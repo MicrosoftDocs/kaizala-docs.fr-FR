@@ -1,33 +1,28 @@
-# README
+# <a name="readme"></a>FICHIER LISEZ-MOI
 
-Thank you for your interest in [Microsoft Kaizala Developer documentation](Articles/index.md).
+Merci d’intérêt dans la [documentation pour les développeurs Microsoft Kaizala](Articles/index.md).
 
-> **Don't have Kaizala? Download the app now for Windows Phone, Android & iOS. [Here's how](Articles/install.md).**
+> **Vous n’avez Kaizala ? Télécharger l’application maintenant pour Windows Phone, Android & iOS. [Voici comment](Articles/install.md).**
 
-Please note that Microsoft Kaizala Developer Platform requires a valid Kaizala Pro or Office365 organizational subscription.
+Veuillez noter que plateforme de développement Microsoft Kaizala nécessite un abonnement valide Kaizala Pro ou Office 365 d’organisation.
 
-> **[Microsoft Kaizala Developer documentation](Articles/index.md)**
+> **[Documentation Microsoft Kaizala Developer](Articles/index.md)**
 
-We are constantly working to improve the Developer Platform experience. If you would like to keep yourself updated on the changes, please drop a mail to kaizalaDev@microsoft.com and we will keep you informed.
-
-
+Nous cherchons constamment pour améliorer l’expérience de la plateforme de développement. Si vous souhaitez conserver vous-même mis à jour sur les modifications, supprimez un message à kaizalaDev@microsoft.com et nous vous tient informé.
 
 
-##Legal Notices
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+##<a name="legal-notices"></a>Informations légales
+Microsoft et les contributeurs accordent une licence à la documentation de Microsoft et d’autres contenus dans ce référentiel sous [Creative Commons Attribution 4.0 internationales licence publique](https://creativecommons.org/licenses/by/4.0/legalcode), consultez le fichier de [licence](LICENSE) et vous accorder une licence d’un code dans le référentiel sous [Licence MIT](https://opensource.org/licenses/MIT), consultez le fichier de [CODE licence](LICENSE-CODE) .
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft, Windows, Microsoft Azure et/ou dans d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques déposées soit des marques déposées de Microsoft Corporation aux États-Unis et/ou dans d’autres pays.
+Les licences pour ce projet n’accordez pas les droits d’utiliser des noms, logos, soit des marques déposées Microsoft.
+Les instructions générales relatives aux marques de Microsoft, voir http://go.microsoft.com/fwlink/?LinkID=254653.
 
-##Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Vous trouverez des informations de confidentialité àhttps://privacy.microsoft.com/en-us/
+
+Microsoft et toute réserve collaborateurs tous les autres droits en vertu de leurs droits respectifs, brevets ou marques déposées, par implication, préclusion ou autre.
+
+##<a name="code-of-conduct"></a>Code de conduite
+Ce projet a adopté le [code de conduite Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.

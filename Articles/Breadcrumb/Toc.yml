@@ -1,0 +1,7 @@
+- name: Documents
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Kaizala
+      tocHref: /kaizala/
+      topicHref: /kaizala/index
