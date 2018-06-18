@@ -1,0 +1,47 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md", "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/kaizala/breadcrumb/toc.json",
+      "extendBreadcrumb": "true",
+      "author": "nitinjms",
+      "ms.author": "nitinj",
+      "ms.date": "10/13/2017",
+      "ms.topic": "conceptual",
+      "bilingual_type": "hover over",
+      "ms.prod": "kaizala",
+      "manager": "nitinj"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "Kaizala-Docs"
+  }
+}
