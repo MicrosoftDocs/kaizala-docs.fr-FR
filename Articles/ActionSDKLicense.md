@@ -1,0 +1,86 @@
+# <a name="microsoft-pre-release-software-license-terms"></a>TERMES DU CONTRAT DE LICENCE DE LOGICIEL VERSION PRÉLIMINAIRE DE MICROSOFT
+
+KIT DE DÉVELOPPEMENT LOGICIEL MICROSOFT KAIZALA
+________________________________________
+Ce termes du contrat de licence est un accord entre Microsoft Corporation (ou une de ses filiales) et vous (« conditions »). Elles s’appliquent au logiciel nommé ci-dessus et les services de Microsoft ou d’un logiciel complète ou met à jour (sauf dans la mesure où ces services ou les mises à jour sont accompagnées par les termes nouveaux ou supplémentaires, auquel cas ces différentes conditions s’appliquent de manière prospective et ne pas modifier votre ou droits de Microsoft relatives à la mise à jour des logiciels ou services) (collectivement, « SDK »). SI VOUS CONFORMER À CES TERMES, VOUS DISPOSEZ DES DROITS CI-DESSOUS. À L’AIDE DU KIT DE DÉVELOPPEMENT LOGICIEL, VOUS ACCEPTEZ CES TERMES. SI VOUS N’ACCEPTEZ PAS LES, N’UTILISEZ PAS LE KIT DE DÉVELOPPEMENT.
+
+**1. INSTALLATION, LICENCE ET L’UTILISATION DES DROITS.**
+
+**un) général**. Vous pouvez installer, utiliser n’importe quel nombre de copies du Kit de développement sur vos périphériques pour concevoir, développer et tester vos programmes pour une utilisation dans le cadre de l’application Microsoft Kaizala uniquement. Vous reconnaissez que n’importe quel logiciel, de composant ou fonctionnalités fournies dans le Kit de développement sont une version préliminaire, qui peut ne pas fonctionne correctement et il peut être différente de la version commerciale finale. Vous reconnaissez davantage Microsoft à son entière discrétion il peut que les mises à jour pour le Kit de développement et vous reconnaissez que Microsoft n’est pas chargé pour vérifier que ces mises à jour sont compatibles ou de fonctionner correctement avec les programmes et/ou l’utilisation de tous les programmes qui intègrent la SDKBy l’aide du SDK.  Documentation fournie avec le Kit de développement sujette à modification à son entière discrétion, et pendant que Microsoft peut envoyer régulièrement des notifications concernant ces modifications, vous êtes responsable de s’assurer de la fonctionnalité de votre programme le Kit de développement et conformité avec ces termes.
+
+**b) étendue de licence**.  Le Kit de développement est fourni sous licence, ne pas vendu. Ces termes fournissent uniquement certains droits d’utilisation du SDK. Microsoft réserve tous les autres droits. Sauf si le droit applicable vous donne davantage de droits nonobstant la présente limitation, vous pouvez utiliser le Kit de développement uniquement tel qu’explicitement autorisé dans ces termes. Ce faisant, vous devez respecter les restrictions techniques contenues dans le Kit de développement n’autorisant que vous puissiez l’utiliser dans certains cas. Vous n’êtes pas autorisé à :
+
+  i.    contourner les restrictions techniques contenues dans le Kit de développement ;
+
+  II.   reconstituer, décompiler ou le désassembler le Kit de développement, sauf et uniquement dans la mesure où loi autorise expressément, nonobstant la présente limitation ;
+  
+  III.  faire plus de copies du Kit de développement que spécifiées dans ces termes ou autorisés par la réglementation applicable, nonobstant la présente limitation ;
+  
+  IV.   publier le SDK pour d’autres personnes à copier ;
+  
+  v.    louer ou prêter le Kit de développement ;
+  
+  VI.   transférer le Kit de développement ou de ces termes à une tierce partie qui n’est pas un distributeur autorisé ou un utilisateur externe de vos programmes ; ou
+  
+  VII.  Utilisez le Kit de développement pour des services d’hébergement commercial.
+  
+**c) les termes de licence**.  Ces termes sont efficaces sur votre acceptation et se termine au plus tard (i) 30 jours après la première disponibilité d’une version commerciale du Kit de développement ou (ii) à la résiliation par Microsoft. Microsoft peut étendre ces termes à son entière discrétion.
+
+**d) critères de licences supplémentaires et/ou des droits d’utilisation.**  Le kit SDK contient des fichiers de code et le texte que vous êtes autorisé à distribuer dans les programmes que vous développez uniquement si vous conformer aux termes (« Code distribuable »). Vous pouvez modifier, copier et distribuer à des tiers de la source et le code de formulaire d’objet du Code distribuable marqué comme « sample » (« exemple de Code »). Sauf autorisation contraire par Microsoft, vous ne modifiez pas n’importe quel autre Code distribuable fourni dans le cadre du Kit de développement.
+
+**e) Documentation**.  Toute personne ayant accès valid à votre ordinateur ou votre réseau interne peut copier et utiliser la documentation fournie avec le Kit de développement logiciel pour un usage interne, à des fins de référence.
+
+
+**2. EXIGENCES EN MATIÈRE DE DISTRIBUTION.**
+
+**un) général.**  Pour n’importe quel Code distribuable vous distribuez, vous devez : i.  ajouter des fonctionnalités principales importantes dans vos programmes ;
+
+II. pour n’importe quel Code distribuable ayant une extension de nom de fichier de .lib, distribuer uniquement les résultats de l’exécution de ce Code distribuable par un éditeur de liens avec votre programme ;
+
+III.    distribuer le Code distribuable inclus dans un programme d’installation uniquement dans le cadre du programme d’installation sans modification ;
+
+IV. afficher votre note de copyright valide sur vos programmes ;
+
+v.  garantir, protéger et sans conséquence Microsoft contre toute réclamation, y compris les frais d’avocats, liées à la distribution ou l’utilisation de vos programmes ; et
+
+**b) distribution à une entreprise ou un utilisateur final.**  Dans la mesure où vous ou un distributeur tiers distribue les programmes ou les applications que vous développez à l’aide du SDK, vous devez inclure les dispositions dans vos conditions d’utilisation pour le programme ou l’application met en service cette adresse suivantes (« Minimum requis les termes ») :
+
+  i.    Le programme ou l’application est une version préliminaire ou « Aperçu », qui ne peut-être pas fonctionner correctement, et elle peut être différente de la version commerciale finale.
+  
+  II.   Ni vous, ni Microsoft ou ses filiales contraint garantie que ce soit. Le programme ou l’application est fournie « en l’état » sans aucune garantie de tout type, expresse ou implicite. 
+  
+  III.  Ni vous, ni Microsoft ou ses filiales portent toute responsabilité pour les revendications ou dommages résultant de l’utilisation de l’application ou un programme.
+  
+  IV.   Microsoft et ses filiales tiers bénéficient les termes du contrat de programme ou une application d’utilisation et ont le droit d’appliquer les conditions d’utilisation.
+
+**distribution de tierce partie c).** Vous pouvez autoriser les distributeurs de vos programmes pour distribuer tant que vous respectez version préliminaire de tiers, avant le vol et/ou bêta termes de distributeur de programmes et que votre programme est clairement marqué comme étant un aperçu ou version préliminaire et non un produit final.  Exemples de cette version préliminaire, avant le vol et/ou de vos programmes bêta incluent mais ne sont pas limitées à Apple TestFlight et Google lire Alpha/bêta Tests.
+
+**d) Restrictions de distribution.** Vous n’êtes pas autorisé à :
+
+i.  modifier ou bloquer tout copyright, de marque ou de brevet avis dans le Code distribuable ;
+
+II. utiliser des marques déposées de Microsoft dans les noms de vos programmes ou d’une manière qui suggère provenant de vos programmes ou sont recommandés par Microsoft ;
+
+III.    inclure le Code distribuable dans les programmes malveillants, trompeuses ou illicites ; ou
+
+IV. modifier ou distribuer le code source de n’importe quel Code distribuable afin que n’importe quelle partie de celui-ci est soumis à une licence exclus. Une licence exclus est une propriété qui nécessite, comme une condition d’utilisation, de modification ou de distribution, qui
+1.  le code soit divulgué ou distribué sous forme de code source ; ou
+2.  d’autres utilisateurs ont le droit de la modifier.
+3.  RESTRICTIONS À L’EXPORTATION. Le Kit de développement logiciel est soumis aux réglementations et lois de l’exportation aux États-Unis. Vous devez respecter toutes les lois nationales et internationales sur l’exportation et réglementations qui concernent le Kit de développement. Ces réglementations comprennent des restrictions sur les destinations, les utilisateurs finaux et l’utilisation de fin. Pour plus d’informations, consultez www.microsoft.com/exporting.
+4.  SERVICES DE SUPPORT TECHNIQUE.  Microsoft n’est pas tenu de fournir des services de support technique pour le Kit de développement sous ces termes.  LA MESURE PERMISE PAR VOTRE DROIT, LES SERVICES DE SUPPORT TECHNIQUE FOURNIES SONT FOURNIS « EN L’ÉTAT » ET MICROSOFT EXCLUT ET EXCLUT TOUTES LES REPRÉSENTATIONS, GARANTIES ET CONDITIONS, EXPRESSE OU IMPLICITE, Y COMPRIS MAIS NON LIMITÉ À REPRÉSENTATIONS, GARANTIES OU CONDITIONS DE TITRE, ABSENCE DE CONTREFAÇON, SATISFAISANTE CONDITION OU QUALITÉ, QUALITÉ OU D’ADÉQUATION À UN USAGE PARTICULIER EN CE QUI CONCERNE LES SERVICES DE SUPPORT TECHNIQUE OU D’AUTRES DOCUMENTS OU INFORMATIONS QUE NOUS FOURNISSONS. VOUS DEVEZ TOUS LES RISQUES DE QUALITÉ ET LES PERFORMANCES DES SERVICES DE LA PRISE EN CHARGE.  
+5.  COMMENTAIRES.  Si vous donnez vos commentaires concernant le Kit de développement pour Microsoft, vous accordez à Microsoft, sans frais, le droit à utiliser, partager et commercialiser vos commentaires en aucune manière et à quelque fin. Vous ne donnerez pas d'avis soumis à une licence qui nécessite que Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers, parce que Microsoft y inclut votre avis. Ces droits survivent au ces termes.
+6.  COLLECTE DE DONNÉES. Le Kit de développement peut collecter des informations sur vous et votre utilisation du Kit de développement et qui envoyer à Microsoft. Microsoft peut utiliser ces informations pour fournir des services et d’améliorer les produits et services de Microsoft. Vos droits d’annulations, le cas échéant, sont décrites dans la documentation du produit. Certaines fonctionnalités dans le logiciel peuvent activer la collecte de données d’utilisateurs de vos applications qui accèdent ou utilisent le Kit de développement. Si vous utilisez ces fonctionnalités pour activer la collecte des données dans vos applications, vous devez respecter la réglementation applicable, y compris pour obtenir le consentement de n’importe quel utilisateur requis et gérer une stratégie de confidentialité visible précisément avertissant les utilisateurs sur la façon dont vous utilisez, collectez et partager leurs données. Vous pouvez en savoir plus sur la collecte de données de Microsoft et l’utiliser dans la documentation du produit et la déclaration de confidentialité Microsoft sur https://go.microsoft.com/fwlink/?LinkId=521839. Vous acceptez de vous conformer à toutes les dispositions applicables de la déclaration de confidentialité de Microsoft.
+7.  MISES À JOUR.  Le Kit de développement peut régulièrement des mises à jour et télécharger et installer les pour vous. Vous pouvez obtenir des mises à jour uniquement à partir de Microsoft ou de sources autorisées. Vous devrez mettre à jour votre système pour vous fournir des mises à jour de Microsoft. Vous acceptez de recevoir ces mises à jour automatiques sans notification supplémentaire. Mises à jour ne peuvent pas inclure ou prennent en charge toutes les fonctionnalités du logiciel, des services ou des périphériques.
+8.  LIAISON D’ARBITRAGE ET LEVÉE D’ACTION DE CLASSE. Cette Section s’applique si vous vivez (ou, si une entreprise, le siège social se trouve dans) États-Unis.  Si vous et Microsoft ont un litige et Microsoft convenir tenter de résoudre informelle pendant 60 jours. Si vous ne pouvez pas vous et Microsoft et Microsoft convenir à l’arbitrage individuels liaison avant l’Association d’arbitrage American sous Federal arbitrage Act (« FAA ») et non à utiliser dans un tribunal devant un juge ou un jury. Au lieu de cela, un arbitre neutre décide. Classe poursuites, arbitrages d’échelle de la classe, privées avocat général actions et des autres procédures où une personne fait dans une capacité représentant ne sont pas autorisés ; ni procédure individuels combinant sans le consentement de toutes les parties. L’accord d’arbitrage complet contient des termes et à http://aka.ms/arb-agreement-1. Vous et Microsoft acceptez les présents termes.
+9.  INTÉGRALITÉ DES ACCORDS. Ces termes et les autres conditions de Microsoft peut fournir des compléments, mises à jour ou d’applications tierces, est l’intégralité des accords pour le Kit de développement.
+10.  LOI APPLICABLE ET À LA SOLUTION DES CONFLITS. Si vous avez acheté le Kit de développement aux États-Unis et au Canada, les lois de l’état ou la province où vous vivez (ou, si une entreprise, où se trouve le siège social) régissent l’interprétation de ces termes, basée sur les revendications pour son rupture et toute autre réclamation (y compris protection des consommateurs, concurrence déloyale et basée sur les revendications délits), nonobstant les conflits de principes juridiques, sauf que le FAA régit tout liées à arbitrage. Si vous avez acheté le Kit de développement logiciel dans un autre pays, ses lois s’appliquent, sauf que le FAA régit tout ce qui concerne l’arbitrage. Si la réglementation américaine en matière federal existe, vous et Microsoft acceptez compétence exclusive et le lieu dans la juridiction federal dans comté de King, Washington pour tous litiges entendu parler dans un tribunal (à l’exception d’arbitrage). Si ce n’est pas le cas, vous et Microsoft acceptez compétence exclusive et le lieu de la juridiction supérieure de département King, Washington pour tous litiges entendu parler dans un tribunal (à l’exception d’arbitrage).
+11.  DROITS DES CONSOMMATEURS ; DIFFÉRENCES RÉGIONALES. Ces termes décrivent certains droits juridiques. Vous devrez autres droits, y compris les droits des consommateurs, des lois de votre état, pays ou région. Séparer et en dehors de votre relation avec Microsoft, vous pouvez aussi avoir des droits en ce qui concerne la partie à partir de laquelle vous avez acheté le Kit de développement. Ces termes ne modifiez pas les autres droits si les lois de votre état, pays ou région ne le permettent pas. 
+12.  EXCLUSION DE GARANTIE. LE KIT DE DÉVELOPPEMENT LOGICIEL EST FOURNI SOUS LICENCE « EN L’ÉTAT ». VOUS ASSUMEZ TOUS LES RISQUES DE SON UTILISATION. MICROSOFT N’OFFRE AUCUNE GARANTIE, EXPRESSE OU CONDITION. DANS LA MESURE PERMISE SOUS LA RÉGLEMENTATION APPLICABLE, MICROSOFT EXCLUT TOUTE GARANTIE IMPLICITE, Y COMPRIS DE QUALITÉ, D’ADÉQUATION À UN USAGE PARTICULIER ET D’ABSENCE DE CONTREFAÇON.
+13.  LIMITATION SUR ET EXCLUSION DE DOMMAGES. SI VOUS AVEZ TOUTE BASE DE RÉCUPÉRATION DE DOMMAGES EN DÉPIT DE L’EXCLUSION DE GARANTIE PRÉCÉDENTE, VOUS POUVEZ RÉCUPÉRER AUPRÈS DE MICROSOFT ET SES FOURNISSEURS QUE LES DOMMAGES DIRECTS JUSQU'À 5,00 $ US. VOUS NE POUVEZ PAS RÉCUPÉRER LES AUTRES DOMMAGES, Y COMPRIS LES DOMMAGES DIRECTS, DE PERTE DE BÉNÉFICES, SPÉCIAUX, INDIRECTS OR ACCESSOIRES.
+Cette limite s’applique à (a) tout liées pour le Kit de développement logiciel, services de contenu (y compris le code) sur des sites Internet tiers ou d’applications tierces ; et (b) les réclamations pour rupture de contrat, garantie, garantie ou condition ; responsabilité stricte, de négligence ou autre délit ; ou toute autre réclamation ; dans chaque cas, dans la mesure permise par la réglementation applicable.
+Elle s’applique également même si Microsoft avait ou doit avoir connaissance de la possibilité des dommages. La limitation ou exclusion ci-dessus peut s’applique pas à vous votre état, pays ou province n’autorise pas l’exclusion ou la limitation de dommages indirects, accessoires ou autres.
+
+14.  INFORMATIONS CONFIDENTIELLES. Le Kit de développement, y compris son interface utilisateur, de fonctionnalités et de documentation, est confidentielles et à Microsoft et ses fournisseurs.
+un) utilisation. Cinq ans après l’installation de son commerciales ou le Kit de développement de publication, selon ce qui est d’abord, vous ne pouvez pas divulguer les informations confidentielles à des tiers. Vous pouvez des informations confidentielles uniquement à vos employés et les consultants qui ont besoin de connaître les informations. Vous avez devez écrit avec eux des contrats qui protègent les informations confidentielles au moins autant que ces termes.
+b) survie. Votre droit à la protection des informations confidentielles survit à ces termes.
+c) exclusions de. Vous pouvez des informations confidentielles en réponse à une commande judiciaire ou gouvernementale. Vous devez tout d’abord attribuer écrit à Microsoft pour lui permettre de rechercher un ordre de protection ou de protection des informations. Informations confidentielles n’incluent pas les informations qui : i.  devient connues publiquement via aucune action préjudiciable ; II. vous avez reçue d’une tierce partie qui ne pas violation des obligations de confidentialité pour Microsoft ou ses fournisseurs ; ou iii.    vous avez développé indépendamment.
