@@ -1,0 +1,42 @@
+# <a name="generate-tenant-level-user-token"></a><span data-ttu-id="58a26-101">Générer le jeton de l’utilisateur au niveau du client</span><span class="sxs-lookup"><span data-stu-id="58a26-101">Generate tenant-level user token</span></span>
+
+<span data-ttu-id="58a26-102">Jeton d’actualisation de l’utilisateur au niveau du client peut servir à accorder l’accès à tous les groupes de l’utilisateur dont l’utilisateur est un administrateur. Pour un utilisateur client, ce jeton permet d’accéder à tous les groupes d’une organisation.</span><span class="sxs-lookup"><span data-stu-id="58a26-102">Tenant-level user refresh token can be used to grant access to all the user's groups where user is an admin. For a Tenant user, this token grants access to all the groups for an organization.</span></span>
+
+## <a name="steps-to-generate-tenant-level-user-token"></a><span data-ttu-id="58a26-103">Étapes pour générer le jeton de l’utilisateur au niveau du client</span><span class="sxs-lookup"><span data-stu-id="58a26-103">Steps to generate Tenant-level user token</span></span>
+*   <span data-ttu-id="58a26-104">**Étape 1 : Le développeur enregistre un connecteur**</span><span class="sxs-lookup"><span data-stu-id="58a26-104">**Step 1: Developer registers a Connector**</span></span>
+
+    *   <span data-ttu-id="58a26-105">Pour les développeurs accède au portail de gestion Kaizala @https://manage.kaiza.la/</span><span class="sxs-lookup"><span data-stu-id="58a26-105">Developer navigates to Kaizala Management Portal @ https://manage.kaiza.la/</span></span>
+    *   <span data-ttu-id="58a26-106">Ouvrez une session à l’aide d’un compte Office 365 existant</span><span class="sxs-lookup"><span data-stu-id="58a26-106">Log in using an existing Office365 account</span></span>
+    *   <span data-ttu-id="58a26-107">Inscrire un numéro de téléphone sur le portail en tapant sur « Ajouter un numéro de téléphone »</span><span class="sxs-lookup"><span data-stu-id="58a26-107">Register a phone number on the portal by tapping on “Add a Phone Number”</span></span>
+        *   <span data-ttu-id="58a26-108">Entrez le numéro de téléphone</span><span class="sxs-lookup"><span data-stu-id="58a26-108">Enter Phone number</span></span>
+        *   <span data-ttu-id="58a26-109">Cliquez sur « Générer le code confidentiel »</span><span class="sxs-lookup"><span data-stu-id="58a26-109">Tap on “Generate PIN”</span></span>
+        *   <span data-ttu-id="58a26-110">Vérifier le code confidentiel reçu par SMS sur le numéro de téléphone spécifié</span><span class="sxs-lookup"><span data-stu-id="58a26-110">Verify the PIN received via an SMS on the specified phone number</span></span>
+    *   <span data-ttu-id="58a26-111">Cliquez sur « Connecteurs » dans le menu de gauche</span><span class="sxs-lookup"><span data-stu-id="58a26-111">Tap on “Connectors” in the left menu</span></span>
+    *   <span data-ttu-id="58a26-112">Cliquez sur « Ajouter le connecteur »</span><span class="sxs-lookup"><span data-stu-id="58a26-112">Tap on “Add Connector”</span></span>
+    *   <span data-ttu-id="58a26-113">Inscrire un connecteur pour le système 3ème partie qui utilise l’API</span><span class="sxs-lookup"><span data-stu-id="58a26-113">Register a connector for the 3rd party system that will use the API</span></span>
+        *   <span data-ttu-id="58a26-114">Entrez le nom du connecteur et d’autres détails.</span><span class="sxs-lookup"><span data-stu-id="58a26-114">Enter the name of the Connector and other details.</span></span> <span data-ttu-id="58a26-115">Cliquez sur Continuer</span><span class="sxs-lookup"><span data-stu-id="58a26-115">Tap on Continue</span></span>
+        *   <span data-ttu-id="58a26-116">Sélectionnez autorisations est conçu pour le connecteur d’accéder aux</span><span class="sxs-lookup"><span data-stu-id="58a26-116">Select permissions that is intended for the Connector to have access to</span></span>
+        *   <span data-ttu-id="58a26-117">Cliquez sur Créer le connecteur</span><span class="sxs-lookup"><span data-stu-id="58a26-117">Tap on Create Connector</span></span>
+    *   <span data-ttu-id="58a26-118">Notez l’ID & Secret qui récupèrent généré et affiché sur le portail</span><span class="sxs-lookup"><span data-stu-id="58a26-118">Note the ID & Secret that get generated and displayed on the portal</span></span>
+
+*   <span data-ttu-id="58a26-119">**Étape 2 : Client utilisateur » permet d’accéder » le connecteur à tous les groupes auxquels il est administrateur**</span><span class="sxs-lookup"><span data-stu-id="58a26-119">**Step 2: Tenant User “grants” the Connector access to all groups that he is admin to**</span></span>
+
+    *   <span data-ttu-id="58a26-120">L’utilisateur navigue vers un portail de gestion Kaizala @https://manage.kaiza.la/</span><span class="sxs-lookup"><span data-stu-id="58a26-120">User navigates to Kaizala Management Portal @ https://manage.kaiza.la/</span></span>
+    *   <span data-ttu-id="58a26-121">Ouvrez une session à l’aide d’un Office 365 existant compte (SKU TBD)</span><span class="sxs-lookup"><span data-stu-id="58a26-121">Log in using an existing Office365 (SKU TBD) account</span></span>
+    *   <span data-ttu-id="58a26-122">Inscrire un numéro de téléphone sur le portail en tapant sur « Ajouter un numéro de téléphone »</span><span class="sxs-lookup"><span data-stu-id="58a26-122">Register a phone number on the portal by tapping on “Add a Phone Number”</span></span>
+        *   <span data-ttu-id="58a26-123">Entrez le numéro de téléphone</span><span class="sxs-lookup"><span data-stu-id="58a26-123">Enter Phone number</span></span>
+        *   <span data-ttu-id="58a26-124">Cliquez sur « Générer le code confidentiel »</span><span class="sxs-lookup"><span data-stu-id="58a26-124">Tap on “Generate PIN”</span></span>
+        *   <span data-ttu-id="58a26-125">Vérifier le code confidentiel reçu par SMS sur le numéro de téléphone spécifié</span><span class="sxs-lookup"><span data-stu-id="58a26-125">Verify the PIN received via an SMS on the specified phone number</span></span>
+    *   <span data-ttu-id="58a26-126">Cliquez sur « Connecteurs » dans le menu de gauche</span><span class="sxs-lookup"><span data-stu-id="58a26-126">Tap on “Connectors” in the left menu</span></span>
+    *   <span data-ttu-id="58a26-127">Cliquez sur le nom du connecteur qui doit être accessible par le connecteur</span><span class="sxs-lookup"><span data-stu-id="58a26-127">Tap on the connector name which needs to be accessed by the Connector</span></span>
+    *   <span data-ttu-id="58a26-128">Cliquez sur « Jeton utilisateur de générer »</span><span class="sxs-lookup"><span data-stu-id="58a26-128">Tap on “Generate user token”</span></span>
+    *   <span data-ttu-id="58a26-129">Notez le jeton actualiser qui est généré et affiché sur le portail</span><span class="sxs-lookup"><span data-stu-id="58a26-129">Note the Refresh Token that gets generated and displayed on the portal</span></span>
+
+*   <span data-ttu-id="58a26-130">**Étape 3 : Utilisateur partage le jeton d’actualisation avec le développeur de l’application**</span><span class="sxs-lookup"><span data-stu-id="58a26-130">**Step 3: User shares the Refresh Token with the App Developer**</span></span>
+
+    *   <span data-ttu-id="58a26-131">Admin doit partager manuellement le jeton d’actualisation reçu à l’étape 2 avec le développeur de l’application</span><span class="sxs-lookup"><span data-stu-id="58a26-131">Admin needs to manually share the refresh token received in Step 2 with the app developer</span></span>
+
+*   <span data-ttu-id="58a26-132">**Étape 4 : Développement d’application appelle l’API de Rest de plateforme Kaizala pour générer un jeton d’accès**</span><span class="sxs-lookup"><span data-stu-id="58a26-132">**Step 4: App Developer calls the Kaizala Platform Rest API to generate Access Token**</span></span>
+
+    *   <span data-ttu-id="58a26-133">Développeur peut utiliser maintenant le jeton d’actualisation.</span><span class="sxs-lookup"><span data-stu-id="58a26-133">Developer can now use the Refresh token.</span></span> <span data-ttu-id="58a26-134">un ID de connecteur et connecteur Secret pour appeler l’API REST communiquées pour générer un jeton d’accès (plus d’informations sur ci-dessous)</span><span class="sxs-lookup"><span data-stu-id="58a26-134">a Connector ID and Connector Secret to call the REST API inorder to generate Access Token (more info below)</span></span>
+
