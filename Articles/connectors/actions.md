@@ -3,15 +3,14 @@ title: /actions
 description: Article de référence de l’API à envoyer/extraire des instances de l’Action
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: 6f58e45b9eb5d4a4987c3aeb36ff8fe1862fe7bc
-ms.sourcegitcommit: 3a6a13cc885faf1bbc9ee8498f5183f414395aac
+ms.openlocfilehash: da96b8dc40d10a8ff2a6ca05e493677bf236fd84
+ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19905126"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "20399368"
 ---
-# <a name="api-to-sendretrieve-action-instances"></a>API à envoyer/extraire des instances de l’Action
-## <a name="actions"></a>/actions
+# <a name="actions"></a>/actions
 Point de terminaison API à envoyer/extraire des instances de Kaizala Actions dans les groupes de conversation dans Kaizala. Portée actuelle est à prendre en charge la suite de types d’actions :
 
 | Action | OBTENIR la prise en charge | Prise en charge de la publication | ID |

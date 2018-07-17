@@ -3,16 +3,16 @@ title: Configurer les connecteurs Kaizala
 description: Cet Article décrit les étapes pour créer des connecteurs Kaizala et générer des jetons d’autorisation
 topic: get-started-article
 author: nitinjms
-ms.openlocfilehash: f55d09c4619d6d17a997935ff937ae82cc560ceb
-ms.sourcegitcommit: 3a6a13cc885faf1bbc9ee8498f5183f414395aac
+ms.openlocfilehash: e9f6551f4ae824a6da0ee4ee39f32cd2237486b6
+ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19905035"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "20399362"
 ---
 # <a name="setup-for-using-the-kaizala-connectors"></a>Programme d’installation pour l’utilisation de connecteurs Kaizala
 
-## <a name="personas"></a>Personnage
+## <a name="personas"></a>Personas
 
 *   **Pour les développeurs :** En interne ou 3e partie développement d’applications pour l’organisation – qui souhaitent intégrer Kaizala des processus d’entreprise de l’organisation. Pour les développeurs n’ont pas accès à l’utilisateur final lors du développement de l’application (diffère d’un administrateur).
 *   **Admin :** Utilisateur qui fait partie des groupes de fin et est un administrateur. Est prévu pour effectuer les tâches de gestion de groupe.
@@ -52,7 +52,7 @@ Il existe quatre composants d’infrastructure principaux impliqués dans l’ut
     *   Cliquez sur « Ajouter le connecteur »
     *   Inscrire un connecteur pour le système 3ème partie qui utilise l’API
         *   Entrez le nom du connecteur et d’autres détails. Cliquez sur Continuer
-        *   Sélectionnez autorisations est conçu pour le connecteur d’accéder aux
+        *   Sélectionnez [autorisations](permission.md) conçue pour le connecteur d’accéder aux
         *   Cliquez sur Créer le connecteur
     *   Notez l’ID & Secret qui récupèrent généré et affiché sur le portail
 

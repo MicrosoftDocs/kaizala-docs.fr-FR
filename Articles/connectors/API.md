@@ -3,12 +3,12 @@ title: API Kaizala
 description: Liste des API que Kaizala expose pour permettre l’intégration avec des systèmes tiers 3
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: 06cb4b8d4883d0d9a50479cf9c9da048cc42e3a7
-ms.sourcegitcommit: 3a6a13cc885faf1bbc9ee8498f5183f414395aac
+ms.openlocfilehash: 7060588be558a16c83f275ea9e8be6bcf926fd54
+ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19905103"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "20399378"
 ---
 # <a name="kaizala-api-documentation"></a>Documentation Kaizala API
 
@@ -22,7 +22,7 @@ Le domaine racine pour appeler les APIs Kaizala est la suivante :
     
 |               | Paramètre             | Type      | Facultatif ?     | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Url du point de terminaison  | `endpoint-url`        | Chaîne    | Non            | Authentification réussie lors de la génération jetons d’accès, une url de point de terminaison est renvoyée qui doivent être utilisées comme url de base d’api pour effectuer des appels d’API suivants    |
+| Url du point de terminaison  | `endpoint-url`        | String    | Non            | Authentification réussie lors de la génération jetons d’accès, une url de point de terminaison est renvoyée qui doivent être utilisées comme url de base d’api pour effectuer des appels d’API suivants    |
 
 Veuillez noter que tout en appuyant sur n’importe quelle api Kaizala, vous pouvez obtenir l’état Http code : 308 indiquant que l’url de terminaison de l’utilisateur a changé. Emplacement de l’en-tête réponse contient dans ce cas, la nouvelle url de point de terminaison.
 
@@ -38,6 +38,7 @@ L’API fonctionne avec les ressources Kaizala suivantes :
 *   [/ Media](media.md)
 *   [/actions](actions.md)
 *   [/Subscribers](subscribers.md)
+*    [/REACTION](reactions.md)
 
 ### <a name="webhooks"></a>WebHooks
 
