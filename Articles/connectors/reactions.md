@@ -3,12 +3,12 @@ title: /REACTION
 description: Article de référence de l’API réactions de requête sur n’importe quelle Action envoyé dans un groupe
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: 4f2da7302133371dba5edd6035a57068e16aae63
-ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
+ms.openlocfilehash: a0c86aac9dd70e4c72e177f64c6e2dcaeeb8b41c
+ms.sourcegitcommit: 9ac64dcb3ef72a84589483e45ae8e528aaa5aa4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "20425631"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "20457303"
 ---
 # <a name="reaction"></a>/REACTION
 Point de terminaison API pour interroger les données réactions sur n’importe quelle Action envoyée dans un groupe.
@@ -157,7 +157,7 @@ Point de terminaison API pour interroger les données réactions sur n’importe
 
 ## <a name="get-reaction-details-for-a-action"></a>OBTENIR plus d’informations /reaction pour une Action
 
-    GET {endpoint-url}/v1/groups/{groupId}/reaction/summary?sourceGroupId={sourceGroupId}&cursor={timeStamp}
+    GET {endpoint-url}/v1/groups/{groupId}/reaction/{referenceId}?sourceGroupId={sourceGroupId}&reactionType={reactionType}&cursor={timeStamp}
 
 
 ### <a name="request-parameters"></a>Paramètres de la demande
@@ -192,20 +192,16 @@ Point de terminaison API pour interroger les données réactions sur n’importe
 ```javascript
 {
     "cursor": 636674054802000000,
-    "summary": [
+    "reactionDetails": [
         {
-            "referenceId": "4a44-51be-4b42-a980-c7a48e2d92a8",
-            "reactionsCountMap": {
-                "like": 1,
-                "comment": 4
-            }
+            "lastModifiedTime": 1529573303063,
+            "reactionId": "4b2fb78b-b529-4fa1-acda-f670b491ebca",
+            "userId": "72e29591-f391-4e7b-84eb-4e228406fb9b"
         },
         {
-            "referenceId": "4a44-51be-4b420-c7a48e2d92a8",
-            "reactionsCountMap": {
-                "like": 10,
-                "comment": 14
-            }
+            "lastModifiedTime": 1529573313063,
+            "reactionId": "4b2fb7529-4fa1-acda-f670b491ebca",
+            "userId": "72e29591-f391-4eb-4e228406fb9b"
         }
     ]
 }
