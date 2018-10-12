@@ -1,5 +1,5 @@
 # <a name="kaizala-availability"></a>Disponibilité Kaizala 
-Kaizala est lancée sur le marché dans les pays suivants, même si elle est disponible sur tous les Android et iOS stocke dans le monde comme une application gratuite. Kaizala Pro est disponible dans le monde sous Aperçu avant impression.
+Kaizala est lancée sur le marché dans les pays suivants, même si elle est disponible sur tous les Android et iOS stocke dans le monde comme une application gratuite. 
 
 • Inde
 <br>
