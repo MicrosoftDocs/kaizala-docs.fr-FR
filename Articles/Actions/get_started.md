@@ -21,7 +21,7 @@ Toutes les Actions Kaizala actuellement formulaire basé, par exemple, le modèl
 
    **Étape 3 : concevoir et implémenter l’interface d’utilisateur et une expérience utilisateur pour le complément.**
 
-Concevoir une expérience utilisateur et la fluidité cohérente et facile à apprendre, avec les principaux scénarios qui ne nécessitent que quelques étapes à effectuer. Remeber une Action Kaizala ne peut pas faire référence à des sources externes - donc pratiques en termes de ce que vous souhaitez implémenter au sein de votre Action.
+Concevoir une expérience utilisateur et la fluidité cohérente et facile à apprendre, avec les principaux scénarios qui ne nécessitent que quelques étapes à effectuer. N’oubliez pas qu’une Action Kaizala ne peut pas faire référence à des sources externes - donc être pratiques en termes de ce que vous souhaitez implémenter au sein de votre Action.
 
 Vous pouvez faire votre choix parmi divers outils de développement web et utiliser du code HTML et JavaScript pour implémenter l’interface utilisateur.
 
