@@ -6,7 +6,7 @@ Nous cherchons constamment pour améliorer l’expérience de la plateforme de d
 
 
 ## <a name="apis"></a>API
-Microsoft Kaizala APIs sont régies par la [licence d’API de Microsoft et les conditions d’utilisation](https://msdn.microsoft.com/en-us/mt825045)
+Microsoft Kaizala APIs sont régies par la [licence d’API de Microsoft et les conditions d’utilisation](https://docs.microsoft.com/en-us/outlook/rest/terms-of-use)
 
 ## <a name="actions"></a>Actions
 
