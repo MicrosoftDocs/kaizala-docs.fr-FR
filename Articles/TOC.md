@@ -24,7 +24,7 @@
 #### [Anatomie d’un Package d’Action Kaizala](Actions/anatomy.md)
 #### [Mise en route](Actions/get_started.md)
 #### [Développer](Actions/develop.md)
-#### [Publier](Actions/publish.md)
+#### [Publish](Actions/publish.md)
 
 ## Références d’API
 
@@ -58,6 +58,9 @@
 ## [Complément Office Kaizala](PartnerDocs/ExcelAddinforKaizala.md)
 
 # Solutions professionnelles à l’aide de Kaizala
+## [Communications d’entreprise](BusinessSolutions/CorporateCommunications/CorporateCommunications.md)
+### [Afficher les flux RSS dans des groupes Kaizala](BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
+### [Afficher les annonces SharePoint dans les groupes de Kaizala](BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
 ## [Système de tickets](PartnerDocs/Customerticketingsolution.md)
 ## [Intégration de données Kaizala à vos tableaux de bord personnalisés](PartnerDocs/IntegratingKaizalaData.md)
 
