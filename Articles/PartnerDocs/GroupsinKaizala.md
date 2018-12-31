@@ -28,7 +28,7 @@ Par exemple, lorsque vous ajoutez un groupe de ventes au groupe du siège social
 
 De même, lorsque les ventes du Nord (groupe D dans les images) est ajouté au groupe de ventes, consultez le tableau ci-dessous pour comprendre la relation.
 
-|Groupe d’envoi de message|Groupe Recieving de message|
+|Groupe d’envoi de message|Groupe de réception de messages|
 |--------|--------|
 |Messages envoyés dans le siège social|Membres du groupe de ventes et le groupe de ventes Amérique reçoit le message dans un groupe nommé siège social dans la liste de conversation|
 |Messages envoyés au groupe de ventes|Les membres du groupe de ventes Amérique reçoit le message dans le groupe de ventes dans la liste de conversation|

@@ -3,12 +3,12 @@ title: /messages
 description: Article de référence de l’API pour les messages de requête envoyée groupe carte réseau interne
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: 30a0164208bf025b59ad08049225e872f68c67f9
-ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
+ms.openlocfilehash: 8efad3236e852276e11c3052f98ac6f1d5541b0a
+ms.sourcegitcommit: 58839035fca768f92eda40974029208eb31dda7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "20399360"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27465700"
 ---
 # <a name="messages"></a>/messages
 
@@ -26,7 +26,7 @@ Point de terminaison API pour envoyer des messages à des groupes de conversatio
 | En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
 | En-tête HTTP | Content-Type | String | Non | valeur : application/json |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
 | Paramètre | Type | Facultatif ? | Description |
 | :---: | :---: | :--- | :--- |
@@ -47,7 +47,7 @@ Point de terminaison API pour envoyer des messages à des groupes de conversatio
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| referenceId | String | GUID représentant l’achèvement succesful de la demande |
+| referenceId | String | GUID représentant l’exécution réussie de la demande |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 

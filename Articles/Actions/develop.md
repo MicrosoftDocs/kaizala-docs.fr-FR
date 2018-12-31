@@ -34,7 +34,7 @@ Reportez-vous à la [JSON schéma de manifeste de package](package_manifest_sche
 
 À ce stade, vous devez également inclure un fichier d’icône pour votre Action personnalisée dans le package.
 
-Fichier HTML d’affichage Création dans le manifeste du package et mappez-le sur l’objet de paramètre pertinent.
+Fichier HTML d’affichage Création dans le manifeste du package et mappez-le sur l’objet parameter pertinents.
 
 ## <a name="configure-the-card-that-appears-on-the-conversation-canvas"></a>Configurer la carte qui apparaît dans la zone de conversation
 
