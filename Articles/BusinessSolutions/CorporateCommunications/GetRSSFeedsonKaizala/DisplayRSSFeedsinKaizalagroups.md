@@ -2,7 +2,7 @@
 
 Organisations utilisent des flux RSS pour compléter leurs systèmes de messagerie et améliorer la façon dont elles fournissent des informations aux employés. Les organisations peuvent désormais exploiter ces flux avec la première ligne et les travailleurs mobiles en lui envoyant comme des annonces aux groupes Kaizala.
 
-Quelques exemples de flux RSS d’utilisation
+Quelques exemples de flux RSS d’utilisation :
 
 1. Actualités du secteur des sites externes
 2. Informations sur la société à partir des sites internes
@@ -51,10 +51,9 @@ Il s’agit d’une annonce sous la forme d’une carte et Microsoft Flow est ut
         1. Sélectionnez le nom du groupe ou entrez l’id de groupe dans lequel vous souhaitez envoyer la carte
         2. Pour obtenir l’id de groupe, accédez à votre groupe sur https://manage.kaiza.la et sélectionnez l’identificateur à la fin de l’URL.
         
-      <img src="GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
-      
-       3. Cliquez sur action, sélectionnez le type d’action en tant que « valeur personnalisée » dans la liste déroulante
-       4. Mapper des corps d’action à « ActionBodyJson »
+            <img src="GetRSSFeedsOnKaizalaImages/6.PNG" width="600" />
+        3. Cliquez sur action, sélectionnez le type d’action en tant que « valeur personnalisée » dans la liste déroulante
+        4. Mapper les corps à « ActionBodyJson »
        
        <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
 7.  Enregistrer le flux RSS flux recevrez au groupe Kaizala sélectionné, chaque fois flux est déclenché. 
