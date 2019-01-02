@@ -7,7 +7,7 @@ Kaizala permet aux organisations de créer ce réseau d’employés connectés e
 Pour simplifier le processus de communication et de tirer parti des investissements actuelles dans les canaux de communication, les organisations peuvent utiliser des actions personnalisées pour afficher internet et intranet pour les flux de groupes Kaizala.
 
 Voici des exemples de solutions qui permettraient aux organisations de communiquer avec la mobilité efficacement
- 1. [Afficher les flux RSS dans des groupes Kaizala](/Articles/BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
- 2. [Afficher les annonces SharePoint dans les groupes de Kaizala](/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
+ 1. [Afficher les flux RSS dans des groupes Kaizala](GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
+ 2. [Afficher les annonces SharePoint dans les groupes de Kaizala](SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
 
 Liens utiles- [Kaizala actions](https://docs.microsoft.com/en-us/kaizala/actions/readme)
