@@ -42,7 +42,7 @@ Il s’agit d’une annonce sous la forme d’une carte et flux est utilisé pou
 4. [Importation](https://docs.microsoft.com/en-us/kaizala/actions/publish#import-kaizala-action) du package action modifiées au portail de gestion kaizala (*cette carte est envoyé par un appel d’API, et il n’est pas nécessaire d’ajouter la carte à un groupe*)
 5. [Importer](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) le « RSS-flux-Flowpackage.zip » à votre compte Microsoft Flow
 
-> Remarque : Si vous n’avez jamais utilisé connexions RSS ou Kaizala, première [Ajouter des connexions](https://docs.microsoft.com/en-us/flow/add-manage-connections)    
+    > Remarque : Si vous n’avez jamais utilisé connexions RSS ou Kaizala, première [Ajouter des connexions](https://docs.microsoft.com/en-us/flow/add-manage-connections)    
 
 6. Modifier les détails dans importés flux (*voir les étapes ci-dessous*) 
    1. Dans le premier bloc, entrez l’URL du flux RSS <img src= "GetRSSFeedsOnKaizalaImages/3.1.PNG" width="600" />
@@ -61,7 +61,9 @@ Il s’agit d’une annonce sous la forme d’une carte et flux est utilisé pou
         4. Mapper les corps à « ActionBodyJson »
        
        <img src="GetRSSFeedsOnKaizalaImages/5.png" width="600" />
-7.  Enregistrer le flux RSS flux recevrez au groupe Kaizala sélectionné, chaque fois flux est déclenché. 
+7.  Enregistrer le flux
+
+ Flux RSS sont envoyées au groupe Kaizala sélectionné, chaque flux de temps est déclenché. 
 
 > Remarque : Vous ne pouvez définir un flux RSS URL dans le flux. Pour indiquer plusieurs flux au même groupe, différents flux doivent être créées pour chaque flux
 
