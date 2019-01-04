@@ -1,5 +1,5 @@
 # <a name="display-sharepoint-announcements-in-kaizala-groups"></a>Afficher les annonces SharePoint dans les groupes de Kaizala 
-Organisations utilisent application annonce SharePoint pour partager des news, état et autres bribes d’informations aux employés. Application annonce de SharePoint, qui est fourni avec une liste, est un type particulier de la liste qui vous permet de créer un annonces.
+Organisations utilisent application annonce SharePoint pour partager des news, état et autres bribes d’informations aux employés. Application annonce de SharePoint, qui est fourni avec une liste, est un type particulier de la liste qui vous permet de créer des annonces.
 
 À l’aide de cet exemple, les organisations peuvent partager des annonces SharePoint avec la première ligne et les travailleurs mobiles sur Kaizala. Cette carte a 3 champs de conversation carte afficher-les pièces jointes (dans cet exemple, article Photo d’images), titre et annonce le corps (description). Il est envoyé à un groupe de Kaizala en tant qu’une carte annonce out-of-box.
 
@@ -32,7 +32,9 @@ Ce scénario peut être divisé en 2 étapes :
 2. Utiliser le [composant WebPart contenu mis en surbrillance](https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd) (*le cas échéant, pour la visualisation*)
 3. Téléchargez le [SharepointAnnouncementOnKaizala-SolutionPackage.zip](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/SharepointAnnouncementOnKaizala-SolutionPackage.zip) (*il s’agit d’un package de flux*)
 4. [Importation](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) SharepointAnnouncementOnKaizala-SolutionPackage.zip à votre compte Microsoft Flow
-    > Remarque : Si vous n’avez jamais utilisé Sharepoint ou Kaizala connexion, première [Ajouter des connexions](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+   
+   > Remarque : Si vous n’avez jamais utilisé Sharepoint ou Kaizala connexion, première [Ajouter des connexions](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+   
 5. Modifier le flux (*comme indiqué ci-dessous*)
     1. Dans le premier bloc du flux
     
