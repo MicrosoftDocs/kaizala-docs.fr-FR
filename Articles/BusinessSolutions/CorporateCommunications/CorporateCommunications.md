@@ -9,6 +9,6 @@ Pour simplifier le processus de communication et de tirer parti des investisseme
 Voici des exemples de solutions qui permettraient aux organisations de communiquer avec la mobilité efficacement
  1. [Afficher les flux RSS dans des groupes Kaizala](GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
  2. [Afficher les annonces SharePoint dans les groupes de Kaizala](SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
- 3. [Mises à jour Kaizala auto-Post Twitter](AutoPostTwitterUpdatesToKaizala.md)
+ 3. [Mises à jour Kaizala auto-Post Twitter](AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
 
 Liens utiles- [Kaizala actions](https://docs.microsoft.com/en-us/kaizala/actions/readme)
