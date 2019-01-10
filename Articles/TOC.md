@@ -24,7 +24,7 @@
 #### [Anatomie d’un Package d’Action Kaizala](Actions/anatomy.md)
 #### [Mise en route](Actions/get_started.md)
 #### [Développer](Actions/develop.md)
-#### [Publish](Actions/publish.md)
+#### [Publier](Actions/publish.md)
 
 ## Références d’API
 
@@ -61,6 +61,9 @@
 ## [Communications d’entreprise](BusinessSolutions/CorporateCommunications/CorporateCommunications.md)
 ### [Afficher les flux RSS dans des groupes Kaizala](BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
 ### [Afficher les annonces SharePoint dans les groupes de Kaizala](BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
+### [Mises à jour Kaizala auto-Post Twitter](BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
+## [Life@Work](BusinessSolutions/Life@Work/Life@Work.md)
+### [Partager des guillemets inspiration @ espace de travail](BusinessSolutions/Life@Work/InspirationalQuotes@Workplace/InspirationalQuotes@Workplace.md)
 ## [Système de tickets](PartnerDocs/Customerticketingsolution.md)
 ## [Intégration de données Kaizala à vos tableaux de bord personnalisés](PartnerDocs/IntegratingKaizalaData.md)
 
