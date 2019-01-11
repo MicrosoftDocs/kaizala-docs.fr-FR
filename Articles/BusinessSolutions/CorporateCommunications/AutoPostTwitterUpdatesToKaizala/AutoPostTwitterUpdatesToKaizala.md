@@ -2,17 +2,17 @@
 
 Validation pour Twitter pages employé fait partie des activités quotidiennes, mais que vous ayez à valider les mêmes informations plusieurs fois est très difficile. Encourager les employés peuvent partager des mises à jour des médias sociaux, lorsque vous avez terminé correctement peut étendre considérablement suivant de la société. 
 
-Cet exemple de solution gagne du temps par automatique-validation les mises à jour de l’état de votre compte twitter officiel aux groupes Kaizala. Une carte de l’annonce est envoyée au groupe lorsqu’un ou tous les sous déclencheurs se produisent
+Cet exemple de solution gagne du temps en auto-validation tweet à partir de votre compte Twitter officiel aux groupes Kaizala. Une carte de l’annonce est envoyée au groupe lorsqu’un ou tous les sous déclencheurs se produisent
 
-1. Un nouveau tweet est publié sur un handle spécifique twitter E.g.,"@InsideFabrikam »
+1. Un nouveau tweet est publié sur un Twitter spécifique gérer E.g.,"@InsideFabrikam »
 
-2. Une publication est nouveau tweetée dans ce handle twitter 
+2. Une publication est nouveau tweetée dans ce handle Twitter 
     
 3. Une publication est simplement un hashtag spécifique E.g.,"#EmployeeEngagement »
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/6.png" alt="Tweet" width="400" />
 
-Cette carte possède trois champs carte titre, corps (description) et des pièces jointes (images, des vidéos ou GIF). Le corps de l’annonce est l’URL twitter et sur appuyant sur cette URL, les utilisateurs seraient redirigés vers la page d’état sur twitter.
+Cette carte possède trois champs carte titre, corps (description) et des pièces jointes (images, des vidéos ou GIF). Le corps de l’annonce est l’URL Twitter et sur appuyant sur cette URL, les utilisateurs seraient redirigés vers la page d’état sur Twitter.
 
 > Remarque : En cas de vidéo ou GIF, vignette s’affiche dans la vue de carte de conversation
 
@@ -40,7 +40,7 @@ Dans ce scénario, le flux est utilisé pour envoyer la carte à un groupe séle
 
     1.  Dans le premier bloc du flux
     
-        Entrez la poignée twitter ou le hashtag, ou les deux
+        Entrez la poignée Twitter ou le hashtag, ou les deux
         
         <img src="AutoPostTwitterUpdatesToKaizalaImages/4.PNG" alt="Firstblock>Kaizala" width="400" />
     
