@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: de0df75d7a62fda9ea6ff5625fbef94774069cfd
+ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28727718"
+---
 ## <a name="kas-client"></a>KAS Client
 
 SDK de Client KAS fournit un pont entre l’interface de l’application Kaizala native (Objective-C pour iOS, Java pour Android) et javascript de l’Action de votre Kaizala.
@@ -14,11 +22,11 @@ Vous pouvez télécharger le fichier KASClient Javascript actuel à partir [d’
 
 ## <a name="api-reference"></a>Référence API
 
-*   [Flux de création de formulaire API](form_creation.md)
-*   [Formulaire de flux de réponse API](form_response.md)
-*   [API de flux de résumé de formulaire](form_summary.md)
-*   [API d’application](app.md)
+*   [Flux de création de formulaire API](generated/modules/kasclient.form.md#creation)
+*   [Formulaire de flux de réponse API](generated/modules/kasclient.form.md#response)
+*   [API de flux de résumé de formulaire](generated/modules/kasclient.form.md#summary)
+*   [API d’application](generated/modules/kasclient.app.md)
 
 ## <a name="object-reference"></a>Référence d’objet
 
-Références de tous les objets dans le Kit de développement sont disponible [ici](objects.md).
+Les références de tous les objets dans le SDK sont disponibles [ici](objects.md).
