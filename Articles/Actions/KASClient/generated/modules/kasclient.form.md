@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5e5778d41163788bd93609d0f41019e68b8d6f22
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
+ms.openlocfilehash: f33333ae61040460dc0386fee6a1f1cc118128be
+ms.sourcegitcommit: 04ef38ff8e68cf1697371551aed1ffb254a69649
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28728000"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "29379428"
 ---
 [](../README.md) > [KASClient](../modules/kasclient.md) > [formulaire](../modules/kasclient.form.md)
 
@@ -18,6 +18,7 @@ ms.locfileid: "28728000"
 * [submitFormRequestV2](kasclient.form.md#submitformrequestv2)
 * [submitFormRequestWithoutDismiss](kasclient.form.md#submitformrequestwithoutdismiss)
 * [updateForm](kasclient.form.md#updateform)
+
 ### <a name="response"></a>Réponse
 
 * [canRespondToFormAsync](kasclient.form.md#canrespondtoformasync)
@@ -26,6 +27,7 @@ ms.locfileid: "28728000"
 * [getMyFormResponsesAsync](kasclient.form.md#getmyformresponsesasync)
 * [sumbitFormResponse](kasclient.form.md#sumbitformresponse)
 * [sumbitFormResponseWithoutDismiss](kasclient.form.md#sumbitformresponsewithoutdismiss)
+
 ### <a name="summary"></a>Résumé
 
 * [FormSummaryCallback](kasclient.form.md#formsummarycallback)

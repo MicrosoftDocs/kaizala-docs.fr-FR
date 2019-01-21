@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4325d77bcd1dfd92975415bedd438a23cb96c883
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
+ms.openlocfilehash: 9520800959a0ff479ccd0d87895c1e045fbbe24c
+ms.sourcegitcommit: 04ef38ff8e68cf1697371551aed1ffb254a69649
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727930"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "29379426"
 ---
 [](../README.md) > [KASClient](../modules/kasclient.md)
 
@@ -16,6 +16,7 @@ ms.locfileid: "28727930"
 
 * [App](kasclient.app.md)
 * [Form](kasclient.form.md)
+
 ### <a name="enumerations"></a>Énumérations
 
 * [AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)
@@ -43,6 +44,7 @@ ms.locfileid: "28727930"
 * [NotificationPriority](../enums/kasclient.notificationpriority.md)
 * [UrlAction](../enums/kasclient.urlaction.md)
 * [PrésentationTapez](../enums/kasclient.urltype.md)
+
 ### <a name="classes"></a>Classes
 
 * [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)
@@ -91,6 +93,7 @@ ms.locfileid: "28727930"
 * [KASValidationRule](../classes/kasclient.kasvalidationrule.md)
 * [KASVideoAttachment](../classes/kasclient.kasvideoattachment.md)
 * [KASVisibilityRule](../classes/kasclient.kasvisibilityrule.md)
+
 ### <a name="functions"></a>Fonctions
 
 * [getFilteredParticipantRole](kasclient.md#getfilteredparticipantrole)
