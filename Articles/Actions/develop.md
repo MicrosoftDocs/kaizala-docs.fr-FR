@@ -2,9 +2,9 @@
 
 Un package de l’Action Kaizala est un fichier zip qui contient tous les fichiers de manifeste et des ressources requises à la racine.
 
-Pour commencer, créez un nouveau dossier sur votre ordinateur afin de rendre votre dorectory de travail.
+Pour commencer, créez un nouveau dossier sur votre ordinateur pour rendre votre répertoire de travail.
 
-Vous aurez besoin d’un éditeur de code pour travailler avec différents types de ressources web et les fichiers manifeste.
+Vous aurez besoin d’un éditeur de code pour travailler avec différents types de fichiers manifeste de & de ressources web.
 
 >   Nous vous recommandons de l’éditeur de Code Visual Studio. Vous pouvez le télécharger à partir [d’ici](https://code.visualstudio.com/)
 
@@ -41,7 +41,7 @@ Fichier HTML d’affichage Création dans le manifeste du package et mappez-le s
 Lorsqu’une nouvelle instance d’une Action Kaizala est créée et publiée dans une conversation, une carte d’Action s’affiche dans la zone de dessin pour d’autres utilisateurs de la conversation afficher et soumettre leurs réponses.
 
 Afin de personnaliser l’affichage de carte de conversation, reportez-vous à [Personnalisation de ChatCardView](ChatCanvasCardView.md) 
-## <a name="define-the-response--summary-views"></a>Définir la réponse et les affichages de synthèse
+## <a name="define-the-response--summary-views"></a>Définir les affichages de synthèse & réponse
 
 Lorsque les utilisateurs tentent d’afficher plus d’informations et de répondre à une instance de l’Action Kaizala publié dans une conversation, ils peuvent voir les deux types d’affichages.
 *   Affichage de réponse lorsqu’ils cliquez sur le bouton d’appel à l’action principal et want publier une réponse

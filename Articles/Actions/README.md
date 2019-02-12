@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: bcc9a8ad0b6aba1f52204730326cdc8e72b586e4
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727722"
----
 # <a name="kaizala-actions"></a>Actions Kaizala
 
 ## <a name="overview"></a>Vue d’ensemble
@@ -42,5 +34,4 @@ Vous pouvez essayer de création de votre première Action Kaizala en suivant no
 
 ## <a name="download-sample-action-packages"></a>Téléchargez des exemples de Packages de Action
 
-*  [Exemple Action dans le format de la réponse à la demande](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/Sample%20Request-Response%20Action.zip)
-*  [Action d’exemple dans un seul format de réponse](https://github.com/Microsoft/kaizala-docs-preview/blob/master/kaizala/platform/v1/docs/actions/Sample%20Response%20Action.zip)
+Vous pouvez télécharger des exemples de Packages de Action à partir [d’ici](https://manage.kaiza.la/MiniApps/DownloadSDK)
