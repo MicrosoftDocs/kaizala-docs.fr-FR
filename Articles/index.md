@@ -2,18 +2,13 @@
 layout: HubPage
 hide_bc: true
 title: Vue d’ensemble
-description: Vue d’ensemble de Microsoft Kaizala
+description: Vue d'ensemble de Microsoft Kaizala
 topic: overview
 author: nitinjms
 ms.author: nitinjms
 ms.date: 04/04/2018
-ms.openlocfilehash: 05c05ef9ce57f69fece9be7e27110291e2cb0f4a
-ms.sourcegitcommit: fd1547020a551d040fb2887d0996cd4bf052c03f
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26538019"
 ---
+
 <div id="main" class="v2">
 <div class="container">
     <h1>Microsoft Kaizala</h1>
@@ -36,7 +31,7 @@ ms.locfileid: "26538019"
                                         </div>
                                         <div class="cardText">
                                             <h3>Administrateurs</h3>
-                                            <p>Obtenez des conseils pratiques que vous avez besoin pour tirer le meilleur parti Kaizala dans votre organisation.</p>
+                                            <p>Obtenez les conseils pratiques nécessaires pour tirer le meilleur parti de Kaizala dans votre organisation.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +50,7 @@ ms.locfileid: "26538019"
                                         </div>
                                         <div class="cardText">
                                             <h3>Développeurs</h3>
-                                            <p>Découvrez les meilleures pratiques et les procédures pour les développeurs.</p>
+                                            <p>Découvrez les meilleures pratiques et les procédures à suivre pour les développeurs.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +58,7 @@ ms.locfileid: "26538019"
                             </a>
                         </li>
                         <li>
-                            <a href="https://support.office.com/article/kaizala-help-center-22700f1d-274f-4533-8956-247c733f6ae6">
+                            <a href="https://support.office.com/kaizala">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -73,8 +68,8 @@ ms.locfileid: "26538019"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Utilisateurs finaux</h3>
-                                            <p>Recherchez aide, de formation et de support technique pour les utilisateurs Kaizala sur support.office.com.</p>
+                                            <h3>Utilisateurs finals</h3>
+                                            <p>Recherchez de l'aide, de la formation et du support technique pour les utilisateurs d'Kaizala sur support.office.com.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +87,8 @@ ms.locfileid: "26538019"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Solutions d’entreprise</h3>
-                                            <p>Apprenez à créer des tickets système, force de vente ou d’autres solutions à l’aide de Kaizala.</p>
+                                            <h3>Solutions métiers</h3>
+                                            <p>Découvrez comment créer un système de gestion des tickets, une Salesforce ou d'autres solutions à l'aide de Kaizala.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -111,8 +106,8 @@ ms.locfileid: "26538019"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Intégration avec d’autres applications d’entreprise</h3>
-                                            <p>Explorez les façons d’intégrer Kaizala avec les applications métiers populaires.</p>
+                                            <h3>Intégration à d'autres applications métiers</h3>
+                                            <p>Découvrez comment intégrer Kaizala à des applications d'entreprise populaires.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -130,8 +125,8 @@ ms.locfileid: "26538019"
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Sécurité, de confidentialité et de conformité</h3>
-                                            <p>Kaizala repose sur Office 365. Découvrez comment il vous fournit la conformité et sécurité de l’entreprise.</p>
+                                            <h3>Sécurité, confidentialité et conformité</h3>
+                                            <p>Kaizala est basé sur Office 365. Découvrez comment elle vous fournit une sécurité et une conformité de niveau entreprise.</p>
                                         </div>
                                     </div>
                                 </div>
