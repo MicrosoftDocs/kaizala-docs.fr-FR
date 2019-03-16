@@ -1,5 +1,5 @@
 # <a name="kaizala-availability"></a>Disponibilité Kaizala 
-Kaizala est lancée sur le marché dans les pays suivants, même si elle est disponible sur tous les Android et iOS stocke dans le monde comme une application gratuite. 
+Kaizala Pro est disponible dans les 28 pays suivants, bien qu'il soit disponible sur tous les magasins Android et iOS dans le monde entier en tant qu'application gratuite. 
 
 • Inde
 <br>
@@ -11,13 +11,13 @@ Kaizala est lancée sur le marché dans les pays suivants, même si elle est dis
 <br>
 • Mexique
 <br>
-• Colombie
+• Columbia
 <br>
 • Argentine
 <br>
-• L’enfant
+• Chili
 <br>
-• L’Afrique du Sud
+• Afrique du Sud
 <br>
 • Nigeria
 <br>
@@ -25,11 +25,11 @@ Kaizala est lancée sur le marché dans les pays suivants, même si elle est dis
 <br>
 • Tanzanie
 <br>
-• Shilling
+• Ouganda
 <br>
 • Éthiopie
 <br>
-• Rwandais
+• Rwanda
 <br>
 • Turquie
 <br>
@@ -37,11 +37,11 @@ Kaizala est lancée sur le marché dans les pays suivants, même si elle est dis
 <br>
 • Liban
 <br>
-• Arabie Saoudite
+• Arabie saoudite
 <br>
 • Israël
 <br>
-• (Bangladesh)
+• Bangladesh
 <br>
 • Maroc
 <br>
@@ -57,5 +57,8 @@ Kaizala est lancée sur le marché dans les pays suivants, même si elle est dis
 <br>
 • Cambodge
 
-### <a name="download-links"></a>Des liens de téléchargement
-Si d’autres informations nécessaires atteindre[https://products.office.com/en-in/business/microsoft-kaizala](https://products.office.com/en-in/business/microsoft-kaizala)
+## <a name="download-links"></a>Liens de téléchargement
+
+Kaizala est disponible sur tous les magasins Android et iOS dans le monde entier en tant qu'application gratuite.
+
+Si vous avez besoin d'autres informations, reportez-vous à:[https://products.office.com/en-in/business/microsoft-kaizala](https://products.office.com/en-in/business/microsoft-kaizala)
