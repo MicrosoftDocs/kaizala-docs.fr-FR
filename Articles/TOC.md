@@ -62,12 +62,13 @@
 ### [Afficher les flux RSS dans les groupes Kaizala](BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
 ### [Afficher les annonces SharePoint dans les groupes Kaizala](BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
 ### [Publication automatique des mises à jour Twitter sur Kaizala](BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
+## [Performances des disques à l'aide de Leaderboard](BusinessSolutions/Leaderboard/Leaderboard.md)
 ## [Système de tickets](PartnerDocs/Customerticketingsolution.md)
 ## [Intégration de données Kaizala à vos tableaux de bord personnalisés](PartnerDocs/IntegratingKaizalaData.md)
 
 
 # Sécurité, confidentialité et conformité
-## [Vue d'ensemble](PartnerDocs/SecurityOverview.md)
+## [Vue d’ensemble](PartnerDocs/SecurityOverview.md)
 ## [Sécurité pour les clients finaux](PartnerDocs/SecurityFeaturesforendcustomers.md)
 ## [Sécurité](PartnerDocs/Security.md)
 ## [Confidentialité](PartnerDocs/Privacy.md)
