@@ -28,7 +28,7 @@ Cela peut être divisé en trois étapes:
 3. Configurer le flux Microsoft
 
 ### <a name="upload-action-package"></a>Télécharger le package d'action
-1. Téléchargez le fichier [«Leaderboard-SolutionPackage. zip](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Leaderboard/Leaderboard-SolutionPackage.zip)»*(il* *contient* les *packages* *«Leaderboard_ActionPackage. zip»* *et* *«Leaderboard_FlowPackage. zip»* )
+1. Téléchargez le fichier [«Leaderboard-SolutionPackage. zip](https://aka.ms/Leaderboard-SolutionPackage.zip)»*(il* *contient* les *packages* *«Leaderboard_ActionPackage. zip»* *et* *«Leaderboard_FlowPackage. zip»* )
 2. Téléchargez la dernière version de Kaizala [«ActionSDK. zip»](https://manage.kaiza.la/MiniApps/DownloadSDK) (*elle contient KASClient. js*)
 3. Modifier «Leaderboard_ActionPackage. zip»
    1. DéCompresser «Leaderboard_ActionPackage. zip» dans un dossier

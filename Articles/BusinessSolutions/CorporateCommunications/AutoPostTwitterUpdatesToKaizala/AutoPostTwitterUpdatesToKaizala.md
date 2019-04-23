@@ -1,26 +1,26 @@
-# <a name="auto-post-twitter-updates-to-kaizala"></a>Mises à jour Kaizala auto-Post Twitter
+# <a name="auto-post-twitter-updates-to-kaizala"></a>Publication automatique des mises à jour Twitter sur Kaizala
 
-Validation pour Twitter pages employé fait partie des activités quotidiennes, mais que vous ayez à valider les mêmes informations plusieurs fois est très difficile. Encourager les employés peuvent partager des mises à jour des médias sociaux, lorsque vous avez terminé correctement peut étendre considérablement suivant de la société. 
+La publication des pages d'employés Twitter fait partie de l'activité quotidienne, mais il est assez difficile de publier les mêmes informations plusieurs fois. Encourager les employés à partager les mises à jour des réseaux sociaux, lorsqu'ils sont effectués correctement, peuvent considérablement élargir les points suivants. 
 
-Cet exemple de solution gagne du temps en auto-validation tweet à partir de votre compte Twitter officiel aux groupes Kaizala. Une carte de l’annonce est envoyée au groupe lorsqu’un ou tous les sous déclencheurs se produisent
+Cet exemple de solution vous permet de gagner du temps en publiant automatiquement des tweets à partir de votre compte Twitter officiel vers les groupes Kaizala. Une carte d'annonce est envoyée au groupe lorsqu'un ou tous les déclencheurs suivants se produisent
 
-1. Un nouveau tweet est publié sur un Twitter spécifique gérer E.g.,"@InsideFabrikam »
+1. Un nouveau Tweet est publié sur une poignée Twitter spécifique, par exemple, «@InsideFabrikam»
 
-2. Une publication est nouveau tweetée dans ce handle Twitter 
+2. Un billet est ré-tweeté dans ce handle Twitter 
     
-3. Une publication est simplement un hashtag spécifique E.g.,"#EmployeeEngagement »
+3. Un billet a un mot-dièse spécifique, par exemple «#EmployeeEngagement»
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/6.png" alt="Tweet" width="400" />
 
-Cette carte possède trois champs carte titre, corps (description) et des pièces jointes (images, des vidéos ou GIF). Le corps de l’annonce est l’URL Twitter et sur appuyant sur cette URL, les utilisateurs seraient redirigés vers la page d’état sur Twitter.
+Cette carte comporte trois champs, le titre de la carte, les pièces jointes (images, vidéos ou GIF) et le corps (Description). Le corps de l'annonce est doté de l'URL Twitter et en appuyant sur cette URL, les utilisateurs sont dirigés vers la page d'État sur Twitter.
 
-> Remarque : En cas de vidéo ou GIF, vignette s’affiche dans la vue de carte de conversation
+> Remarque: en cas de vidéo ou GIF, la miniature apparaît en mode carte de conversation.
 
-Afficher la carte conversation :
+Affichage de la carte de conversation:
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/1.png" alt="Chat card view Logo" width="400" />
 
-Mode immersif :
+Vue immersive:
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/2.png" alt="Immersive view Logo" width="190" />
 
@@ -28,34 +28,34 @@ Dans ce scénario, le flux est utilisé pour envoyer la carte à un groupe séle
 
 <img src="AutoPostTwitterUpdatesToKaizalaImages/3.png" alt="Flow+Twitter>Kaizala" width="500" />
 
-## <a name="implementation-steps"></a>Étapes d’implémentation :
+## <a name="implementation-steps"></a>Étapes d'implémentation:
 
-1. Téléchargez le [AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip) (*il contient le Package de flux*)
+1. Télécharger le [AutoPostTwitterUpdatesToKaizala-SolutionPackage. zip](https://aka.ms/AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip) (*contient un package de flux*)
 
-2. [Importation](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) « AutoPostTwitterUpdatesToKaizala-SolutionPackage.zip » à votre compte Microsoft Flow
+2. [Importer](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/) le fichier «AutoPostTwitterUpdatesToKaizala-SolutionPackage. zip» sur votre compte Microsoft Flow
 
-     > Remarque : Si vous n’avez jamais utilisé connexions Twitter ou Kaizala, première [Ajouter des connexions](https://docs.microsoft.com/en-us/flow/add-manage-connections)
+     > Remarque: Si vous n'avez jamais utilisé de connexions Twitter ou Kaizala, ajoutez d'abord les [connexions](https://docs.microsoft.com/en-us/flow/add-manage-connections)
 
-3. Modifier le flux (*comme indiqué ci-dessous*)
+3. Modifier le flux (*comme ci-dessous*)
 
     1.  Dans le premier bloc du flux
     
-        Entrez la poignée Twitter ou le hashtag, ou les deux
+        Entrer le descripteur Twitter ou entrer le mot-dièse, ou les deux
         
         <img src="AutoPostTwitterUpdatesToKaizalaImages/4.PNG" alt="Firstblock>Kaizala" width="400" />
     
     2.  Dans le dernier bloc du flux
       
-        1. Sélectionnez le nom du groupe 
+        1. Sélectionnez le nom du groupe. 
     
-        2. Entrez le titre. Le titre sera visible pour les utilisateurs dans l’affichage de carte de conversation. Par exemple, « InsideFabrikam »
+        2. Entrez le titre. Le titre sera visible par les utilisateurs en mode carte de conversation. Par exemple, «InsideFabrikam»
      
         <img src="AutoPostTwitterUpdatesToKaizalaImages/5.PNG" alt="Flow+Twitter>Kaizala" width="400" />
      
 4. Enregistrer le flux
 
-Annonce est envoyé au groupe Kaizala sélectionné, chaque fois que flux est déclenché.
+L'annonce est envoyée au groupe Kaizala sélectionné, chaque flux de temps étant déclenché.
 
-> Remarque : en cas de tweet sondages/emplacement uniquement le texte de la question/tweet sondage s’affichera dans la fiche, pas les options de sondage ou l’emplacement tweet
+> Remarque: en cas de tweets avec sondages/emplacement, seul le texte de question/tweet de sondage s'affichera dans la carte, pas les options de sondage ou l'emplacement tweet.
 
-> Remarque : Vérifiez avec votre administrateur informatique en cas de toute [stratégie DLP](https://docs.microsoft.com/en-us/flow/prevent-data-loss) défini par votre organisation pour Twitter
+> Remarque: consultez votre administrateur informatique en cas de [stratégie DLP](https://docs.microsoft.com/en-us/flow/prevent-data-loss) définie par votre organisation pour Twitter
