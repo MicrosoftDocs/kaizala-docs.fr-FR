@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: d6f9eac039fb2a7e0fb838891296654ecbc6f987
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727905"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASForwardContext](../classes/kasclient.kasforwardcontext.md)
 
-# <a name="class-kasforwardcontext"></a>Classe : KASForwardContext
+# <a name="class-kasforwardcontext"></a>Classe: KASForwardContext
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -41,7 +33,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASForwardContext](kasclient.kasforwardcontext.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASForwardContext](kasclient.kasforwardcontext.md)
 
 **Paramètres :**
 
@@ -49,7 +41,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASForwardContext](kasclient.kasforwardcontext.md)
+**Renvoie:** [KASForwardContext](kasclient.kasforwardcontext.md)
 
 ___
 

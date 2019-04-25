@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 7cdf9928a0c6bc5312d2a29a31190b9374664d09
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727910"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASVideoAttachment](../classes/kasclient.kasvideoattachment.md)
 
-# <a name="class-kasvideoattachment"></a>Classe : KASVideoAttachment
+# <a name="class-kasvideoattachment"></a>Classe: KASVideoAttachment
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -47,7 +39,7 @@ ms.locfileid: "28727910"
 
 ###  <a name="attachmentid"></a>attachmentId
 
-**● attachmentId**: *`string`* = « »
+**● attachmentId**: *`string`* = ""
 
 ___
 
@@ -55,7 +47,7 @@ ___
 
 ###  <a name="duration"></a>duration
 
-**Durée ●**: *`number`* = 0
+**● durée**: *`number`* = 0
 
 ___
 
@@ -63,7 +55,7 @@ ___
 
 ###  <a name="filename"></a>fileName
 
-**● le nom de fichier**: *`string`* = « »
+**● filename**: *`string`* = ""
 
 ___
 
@@ -79,7 +71,7 @@ ___
 
 ###  <a name="localpath"></a>localPath
 
-**● localPath**: *`string`* = « »
+**● LocalPath**: *`string`* = ""
 
 ___
 
@@ -95,15 +87,15 @@ ___
 
 ###  <a name="serverpath"></a>serverPath
 
-**● serverPath**: *`string`* = « »
+**● ServerPath**: *`string`* = ""
 
 ___
 
 <a id="size"></a>
 
-###  <a name="size"></a>size
+###  <a name="size"></a>taille
 
-**Taille ●**: *`number`* = 0
+**● taille**: *`number`* = 0
 
 ___
 
@@ -111,15 +103,15 @@ ___
 
 ###  <a name="streamingpath"></a>streamingPath
 
-**● streamingPath**: *`string`* = « »
+**● streamingPath**: *`string`* = ""
 
 ___
 
 <a id="thumbnail"></a>
 
-###  <a name="thumbnail"></a>miniature
+###  <a name="thumbnail"></a>icône
 
-**Miniature ●**: *`string`* = « »
+**● miniature**: *`string`* = ""
 
 ___
 
@@ -127,7 +119,7 @@ ___
 
 ###  <a name="type"></a>type
 
-**Type ●**: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)* = KASAttachmentType.Image
+**● type**: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)* = KASAttachmentType. image
 
 ___
 
@@ -137,9 +129,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -147,7 +139,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASAttachment](kasclient.kasattachment.md)
+▸ **fromJSON**(objet: *`any`*): [KASAttachment](kasclient.kasattachment.md)
 
 **Paramètres :**
 
@@ -155,7 +147,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASAttachment](kasclient.kasattachment.md)
+**Renvoie:** [KASAttachment](kasclient.kasattachment.md)
 
 ___
 
@@ -163,15 +155,15 @@ ___
 
 ### <a name="static-haslocalpath"></a>`<Static>`hasLocalPath
 
-▸ **hasLocalPath**(obj : *[KASAttachment](kasclient.kasattachment.md)*) :`boolean`
+▸ **hasLocalPath**(obj: *[KASAttachment](kasclient.kasattachment.md)*):`boolean`
 
 **Paramètres :**
 
 | Nom | Type |
 | ------ | ------ |
-| obj | [KASAttachment](kasclient.kasattachment.md) |
+| 5.5 | [KASAttachment](kasclient.kasattachment.md) |
 
-**Renvoie :** `boolean`
+**Renvoie:**`boolean`
 
 ___
 
@@ -179,15 +171,15 @@ ___
 
 ### <a name="static-hasserverpath"></a>`<Static>`hasServerPath
 
-▸ **hasServerPath**(obj : *[KASAttachment](kasclient.kasattachment.md)*) :`boolean`
+▸ **hasServerPath**(obj: *[KASAttachment](kasclient.kasattachment.md)*):`boolean`
 
 **Paramètres :**
 
 | Nom | Type |
 | ------ | ------ |
-| obj | [KASAttachment](kasclient.kasattachment.md) |
+| 5.5 | [KASAttachment](kasclient.kasattachment.md) |
 
-**Renvoie :** `boolean`
+**Renvoie:**`boolean`
 
 ___
 
@@ -195,7 +187,7 @@ ___
 
 ### <a name="static-populatemodelfromjson"></a>`<Static>`populateModelFromJSON
 
-▸ **populateModelFromJSON**(pièces jointes : *[KASVideoAttachment](kasclient.kasvideoattachment.md)*, l’objet : *`JSON`*) :`void`
+▸ **populateModelFromJSON**(attachment: *[KASVideoAttachment](kasclient.kasvideoattachment.md)*, Object *`JSON`*:):`void`
 
 **Paramètres :**
 
@@ -204,7 +196,7 @@ ___
 | pièce jointe | [KASVideoAttachment](kasclient.kasvideoattachment.md) |
 | objet | `JSON` |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 

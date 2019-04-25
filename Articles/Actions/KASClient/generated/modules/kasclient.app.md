@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: f725f55c2e7e0c8c75d71275c7217497090b4f1a
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28728013"
----
-[](../README.md) > [KASClient](../modules/kasclient.md) > [application](../modules/kasclient.app.md)
+[](../README.md) > [](../modules/kasclient.md) > [Application](../modules/kasclient.app.md) KASClient
 
-# <a name="module-app"></a>Module : application
+# <a name="module-app"></a>Module: App
 
 ## <a name="index"></a>Index
 
@@ -58,7 +50,7 @@ ms.locfileid: "28728013"
 * [showLocationOnMap](kasclient.app.md#showlocationonmap)
 * [showNativeErrorMessage](kasclient.app.md#shownativeerrormessage)
 * [showPlacePickerAsync](kasclient.app.md#showplacepickerasync)
-* [ShowProgressBar indique](kasclient.app.md#showprogressbar)
+* [showProgressBar](kasclient.app.md#showprogressbar)
 * [showQRcodeScannerAsync](kasclient.app.md#showqrcodescannerasync)
 * [showUserProfileAsync](kasclient.app.md#showuserprofileasync)
 * [startChatAsync](kasclient.app.md#startchatasync)
@@ -71,11 +63,11 @@ ms.locfileid: "28728013"
 
 ###  <a name="cancelattachmentdownloadasync"></a>cancelAttachmentDownloadAsync
 
-▸ **cancelAttachmentDownloadAsync**(pièces jointes : *[KASAttachment](../classes/kasclient.kasattachment.md)*, rappel : *`function`*) :`void`
+▸ **cancelAttachmentDownloadAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback *`function`*:):`void`
 
-Annuler une opération de téléchargement en file d’attente d’une pièce jointe
+Annuler une opération de téléchargement en file d'attente pour une pièce jointe
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
  var attachmentsList = JSON.parse(form.properties[0].value);
@@ -92,9 +84,9 @@ Annuler une opération de téléchargement en file d’attente d’une pièce jo
 | Nom | Type | Description |
 | ------ | ------ | ------ |
 | pièce jointe | [KASAttachment](../classes/kasclient.kasattachment.md) |  \- |
-| callback | `function` |  avec erreur param - chaîne d’erreur en cas d’erreur ; Sinon, valeur null |
+| callback | `function` |  avec une erreur param-chaîne d'erreur en cas d'erreur; NULL dans le cas contraire |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -102,11 +94,11 @@ ___
 
 ###  <a name="dismisscurrentscreen"></a>dismissCurrentScreen
 
-▸ **dismissCurrentScreen**() :`void`
+▸ **dismissCurrentScreen**():`void`
 
-Ignorer l’écran de l’Action ouvert en cours (création, réponse ou résumé)
+Faire disparaître l'écran de l'action actuellement ouverte (création, réponse ou résumé)
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -114,11 +106,11 @@ ___
 
 ###  <a name="downloadattachmentasync"></a>downloadAttachmentAsync
 
-▸ **downloadAttachmentAsync**(pièces jointes : *[KASAttachment](../classes/kasclient.kasattachment.md)*, rappel : *`function`*) :`void`
+▸ **downloadAttachmentAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback *`function`*:):`void`
 
 Télécharger la pièce jointe spécifiée
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var imageAttachment =  new KASClient.KASAttachment();
@@ -136,10 +128,10 @@ KASClient.App.downloadAttachmentAsync(imageAttachment, function(downloadedAttach
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| pièce jointe | [KASAttachment](../classes/kasclient.kasattachment.md) |  avec un chemin d’accès de serveur valide pour télécharger des pièces jointes |
-| callback | `function` |  rappel à la fin du téléchargement avec sous Paramètres<br><br>\*@param {KASAttachment} downloadedAttachment la pièce jointe que vous avez téléchargée<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| pièce jointe | [KASAttachment](../classes/kasclient.kasattachment.md) |  pièce jointe avec un chemin d'accès de serveur valide à télécharger |
+| callback | `function` |  rappel à la fin du téléchargement avec les paramètres suivants<br><br>\*@param {KASAttachment} downloadedAttachment la pièce jointe qui a été téléchargée<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -147,11 +139,11 @@ ___
 
 ###  <a name="generatebase64thumbnailasync"></a>generateBase64ThumbnailAsync
 
-▸ **generateBase64ThumbnailAsync**(localPath : *`string`*, rappel : *`function`*) :`void`
+▸ **generateBase64ThumbnailAsync**(LocalPath: *`string`*, callback: *`function`*):`void`
 
-Génère la miniature en Base64 pour une image donnée dont localPath
+Génère une miniature Base64 pour une image dont la fonction localPath est donnée
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error) {
@@ -165,10 +157,10 @@ KASClient.App.generateBase64ThumbnailAsync(localPath, function (thumbnail, error
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| localPath | `string` |  localPath pour l’imageAttachment dont miniature doit être généré |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*valeur de miniature la base64 @param {chaîne}<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| localPath | `string` |  localPath pour le imageAttachment dont la miniature doit être générée |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*miniature de @param {String} valeur base64<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -176,11 +168,11 @@ ___
 
 ###  <a name="generateuuidasync"></a>generateUUIDAsync
 
-▸ **generateUUIDAsync**(rappel : *`function`*) :`void`
+▸ **generateUUIDAsync**(callback: *`function`*):`void`
 
 Obtient le nouvel UUID
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
  KASClient.App.generateUUIDAsync(function (uuid, error) {
@@ -193,9 +185,9 @@ Obtient le nouvel UUID
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*uuid @param {chaîne} généré récemment uuid<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} UUID nouvellement généré<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -203,17 +195,17 @@ ___
 
 ###  <a name="getapplocaleasync"></a>getAppLocaleAsync
 
-▸ **getAppLocaleAsync**(rappel : *`function`*) :`void`
+▸ **getAppLocaleAsync**(callback: *`function`*):`void`
 
-Obtient les paramètres régionaux application en cours, la langue dans laquelle l’application est affichée, utiles pour localiser les chaînes de MiniApp
+Obtient les paramètres régionaux de l'application en cours, la langue dans laquelle l'application est rendue, utile pour la localisation des chaînes MiniApp
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*paramètres régionaux @param {chaîne} peuvent être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} locale peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -221,17 +213,17 @@ ___
 
 ###  <a name="getcalendarnameasync"></a>getCalendarNameAsync
 
-▸ **getCalendarNameAsync**(rappel : *`function`*) :`void`
+▸ **getCalendarNameAsync**(callback: *`function`*):`void`
 
-Obtient la valeur du calendrier système actuelle. Il s’agit principalement pour iOS pour identifier le nom du calendrier défini dans le paramètre de téléphone comme grégorien ou japonais ou Buddhists.
+Obtient le paramètre de calendrier système actuel. Ceci est principalement destiné à iOS pour identifier le nom du calendrier défini dans les paramètres du téléphone (par exemple, grégorien, japonais ou Buddhists).
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*calendarName @param {chaîne} peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} calendarName peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -239,17 +231,17 @@ ___
 
 ###  <a name="getconversationdetailsasync"></a>getConversationDetailsAsync
 
-▸ **getConversationDetailsAsync**(rappel : *`function`*) :`void`
+▸ **getConversationDetailsAsync**(callback: *`function`*):`void`
 
-Conversation Obtient les propriétés associées
+Obtient les propriétés associées à une conversation
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*propriétés de conversation résultat @param {KASConversationDetails}<br><br>\*chaîne json d’erreur de @param {chaîne} pour l’objet KASError contenant la description et/ou le code d’erreur. |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param les propriétés de conversation de résultats {KASConversationDetails}<br><br>\*@param valeur de chaîne JSON de l'erreur {String} pour l'objet KASError contenant un code d'erreur et/ou une description. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -257,11 +249,11 @@ ___
 
 ###  <a name="getcurrentdevicelocationasync"></a>getCurrentDeviceLocationAsync
 
-▸ **getCurrentDeviceLocationAsync**(rappel : *`function`*) :`void`
+▸ **getCurrentDeviceLocationAsync**(callback: *`function`*):`void`
 
-Obtient l’emplacement actuel du périphérique
+Obtient l'emplacement actuel de l'appareil.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
  KASClient.App.getCurrentDeviceLocationAsync(function (location, error){
@@ -276,9 +268,9 @@ Obtient l’emplacement actuel du périphérique
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*emplacement @param {chaîne} peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param l'emplacement {String} peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -286,9 +278,9 @@ ___
 
 ###  <a name="getcurrentlocale"></a>getCurrentLocale
 
-▸ **getCurrentLocale**() :`string`
+▸ **getCurrentLocale**():`string`
 
-**Renvoie :** `string`
+**Renvoie:**`string`
 
 ___
 
@@ -296,17 +288,17 @@ ___
 
 ###  <a name="getdeviceidasync"></a>getDeviceIdAsync
 
-▸ **getDeviceIdAsync**(rappel : *`function`*) :`void`
+▸ **getDeviceIdAsync**(callback: *`function`*):`void`
 
-Obtient l’ID de périphérique
+Obtient deviceId
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*ID de périphérique @param {chaîne} obtenue depuis le service integeration<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} deviceId provenant du service d'enchaînement<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -314,17 +306,17 @@ ___
 
 ###  <a name="getdevicelocationasync"></a>getDeviceLocationAsync
 
-▸ **getDeviceLocationAsync**(rappel : *`function`*) :`void`
+▸ **getDeviceLocationAsync**(callback: *`function`*):`void`
 
-Obtient l’emplacement du périphérique stocké précédemment
+Obtient l'emplacement du périphérique stocké précédemment.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*emplacement @param {chaîne} peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param l'emplacement {String} peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -332,17 +324,17 @@ ___
 
 ###  <a name="getfontsizemultiplierasync"></a>getFontSizeMultiplierAsync
 
-▸ **getFontSizeMultiplierAsync**(rappel : *`function`*) :`void`
+▸ **getFontSizeMultiplierAsync**(callback: *`function`*):`void`
 
-Obtient le multiplicateur de taille de police de texte de grande taille. En cours est uniquement requis par iOS.
+Obtient le multiplicateur de taille de police pour le texte long. Actuel uniquement requis par iOS.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec sous Paramètres<br><br>\*Multiplicateur @param {chaîne}<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants<br><br>\*@param de multiplicateur {String}<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -350,17 +342,17 @@ ___
 
 ###  <a name="getforwardcontextasync"></a>getForwardContextAsync
 
-▸ **getForwardContextAsync**(rappel : *`function`*) :`void`
+▸ **getForwardContextAsync**(callback: *`function`*):`void`
 
-Obtient les détails du contexte transférer tel que : création de carte est en mode transféré
+Obtient les détails du contexte de transfert, par exemple: la création de la carte est en mode transmis.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {Json} retourne les informations de contexte dans la structure de Json |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {JSON} renvoie les détails de contexte dans la structure JSON |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -368,17 +360,17 @@ ___
 
 ###  <a name="getisapptimeformat24hoursasync"></a>getIsAppTimeFormat24HoursAsync
 
-▸ **getIsAppTimeFormat24HoursAsync**(rappel : *`function`*) :`void`
+▸ **getIsAppTimeFormat24HoursAsync**(callback: *`function`*):`void`
 
-Obtient l’heure application actuelle est au format 24hours ou non, le format d’heure sélectionné par l’utilisateur, utile pour la mise en forme des chaînes de temps date correctement
+Obtient le format d'heure de l'application actuel est 24hours ou non, le format d'heure sélectionné par l'utilisateur, utile pour la mise en forme des chaînes de temps de date correctement.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {chaîne} isAppTimeFormat24Hours peut être une valeur null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} isAppTimeFormat24Hours peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -386,11 +378,11 @@ ___
 
 ###  <a name="getlocalizedstringsasync"></a>getLocalizedStringsAsync
 
-▸ **getLocalizedStringsAsync**(rappel : *`function`*) :`void`
+▸ **getLocalizedStringsAsync**(callback: *`function`*):`void`
 
-Obtient un dictionnaire des chaînes localisées en fonction de paramètres régionaux application en cours. Chaînes doivent être fournis dans le package, par exemple : chaînes\_en.json, les chaînes\_hi.json, etc..
+Obtient le dictionnaire des chaînes localisées en fonction des paramètres régionaux de l'application actuelle. Les chaînes doivent être fournies dans le package avec des noms tels\_que: Strings en\_. JSON, Strings Hi. JSON, etc.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.App.getLocalizedStringsAsync(function (strings, error) {
@@ -405,9 +397,9 @@ KASClient.App.getLocalizedStringsAsync(function (strings, error) {
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {JSON} chaînes peuvent être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*les chaînes de @param {JSON} peuvent être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -415,11 +407,11 @@ ___
 
 ###  <a name="getlocationaddressasync"></a>getLocationAddressAsync
 
-▸ **getLocationAddressAsync**(paramètres : *[KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)*, rappel : *`function`*) :`void`
+▸ **getLocationAddressAsync**(params: *[KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md)*, callback: *`function`*):`void`
 
-Obtenir la chaîne d’adresse pour les coordonnées spécifiées
+Obtenir la chaîne d'adresse pour les coordonnées spécifiées
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var params = new KASClient.KASLocationAddressParams();
@@ -438,10 +430,10 @@ KASClient.App.getLocationAddressAsync(params,
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| paramètres | [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md) |  KASLocationAddressParams |
-| callback | `function` |  rappel à extraction adresse avec sous Paramètres<br><br>\*emplacement @param {JSON} a json contenant latitute longitude et autres informaion<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| params | [KASLocationAddressParams](../classes/kasclient.kaslocationaddressparams.md) |  KASLocationAddressParams |
+| callback | `function` |  rappel de la récupération d'adresses avec les paramètres suivants<br><br>\*emplacement de @param {JSON} un JSON contenant une longitude latitute et d'autres informations<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -449,11 +441,11 @@ ___
 
 ###  <a name="getmapimageasbase64async"></a>getMapImageAsBase64Async
 
-▸ **getMapImageAsBase64Async**(paramètres : *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, rappel : *`function`*) :`void`
+▸ **getMapImageAsBase64Async**(params: *[KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)*, callback: *`function`*):`void`
 
-Télécharger l’image de base 64 de la feuille de route pour les coordonnées spécifiées
+Téléchargez l'image 64 de base de Map pour les coordonnées spécifiées.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error) {
@@ -468,10 +460,10 @@ KASClient.App.getMapImageAsBase64Async(params, function (attachmentString, error
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| paramètres | [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md) |  KASLocationStaticMapImageParams |
-| callback | `function` |  à la fin du téléchargement avec sous Paramètres<br><br>\*valeur de base64 attachmentString @param {chaîne} de la pièce jointe<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| params | [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md) |  KASLocationStaticMapImageParams |
+| callback | `function` |  fin du téléchargement avec les paramètres suivants<br><br>\*@param {String} attachmentString base64 de la pièce jointe<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -479,17 +471,17 @@ ___
 
 ###  <a name="geto365userdetailsasync"></a>getO365UserDetailsAsync
 
-▸ **getO365UserDetailsAsync**(rappel : *`function`*) :`void`
+▸ **getO365UserDetailsAsync**(callback: *`function`*):`void`
 
-Obtient les détails de cours O365 utilisateur connecté
+Obtient les détails de l'utilisateur O365 actuellement connecté
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {Json} renvoie la UserDetails dans la structure de Json |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {JSON} renvoie le UserDetails dans la structure JSON |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -497,11 +489,11 @@ ___
 
 ###  <a name="getpackagecustomsettingsasync"></a>getPackageCustomSettingsAsync
 
-▸ **getPackageCustomSettingsAsync**(rappel : *`function`*) :`void`
+▸ **getPackageCustomSettingsAsync**(callback: *`function`*):`void`
 
-Obtient tous les paramètres de personnalisation d’un package (utilisé en cas de packages de Type 4 et leur base).
+Obtient tous les paramètres de personnalisation d'un package (utilisé dans le cas des packages de type 4 et de leur base).
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
@@ -516,9 +508,9 @@ KASClient.App.getPackageCustomSettingsAsync(function (settings, error) {
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*paramètres @param {JSON} peuvent être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*les paramètres de @param {JSON} peuvent être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -526,11 +518,11 @@ ___
 
 ###  <a name="getusersdetailsasync"></a>getUsersDetailsAsync
 
-▸ **getUsersDetailsAsync**(userIds : * `string`[]*, rappel : *`function`*) :`void`
+▸ **getUsersDetailsAsync**(userids: * `string`[]*, callback: *`function`*):`void`
 
-Obtient les détails des utilisateurs (nom, pic, numéro de téléphone, etc.) par rapport à leur ID
+Obtient les détails des utilisateurs (nom, pic, numéro de téléphone, etc.) par rapport à leurs ID.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var userIds = ["<uid1>", "<uid2>",...];
@@ -548,10 +540,10 @@ KASClient.App.getUsersDetailsAsync(userIds, function (users, error) {
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| ID utilisateur | `string`[] |  tableau des ID utilisateur |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {Dictionary<UserId : chaîne UserInfo : KASUser>} userIdToInfoMap (détails des utilisateurs par rapport à leur ID) peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| userIds | `string`[] |  Tableau des ID d'utilisateur |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Dictionary<UserId: String, UserInfo: KASUser>} userIdToInfoMap (les détails des utilisateurs par rapport à leurs ID) peuvent être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -559,11 +551,11 @@ ___
 
 ###  <a name="hideprogressbar"></a>hideProgressBar
 
-▸ **hideProgressBar**() :`void`
+▸ **hideProgressBar**():`void`
 
-Masque la barre de progression en cours, le cas échéant
+Masque la barre de progression actuelle, le cas échéant.
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -571,11 +563,11 @@ ___
 
 ###  <a name="isattachmentdownloadingasync"></a>isAttachmentDownloadingAsync
 
-▸ **isAttachmentDownloadingAsync**(pièces jointes : *[KASAttachment](../classes/kasclient.kasattachment.md)*, rappel : *`function`*) :`void`
+▸ **isAttachmentDownloadingAsync**(attachment: *[KASAttachment](../classes/kasclient.kasattachment.md)*, callback *`function`*:):`void`
 
 Télécharger la pièce jointe spécifiée
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var attachmentJson = {
@@ -598,10 +590,10 @@ KASClient.App.isAttachmentDownloadingAsync(attachment, function(isAttachmentDown
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| pièce jointe | [KASAttachment](../classes/kasclient.kasattachment.md) |  avec un chemin d’accès de serveur valide pour télécharger des pièces jointes |
-| callback | `function` |  rappel à la fin du téléchargement avec sous Paramètres<br><br>\*@param {boolean} isAttachmentDownloadingOrDownLoaded indicateur représentant si la pièce jointe est téléchargé/de téléchargement<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| pièce jointe | [KASAttachment](../classes/kasclient.kasattachment.md) |  pièce jointe avec un chemin d'accès de serveur valide à télécharger |
+| callback | `function` |  rappel à la fin du téléchargement avec les paramètres suivants<br><br>\*@param {Boolean} indicateur isAttachmentDownloadingOrDownLoaded représentant si la pièce jointe est en téléchargement/téléchargée<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -609,18 +601,18 @@ ___
 
 ###  <a name="isauthenticationtyepsupportedasync"></a>isAuthenticationTyepSupportedAsync
 
-▸ **isAuthenticationTyepSupportedAsync**(authenticationType? : *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, rappel : *`function`*) :`void`
+▸ **isAuthenticationTyepSupportedAsync**(AuthenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*):`void`
 
-Vérifie si l’authentification de type est possible ou non.
+Vérifie si l'authentification de type est possible ou non.
 
 **Paramètres :**
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value`authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType.None |  type d’authentification. |
-| callback | `function` | - |  avec les paramètres ci-dessous :<br><br>\*@param {boolean} isSuccessful la valeur true si les empreintes digitales est possible<br><br>\*code de motif de codes de motif @param {chaîne} pourquoi doigt impression n’est pas possible |
+| `Default value`authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType. None |  type d'authentification. |
+| callback | `function` | - |  avec les paramètres suivants:<br><br>\*@param {Boolean} isSuccessful true si l'impression des doigts est possible<br><br>\*@param {String} code motif reasonCode pourquoi l'impression par doigt n'est pas possible |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -628,17 +620,17 @@ ___
 
 ###  <a name="istalkbackenabledasync"></a>isTalkBackEnabledAsync
 
-▸ **isTalkBackEnabledAsync**(rappel : *`function`*) :`void`
+▸ **isTalkBackEnabledAsync**(callback: *`function`*):`void`
 
-Indique si talkback est activé ou non
+Obtient une valeur indiquant si Talkback est activé ou non.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*valeur true talkBackEnabled @param {boolean} si talkback est activé. |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} talkBackEnabled true si Talkback est activé |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -646,9 +638,9 @@ ___
 
 ###  <a name="logtoreport"></a>logToReport
 
-▸ **logToReport**(données : *`string`*) :`void`
+▸ **logToReport**(Data: *`string`*):`void`
 
-Les journaux de données pour « Envoyer le rapport »
+Enregistre les données pour «envoyer un rapport»
 
 **Paramètres :**
 
@@ -656,7 +648,7 @@ Les journaux de données pour « Envoyer le rapport »
 | ------ | ------ | ------ |
 | data | `string` |  string |
 
-**Renvoie :**`void`
+**Renvoie:**`void`
 
 ___
 
@@ -664,7 +656,7 @@ ___
 
 ###  <a name="openattachmentimmersiveview"></a>openAttachmentImmersiveView
 
-▸ **openAttachmentImmersiveView**(attachmentObj : *[KASAttachment](../classes/kasclient.kasattachment.md)*) :`void`
+▸ **openAttachmentImmersiveView**(AttachmentObj: *[KASAttachment](../classes/kasclient.kasattachment.md)*):`void`
 
 Ouvrir la pièce jointe en mode immersif.
 
@@ -674,7 +666,7 @@ Ouvrir la pièce jointe en mode immersif.
 | ------ | ------ | ------ |
 | attachmentObj | [KASAttachment](../classes/kasclient.kasattachment.md) |   |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -682,7 +674,7 @@ ___
 
 ###  <a name="openimmersiveviewforattachmentlist"></a>openImmersiveViewForAttachmentList
 
-▸ **openImmersiveViewForAttachmentList**(attachmentList : *[] [KASAttachment](../classes/kasclient.kasattachment.md)*, atIndex? : *`number`*) :`void`
+▸ **openImmersiveViewForAttachmentList**(AttachmentList: * [KASAttachment](../classes/kasclient.kasattachment.md)[]*, atIndex?: *`number`*):`void`
 
 Ouvrir la pièce jointe en mode immersif.
 
@@ -693,7 +685,7 @@ Ouvrir la pièce jointe en mode immersif.
 | attachmentList | [KASAttachment](../classes/kasclient.kasattachment.md) [] | - |
 | `Default value`atIndex | `number` | 0 |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -701,11 +693,11 @@ ___
 
 ###  <a name="performauthenticationasync"></a>performAuthenticationAsync
 
-▸ **performAuthenticationAsync**(authenticationType? : *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, rappel : *`function`*) :`void`
+▸ **performAuthenticationAsync**(AuthenticationType?: *[KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md)*, callback: *`function`*):`void`
 
-Si le type d’authentification est autorisé, cette API effectue l’authentification et renvoie l’état de réussite/false sinon il renvoie une chaîne d’erreur avec motif pourquoi l’authentification n’est pas possible.
+Si le type d'authentification est autorisé, cette API effectue l'authentification et renvoie l'État Success/false sinon elle renvoie une chaîne d'erreur indiquant pourquoi l'authentification n'est pas possible.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, function (isSuccessful, reasonCode) {
@@ -719,10 +711,10 @@ KASClient.App.performAuthenticationAsync(KASAuthenticationType.Password, functio
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value`authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType.None |  type d’authentification. |
-| callback | `function` | - |  avec les paramètres ci-dessous :<br><br>\*@param {boolean} isSuccessful la valeur true si le formulaire n’est pas encore terminée.<br><br>\*codes de motif @param {chaîne} raison code en cas d’erreur, la valeur null dans le cas contraire |
+| `Default value`authenticationType | [KASAuthenticationType](../enums/kasclient.kasauthenticationtype.md) |  KASAuthenticationType. None |  type d'authentification. |
+| callback | `function` | - |  avec les paramètres suivants:<br><br>\*@param {Boolean} isSuccessful true si le formulaire n'a pas encore expiré<br><br>\*@param {String} code de motif de reasonCode en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -730,11 +722,11 @@ ___
 
 ###  <a name="performhttprequest"></a>performHTTPRequest
 
-▸ **performHTTPRequest**(url : *`string`*, parametersJSON : *`string`*, rappel : *`function`*) :`void`
+▸ **performHTTPRequest**(URL: *`string`*, parametersJSON: *`string`*, callback: *`function`*):`void`
 
-effectue une demande http et renvoie la réponse comme indiqué ci-dessous :
+effectue une requête HTTP et renvoie la réponse comme indiqué ci-dessous:
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var url = "<url>";
@@ -750,11 +742,11 @@ KASClient.App.performHTTPRequest(url, parametersJson, function (response, error)
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| url | `string` |  url de base à ouvrir |
-| parametersJSON | `string` |  jsonstring contenant des paramètres peut être indiquée comme null.<br><br> Si indiqués sous forme de valeur null sera une demande à l’url indiquée ci-dessus. Paramètres inclure l’en-tête de la demande, les paramètres de requête (vide par défaut), demander la méthode (GET par défaut) et le corps de la demande (le corps pour être publiés si la méthode de demande est POST. valeur par défaut vide.) Les clés pour les paramètres sont les suivants :<br><br> « méthode » a) : méthode de demande. exemple : « POST ». la valeur par défaut est « GET ».<br><br> b) « requestBody » : le corps de demande en cas de « POST ». valeur par défaut est vide.<br><br> c) « requestHeaders » : les en-têtes pour être envoyé avec la demande. doit être un json avec<br> clé comme en-tête de la demande et la valeur que la valeur souhaitée. valeur par défaut est vide.<br><br> d.) « queryParameters » : paramètres de requête. sera codé dans l’url. doit être un json avec<br> clé en tant que nom du paramètre et valeur que sa valeur. valeur par défaut est vide.<br><br> e.) « requestResourcePath » : sera ajouté à l’url de base. valeur par défaut est vide. |
-| callback | `function` |  rappel avec paramètres ci-dessous :<br><br>\*corps de réponse @param {chaîne} response renvoyé<br><br> Cela peut avoir les deux options de configuration possibles :<br><br> Si la demande a réussi, elle renvoie jsonstring avec clés suivantes :<br><br> a.) « HttpResponseCode » : le code de réponse de la demande.<br><br> b) « HttpResponseHeader » : les en-têtes de réponse HTTP<br><br> c) « HttpResponseBody » : le corps de réponse est renvoyée pour la demande.<br><br> Si une erreur réseau s’est produite il renvoie :<br><br> a.) « HttpErrorCode » : le code d’erreur<br><br> b) « HttpErrorMessage » : le message d’erreur, par exemple. URL incorrecte, ne peut pas se connecter à l’hôte, etc..<br><br>\*erreur @param {chaîne} le cas échéant : Cela inclut le code d’erreur standard défini dans la documentation KASClient. |
+| url | `string` |  URL de base à ouvrir |
+| parametersJSON | `string` |  les jsonString contenant des paramètres peuvent être fournis en tant que valeur null.<br><br> S'il est fourni comme null, une demande adressée à l'URL fournie ci-dessus sera créée. Les paramètres incluent l'en-tête de demande, les paramètres de requête (vides par défaut), la méthode de demande (GET par défaut) et le corps de la demande (le corps à valider si la méthode de demande est POST. vide par défaut.) Les clés des paramètres sont les suivantes:<br><br> a.) "méthode": méthode Request. exemple: «POST». la valeur par défaut est «GET».<br><br> b.) "requestBody": corps de la demande en cas de "POST". la valeur par défaut est vide.<br><br> c.) "requestHeaders": en-têtes à envoyer avec la demande. doit être un JSON avec<br> clé en tant qu'en-tête et valeur de la requête comme valeur souhaitée. la valeur par défaut est vide.<br><br> d.) "queryParameters": paramètres de requête. seront codées dans l'URL. doit être un JSON avec<br> clé comme nom de paramètre et valeur comme valeur. la valeur par défaut est vide.<br><br> e.) «requestResourcePath»: est ajouté à l'URL de base. la valeur par défaut est vide. |
+| callback | `function` |  rappel avec les paramètres suivants:<br><br>\*@param le corps de réponse de réponse de type {String} a renvoyé<br><br> Il peut s'agit de deux configurations possibles:<br><br> Si la demande était une réussite, elle renvoie jsonString avec les clés suivantes:<br><br> a.) «HttpResponseCode»: code de réponse de la demande.<br><br> b.) "HttpResponseHeader": les en-têtes HTTP de réponse<br><br> c.) "HttpResponseBody": le corps de la réponse a été renvoyé pour une demande.<br><br> S'il y a eu une erreur réseau, il retourne:<br><br> a.) «HttpErrorCode»: le code d'erreur<br><br> b.) "HttpErrorMessage": le message d'erreur par exemple. URL inCorrecte, impossible de se connecter à l'hôte, etc.<br><br>\*@param erreur d'erreur de type {String}, le cas échéant: Ceci inclut le code d'erreur standard défini dans la documentation de KASClient. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -762,18 +754,18 @@ ___
 
 ###  <a name="printf"></a>printf
 
-▸ **printf**(principale : *`string`*, … args : * `any`[]*) :`string`
+▸ **printf**(main: *`string`*,... args: * `any`[]*):`string`
 
-Renvoie une chaîne.
+Renvoie une valeur de type String.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| principale | `string` |
-| `Rest`args | `any`[] |  tableau d’arguments. |
+| grands | `string` |
+| `Rest`args | `any`[] |  Tableau d'arguments. |
 
-**Renvoie :** `string`
+**Renvoie:**`string`
 
 ___
 
@@ -781,9 +773,9 @@ ___
 
 ###  <a name="readtalkbackmessage"></a>readTalkBackMessage
 
-▸ **readTalkBackMessage**(talkBackMessage : *`string`*) :`void`
+▸ **readTalkBackMessage**(talkBackMessage: *`string`*):`void`
 
-Lit le texte si TalkBack/voix hors champ activé
+Lit le texte si TalkBack/VoiceOver est activé.
 
 **Paramètres :**
 
@@ -791,7 +783,7 @@ Lit le texte si TalkBack/voix hors champ activé
 | ------ | ------ |
 | talkBackMessage | `string` |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -799,17 +791,17 @@ ___
 
 ###  <a name="registerhardwarebackpresscallback"></a>registerHardwareBackPressCallback
 
-▸ **registerHardwareBackPressCallback**(callback? : *`function`*) :`void`
+▸ **registerHardwareBackPressCallback**(callback?: *`function`*):`void`
 
-Enregistre un rappel à exécuter sur matériel, appuyez sur le bouton précédent (pour Android)
+Enregistre un rappel à exécuter sur une pression de bouton de retour matériel (pour Android)
 
 **Paramètres :**
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value`rappel | `function` |  null |  méthode à exécuter |
+| `Default value`DoCallBack | `function` |  null |  méthode à exécuter |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -817,11 +809,11 @@ ___
 
 ###  <a name="setnativetoolbarproperties"></a>setNativeToolbarProperties
 
-▸ **setNativeToolbarProperties**(propriétés : *[KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)*) :`void`
+▸ **setNativeToolbarProperties**(propriétés: *[KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)*):`void`
 
-Définit certaines propriétés lors de l’utilisation d’une barre d’outils natif
+Définit peu de propriétés lors de l'utilisation de la barre d'outils Native
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var nativeToolbarProps = new KASClient.KASNativeToolbarProperties();
@@ -837,7 +829,7 @@ KASClient.App.setNativeToolbarProperties(nativeToolbarProps);
 | ------ | ------ | ------ |
 | propriétés | [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md) |   |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -845,15 +837,15 @@ ___
 
 ###  <a name="setuserstrings"></a>setUserStrings
 
-▸ **setUserStrings**(strings? : *`JSON`*) :`void`
+▸ **setUserStrings**(strings?: *`JSON`*):`void`
 
 **Paramètres :**
 
 | Nom | Type | Valeur par défaut |
 | ------ | ------ | ------ |
-| `Default value`chaînes | `JSON` |  null |
+| `Default value`String | `JSON` |  null |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -861,11 +853,11 @@ ___
 
 ###  <a name="showattachmentpickerasync"></a>showAttachmentPickerAsync
 
-▸ **showAttachmentPickerAsync**(supportedTypes : *[] [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)*, propriétés : *`JSON`*, rappel : *`function`*) :`void`
+▸ **showAttachmentPickerAsync**(SupportedTypes: * [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)[]*, props: *`JSON`*, callback: *`function`*):`void`
 
-Affiche un sélecteur de pièce jointe dans la couche native
+Affiche un sélecteur de pièces jointes dans la couche native
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var attachmentsTypesToShow = [];
@@ -891,11 +883,11 @@ KASClient.App.showAttachmentPickerAsync(attachmentsTypesToShow, null, function (
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md) [] |  tableau des types de pièce jointe pris en charge pour le sélecteur. |
-| propriétés | `JSON` |  propriétés supplémentaires pour configurer le sélecteur |
-| callback | `function` |  avec les paramètres ci-dessous<br><br>\*@param {KASAttachment\[\]} selectedAttachments chaîne de pièces jointes sélectionnées<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| supportedTypes | [KASAttachmentType](../enums/kasclient.kasattachmenttype.md) [] |  Tableau des types de pièces jointes pris en charge pour le sélecteur. |
+| Propriétés | `JSON` |  autres propriétés permettant de configurer le sélecteur |
+| callback | `function` |  avec les paramètres suivants<br><br>\*@param {KASAttachment\[\]} selectedAttachments chaîne de pièces jointes sélectionnées<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -903,17 +895,17 @@ ___
 
 ###  <a name="showbarcodescannerasync"></a>showBarcodeScannerAsync
 
-▸ **showBarcodeScannerAsync**(rappel : *`function`*) :`void`
+▸ **showBarcodeScannerAsync**(callback: *`function`*):`void`
 
-Lance l’Analyseur de code-barres et renvoie l’objet analysé
+Lance le scanneur de codes-barres et renvoie l'objet analysé
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {chaîne} barcodeInfo peut être une valeur null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} barcodeInfo peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -921,22 +913,22 @@ ___
 
 ###  <a name="showcontactpickerasync"></a>showContactPickerAsync
 
-▸ **showContactPickerAsync**(titre : *`string`*, selectedMutableUser : * `string`[]*, selectedImmutableUser : * `string`[]*, isSingleSelection : *`boolean`*, rappel : *`function`*) :`void`
+▸ **showContactPickerAsync**(title: *`string`*, selectedMutableUser: * `string`[]*, selectedImmutableUser: * `string`[]*, isSingleSelection: *`boolean`*, callback: *`function`*):`void`
 
-Affiche un sélecteur de contact natif et renvoie un tableau des détails de tous les utilisateurs
+Affiche un sélecteur de contacts natif et renvoie un tableau de tous les détails de l'utilisateur sélectionné
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
 | title | `string` |  du sélecteur de contacts |
-| selectedMutableUser | `string`[] |  tableau des ID utilisateur sélectionné |
-| selectedImmutableUser | `string`[] |  tableau des ID utilisateur sélectionné fixe |
-| isSingleSelection | `boolean` |  seule la sélection dans le sélecteur de contacts |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {KASUser\[\]} selectedUsers (tableau de détails de l’utilisateur) peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| selectedMutableUser | `string`[] |  Tableau d'ID utilisateur sélectionnés |
+| selectedImmutableUser | `string`[] |  Tableau des identificateurs de l'utilisateur sélectionnés |
+| isSingleSelection | `boolean` |  sélection unique dans le sélecteur de contacts |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {KASUser\[\]} selectedUsers (tableau des détails de l'utilisateur) peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void` Tableau des détails de tous les utilisateurs (tableau de JSON)
-#### <a name="sample-usage"></a>Exemple d’utilisation
+**Renvoie:** `void` Tableau de tous les détails des utilisateurs sélectionnés (tableau de JSON)
+#### <a name="sample-usage"></a>Exemple d'utilisation
 ```
 var alreadySelectedUserIds = [];
 KASClient.App.showContactPickerAsync("<picker title>", alreadySelectedUserIds, [], true, function (selectedUsers, error) {
@@ -953,7 +945,7 @@ ___
 
 ###  <a name="showdurationpickerasync"></a>showDurationPickerAsync
 
-▸ **showDurationPickerAsync**(defaultDurationInMinutes : *`number`*, rappel : *`function`*) :`void`
+▸ **showDurationPickerAsync**(defaultDurationInMinutes: *`number`*, callback: *`function`*):`void`
 
 Affiche un sélecteur de durée native avec jour/heure/minute
 
@@ -961,10 +953,10 @@ Affiche un sélecteur de durée native avec jour/heure/minute
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| defaultDurationInMinutes | `number` |  la durée par défaut à afficher dans le sélecteur |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*durationInMinutes @param {nombre} sélectionné la durée en minutes<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| defaultDurationInMinutes | `number` |  durée par défaut à afficher sur le sélecteur |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {nombre} durationInMinutes sélection de la durée en minutes<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -972,11 +964,11 @@ ___
 
 ###  <a name="showimageimmersiveview"></a>showImageImmersiveView
 
-▸ **showImageImmersiveView**(urls? : * `string`[]*, currentImageIndex? : *`number`*) :`void`
+▸ **showImageImmersiveView**(urls?: * `string`[]*, currentImageIndex?: *`number`*):`void`
 
-Affiche l’Image en mode immersif.
+Affiche l'image en mode immersif.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var urlArray = ["path1", "path2"];
@@ -987,10 +979,10 @@ KASClient.App.showImageImmersiveView(urlArray);
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value`URL | `string`[] |  [] |  Tableau d’images url : |
+| `Default value`URL | `string`[] |  [] |  Tableau des images URL: |
 | `Default value`currentImageIndex | `number` | 0 |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -998,17 +990,17 @@ ___
 
 ###  <a name="showimagepickerasync"></a>showImagePickerAsync
 
-▸ **showImagePickerAsync**(rappel : *`function`*) :`void`
+▸ **showImagePickerAsync**(callback: *`function`*):`void`
 
-Affiche un sélecteur d’images natif et renvoie le chemin d’accès de l’image sélectionnée
+Affiche un sélecteur d'image native et renvoie le chemin d'accès à l'image sélectionnée
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {chaîne} selectedImagePath peut être une valeur null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} selectedImagePath peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void` Sélectionné l’emplacement de l’image
+**Renvoie:** `void` Emplacement de l'image sélectionnée
 
 ___
 
@@ -1016,9 +1008,9 @@ ___
 
 ###  <a name="showlocationonmap"></a>showLocationOnMap
 
-▸ **showLocationOnMap**(emplacement : *[KASLocation](../classes/kasclient.kaslocation.md)*) :`void`
+▸ **showLocationOnMap**(Location: *[KASLocation](../classes/kasclient.kaslocation.md)*):`void`
 
-Indique un emplacement particulier, comme indiqué dans KASLocation
+indique un emplacement particulier, comme indiqué dans KASLocation
 
 **Paramètres :**
 
@@ -1026,7 +1018,7 @@ Indique un emplacement particulier, comme indiqué dans KASLocation
 | ------ | ------ | ------ |
 | location | [KASLocation](../classes/kasclient.kaslocation.md) |   |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -1034,9 +1026,9 @@ ___
 
 ###  <a name="shownativeerrormessage"></a>showNativeErrorMessage
 
-▸ **showNativeErrorMessage**(message : *`string`*) :`void`
+▸ **showNativeErrorMessage**(message: *`string`*):`void`
 
-Affiche une alerte native (pour les e/s) ou une alerte (Android) avec le message
+Affiche une alerte native (pour iOS) ou un toast (pour Android) avec le message
 
 **Paramètres :**
 
@@ -1044,7 +1036,7 @@ Affiche une alerte native (pour les e/s) ou une alerte (Android) avec le message
 | ------ | ------ | ------ |
 | message | `string` |   |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -1052,27 +1044,27 @@ ___
 
 ###  <a name="showplacepickerasync"></a>showPlacePickerAsync
 
-▸ **showPlacePickerAsync**(rappel : *`function`*) :`void`
+▸ **showPlacePickerAsync**(callback: *`function`*):`void`
 
-Affiche un sélecteur de place natif et renvoie le lieu sélectionné (lt, lg, n)
+Affiche un sélecteur d'emplacement natif et renvoie le lieu sélectionné (LT, LG, n)
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {KASLocation} selectedLocation peut être une valeur nulle en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {KASLocation} selectedLocation peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
 <a id="showprogressbar"></a>
 
-###  <a name="showprogressbar"></a>ShowProgressBar indique
+###  <a name="showprogressbar"></a>showProgressBar
 
-▸ **ShowProgressBar indique**(texte : *`string`*) :`void`
+▸ **showProgressBar**(Text: *`string`*):`void`
 
-Affiche une barre de progression de l ' écran complète native avec le texte donné
+Affiche une barre de progression Sreen complète native avec le texte donné
 
 **Paramètres :**
 
@@ -1080,7 +1072,7 @@ Affiche une barre de progression de l ' écran complète native avec le texte do
 | ------ | ------ | ------ |
 | text | `string` |   |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -1088,17 +1080,17 @@ ___
 
 ###  <a name="showqrcodescannerasync"></a>showQRcodeScannerAsync
 
-▸ **showQRcodeScannerAsync**(rappel : *`function`*) :`void`
+▸ **showQRcodeScannerAsync**(callback: *`function`*):`void`
 
-Lance l’Analyseur de code QR et renvoie l’objet analysé
+Lance l'analyseur de code QR et renvoie l'objet analysé
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {chaîne} qrCodeInfo peut être une valeur null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} qrCodeInfo peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -1106,19 +1098,19 @@ ___
 
 ###  <a name="showuserprofileasync"></a>showUserProfileAsync
 
-▸ **showUserProfileAsync**(userId : *`string`*, isMiniProfile : *`boolean`*, rappel : *`function`*) :`void`
+▸ **showUserProfileAsync**(UserID: *`string`*, isMiniProfile: *`boolean`*, callback: *`function`*):`void`
 
-Indique les détails/page de profil d’un utilisateur
+Affiche la page de profil/les détails d'un utilisateur
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| userId | `string` |  de l’utilisateur dont le profil doit être affiché |
-| isMiniProfile | `boolean` |  s’il faut afficher d’abord Mini profil |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*false la valeur true si l’opération réussit, de réussite @param {boolean} sinon<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| userId | `string` |  de l'utilisateur dont le profil doit être affiché |
+| isMiniProfile | `boolean` |  indique s'il faut afficher d'abord le mini-profil |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} Success true si elle réussit, false dans le cas contraire<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -1126,18 +1118,18 @@ ___
 
 ###  <a name="startchatasync"></a>startChatAsync
 
-▸ **startChatAsync**(userId : *`string`*, rappel : *`function`*) :`void`
+▸ **startChatAsync**(UserID: *`string`*, callback: *`function`*):`void`
 
-Conversation commence avec un utilisateur
+Démarre la conversation avec un utilisateur
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| userId | `string` |  de l’utilisateur |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*réussite @param {boolean}<br><br>\*erreur @param {chaîne} |
+| userId | `string` |  de l'utilisateur |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} réussite<br><br>\*erreur @param {chaîne} |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 

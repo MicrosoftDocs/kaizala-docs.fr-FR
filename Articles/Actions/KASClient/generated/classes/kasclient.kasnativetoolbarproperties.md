@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: bc1a670fc84102590cbb4ba65394a12faeac1b4a
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727938"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASNativeToolbarProperties](../classes/kasclient.kasnativetoolbarproperties.md)
 
-# <a name="class-kasnativetoolbarproperties"></a>Classe : KASNativeToolbarProperties
+# <a name="class-kasnativetoolbarproperties"></a>Classe: KASNativeToolbarProperties
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -23,7 +15,7 @@ ms.locfileid: "28727938"
 * [sous-titre](kasclient.kasnativetoolbarproperties.md#subtitle)
 * [title](kasclient.kasnativetoolbarproperties.md#title)
 * [urlAction](kasclient.kasnativetoolbarproperties.md#urlaction)
-* [présentationTapez](kasclient.kasnativetoolbarproperties.md#urltype)
+* [urlType](kasclient.kasnativetoolbarproperties.md#urltype)
 ### <a name="methods"></a>Méthodes
 
 * [toJSON](kasclient.kasnativetoolbarproperties.md#tojson)
@@ -44,7 +36,7 @@ ___
 
 ###  <a name="icon"></a>icône
 
-**Icône ●**: *`string`* = null
+**icône ●**: *`string`* = null
 
 ___
 
@@ -52,7 +44,7 @@ ___
 
 ###  <a name="subtitle"></a>sous-titre
 
-**Sous-titre ●**: *`string`* = null
+**● sous**- *`string`* titre: = null
 
 ___
 
@@ -60,7 +52,7 @@ ___
 
 ###  <a name="title"></a>title
 
-**Titre ●**: *`string`* = null
+**● titre**: *`string`* = null
 
 ___
 
@@ -68,15 +60,15 @@ ___
 
 ###  <a name="urlaction"></a>urlAction
 
-**● urlAction**: *[UrlAction](../enums/kasclient.urlaction.md)* = UrlAction.None
+**● UrlAction**: *[UrlAction](../enums/kasclient.urlaction.md)* = UrlAction. None
 
 ___
 
 <a id="urltype"></a>
 
-###  <a name="urltype"></a>présentationTapez
+###  <a name="urltype"></a>urlType
 
-**● présentationTapez**: *[présentationTapez](../enums/kasclient.urltype.md)* = UrlType.Current
+**● urlType**: *[urlType](../enums/kasclient.urltype.md)* = urlType. Current
 
 ___
 
@@ -86,9 +78,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 

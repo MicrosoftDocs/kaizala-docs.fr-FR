@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 461b6d9fe1a01d956f60550037eeaaf84719622b
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727898"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASLocationStaticMapImageParams](../classes/kasclient.kaslocationstaticmapimageparams.md)
 
-# <a name="class-kaslocationstaticmapimageparams"></a>Classe : KASLocationStaticMapImageParams
+# <a name="class-kaslocationstaticmapimageparams"></a>Classe: KASLocationStaticMapImageParams
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -18,14 +10,14 @@ ms.locfileid: "28727898"
 
 ### <a name="properties"></a>Propriétés
 
-* [langue](kasclient.kaslocationstaticmapimageparams.md#language)
+* [language](kasclient.kaslocationstaticmapimageparams.md#language)
 * [latitude](kasclient.kaslocationstaticmapimageparams.md#latitude)
 * [longitude](kasclient.kaslocationstaticmapimageparams.md#longitude)
 * [mapType](kasclient.kaslocationstaticmapimageparams.md#maptype)
 * [markerColor](kasclient.kaslocationstaticmapimageparams.md#markercolor)
 * [sizeX](kasclient.kaslocationstaticmapimageparams.md#sizex)
-* [sizeY](kasclient.kaslocationstaticmapimageparams.md#sizey)
-* [Zoom](kasclient.kaslocationstaticmapimageparams.md#zoom)
+* [taille](kasclient.kaslocationstaticmapimageparams.md#sizey)
+* [zoom](kasclient.kaslocationstaticmapimageparams.md#zoom)
 ### <a name="methods"></a>Méthodes
 
 * [toJSON](kasclient.kaslocationstaticmapimageparams.md#tojson)
@@ -38,7 +30,7 @@ ms.locfileid: "28727898"
 
 ###  <a name="language"></a>language
 
-**Langue ●**:*`string`*
+**● langue**:*`string`*
 
 ___
 
@@ -46,7 +38,7 @@ ___
 
 ###  <a name="latitude"></a>latitude
 
-**Latitude ●**:*`number`*
+**● Latitude**:*`number`*
 
 ___
 
@@ -54,7 +46,7 @@ ___
 
 ###  <a name="longitude"></a>longitude
 
-**Longitude ●**:*`number`*
+**● longitude**:*`number`*
 
 ___
 
@@ -70,7 +62,7 @@ ___
 
 ###  <a name="markercolor"></a>markerColor
 
-**● markerColor**: *`string`* = « rouge »
+**● markerColor**: *`string`* = "rouge"
 
 ___
 
@@ -84,9 +76,9 @@ ___
 
 <a id="sizey"></a>
 
-###  <a name="sizey"></a>sizeY
+###  <a name="sizey"></a>taille
 
-**● sizeY**: *`number`* = 170
+**● taille**: *`number`* = 170
 
 ___
 
@@ -94,7 +86,7 @@ ___
 
 ###  <a name="zoom"></a>zoom
 
-**● le zoom**:*`number`*
+**● Zoom**:*`number`*
 
 ___
 
@@ -104,9 +96,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 

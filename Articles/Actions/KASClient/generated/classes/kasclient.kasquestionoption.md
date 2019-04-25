@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: be34131e79e667166730ab5595a82f22d891d7d7
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727939"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionOption](../classes/kasclient.kasquestionoption.md)
 
-# <a name="class-kasquestionoption"></a>Classe : KASQuestionOption
+# <a name="class-kasquestionoption"></a>Classe: KASQuestionOption
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -19,7 +11,7 @@ ms.locfileid: "28727939"
 ### <a name="properties"></a>Propriétés
 
 * [id](kasclient.kasquestionoption.md#id)
-* [URL de la photo](kasclient.kasquestionoption.md#pictureurl)
+* [pictureUrl](kasclient.kasquestionoption.md#pictureurl)
 * [text](kasclient.kasquestionoption.md#text)
 ### <a name="methods"></a>Méthodes
 
@@ -36,13 +28,13 @@ ms.locfileid: "28727939"
 
 ###  <a name="id"></a>id
 
-**Id ●**: *`number`* = 0
+**● ID**: *`number`* = 0
 
 ___
 
 <a id="pictureurl"></a>
 
-###  <a name="pictureurl"></a>URL de la photo
+###  <a name="pictureurl"></a>pictureUrl
 
 **● pictureUrl**: *`string`* = null
 
@@ -52,7 +44,7 @@ ___
 
 ###  <a name="text"></a>text
 
-**Texte ●**: *`string`* = « »
+**● texte**: *`string`* = ""
 
 ___
 
@@ -62,9 +54,9 @@ ___
 
 ###  <a name="toapicompatiblejson"></a>toAPICompatibleJSON
 
-▸ **toAPICompatibleJSON**() :`JSON`
+▸ **toAPICompatibleJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -72,9 +64,9 @@ ___
 
 ###  <a name="toclientjson"></a>toClientJSON
 
-▸ **toClientJSON**() :`JSON`
+▸ **toClientJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -82,9 +74,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -92,7 +84,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASQuestionOption](kasclient.kasquestionoption.md)
+▸ **fromJSON**(objet: *`any`*): [KASQuestionOption](kasclient.kasquestionoption.md)
 
 **Paramètres :**
 
@@ -100,7 +92,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASQuestionOption](kasclient.kasquestionoption.md)
+**Renvoie:** [KASQuestionOption](kasclient.kasquestionoption.md)
 
 ___
 

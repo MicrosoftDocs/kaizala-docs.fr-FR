@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 7d76c2a5eae67bd6c1063b2595561e299f9f9160
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727902"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)
 
-# <a name="class-kasformprocessedsummary"></a>Classe : KASFormProcessedSummary
+# <a name="class-kasformprocessedsummary"></a>Classe: KASFormProcessedSummary
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -35,7 +27,7 @@ ms.locfileid: "28727902"
 
 ###  <a name="json"></a>json
 
-**● json**:*`JSON`*
+**● JSON**:*`JSON`*
 
 ___
 
@@ -43,19 +35,19 @@ ___
 
 ###  <a name="nonrespondersinconversation"></a>nonRespondersInConversation
 
-**● nonRespondersInConversation**: * `string`[]* =]
+**● nonRespondersInConversation**: * `string`[]* = []
 
-Combien de la conversation n’a pas répondu
+Nombre de réponses dans la conversation
 
 ___
 
 <a id="results"></a>
 
-###  <a name="results"></a>résultats
+###  <a name="results"></a>results
 
-**Résultats ●**:*`object`*
+**● résultats**:*`object`*
 
-Agrégation des résultats pour les questions aggregative Dictionary<QuestionId : nombre, le résultat : KASQuestionResult>
+Résultat agrégé pour les questions agrégées Dictionary<QuestionId: Number, result: KASQuestionResult>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
@@ -66,7 +58,7 @@ ___
 
 **● targetResponderCount**: *`number`* = 0
 
-Combien de la conversation ont été attribués pour répondre à ce formulaire
+Combien de fois dans la conversation ont été affectées pour répondre à ce formulaire
 
 ___
 
@@ -76,7 +68,7 @@ ___
 
 **● totalResponseCount**: *`number`* = 0
 
-Nombre total de réponses ont été reçus pour le formulaire, en tenant compte des réponses multiples d’une personne
+Le nombre total de réponses reçues pour le formulaire, en considérant plusieurs réponses d'une personne
 
 ___
 
@@ -86,7 +78,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASFormProcessedSummary](kasclient.kasformprocessedsummary.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASFormProcessedSummary](kasclient.kasformprocessedsummary.md)
 
 **Paramètres :**
 
@@ -94,7 +86,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASFormProcessedSummary](kasclient.kasformprocessedsummary.md)
+**Renvoie:** [KASFormProcessedSummary](kasclient.kasformprocessedsummary.md)
 
 ___
 

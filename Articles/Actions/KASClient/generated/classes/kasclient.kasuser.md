@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 20daed268b67eea07a8185c84086587dcf1f1aeb
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727942"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASUser](../classes/kasclient.kasuser.md)
 
-# <a name="class-kasuser"></a>Classe : KASUser
+# <a name="class-kasuser"></a>Classe: KASUser
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -24,7 +16,7 @@ ms.locfileid: "28727942"
 * [phoneNumber](kasclient.kasuser.md#phonenumber)
 * [pictureBGColor](kasclient.kasuser.md#picturebgcolor)
 * [pictureInitials](kasclient.kasuser.md#pictureinitials)
-* [URL de la photo](kasclient.kasuser.md#pictureurl)
+* [pictureUrl](kasclient.kasuser.md#pictureurl)
 ### <a name="methods"></a>Méthodes
 
 * [fromJSON](kasclient.kasuser.md#fromjson)
@@ -37,9 +29,9 @@ ms.locfileid: "28727942"
 
 ###  <a name="id"></a>id
 
-**Id ●**: *`string`* = « »
+**● ID**: *`string`* = ""
 
-Id d’utilisateur unique
+ID d'utilisateur unique
 
 ___
 
@@ -47,9 +39,9 @@ ___
 
 ###  <a name="name"></a>name
 
-**Nom ●**: *`string`* = « »
+**● nom**: *`string`* = ""
 
-Nom de l’utilisateur (« vous » pour l’utilisateur actuel)
+Nom de l'utilisateur («vous» pour l'utilisateur actuel)
 
 ___
 
@@ -57,9 +49,9 @@ ___
 
 ###  <a name="originalname"></a>originalName
 
-**● originalName**: *`string`* = « »
+**● originalName**: *`string`* = ""
 
-Ne pas considérer « Vous »
+N'envisagez pas «vous»
 
 ___
 
@@ -67,9 +59,9 @@ ___
 
 ###  <a name="phonenumber"></a>phoneNumber
 
-**● phoneNumber**: *`string`* = « »
+**● phoneNumber**: *`string`* = ""
 
-Numéro de téléphone de l’utilisateur
+Numéro de téléphone de l'utilisateur
 
 ___
 
@@ -77,9 +69,9 @@ ___
 
 ###  <a name="picturebgcolor"></a>pictureBGColor
 
-**● pictureBGColor**: *`string`* = « »
+**● pictureBGColor**: *`string`* = ""
 
-En cas de l’URL de la photo n’est pas visible, nous devons utiliser les initiales en tant que le pic de profil, sous deux membres qui sont des utilisateurs
+Si le PictureUrl n'est pas là, nous devons utiliser les initiales des utilisateurs comme profil pic, sous deux membres
 
 ___
 
@@ -87,17 +79,17 @@ ___
 
 ###  <a name="pictureinitials"></a>pictureInitials
 
-**● pictureInitials**: *`string`* = « »
+**● pictureInitials**: *`string`* = ""
 
 ___
 
 <a id="pictureurl"></a>
 
-###  <a name="pictureurl"></a>URL de la photo
+###  <a name="pictureurl"></a>pictureUrl
 
-**● pictureUrl**: *`string`* = « »
+**● pictureUrl**: *`string`* = ""
 
-Url d’image de profil de l’utilisateur
+URL de l'image de profil de l'utilisateur
 
 ___
 
@@ -107,7 +99,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASUser](kasclient.kasuser.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASUser](kasclient.kasuser.md)
 
 **Paramètres :**
 
@@ -115,7 +107,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASUser](kasclient.kasuser.md)
+**Renvoie:** [KASUser](kasclient.kasuser.md)
 
 ___
 

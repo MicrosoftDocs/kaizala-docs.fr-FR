@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: e2ff630472614067d27e76e75b42a4845fd08534
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727896"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormSummaryForGroup](../classes/kasclient.kasformsummaryforgroup.md)
 
-# <a name="class-kasformsummaryforgroup"></a>Classe : KASFormSummaryForGroup
+# <a name="class-kasformsummaryforgroup"></a>Classe: KASFormSummaryForGroup
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -35,7 +27,7 @@ ms.locfileid: "28727896"
 
 ###  <a name="cursor"></a>curseur
 
-**Curseur ●**: *`string`* = « »
+**● curseur**: *`string`* = ""
 
 ___
 
@@ -43,9 +35,9 @@ ___
 
 ###  <a name="directmemberresponses"></a>directMemberResponses
 
-**● directMemberResponses**: * `KASActionInstanceResponse`[]* =]
+**● directMemberResponses**: * `KASActionInstanceResponse`[]* = []
 
-Exemple pour le groupe {« c » : « 125955414 », « rdc » : 3, « r » : \[ {« id » : « 5a1d8f15-79b8-4cd5-a497-a5caff979b74 », « n » : « ABC », « supprimer » : « 0a228aee-c5c0-4dc5-bca0-42a634474e2b@1 », « r » : {« 0 » : « Jbbl », « 1 » : « 1540980866017 », « 2 » : « {« lt » : 0, « lg » : 0, « acc » : 0, « n » : « ty «, » » : 0} »}}, {« id » : « 41e589cf-ad48-46b9-9290-786bf64cd599 », « n » : « SRK », « supprimer » : « 13dfa760-df77-4c88-a9f6-f34a76136439@1 », « r » : {« 0 » : « Gnuk », « 1 » : « 1540981299094 », « 2 » : « {« lt » : 0, « lg » : 0, « acc » : 0, « n » : » ty «, » » : 0} »}} \], « sgs » : { » 0c6207fc-39ce-4b74-b420-db2d52f2cd08@1 « : {« n » : null, « rdc » : 1, « tc » : 6}}, « tc » : 6}
+Exemple de résumé pour le groupe {"c": "125955414", "RDC": 3, «RS \[ »: {"ID": "5a1d8f15-79b8-4cd5-a497-a5caff979b74", "n": "ABC", "RID": "0a228aee-c5c0-4dc5-bca0-42a634474e2b @ 1", "RS": {"0": "Jbbl", "1": "1540980866017", "2": "{" lt ": 0," LG ": 0," ACC " : 0, "n": "", "Ty": 0} "}}, {" ID ":" 41e589cf-Ad48-46b9-9290-786bf64cd599 "," n ":" SRK "," RID ":" 13dfa760-df77-4c88-a9f6-f34a76136439 @ 1 "," RS ": {" 0 ":" Gnuk "," 1 ":" 1540981299094 "," 2 ":" {"lt": 0, "LG": 0, "ACC": "...": "" = "," = 0} "}} \]," SG ": {" 0c6207fc-39CE-4b74-B420-db2d52f2cd08 @ 1 ": {" n ": null," RDC ": 1," TC ": 6}}," TC ": 6}
 
 ___
 
@@ -81,7 +73,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASFormSummaryForGroup](kasclient.kasformsummaryforgroup.md)
+▸ **fromJSON**(objet: *`any`*): [KASFormSummaryForGroup](kasclient.kasformsummaryforgroup.md)
 
 **Paramètres :**
 
@@ -89,7 +81,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASFormSummaryForGroup](kasclient.kasformsummaryforgroup.md)
+**Renvoie:** [KASFormSummaryForGroup](kasclient.kasformsummaryforgroup.md)
 
 ___
 

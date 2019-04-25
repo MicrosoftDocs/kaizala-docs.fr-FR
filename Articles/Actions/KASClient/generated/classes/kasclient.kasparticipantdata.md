@@ -1,16 +1,8 @@
----
-ms.openlocfilehash: bb410570ca61dd12bc05c9b5b2d9f0b154b2e7da
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727901"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASParticipantData](../classes/kasclient.kasparticipantdata.md)
 
-# <a name="class-kasparticipantdata"></a>Classe : KASParticipantData
+# <a name="class-kasparticipantdata"></a>Classe: KASParticipantData
 
-Définit les propriétés d’un participant de conversation
+Définit les propriétés d'un participant à une conversation
 ## <a name="hierarchy"></a>Hierarchy
 
 **KASParticipantData**
@@ -34,7 +26,7 @@ Définit les propriétés d’un participant de conversation
 
 ###  <a name="participantid"></a>participantId
 
-**● participantId**: *`string`* = « »
+**● participantId**: *`string`* = ""
 
 ___
 
@@ -42,7 +34,7 @@ ___
 
 ###  <a name="participantrole"></a>participantRole
 
-**● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* = KASParticipantRole.NONE
+**● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* = KASParticipantRole. None
 
 ___
 
@@ -50,7 +42,7 @@ ___
 
 ###  <a name="participanttype"></a>participantType
 
-**● participantType**: *[KASParticipantType](../enums/kasclient.kasparticipanttype.md)* = KASParticipantType.NONE
+**● participantType**: *[KASParticipantType](../enums/kasclient.kasparticipanttype.md)* = KASParticipantType. None
 
 ___
 
@@ -60,7 +52,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASParticipantData](kasclient.kasparticipantdata.md)
+▸ **fromJSON**(objet: *`any`*): [KASParticipantData](kasclient.kasparticipantdata.md)
 
 **Paramètres :**
 
@@ -68,7 +60,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASParticipantData](kasclient.kasparticipantdata.md)
+**Renvoie:** [KASParticipantData](kasclient.kasparticipantdata.md)
 
 ___
 

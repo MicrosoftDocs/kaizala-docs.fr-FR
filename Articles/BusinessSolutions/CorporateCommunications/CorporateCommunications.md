@@ -1,14 +1,14 @@
-# <a name="corporate-communications"></a>Communications d’entreprise
+# <a name="corporate-communications"></a>Communications d'entreprise
 
-Une communication efficace est des piliers principaux pour leur engagement. Avec une augmentation des ressources mobiles et les travailleurs de première ligne, il est important pour une organisation créer un réseau d’employés connectés (inclus) et de créer un canal de communication en temps réel.
+Une communication efficace est un pilier fondamental de l'engagement de l'employé. Avec un personnel mobile croissant et des travailleurs de première ligne, il est important pour une organisation de créer un réseau inclusif d'employés connectés et de créer un canal de communication en temps réel.
 
-Kaizala permet aux organisations de créer ce réseau d’employés connectés en mettant en premier travailleur de ligne dans fold numérique de l’organisation. Organisations peuvent envoyer des actualités de l’entreprise, des informations sur le produit et des annonces critique création d’une organisation (inclus).
+Kaizala permet aux organisations de créer ce réseau d'employés connectés en mettant le travail de première ligne dans le pliage numérique de l'organisation. Les organisations peuvent envoyer des informations d'entreprise, des informations sur les produits et des annonces critiques créant une organisation inclusive.
 
-Pour simplifier le processus de communication et de tirer parti des investissements actuelles dans les canaux de communication, les organisations peuvent utiliser des actions personnalisées pour afficher internet et intranet pour les flux de groupes Kaizala.
+Pour simplifier le processus de communication et tirer parti des investissements actuellement réalisés dans les canaux de communication, les organisations peuvent utiliser des actions personnalisées pour afficher les flux Internet et intranet dans des groupes Kaizala.
 
-Voici des exemples de solutions qui permettraient aux organisations de communiquer avec la mobilité efficacement
- 1. [Afficher les flux RSS dans des groupes Kaizala](GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
- 2. [Afficher les annonces SharePoint dans les groupes de Kaizala](SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
- 3. [Mises à jour Kaizala auto-Post Twitter](AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
+Vous trouverez ci-dessous les exemples de solutions qui aideront les organisations à communiquer efficacement avec le personnel mobile
+ 1. [Afficher les flux RSS dans les groupes Kaizala](GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
+ 2. [Afficher les annonces SharePoint dans les groupes Kaizala](SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
+ 3. [Publication automatique des mises à jour Twitter sur Kaizala](AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
 
-Liens utiles- [Kaizala actions](https://docs.microsoft.com/en-us/kaizala/actions/readme)
+Liens utiles- [actions Kaizala](https://docs.microsoft.com/en-us/kaizala/actions/readme)

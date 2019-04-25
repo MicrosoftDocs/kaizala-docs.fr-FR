@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 1033173dfb8f71f7e8274740c10202ad75c24693
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727917"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASValidationRule](../classes/kasclient.kasvalidationrule.md)
 
-# <a name="class-kasvalidationrule"></a>Classe : KASValidationRule
+# <a name="class-kasvalidationrule"></a>Classe: KASValidationRule
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -19,9 +11,9 @@ ms.locfileid: "28727917"
 ### <a name="properties"></a>Propriétés
 
 * [attributes](kasclient.kasvalidationrule.md#attributes)
-* [errorString](kasclient.kasvalidationrule.md#errorstring)
+* [ErrorString,](kasclient.kasvalidationrule.md#errorstring)
 * [helpText](kasclient.kasvalidationrule.md#helptext)
-* [règle](kasclient.kasvalidationrule.md#rule)
+* [sous](kasclient.kasvalidationrule.md#rule)
 ### <a name="methods"></a>Méthodes
 
 * [toJSON](kasclient.kasvalidationrule.md#tojson)
@@ -35,13 +27,13 @@ ms.locfileid: "28727917"
 
 ###  <a name="attributes"></a>attributes
 
-**Attributs ●**:*`any`*
+**● attributs**:*`any`*
 
 ___
 
 <a id="errorstring"></a>
 
-###  <a name="errorstring"></a>errorString
+###  <a name="errorstring"></a>ErrorString,
 
 **● errorString**: *`string`* = null
 
@@ -51,15 +43,15 @@ ___
 
 ###  <a name="helptext"></a>helpText
 
-**● helpText**: *`string`* = null
+**● HelpText**: *`string`* = null
 
 ___
 
 <a id="rule"></a>
 
-###  <a name="rule"></a>règle
+###  <a name="rule"></a>sous
 
-**Règle ●**:*`any`*
+**● règle**:*`any`*
 
 ___
 
@@ -69,9 +61,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -79,7 +71,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASValidationRule](kasclient.kasvalidationrule.md)
+▸ **fromJSON**(objet: *`any`*): [KASValidationRule](kasclient.kasvalidationrule.md)
 
 **Paramètres :**
 
@@ -87,7 +79,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASValidationRule](kasclient.kasvalidationrule.md)
+**Renvoie:** [KASValidationRule](kasclient.kasvalidationrule.md)
 
 ___
 

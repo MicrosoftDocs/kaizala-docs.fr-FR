@@ -1,16 +1,8 @@
----
-ms.openlocfilehash: 2462effb40cd9759a8822cc8dcc09834fcef727b
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727952"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASConversationDetails](../classes/kasclient.kasconversationdetails.md)
 
-# <a name="class-kasconversationdetails"></a>Classe : KASConversationDetails
+# <a name="class-kasconversationdetails"></a>Classe: KASConversationDetails
 
-Définit les détails de l’hôte et la source de conversation
+Définit les détails de la conversation de l'hôte et de la source
 ## <a name="hierarchy"></a>Hierarchy
 
 **KASConversationDetails**
@@ -40,7 +32,7 @@ Définit les détails de l’hôte et la source de conversation
 
 ###  <a name="currentuserid"></a>currentUserId
 
-**● currentUserId**: *`string`* = « »
+**● currentUserId**: *`string`* = ""
 
 ___
 
@@ -48,7 +40,7 @@ ___
 
 ###  <a name="currentuserroleinhostconversation"></a>currentUserRoleInHostConversation
 
-**● currentUserRoleInHostConversation**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* = KASParticipantRole.NONE
+**● currentUserRoleInHostConversation**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* = KASParticipantRole. None
 
 ___
 
@@ -56,7 +48,7 @@ ___
 
 ###  <a name="hostconversationid"></a>hostConversationId
 
-**● hostConversationId**: *`string`* = « »
+**● hostConversationId**: *`string`* = ""
 
 ___
 
@@ -74,7 +66,7 @@ ___
 
 ###  <a name="hostconversationtitle"></a>hostConversationTitle
 
-**● hostConversationTitle**: *`string`* = « »
+**● hostConversationTitle**: *`string`* = ""
 
 ___
 
@@ -82,7 +74,7 @@ ___
 
 ###  <a name="hostconversationtype"></a>hostConversationType
 
-**● hostConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* = KASFormConversationType.NONE
+**● hostConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* = KASFormConversationType. None
 
 ___
 
@@ -90,7 +82,7 @@ ___
 
 ###  <a name="sourceconversationid"></a>sourceConversationId
 
-**● sourceConversationId**: *`string`* = « »
+**● sourceConversationId**: *`string`* = ""
 
 ___
 
@@ -98,7 +90,7 @@ ___
 
 ###  <a name="sourceconversationtitle"></a>sourceConversationTitle
 
-**● sourceConversationTitle**: *`string`* = « »
+**● sourceConversationTitle**: *`string`* = ""
 
 ___
 
@@ -106,7 +98,7 @@ ___
 
 ###  <a name="sourceconversationtype"></a>sourceConversationType
 
-**● sourceConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* = KASFormConversationType.NONE
+**● sourceConversationType**: *[KASFormConversationType](../enums/kasclient.kasformconversationtype.md)* = KASFormConversationType. None
 
 ___
 
@@ -116,7 +108,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASConversationDetails](kasclient.kasconversationdetails.md)
+▸ **fromJSON**(objet: *`any`*): [KASConversationDetails](kasclient.kasconversationdetails.md)
 
 **Paramètres :**
 
@@ -124,7 +116,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASConversationDetails](kasclient.kasconversationdetails.md)
+**Renvoie:** [KASConversationDetails](kasclient.kasconversationdetails.md)
 
 ___
 

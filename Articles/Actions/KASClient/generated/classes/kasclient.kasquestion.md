@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: cd7a7880b45a68ea4ac977487756c754a2291dd4
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727924"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestion](../classes/kasclient.kasquestion.md)
 
-# <a name="class-kasquestion"></a>Classe : KASQuestion
+# <a name="class-kasquestion"></a>Classe: KASQuestion
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -18,7 +10,7 @@ ms.locfileid: "28727924"
 
 ### <a name="properties"></a>Propriétés
 
-* [Options de configuration](kasclient.kasquestion.md#config)
+* [configurer](kasclient.kasquestion.md#config)
 * [displayType](kasclient.kasquestion.md#displaytype)
 * [id](kasclient.kasquestion.md#id)
 * [isEditable](kasclient.kasquestion.md#iseditable)
@@ -45,11 +37,11 @@ ms.locfileid: "28727924"
 
 <a id="config"></a>
 
-###  <a name="config"></a>Options de configuration
+###  <a name="config"></a>configurer
 
 **● config**: *[KASQuestionConfig](kasclient.kasquestionconfig.md)* = null
 
-Configuration/comportement d’une question
+Configuration/comportement d'une question
 
 ___
 
@@ -57,9 +49,9 @@ ___
 
 ###  <a name="displaytype"></a>displayType
 
-**● displayType**: *[KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)* = KASQuestionDisplayType.None
+**● DisplayType**: *[KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)* = KASQuestionDisplayType. None
 
-Afficher le type des options de la question
+Type d'affichage des options de la question
 
 ___
 
@@ -67,9 +59,9 @@ ___
 
 ###  <a name="id"></a>id
 
-**Id ●**: *`number`* = 0
+**● ID**: *`number`* = 0
 
-Index de la question, commence par 0
+Index de la question commençant par 0
 
 ___
 
@@ -77,9 +69,9 @@ ___
 
 ###  <a name="iseditable"></a>isEditable
 
-**● isEditable**: *`boolean`* = true
+**● IsEditable**: *`boolean`* = true
 
-Indique si la question peut être modifiée par le répondeur, la valeur par défaut est true
+Indique si la question peut être modifiée par le répondeur, la valeur par défaut est true.
 
 ___
 
@@ -89,7 +81,7 @@ ___
 
 **● isExcludedFromReporting**: *`boolean`* = false
 
-Indique si la question est ignorée dans tous les types de rapports
+Indique si la question sera ignorée de toutes sortes de rapports
 
 ___
 
@@ -99,7 +91,7 @@ ___
 
 **● isInvisible**: *`boolean`* = false
 
-Indique si la question doit être invisible pour le répondeur, la valeur par défaut est false
+Indique si la question doit être invisible pour le répondeur, la valeur par défaut est false.
 
 ___
 
@@ -109,7 +101,7 @@ ___
 
 **● isResponseOptional**: *`boolean`* = false
 
-Indique si elle est obligatoire pour répondre à cette question
+Indique s'il est obligatoire de répondre à cette question.
 
 ___
 
@@ -117,9 +109,9 @@ ___
 
 ###  <a name="options"></a>options
 
-**Options ●**: *[] [KASQuestionOption](kasclient.kasquestionoption.md)* =]
+**● options**: * [KASQuestionOption](kasclient.kasquestionoption.md)[]* = []
 
-Liste d’options pour la question
+Liste des options pour la question
 
 ___
 
@@ -127,7 +119,7 @@ ___
 
 ###  <a name="title"></a>title
 
-**Titre ●**: *`string`* = « »
+**● titre**: *`string`* = ""
 
 Titre de la question
 
@@ -137,7 +129,7 @@ ___
 
 ###  <a name="type"></a>type
 
-**Type ●**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* = KASQuestionType.None
+**● type**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* = KASQuestionType. None
 
 Type de la question
 
@@ -149,7 +141,7 @@ ___
 
 **● valif**: *[KASValidationRule](kasclient.kasvalidationrule.md)* = null
 
-Règles de validation d’une question - JSON de règles, de chaîne d’erreur et de chaîne d’aide
+Règles de validation d'une question-JSON de règle (s), chaîne d'erreur et chaîne d'aide
 
 ___
 
@@ -159,7 +151,7 @@ ___
 
 **● visif**: *[KASVisibilityRule](kasclient.kasvisibilityrule.md)* = null
 
-Règles de visibilité d’une question - chaîne de règle
+Règles de visibilité d'une chaîne de règle de question
 
 ___
 
@@ -169,7 +161,7 @@ ___
 
 ###  <a name="getapicompatiblequestiontype"></a>getAPICompatibleQuestionType
 
-▸ **getAPICompatibleQuestionType**(type : *`string`*) :`string`
+▸ **getAPICompatibleQuestionType**(type: *`string`*):`string`
 
 **Paramètres :**
 
@@ -177,7 +169,7 @@ ___
 | ------ | ------ |
 | type | `string` |
 
-**Renvoie :** `string`
+**Renvoie:**`string`
 
 ___
 
@@ -185,9 +177,9 @@ ___
 
 ###  <a name="toapicompatiblejson"></a>toAPICompatibleJSON
 
-▸ **toAPICompatibleJSON**() :`JSON`
+▸ **toAPICompatibleJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -195,9 +187,9 @@ ___
 
 ###  <a name="toclientjson"></a>toClientJSON
 
-▸ **toClientJSON**() :`JSON`
+▸ **toClientJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -205,9 +197,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -215,7 +207,7 @@ ___
 
 ###  <a name="validateresponse"></a>validateResponse
 
-▸ **validateResponse**(réponse : *`string`*) : [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
+▸ **validateResponse**(Response: *`string`*): [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
 
 **Paramètres :**
 
@@ -223,7 +215,7 @@ ___
 | ------ | ------ |
 | réponse | `string` |
 
-**Renvoie :** [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
+**Renvoie:** [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
 
 ___
 
@@ -231,7 +223,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASQuestion](kasclient.kasquestion.md)
+▸ **fromJSON**(objet: *`any`*): [KASQuestion](kasclient.kasquestion.md)
 
 **Paramètres :**
 
@@ -239,7 +231,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASQuestion](kasclient.kasquestion.md)
+**Renvoie:** [KASQuestion](kasclient.kasquestion.md)
 
 ___
 

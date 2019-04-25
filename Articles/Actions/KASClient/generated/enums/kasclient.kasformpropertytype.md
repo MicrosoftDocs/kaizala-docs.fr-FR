@@ -1,21 +1,13 @@
----
-ms.openlocfilehash: 6e7acc848399b99ebc6e382546e6b73cd535f420
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727913"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)
 
-# <a name="enumeration-kasformpropertytype"></a>Énumération : KASFormPropertyType
+# <a name="enumeration-kasformpropertytype"></a>Énumération: KASFormPropertyType
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres de l’énumération
+### <a name="enumeration-members"></a>Membres d'énumération
 
 * [Array](kasclient.kasformpropertytype.md#array)
-* [Pièce jointe](kasclient.kasformpropertytype.md#attachment)
+* [Attachment](kasclient.kasformpropertytype.md#attachment)
 * [AttachmentList](kasclient.kasformpropertytype.md#attachmentlist)
 * [DateTime](kasclient.kasformpropertytype.md#datetime)
 * [Emplacement](kasclient.kasformpropertytype.md#location)
@@ -25,7 +17,7 @@ ms.locfileid: "28727913"
 
 ---
 
-## <a name="enumeration-members"></a>Membres de l’énumération
+## <a name="enumeration-members"></a>Membres d'énumération
 
 <a id="array"></a>
 
@@ -33,7 +25,7 @@ ms.locfileid: "28727913"
 
 **Tableau**: = 4
 
-Tableau de chaînes en tant que la valeur de métadonnées
+Tableau de chaînes en tant que valeur de métadonnées
 
 ___
 
@@ -43,7 +35,7 @@ ___
 
 **Pièce jointe**: = 5
 
-Chemin d’accès de la pièce jointe en tant que la valeur de métadonnées
+Chemin d'accès des pièces jointes en tant que valeur de métadonnées
 
 ___
 
@@ -53,7 +45,7 @@ ___
 
 **AttachmentList**: = 7
 
-Liste de KASAttachment en tant que valeur de métadonnées
+Liste des KASAttachment en tant que valeur de métadonnées
 
 ___
 
@@ -62,9 +54,9 @@ ___
 ###  <a name="datetime"></a>DateTime
 
 
-**DateTime**: = 3
+**Date/heure**: = 3
 
-Date heure en tant que la valeur de métadonnées
+Date et heure comme valeur de métadonnées
 
 ___
 
@@ -74,7 +66,7 @@ ___
 
 **Emplacement**: = 2
 
-Type d’emplacement en tant que la valeur de métadonnées
+Type d'emplacement comme valeur de métadonnées
 
 ___
 
@@ -84,7 +76,7 @@ ___
 
 **Numérique**: = 1
 
-Seuls les nombres sont autorisés en tant que la valeur de métadonnées
+Seuls les nombres sont autorisés comme valeur de métadonnées
 
 ___
 
@@ -92,19 +84,19 @@ ___
 
 ###  <a name="set"></a>Set
 
-**Définir**: = 6
+**Set**: = 6
 
-Ensemble (liste unique) de chaînes en tant que la valeur de métadonnées
+Set (liste unique) de chaînes en tant que valeur de métadonnées
 
 ___
 
 <a id="text"></a>
 
-###  <a name="text"></a>Texte
+###  <a name="text"></a>Text
 
-**Texte**: = 0
+**Text**: = 0
 
-Tout le texte est autorisé comme valeur de métadonnées
+Tout texte est autorisé comme valeur de métadonnées
 
 ___
 

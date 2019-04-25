@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 45b9faa0ec2bde1b344f3fa24274c4a18c0c2c12
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727891"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormSubgroupSummary](../classes/kasclient.kasformsubgroupsummary.md)
 
-# <a name="class-kasformsubgroupsummary"></a>Classe : KASFormSubgroupSummary
+# <a name="class-kasformsubgroupsummary"></a>Classe: KASFormSubgroupSummary
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -33,9 +25,9 @@ ms.locfileid: "28727891"
 
 ###  <a name="groupname"></a>groupName
 
-**● groupName**: *`string`* = « »
+**● GroupName**: *`string`* = ""
 
-Sous-groupe exemple synthèse {« 0c6207fc-39ce-4b74-b420-db2d52f2c388@1 » : {« n » : « G22 », « rdc » : 1, « tc » : 6}}
+Exemple de résumé de sous-groupe {"0c6207fc-39CE-4b74-B420-db2d52f2c388 @ 1": {"n": "G22", "RDC": 1, "TC": 6}}
 
 ___
 
@@ -61,7 +53,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASFormSubgroupSummary](kasclient.kasformsubgroupsummary.md)
+▸ **fromJSON**(objet: *`any`*): [KASFormSubgroupSummary](kasclient.kasformsubgroupsummary.md)
 
 **Paramètres :**
 
@@ -69,7 +61,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASFormSubgroupSummary](kasclient.kasformsubgroupsummary.md)
+**Renvoie:** [KASFormSubgroupSummary](kasclient.kasformsubgroupsummary.md)
 
 ___
 

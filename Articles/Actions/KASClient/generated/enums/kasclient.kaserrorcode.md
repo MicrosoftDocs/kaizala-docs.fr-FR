@@ -1,18 +1,10 @@
----
-ms.openlocfilehash: 96015f59a49752aab0708bead766e2c7de80308b
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727949"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASErrorCode](../enums/kasclient.kaserrorcode.md)
 
-# <a name="enumeration-kaserrorcode"></a>Énumération : KASErrorCode
+# <a name="enumeration-kaserrorcode"></a>Énumération: KASErrorCode
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres de l’énumération
+### <a name="enumeration-members"></a>Membres d'énumération
 
 * [AUTHENTICATION_CANCELLED](kasclient.kaserrorcode.md#authentication_cancelled)
 * [AUTHENTICATION_FAILED](kasclient.kaserrorcode.md#authentication_failed)
@@ -26,7 +18,7 @@ ms.locfileid: "28727949"
 * [INVALID_REQUEST_DATA](kasclient.kaserrorcode.md#invalid_request_data)
 * [LOCATION_ERROR](kasclient.kaserrorcode.md#location_error)
 * [NETWORK_ERROR](kasclient.kaserrorcode.md#network_error)
-* [AUCUN](kasclient.kaserrorcode.md#none)
+* [NUL](kasclient.kaserrorcode.md#none)
 * [SERVER_GENERIC_ERROR](kasclient.kaserrorcode.md#server_generic_error)
 * [UNAUTHORIZED_USER_OPERATION](kasclient.kaserrorcode.md#unauthorized_user_operation)
 * [UNKNOWN_ERROR](kasclient.kaserrorcode.md#unknown_error)
@@ -34,7 +26,7 @@ ms.locfileid: "28727949"
 
 ---
 
-## <a name="enumeration-members"></a>Membres de l’énumération
+## <a name="enumeration-members"></a>Membres d'énumération
 
 <a id="authentication_cancelled"></a>
 
@@ -134,9 +126,9 @@ ___
 
 <a id="none"></a>
 
-###  <a name="none"></a>AUCUN
+###  <a name="none"></a>NUL
 
-**NONE**: = -1
+**None**: =-1
 
 ___
 

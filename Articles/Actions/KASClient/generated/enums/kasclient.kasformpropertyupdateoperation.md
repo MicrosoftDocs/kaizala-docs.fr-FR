@@ -1,18 +1,10 @@
----
-ms.openlocfilehash: 85637909c5bca0d1362114c74f53fa4bd00c69d0
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727911"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormPropertyUpdateOperation](../enums/kasclient.kasformpropertyupdateoperation.md)
 
-# <a name="enumeration-kasformpropertyupdateoperation"></a>Énumération : KASFormPropertyUpdateOperation
+# <a name="enumeration-kasformpropertyupdateoperation"></a>Énumération: KASFormPropertyUpdateOperation
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres de l’énumération
+### <a name="enumeration-members"></a>Membres d'énumération
 
 * [AddEntriesInValue](kasclient.kasformpropertyupdateoperation.md#addentriesinvalue)
 * [AddProperty](kasclient.kasformpropertyupdateoperation.md#addproperty)
@@ -23,7 +15,7 @@ ms.locfileid: "28727911"
 
 ---
 
-## <a name="enumeration-members"></a>Membres de l’énumération
+## <a name="enumeration-members"></a>Membres d'énumération
 
 <a id="addentriesinvalue"></a>
 

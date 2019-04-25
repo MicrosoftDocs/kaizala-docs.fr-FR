@@ -1,32 +1,24 @@
----
-ms.openlocfilehash: 7530bbe49e390c185f8814b204c9cb1dec1bcfbe
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727933"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [NotificationPriority](../enums/kasclient.notificationpriority.md)
 
-# <a name="enumeration-notificationpriority"></a>Énumération : NotificationPriority
+# <a name="enumeration-notificationpriority"></a>Énumération: NotificationPriority
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres de l’énumération
+### <a name="enumeration-members"></a>Membres d'énumération
 
-* [Élevé](kasclient.notificationpriority.md#high)
+* [High](kasclient.notificationpriority.md#high)
 * [Faible](kasclient.notificationpriority.md#low)
-* [Moyen](kasclient.notificationpriority.md#medium)
+* [Moyenne](kasclient.notificationpriority.md#medium)
 
 ---
 
-## <a name="enumeration-members"></a>Membres de l’énumération
+## <a name="enumeration-members"></a>Membres d'énumération
 
 <a id="high"></a>
 
-###  <a name="high"></a>Élevé
+###  <a name="high"></a>Importante
 
-**Haute**: = 0
+**Élevé**: = 0
 
 ___
 
@@ -40,7 +32,7 @@ ___
 
 <a id="medium"></a>
 
-###  <a name="medium"></a>Moyen
+###  <a name="medium"></a>Moyenne
 
 **Moyenne**: = 1
 

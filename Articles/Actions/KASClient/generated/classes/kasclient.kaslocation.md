@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: f9866ba870c065df049ffcde8b36feac23a3b3d0
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727941"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASLocation](../classes/kasclient.kaslocation.md)
 
-# <a name="class-kaslocation"></a>Classe : KASLocation
+# <a name="class-kaslocation"></a>Classe: KASLocation
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -35,9 +27,9 @@ ms.locfileid: "28727941"
 
 ###  <a name="latitude"></a>latitude
 
-**Latitude ●**: *`number`* = 0
+**● Latitude**: *`number`* = 0
 
-Latitude de l’emplacement
+Latitude de l'emplacement
 
 ___
 
@@ -45,9 +37,9 @@ ___
 
 ###  <a name="longitude"></a>longitude
 
-**Longitude ●**: *`number`* = 0
+**● longitude**: *`number`* = 0
 
-Longitude de l’emplacement
+Longitude de l'emplacement
 
 ___
 
@@ -55,9 +47,9 @@ ___
 
 ###  <a name="placeaddress"></a>placeAddress
 
-**● placeAddress**: *`string`* = « »
+**● placeAddress**: *`string`* = ""
 
-Adresse de l’emplacement
+Adresse de l'emplacement
 
 ___
 
@@ -65,9 +57,9 @@ ___
 
 ###  <a name="placename"></a>placeName
 
-**● placeName**: *`string`* = « »
+**● placename**: *`string`* = ""
 
-Nom de l’emplacement
+Nom de l'emplacement
 
 ___
 
@@ -77,9 +69,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -87,7 +79,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASLocation](kasclient.kaslocation.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASLocation](kasclient.kaslocation.md)
 
 **Paramètres :**
 
@@ -95,7 +87,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASLocation](kasclient.kaslocation.md)
+**Renvoie:** [KASLocation](kasclient.kaslocation.md)
 
 ___
 

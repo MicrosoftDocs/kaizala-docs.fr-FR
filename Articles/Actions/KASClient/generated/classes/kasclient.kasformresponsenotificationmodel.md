@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 94efbe6f80d643bdc930e2c23de6197d8b20d7ad
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727922"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResponseNotificationModel](../classes/kasclient.kasformresponsenotificationmodel.md)
 
-# <a name="class-kasformresponsenotificationmodel"></a>Classe : KASFormResponseNotificationModel
+# <a name="class-kasformresponsenotificationmodel"></a>Classe: KASFormResponseNotificationModel
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -37,7 +29,7 @@ ms.locfileid: "28727922"
 
 ###  <a name="constructor"></a>constructeur
 
-⊕ **KASFormResponseNotificationModel nouveau**(messageTarget? : *[] [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)*, pushTarget? : *[] [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)*, messagePreview? : *`String`*) : [ KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
+⊕ **New KASFormResponseNotificationModel**(MessageTarget?: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*, pushTarget?: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*, messagePreview?: *`String`*): [ KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
 
 **Paramètres :**
 
@@ -47,7 +39,7 @@ ms.locfileid: "28727922"
 | `Default value`pushTarget | [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md) [] |  null |
 | `Default value`messagePreview | `String` |  null |
 
-**Renvoie :** [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
+**Renvoie:** [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
 
 ___
 
@@ -57,7 +49,7 @@ ___
 
 ###  <a name="messagepreview"></a>messagePreview
 
-**● messagePreview**: *`String`* = « »
+**● messagePreview**: *`String`* = ""
 
 ___
 
@@ -65,7 +57,7 @@ ___
 
 ###  <a name="messagetarget"></a>messageTarget
 
-**● messageTarget**: *[] [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)*
+**● messageTarget**: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*
 
 ___
 
@@ -73,7 +65,7 @@ ___
 
 ###  <a name="pushtarget"></a>pushTarget
 
-**● pushTarget**: *[] [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)*
+**● pushTarget**: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*
 
 ___
 
@@ -83,9 +75,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -93,7 +85,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJson
 
-▸ **fromJson**(objet : *`JSON`*) : [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
+▸ **fromJson**(objet: *`JSON`*): [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
 
 **Paramètres :**
 
@@ -101,7 +93,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
+**Renvoie:** [KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
 
 ___
 

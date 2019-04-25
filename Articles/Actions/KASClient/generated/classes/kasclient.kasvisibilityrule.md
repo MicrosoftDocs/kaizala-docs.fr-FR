@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: c7cc393a1e7ac1130de374640d2380137a16072b
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727956"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASVisibilityRule](../classes/kasclient.kasvisibilityrule.md)
 
-# <a name="class-kasvisibilityrule"></a>Classe : KASVisibilityRule
+# <a name="class-kasvisibilityrule"></a>Classe: KASVisibilityRule
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -19,8 +11,8 @@ ms.locfileid: "28727956"
 ### <a name="properties"></a>Propriétés
 
 * [dependencyQuestionId](kasclient.kasvisibilityrule.md#dependencyquestionid)
-* [Id_option](kasclient.kasvisibilityrule.md#optionid)
-* [règle](kasclient.kasvisibilityrule.md#rule)
+* [optionId](kasclient.kasvisibilityrule.md#optionid)
+* [sous](kasclient.kasvisibilityrule.md#rule)
 ### <a name="methods"></a>Méthodes
 
 * [toJSON](kasclient.kasvisibilityrule.md#tojson)
@@ -34,23 +26,23 @@ ms.locfileid: "28727956"
 
 ###  <a name="dependencyquestionid"></a>dependencyQuestionId
 
-**● dependencyQuestionId**: *`string`* = « »
+**● dependencyQuestionId**: *`string`* = ""
 
 ___
 
 <a id="optionid"></a>
 
-###  <a name="optionid"></a>Id_option
+###  <a name="optionid"></a>optionId
 
-**● Id_option**: *`string`* = « »
+**● optionId**: *`string`* = ""
 
 ___
 
 <a id="rule"></a>
 
-###  <a name="rule"></a>règle
+###  <a name="rule"></a>sous
 
-**Règle ●**:*`any`*
+**● règle**:*`any`*
 
 ___
 
@@ -60,9 +52,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -70,7 +62,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASVisibilityRule](kasclient.kasvisibilityrule.md)
+▸ **fromJSON**(objet: *`any`*): [KASVisibilityRule](kasclient.kasvisibilityrule.md)
 
 **Paramètres :**
 
@@ -78,7 +70,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASVisibilityRule](kasclient.kasvisibilityrule.md)
+**Renvoie:** [KASVisibilityRule](kasclient.kasvisibilityrule.md)
 
 ___
 

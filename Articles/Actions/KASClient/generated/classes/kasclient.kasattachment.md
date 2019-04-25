@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 5ea10ec4a326c6ae1ceaae4db8a2994d25e17fce
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727928"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASAttachment](../classes/kasclient.kasattachment.md)
 
-# <a name="class-kasattachment"></a>Classe : KASAttachment
+# <a name="class-kasattachment"></a>Classe: KASAttachment
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -49,7 +41,7 @@ ms.locfileid: "28727928"
 
 ###  <a name="attachmentid"></a>attachmentId
 
-**● attachmentId**: *`string`* = « »
+**● attachmentId**: *`string`* = ""
 
 ___
 
@@ -57,7 +49,7 @@ ___
 
 ###  <a name="filename"></a>fileName
 
-**● le nom de fichier**: *`string`* = « »
+**● filename**: *`string`* = ""
 
 ___
 
@@ -73,7 +65,7 @@ ___
 
 ###  <a name="localpath"></a>localPath
 
-**● localPath**: *`string`* = « »
+**● LocalPath**: *`string`* = ""
 
 ___
 
@@ -89,23 +81,23 @@ ___
 
 ###  <a name="serverpath"></a>serverPath
 
-**● serverPath**: *`string`* = « »
+**● ServerPath**: *`string`* = ""
 
 ___
 
 <a id="size"></a>
 
-###  <a name="size"></a>size
+###  <a name="size"></a>taille
 
-**Taille ●**: *`number`* = 0
+**● taille**: *`number`* = 0
 
 ___
 
 <a id="thumbnail"></a>
 
-###  <a name="thumbnail"></a>miniature
+###  <a name="thumbnail"></a>icône
 
-**Miniature ●**: *`string`* = « »
+**● miniature**: *`string`* = ""
 
 ___
 
@@ -113,7 +105,7 @@ ___
 
 ###  <a name="type"></a>type
 
-**Type ●**: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)* = KASAttachmentType.Image
+**● type**: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)* = KASAttachmentType. image
 
 ___
 
@@ -123,11 +115,11 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-Les clés de chaîne suivantes (« ty », « bande afn », « asb », etc.) DOIT être synchronisée avec la représentation du modèle objet des pièces jointes dans iOS et Android code. Ceci est essentiel appropriée sérialisation et la désérialisation sur le pont KAS.
+Les clés de chaîne suivantes («Ty», «AFN», «ASB», etc.) DOIT être synchronisé avec la représentation du modèle objet pièce jointe dans iOS et le code Android. Cette étape est essentielle pour la sérialisation et la désérialisation appropriées sur le pont KAS.
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -135,7 +127,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASAttachment](kasclient.kasattachment.md)
+▸ **fromJSON**(objet: *`any`*): [KASAttachment](kasclient.kasattachment.md)
 
 **Paramètres :**
 
@@ -143,7 +135,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASAttachment](kasclient.kasattachment.md)
+**Renvoie:** [KASAttachment](kasclient.kasattachment.md)
 
 ___
 
@@ -151,15 +143,15 @@ ___
 
 ### <a name="static-haslocalpath"></a>`<Static>`hasLocalPath
 
-▸ **hasLocalPath**(obj : *[KASAttachment](kasclient.kasattachment.md)*) :`boolean`
+▸ **hasLocalPath**(obj: *[KASAttachment](kasclient.kasattachment.md)*):`boolean`
 
 **Paramètres :**
 
 | Nom | Type |
 | ------ | ------ |
-| obj | [KASAttachment](kasclient.kasattachment.md) |
+| 5.5 | [KASAttachment](kasclient.kasattachment.md) |
 
-**Renvoie :** `boolean`
+**Renvoie:**`boolean`
 
 ___
 
@@ -167,15 +159,15 @@ ___
 
 ### <a name="static-hasserverpath"></a>`<Static>`hasServerPath
 
-▸ **hasServerPath**(obj : *[KASAttachment](kasclient.kasattachment.md)*) :`boolean`
+▸ **hasServerPath**(obj: *[KASAttachment](kasclient.kasattachment.md)*):`boolean`
 
 **Paramètres :**
 
 | Nom | Type |
 | ------ | ------ |
-| obj | [KASAttachment](kasclient.kasattachment.md) |
+| 5.5 | [KASAttachment](kasclient.kasattachment.md) |
 
-**Renvoie :** `boolean`
+**Renvoie:**`boolean`
 
 ___
 
@@ -183,7 +175,7 @@ ___
 
 ### <a name="static-populatemodelfromjson"></a>`<Static>`populateModelFromJSON
 
-▸ **populateModelFromJSON**(pièces jointes : *[KASAttachment](kasclient.kasattachment.md)*, l’objet : *`JSON`*) :`void`
+▸ **populateModelFromJSON**(attachment: *[KASAttachment](kasclient.kasattachment.md)*, Object *`JSON`*:):`void`
 
 **Paramètres :**
 
@@ -192,7 +184,7 @@ ___
 | pièce jointe | [KASAttachment](kasclient.kasattachment.md) |
 | objet | `JSON` |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 

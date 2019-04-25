@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 1e51f3aa34eb9a0a229cae1d4fd25be002447a1e
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727940"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASQuestionResult](../classes/kasclient.kasquestionresult.md)
 
-# <a name="class-kasquestionresult"></a>Classe : KASQuestionResult
+# <a name="class-kasquestionresult"></a>Classe: KASQuestionResult
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -49,7 +41,7 @@ ___
 
 ###  <a name="questiontitle"></a>questionTitle
 
-**● questionTitle**: *`string`* = « »
+**● questionTitle**: *`string`* = ""
 
 Titre de la question
 
@@ -59,7 +51,7 @@ ___
 
 ###  <a name="questiontype"></a>questionType
 
-**● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* = KASQuestionType.None
+**● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* = KASQuestionType. None
 
 Type de la question
 
@@ -71,7 +63,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASQuestionResult](kasclient.kasquestionresult.md)
+▸ **fromJSON**(objet: *`any`*): [KASQuestionResult](kasclient.kasquestionresult.md)
 
 **Paramètres :**
 
@@ -79,7 +71,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASQuestionResult](kasclient.kasquestionresult.md)
+**Renvoie:** [KASQuestionResult](kasclient.kasquestionresult.md)
 
 ___
 

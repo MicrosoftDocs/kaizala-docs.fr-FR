@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 84e9530593e8850a0cf354ae2e07c77e0b68db75
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727909"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormResponse](../classes/kasclient.kasformresponse.md)
 
-# <a name="class-kasformresponse"></a>Classe : KASFormResponse
+# <a name="class-kasformresponse"></a>Classe: KASFormResponse
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -39,9 +31,9 @@ ms.locfileid: "28727909"
 
 ###  <a name="groupid"></a>groupId
 
-**● groupId**: *`string`* = « »
+**● GroupID**: *`string`* = ""
 
-Id de groupe
+ID de groupe
 
 ___
 
@@ -49,7 +41,7 @@ ___
 
 ###  <a name="groupname"></a>groupName
 
-**● groupName**: *`string`* = « »
+**● GroupName**: *`string`* = ""
 
 Nom du groupe
 
@@ -59,9 +51,9 @@ ___
 
 ###  <a name="id"></a>id
 
-**Id ●**: *`string`* = « »
+**● ID**: *`string`* = ""
 
-Un id réponse unique, requis en cas de mise à jour d’une réponse existante
+Un ID de réponse unique, requis en cas de mise à jour d'une réponse existante
 
 ___
 
@@ -71,7 +63,7 @@ ___
 
 **● questionToAnswerMap**:*`object`*
 
-Un mappage d’id de question pour répondre aux Dictionary<QuestionId : nombre, réponse : string>
+Une carte de l'ID de question pour répondre à Dictionary<QuestionId: Number, Answer: string>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
@@ -80,9 +72,9 @@ ___
 
 ###  <a name="responderid"></a>responderId
 
-**● responderId**: *`string`* = « »
+**● responderId**: *`string`* = ""
 
-Identificateur de réponse
+ID du répondeur
 
 ___
 
@@ -90,7 +82,7 @@ ___
 
 ###  <a name="respondername"></a>responderName
 
-**● responderName**: *`string`* = « »
+**● responderName**: *`string`* = ""
 
 Nom du répondeur
 
@@ -100,9 +92,9 @@ ___
 
 ###  <a name="sendstatus"></a>sendStatus
 
-**● sendStatus**: *[KASFormMessageSendStatus](../enums/kasclient.kasformmessagesendstatus.md)* = KASFormMessageSendStatus.Unknown
+**● sendStatus**: *[KASFormMessageSendStatus](../enums/kasclient.kasformmessagesendstatus.md)* = KASFormMessageSendStatus. Unknown
 
-État d’envoyer de message de réponse
+État de l'envoi du message de réponse
 
 ___
 
@@ -112,7 +104,7 @@ ___
 
 **● sendTime**: *`number`* = 0
 
-Envoyer le temps de réponse
+Heure d'envoi de la réponse
 
 ___
 
@@ -122,7 +114,7 @@ ___
 
 **● serverToLocalAssetUrlMap**:*`object`*
 
-Un mappage pour la propriété serverUrl par rapport à localUrl de toutes les pièces jointes image pour une réponse Dictionary<ServerUrl : chaîne, LocalUrl : string>
+Une carte pour l'localUrl de toutes les pièces jointes d'image à une réponse Dictionary<ServerUrl: chaîne, LocalUrl: string>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
@@ -133,7 +125,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASFormResponse](kasclient.kasformresponse.md)
+▸ **fromJSON**(objet: *`any`*): [KASFormResponse](kasclient.kasformresponse.md)
 
 **Paramètres :**
 
@@ -141,7 +133,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASFormResponse](kasclient.kasformresponse.md)
+**Renvoie:** [KASFormResponse](kasclient.kasformresponse.md)
 
 ___
 

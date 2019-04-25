@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 9520800959a0ff479ccd0d87895c1e045fbbe24c
-ms.sourcegitcommit: 04ef38ff8e68cf1697371551aed1ffb254a69649
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "29379426"
----
 [](../README.md) > [KASClient](../modules/kasclient.md)
 
-# <a name="module-kasclient"></a>Module : KASClient
+# <a name="module-kasclient"></a>Module: KASClient
 
 ## <a name="index"></a>Index
 
@@ -43,7 +35,7 @@ ms.locfileid: "29379426"
 * [KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)
 * [NotificationPriority](../enums/kasclient.notificationpriority.md)
 * [UrlAction](../enums/kasclient.urlaction.md)
-* [PrésentationTapez](../enums/kasclient.urltype.md)
+* [UrlType](../enums/kasclient.urltype.md)
 
 ### <a name="classes"></a>Classes
 
@@ -107,7 +99,7 @@ ms.locfileid: "29379426"
 
 ###  <a name="getfilteredparticipantrole"></a>getFilteredParticipantRole
 
-▸ **getFilteredParticipantRole**(rôle : *`any`*) : [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
+▸ **getFilteredParticipantRole**(Role: *`any`*): [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
 **Paramètres :**
 
@@ -115,7 +107,7 @@ ms.locfileid: "29379426"
 | ------ | ------ |
 | role | `any` |
 
-**Renvoie :** [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
+**Renvoie:** [KASParticipantRole](../enums/kasclient.kasparticipantrole.md)
 
 ___
 
@@ -123,7 +115,7 @@ ___
 
 ###  <a name="getfilteredparticipanttype"></a>getFilteredParticipantType
 
-▸ **getFilteredParticipantType**(type : *`any`*) : [KASParticipantType](../enums/kasclient.kasparticipanttype.md)
+▸ **getFilteredParticipantType**(type: *`any`*): [KASParticipantType](../enums/kasclient.kasparticipanttype.md)
 
 **Paramètres :**
 
@@ -131,7 +123,7 @@ ___
 | ------ | ------ |
 | type | `any` |
 
-**Renvoie :** [KASParticipantType](../enums/kasclient.kasparticipanttype.md)
+**Renvoie:** [KASParticipantType](../enums/kasclient.kasparticipanttype.md)
 
 ___
 

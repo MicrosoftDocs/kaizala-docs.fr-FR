@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 09c4d04d850198f957d919149327b0cf910e2a6d
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727946"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASImageQuestionConfig](../classes/kasclient.kasimagequestionconfig.md)
 
-# <a name="class-kasimagequestionconfig"></a>Classe : KASImageQuestionConfig
+# <a name="class-kasimagequestionconfig"></a>Classe: KASImageQuestionConfig
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -38,7 +30,7 @@ ms.locfileid: "28727946"
 
 ###  <a name="defaultcamerafiltermode"></a>defaultCameraFilterMode
 
-**● defaultCameraFilterMode**: *[CameraFilterMode](../enums/kasclient.camerafiltermode.md)* = CameraFilterMode.Photo
+**● defaultCameraFilterMode**: *[CameraFilterMode](../enums/kasclient.camerafiltermode.md)* = CameraFilterMode. photo
 
 ___
 
@@ -46,7 +38,7 @@ ___
 
 ###  <a name="imagesource"></a>imageSource
 
-**● imageSource**: *[ImagePickerSource](../enums/kasclient.imagepickersource.md)* = ImagePickerSource.All
+**● imageSource**: *[ImagePickerSource](../enums/kasclient.imagepickersource.md)* = ImagePickerSource. All
 
 ___
 
@@ -62,7 +54,7 @@ ___
 
 ### <a name="static-defaultcamerafiltermode"></a>`<Static>`DEFAULT_CAMERA_FILTER_MODE
 
-**● DEFAULT_CAMERA_FILTER_MODE**: *`string`* = « dcfm »
+**● DEFAULT_CAMERA_FILTER_MODE**: *`string`* = "DCFM"
 
 ___
 
@@ -70,7 +62,7 @@ ___
 
 ### <a name="static-imagesourcekey"></a>`<Static>`IMAGE_SOURCE_KEY
 
-**● IMAGE_SOURCE_KEY**: *`string`* = « est »
+**● IMAGE_SOURCE_KEY**: *`string`* = "is"
 
 ___
 
@@ -80,9 +72,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -90,7 +82,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASImageQuestionConfig](kasclient.kasimagequestionconfig.md)
+▸ **fromJSON**(objet: *`any`*): [KASImageQuestionConfig](kasclient.kasimagequestionconfig.md)
 
 **Paramètres :**
 
@@ -98,7 +90,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASImageQuestionConfig](kasclient.kasimagequestionconfig.md)
+**Renvoie:** [KASImageQuestionConfig](kasclient.kasimagequestionconfig.md)
 
 ___
 

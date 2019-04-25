@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: d17c8b40deb0c4e1bc4d4ef6be0c448297d726b5
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727944"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)
 
-# <a name="class-kasactionpackageproperties"></a>Classe : KASActionPackageProperties
+# <a name="class-kasactionpackageproperties"></a>Classe: KASActionPackageProperties
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -33,7 +25,7 @@ ms.locfileid: "28727944"
 
 ###  <a name="actionpackageid"></a>actionPackageId
 
-**● actionPackageId**: *`string`* = « »
+**● actionPackageId**: *`string`* = ""
 
 ___
 
@@ -41,7 +33,7 @@ ___
 
 ###  <a name="json"></a>json
 
-**● json**:*`JSON`*
+**● JSON**:*`JSON`*
 
 ___
 
@@ -49,7 +41,7 @@ ___
 
 ###  <a name="properties"></a>properties
 
-**Propriétés ●**:*`JSON`*
+**● Propriétés**:*`JSON`*
 
 ___
 
@@ -59,7 +51,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASActionPackageProperties](kasclient.kasactionpackageproperties.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASActionPackageProperties](kasclient.kasactionpackageproperties.md)
 
 **Paramètres :**
 
@@ -67,7 +59,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASActionPackageProperties](kasclient.kasactionpackageproperties.md)
+**Renvoie:** [KASActionPackageProperties](kasclient.kasactionpackageproperties.md)
 
 ___
 

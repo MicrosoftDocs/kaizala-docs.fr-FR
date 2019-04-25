@@ -1,29 +1,21 @@
----
-ms.openlocfilehash: ea730df0e2d9b0a8f26168c422b1d7636b363f10
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727934"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASAttachmentType](../enums/kasclient.kasattachmenttype.md)
 
-# <a name="enumeration-kasattachmenttype"></a>Énumération : KASAttachmentType
+# <a name="enumeration-kasattachmenttype"></a>Énumération: KASAttachmentType
 
-Les valeurs d’énumération suivantes doivent être synchronisées avec la représentation d’énumération AttachmentType dans iOS et Android code. Ceci est essentiel appropriée sérialisation et la désérialisation sur le pont KAS.
+Les valeurs d'énumération suivantes doivent être synchronisées avec la représentation d'énumération AttachmentType dans le code iOS et Android. Cette étape est essentielle pour la sérialisation et la désérialisation appropriées sur le pont KAS.
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres de l’énumération
+### <a name="enumeration-members"></a>Membres d'énumération
 
-* [Audio](kasclient.kasattachmenttype.md#audio)
+* [Signaux](kasclient.kasattachmenttype.md#audio)
 * [Document](kasclient.kasattachmenttype.md#document)
-* [Generic](kasclient.kasattachmenttype.md#generic)
+* [Générique](kasclient.kasattachmenttype.md#generic)
 * [Image](kasclient.kasattachmenttype.md#image)
 * [Video](kasclient.kasattachmenttype.md#video)
 
 ---
 
-## <a name="enumeration-members"></a>Membres de l’énumération
+## <a name="enumeration-members"></a>Membres d'énumération
 
 <a id="audio"></a>
 

@@ -1,18 +1,10 @@
----
-ms.openlocfilehash: f33333ae61040460dc0386fee6a1f1cc118128be
-ms.sourcegitcommit: 04ef38ff8e68cf1697371551aed1ffb254a69649
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "29379428"
----
-[](../README.md) > [KASClient](../modules/kasclient.md) > [formulaire](../modules/kasclient.form.md)
+[](../README.md) > [](../modules/kasclient.md) > [Formulaire](../modules/kasclient.form.md) KASClient
 
-# <a name="module-form"></a>Module : formulaire
+# <a name="module-form"></a>Module: formulaire
 
 ## <a name="index"></a>Index
 
-### <a name="creation"></a>Création
+### <a name="creation"></a>Sa
 
 * [initFormAsync](kasclient.form.md#initformasync)
 * [submitFormRequestV2](kasclient.form.md#submitformrequestv2)
@@ -51,17 +43,17 @@ ms.locfileid: "29379428"
 
 ---
 
-## <a name="creation"></a>Création
+## <a name="creation"></a>Sa
 
 <a id="initformasync"></a>
 
 ###  <a name="initformasync"></a>initFormAsync
 
-▸ **initFormAsync**(rappel : *`function`*) :`void`
+▸ **initFormAsync**(callback: *`function`*):`void`
 
-Initialise et renvoie un objet de formulaire vide basé sur le fichier de formulaire par défaut dans le package
+Initialise et renvoie un objet Form vide basé sur le fichier de formulaire par défaut présent dans le package.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.Form.initFormAsync(function (form, error) {
@@ -75,9 +67,9 @@ KASClient.Form.initFormAsync(function (form, error) {
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*formulaire @param {KASForm} peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param formulaire {KASForm} peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -85,19 +77,19 @@ ___
 
 ###  <a name="submitformrequestv2"></a>submitFormRequestV2
 
-▸ **submitFormRequestV2**(formulaire : *[KASForm](../classes/kasclient.kasform.md)*, shouldDismiss? : *`boolean`*, shouldSendToSubscribers? : *`boolean`*) :`void`
+▸ **submitFormRequestV2**(Form: *[KASForm](../classes/kasclient.kasform.md)*, shouldDismiss?: *`boolean`*, shouldSendToSubscribers?: *`boolean`*):`void`
 
-Envoie le formulaire nouvellement créé en tant que demande. Cette action entraîne une nouvelle carte de conversation
+Envoie le formulaire nouvellement créé sous la forme d'une requête. Cela aboutit à une nouvelle carte de conversation
 
 **Paramètres :**
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
 | formulaire | [KASForm](../classes/kasclient.kasform.md) | - |  \- |
-| `Default value`shouldDismiss | `boolean` | false |  valeur True si le formulaire doit être fermé après l’envoi ; False dans le cas contraire |
+| `Default value`shouldDismiss | `boolean` | false |  true si le formulaire doit être fermé lors de l'envoi; false dans le cas contraire |
 | `Default value`shouldSendToSubscribers | `boolean` | true |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -105,18 +97,18 @@ ___
 
 ###  <a name="submitformrequestwithoutdismiss"></a>submitFormRequestWithoutDismiss
 
-▸ **submitFormRequestWithoutDismiss**(formulaire : *[KASForm](../classes/kasclient.kasform.md)*, shouldInflate : *`boolean`*) :`void`
+▸ **submitFormRequestWithoutDismiss**(Form: *[KASForm](../classes/kasclient.kasform.md)*, shouldInflate: *`boolean`*):`void`
 
-Envoie le formulaire nouvellement créé en tant que demande. Cette action entraîne une nouvelle carte de conversation
+Envoie le formulaire nouvellement créé sous la forme d'une requête. Cela aboutit à une nouvelle carte de conversation
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
 | formulaire | [KASForm](../classes/kasclient.kasform.md) |  \- |
-| shouldInflate | `boolean` |  Boolean – devrait pas augmenter |
+| shouldInflate | `boolean` |  Boolean – doit être gonflé/non |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -124,11 +116,11 @@ ___
 
 ###  <a name="updateform"></a>updateForm
 
-▸ **updateForm**(champs : *`string`*, shouldInflate : *`boolean`*, rappel : *`function`*) :`void`
+▸ **updateForm**(Fields *`string`*:, shouldInflate *`boolean`*:, callback *`function`*:):`void`
 
-Utilisez cette option pour apporter des modifications dans les champs de formulaire comme titre, description et paramètres.
+Utilisez pour apporter des modifications aux champs de formulaire comme le titre, la description et les paramètres.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
   var fieldsToUpdate = {"title" : "<updated title", "exp" : "<expiry time>",
@@ -144,11 +136,11 @@ Utilisez cette option pour apporter des modifications dans les champs de formula
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| champs | `string` |  chaîne JSON de champs qui nécessitent la mise à jour |
-| shouldInflate | `boolean` |  Boolean – devrait pas augmenter |
-| callback | `function` |  avec sous Paramètres :<br><br>\*valeur true réussite @param {boolean} si la mise à jour a réussi ; False dans le cas contraire |
+| champs | `string` |  chaîne JSON de champs nécessitant une mise à jour |
+| shouldInflate | `boolean` |  Boolean – doit être gonflé/non |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} Success true si la mise à jour a réussi; false dans le cas contraire |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -158,17 +150,17 @@ ___
 
 ###  <a name="canrespondtoformasync"></a>canRespondToFormAsync
 
-▸ **canRespondToFormAsync**(rappel : *`function`*) :`void`
+▸ **canRespondToFormAsync**(callback: *`function`*):`void`
 
-Indique si l’utilisateur actuel peut répondre à l’écran
+Indique si l'utilisateur actuel peut répondre au formulaire.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {boolean} canRespond true en cours si l’utilisateur est autorisé à répondre |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} canRespond true si l'utilisateur actuel est autorisé à répondre |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -176,17 +168,17 @@ ___
 
 ###  <a name="getformasync"></a>getFormAsync
 
-▸ **getFormAsync**(rappel : *`function`*) :`void`
+▸ **getFormAsync**(callback: *`function`*):`void`
 
-Obtient l’objet de formulaire associé à la carte de conversation
+Obtient l'objet de formulaire associé à la carte de conversation.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*formulaire @param {KASForm} peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param formulaire {KASForm} peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -194,17 +186,17 @@ ___
 
 ###  <a name="getformstatusasync"></a>getFormStatusAsync
 
-▸ **getFormStatusAsync**(rappel : *`function`*) :`void`
+▸ **getFormStatusAsync**(callback: *`function`*):`void`
 
-Obtient l’état du formulaire associé à la carte de conversation
+Obtient l'état du formulaire associé à la carte de conversation.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {boolean} isActive true si le formulaire n’est pas encore terminée.<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} isActive true si le formulaire n'a pas encore expiré<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -212,18 +204,18 @@ ___
 
 ###  <a name="getmyformresponsesasync"></a>getMyFormResponsesAsync
 
-▸ **getMyFormResponsesAsync**(rappel : *`function`*, onlyCurrentResponse? : *`boolean`*) :`void`
+▸ **getMyFormResponsesAsync**(callback: *`function`*, onlyCurrentResponse?: *`boolean`*):`void`
 
-Obtient toutes les réponses de l’utilisateur actuel par rapport à l’écran
+Obtient toutes les réponses de l'utilisateur actuel sur le formulaire.
 
 **Paramètres :**
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
-| callback | `function` | - |  avec les paramètres ci-dessous :<br><br>\*@param {KASFormResponse\[\]} réponses peuvent être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
-| `Default value`onlyCurrentResponse | `boolean` | true |  Applicable d’Actions de réponse où cette méthode retourne uniquement la réponse en cours dans le contexte, définissez cet indicateur sur false pour extraire toutes les réponses à la place. Valeur par défaut est true |
+| callback | `function` | - |  avec les paramètres suivants:<br><br>\*@param les réponses\[\]{KASFormResponse} peuvent être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
+| `Default value`onlyCurrentResponse | `boolean` | true |  Applicable aux actions de réponse pour lesquelles cette méthode renvoie uniquement la réponse actuelle dans le contexte, affectez la valeur false à cet indicateur pour extraire toutes les réponses à la place. La valeur par défaut est true |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -231,11 +223,11 @@ ___
 
 ###  <a name="sumbitformresponse"></a>sumbitFormResponse
 
-▸ **sumbitFormResponse**(questionToAnswerMap : *`JSON`*, responseId : *`string`*, isEdit : *`boolean`*, showInChatCanvas : *`boolean`*, é anonyme : *`boolean`*) :`void`
+▸ **sumbitFormResponse**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*):`void`
 
-Envoie une réponse par rapport à la forme associée à la carte de conversation ce sera faire disparaître l’écran en cours
+Envoie une nouvelle réponse au formulaire associé à la carte de conversation cette opération va faire disparaître l'écran actuel.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var questionToAnswerMap = JSON.parse("{}");
@@ -264,13 +256,13 @@ Now questionToAnswerMap for this should look like this {1: "<answer>"}
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| questionToAnswerMap | `JSON` |  id de la question pour répondre aux mappage |
-| responseId | `string` |  à remplir si la réponse en cours est une modification/mise à jour une précédente |
-| isEdit | `boolean` |  Indique si la réponse en cours est une modification/mise à jour une précédente |
-| showInChatCanvas | `boolean` |  Indique si une carte de conversation distinct doit être créé pour cette réponse ou non |
-| é anonyme | `boolean` |  Indique si la réponse doit être enregistrée en tant qu’anonyme ou non |
+| questionToAnswerMap | `JSON` |  ID de la question pour répondre au mappage |
+| responseId | `string` |  à remplir si la réponse actuelle est une modification ou mise à jour d'une précédente |
+| isEdit | `boolean` |  indique si la réponse actuelle est une modification ou mise à jour d'une précédente |
+| showInChatCanvas | `boolean` |  indique si une carte de conversation distincte doit être créée pour cette réponse ou non. |
+| isAnonymous | `boolean` |  indique si la réponse doit être inscrite comme anonyme ou non |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -278,11 +270,11 @@ ___
 
 ###  <a name="sumbitformresponsewithoutdismiss"></a>sumbitFormResponseWithoutDismiss
 
-▸ **sumbitFormResponseWithoutDismiss**(questionToAnswerMap : *`JSON`*, responseId : *`string`*, isEdit : *`boolean`*, showInChatCanvas : *`boolean`*, é anonyme : *`boolean`*) :`void`
+▸ **sumbitFormResponseWithoutDismiss**(questionToAnswerMap: *`JSON`*, responseId: *`string`*, isEdit: *`boolean`*, showInChatCanvas: *`boolean`*, isAnonymous: *`boolean`*):`void`
 
-Envoie une réponse par rapport à la forme associée à la carte de conversation, cela ne faire disparaître l’écran en cours
+Envoie une nouvelle réponse au formulaire associé à la carte de conversation qui ne refermera pas l'écran actuel.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var questionToAnswerMap = JSON.parse("{}");
@@ -298,13 +290,13 @@ KASClient.Form.sumbitFormResponseWithoutDismiss(questionToAnswerMap,
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| questionToAnswerMap | `JSON` |  id de la question pour répondre aux mappage |
-| responseId | `string` |  à remplir si la réponse en cours est une modification/mise à jour une précédente |
-| isEdit | `boolean` |  Indique si la réponse en cours est une modification/mise à jour une précédente |
-| showInChatCanvas | `boolean` |  Indique si une carte de conversation distinct doit être créé pour cette réponse ou non |
-| é anonyme | `boolean` |  Indique si la réponse doit être enregistrée en tant qu’anonyme ou non |
+| questionToAnswerMap | `JSON` |  ID de la question pour répondre au mappage |
+| responseId | `string` |  à remplir si la réponse actuelle est une modification ou mise à jour d'une précédente |
+| isEdit | `boolean` |  indique si la réponse actuelle est une modification ou mise à jour d'une précédente |
+| showInChatCanvas | `boolean` |  indique si une carte de conversation distincte doit être créée pour cette réponse ou non. |
+| isAnonymous | `boolean` |  indique si la réponse doit être inscrite comme anonyme ou non |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -317,7 +309,7 @@ ___
 **Ƭ FormSummaryCallback**:*`function`*
 
 #### <a name="type-declaration"></a>Déclaration de type
-▸ (flatSummary : *[KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)*, processedSummary : *[KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)*, erreur : *`string`*) :`void`
+▸ (flatSummary: *[KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)*, ProcessedSummary: *[KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md)*, Error: *`string`*):`void`
 
 **Paramètres :**
 
@@ -327,7 +319,7 @@ ___
 | processedSummary | [KASFormProcessedSummary](../classes/kasclient.kasformprocessedsummary.md) |
 | error | `string` |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -335,9 +327,9 @@ ___
 
 ###  <a name="addcommentonform"></a>addCommentOnForm
 
-▸ **addCommentOnForm**(commentaire : *`string`*) :`void`
+▸ **addCommentOnForm**(Commentaire: *`string`*):`void`
 
-Demandes d’ajout d’un commentaire à un formulaire
+Demandes d'ajout d'un commentaire à un formulaire
 
 **Paramètres :**
 
@@ -345,7 +337,7 @@ Demandes d’ajout d’un commentaire à un formulaire
 | ------ | ------ |
 | commentaire | `string` |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -353,11 +345,11 @@ ___
 
 ###  <a name="closeform"></a>closeForm
 
-▸ **closeForm**() :`void`
+▸ **closeForm**():`void`
 
-Ferme le formulaire associé à la carte, aucune réponse ne sera autorisée supplémentaire
+Ferme le formulaire associé à la carte, aucune réponse n'est autorisée.
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -365,11 +357,11 @@ ___
 
 ###  <a name="copyformandforward"></a>copyFormAndForward
 
-▸ **copyFormAndForward**() :`void`
+▸ **copyFormAndForward**():`void`
 
-Lance le sélecteur de conversation pour transférer une copie du formulaire existant en tant qu’une nouvelle carte de conversation
+Lance le sélecteur de conversation pour transférer une copie du formulaire existant en tant que nouvelle carte de conversation
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -377,14 +369,14 @@ ___
 
 ###  <a name="getactioninstancelocaldatacacheasync"></a>getActionInstanceLocalDataCacheAsync
 
-▸ **getActionInstanceLocalDataCacheAsync**(rappel : *`function`*) :`void`
+▸ **getActionInstanceLocalDataCacheAsync**(callback: *`function`*):`void`
 
-Récupère les propriétés ActionInstance à partir du cache de données local, le cas échéant ces propriétés sont stockées à une action au niveau de l’instance. Ainsi, les données locales enregistrées pour l’instance de l’action particulière seront renvoyées par cette API.
+Récupère les propriétés ActionInstance à partir du cache de données local si celles-ci sont stockées au niveau d'une instance d'action. Par conséquent, les données locales enregistrées pour l'instance d'action particulière seront retournées par cette API.
 #### <a name="note"></a>Remarque
 
-Cette API ne fonctionne pas comme prévu en cas d’historique des messages.
+Cette API ne fonctionne pas comme prévu en cas de messages historiques.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.Form.getActionInstanceLocalDataCacheAsync(function (actionPackageProperties, error) {
@@ -400,9 +392,9 @@ KASClient.Form.getActionInstanceLocalDataCacheAsync(function (actionPackagePrope
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {KASActionProperties} actionProperties ActionInstance/formulaire Propriétés<br><br>\*chaîne json d’erreur de @param {chaîne} pour l’objet KASError contenant la description et/ou le code d’erreur. |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {KASActionProperties} Actionpropriétés ActionInstance/propriétés du formulaire<br><br>\*@param valeur de chaîne JSON de l'erreur {String} pour l'objet KASError contenant un code d'erreur et/ou une description. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -410,14 +402,14 @@ ___
 
 ###  <a name="getactionpackagelocaldatacacheasync"></a>getActionPackageLocalDataCacheAsync
 
-▸ **getActionPackageLocalDataCacheAsync**(rappel : *`function`*) :`void`
+▸ **getActionPackageLocalDataCacheAsync**(callback: *`function`*):`void`
 
-Récupère les propriétés de Package d’Action à partir du cache de données local, le cas échéant ces propriétés sont enregistrées au niveau du lot d’action. Pour toutes les instances de l’action créés à partir de ce package action reçoit les mêmes données.
+Extrait les propriétés de package d'action à partir du cache de données local s'il en existe une quelconque, ces propriétés sont enregistrées au niveau du package d'action. Par conséquent, toutes les instances d'action créées à partir de ce package d'action recevront les mêmes données.
 #### <a name="note"></a>Remarque
 
-Cette API ne fonctionne pas comme prévu en cas d’historique des messages.
+Cette API ne fonctionne pas comme prévu en cas de messages historiques.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProperties, error) {
@@ -433,9 +425,9 @@ KASClient.Form.getActionPackageLocalDataCacheAsync(function (actionPackageProper
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*@param {KASActionPackageProperties} actionPackageProperties propriétés d’Action de Package<br><br>\*chaîne json d’erreur de @param {chaîne} pour l’objet KASError contenant la description et/ou le code d’erreur. |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param les propriétés de package d'action actionPackageProperties {KASActionPackageProperties}<br><br>\*@param valeur de chaîne JSON de l'erreur {String} pour l'objet KASError contenant un code d'erreur et/ou une description. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -443,17 +435,17 @@ ___
 
 ###  <a name="getformreactionasync"></a>getFormReactionAsync
 
-▸ **getFormReactionAsync**(rappel : *`function`*) :`void`
+▸ **getFormReactionAsync**(callback: *`function`*):`void`
 
-Obtient la réaction consolidée (J’aime et commentaires) de la carte de conversation associée au formulaire
+Obtient la réaction consolidée (j'aime et les commentaires) de la carte de conversation associée au formulaire.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*réaction @param {KASFormReaction} peut être nulle en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param la réaction {KASFormReaction} peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -461,14 +453,14 @@ ___
 
 ###  <a name="getformsummaryasync"></a>getFormSummaryAsync
 
-▸ **getFormSummaryAsync**(mostUpdatedCallback : *[FormSummaryCallback](kasclient.form.md#formsummarycallback)*, notifyCallback : *[FormSummaryCallback](kasclient.form.md#formsummarycallback)*) :`void`
+▸ **getFormSummaryAsync**(MostUpdatedCallback: *[FormSummaryCallback](kasclient.form.md#formsummarycallback)*, notifyCallback: *[FormSummaryCallback](kasclient.form.md#formsummarycallback)*):`void`
 
-Obtient plat réponses par tous les utilisateurs et traités résumé à partir de toutes les réponses associé au formulaire. Elle nécessite deux rappels :
+Obtient les réponses plates de tous les utilisateurs et le résumé traité de toutes les réponses associées au formulaire. Il nécessite deux rappels:
 #### <a name="note"></a>Remarque
 
-Cela est utile lorsque le réseau est peu fiable/déconnecté, ce résumé peut être affiché immédiatement avec les données présentes, que nous avons, mais avec une option pour actualiser une version ultérieure sur réception des données les plus récentes à partir du serveur. Aucun des rappels sont obligatoires, si 1er est nul, cette méthode peut être utilisée pour extraire toujours résumé du serveur et si 2ème est zéro, cela peut être utilisé pour extraire toujours résumé de base de données locale !
+Ceci est utile lorsque le réseau est en regard/déconnecté, de sorte que le résumé peut immédiatement être affiché avec les données actuelles dont nous disposons, mais avec une option permettant de l'actualiser ultérieurement à l'arrivée des données les plus récentes à partir du serveur. Aucun des rappels n'est obligatoire, donc si le 1er est Nil, cette méthode peut être utilisée pour toujours extraire le résumé du serveur, et si 2nd est Nil, il peut être utilisé pour toujours extraire le résumé à partir de la base de données locale!
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.Form.getFormSummaryAsync(
@@ -488,10 +480,10 @@ KASClient.Form.getFormSummaryAsync(
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| mostUpdatedCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  Pour obtenir immédiatement le résumé de la plus à jour à partir de la base de données locale. Il a paramètres ci-dessous :<br><br>\*@param {KASFormFlatSummary} flatSummary peut être une valeur null en cas d’erreur<br><br>\*@param {KASFormProcessedSummary} processedSummary peut être une valeur null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
-| notifyCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  Pour recevoir un avertissement la synthèse le plus récent extraites du serveur. Il a paramètres ci-dessous :<br><br>\*@param {KASFormFlatSummary} flatSummary peut être une valeur null en cas d’erreur<br><br>\*@param {KASFormProcessedSummary} processedSummary peut être une valeur null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| mostUpdatedCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  pour obtenir immédiatement le récapitulatif le plus mis à jour à partir de la base de données locale. Elle comporte les paramètres suivants:<br><br>\*@param {KASFormFlatSummary} flatSummary peut être null en cas d'erreur<br><br>\*@param {KASFormProcessedSummary} processedSummary peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
+| notifyCallback | [FormSummaryCallback](kasclient.form.md#formsummarycallback) |  pour recevoir une notification avec le dernier Résumé extrait du serveur. Elle comporte les paramètres suivants:<br><br>\*@param {KASFormFlatSummary} flatSummary peut être null en cas d'erreur<br><br>\*@param {KASFormProcessedSummary} processedSummary peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -499,17 +491,17 @@ ___
 
 ###  <a name="getformurlasync"></a>getFormURLAsync
 
-▸ **getFormURLAsync**(rappel : *`function`*) :`void`
+▸ **getFormURLAsync**(callback: *`function`*):`void`
 
-Obtient l’url du fichier contenant les réponses plats associés au formulaire de serveur
+Obtient l'URL de fichier à partir du serveur contenant les réponses plates associées au formulaire.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*url @param {chaîne} peut être null en cas d’erreur<br><br>\*message d’erreur @param {chaîne} en cas d’erreur, la valeur null dans le cas contraire |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {String} URL peut être null en cas d'erreur<br><br>\*message d'erreur @param {String} en cas d'erreur, NULL sinon |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -517,11 +509,11 @@ ___
 
 ###  <a name="getformusercapabilitiesasync"></a>getFormUserCapabilitiesAsync
 
-▸ **getFormUserCapabilitiesAsync**(rappel : *`function`*) :`void`
+▸ **getFormUserCapabilitiesAsync**(callback: *`function`*):`void`
 
 Obtient les autorisations de formulaire
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 KASClient.Form.getFormUserCapabilitiesAsync(function (permissions, error) {
@@ -537,9 +529,9 @@ KASClient.Form.getFormUserCapabilitiesAsync(function (permissions, error) {
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*autorisations @param {KASFormUserCapabilities}<br><br>\*chaîne d’erreur erreur @param {chaîne} en cas d’erreur ; Sinon, valeur null |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param les autorisations {KASFormUserCapabilities}<br><br>\*@param chaîne d'erreur d'erreur de type {String} en cas d'erreur; NULL dans le cas contraire |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -547,17 +539,17 @@ ___
 
 ###  <a name="issubscribed"></a>isSubscribed
 
-▸ **isSubscribed**(rappel : *`function`*) :`void`
+▸ **isSubscribed**(callback: *`function`*):`void`
 
-Détermine si l’utilisateur actuel est abonné ou non
+Obtient une valeur indiquant si l'utilisateur actuel est abonné ou non.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*abonné de la valeur true si les utilisateurs isSubscribed @param {boolean} |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} isSubscribed true si l'abonné utilisateur actuel |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -565,11 +557,11 @@ ___
 
 ###  <a name="likeform"></a>likeForm
 
-▸ **likeForm**() :`void`
+▸ **likeForm**():`void`
 
-Pour ajouter un décompte similaire à un formulaire, le nombre de demandes peuvent entraîner une diminution si l’utilisateur actuel a aimé déjà le formulaire
+Demandes d'ajout d'un nombre similaire à un formulaire, le nombre peut diminuer si l'utilisateur actuel a déjà aimé le formulaire.
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -577,11 +569,11 @@ ___
 
 ###  <a name="sendreminderstorespond"></a>sendRemindersToRespond
 
-▸ **sendRemindersToRespond**() :`void`
+▸ **sendRemindersToRespond**():`void`
 
-Envoie un rappel (une nouvelle carte de conversation) par rapport à la carte existante
+Envoie un rappel (une nouvelle carte de conversation) à la carte existante
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -589,9 +581,9 @@ ___
 
 ###  <a name="shareformurl"></a>shareFormURL
 
-▸ **shareFormURL**(url : *`string`*) :`void`
+▸ **shareFormURL**(URL: *`string`*):`void`
 
-Partager l’url du résultat extraite serveur - lance partager native écran pour l’url du formulaire
+Partager l'URL de résultats extraite de l'écran de serveur-lancer le partage natif pour l'URL du formulaire
 
 **Paramètres :**
 
@@ -599,7 +591,7 @@ Partager l’url du résultat extraite serveur - lance partager native écran po
 | ------ | ------ | ------ |
 | url | `string` |  à partager |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -607,17 +599,17 @@ ___
 
 ###  <a name="showallreactions"></a>showAllReactions
 
-▸ **showAllReactions**(showComments? : *`boolean`*) :`void`
+▸ **showAllReactions**(showComments?: *`boolean`*):`void`
 
-Affiche tous les la réaction écran (J’aime et commentaires) par rapport à l’écran
+Affiche tous les écrans de réaction (j'aime et commentaires) sur le formulaire
 
 **Paramètres :**
 
 | Nom | Type | Valeur par défaut | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value`showComments | `boolean` | true |  valeur True si les commentaires doivent également être affichés ; False dans le cas contraire |
+| `Default value`showcomments, | `boolean` | true |  true si les commentaires doivent également être affichés; false dans le cas contraire |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -625,11 +617,11 @@ ___
 
 ###  <a name="updateactioninstancelocaldatacacheasync"></a>updateActionInstanceLocalDataCacheAsync
 
-▸ **updateActionInstanceLocalDataCacheAsync**(actionProperties : *[KASActionProperties](../classes/kasclient.kasactionproperties.md)*, rappel : *`function`*) :`void`
+▸ **updateActionInstanceLocalDataCacheAsync**(Actionpropriétés: *[KASActionProperties](../classes/kasclient.kasactionproperties.md)*, callback: *`function`*):`void`
 
-Mises à jour/enregistre les propriétés ActionInstance donnée dans le cache de données local que ces propriétés sont stockées au niveau instance de l’action. Pour chaque instance de l’action peut enregistrer certaines données locales dans le cache et il seulement sera accessible par cette instance particulière
+Met à jour/enregistre les propriétés ActionInstance données dans le cache de données local ces propriétés sont stockées au niveau de l'instance de l'action. Par conséquent, chaque instance d'action peut enregistrer des données locales dans le cache et celle-ci ne sera accessible que par cette instance particulière.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var actionPackageProperties = KASClient.KASActionPackageProperties.fromJSON(JSON.parse("{}"));
@@ -642,16 +634,16 @@ KASClient.Form.updateActionInstanceLocalDataCacheAsync(actionPackageProperties, 
 ```
 #### <a name="note"></a>Remarque
 
-Cette API ne fonctionne pas comme prévu en cas d’historique des messages.
+Cette API ne fonctionne pas comme prévu en cas de messages historiques.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| actionProperties | [KASActionProperties](../classes/kasclient.kasactionproperties.md) |  Propriétés du ActionInstance/formulaire pour être mis à jour/enregistré |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*réussite @param {boolean} indique si la mise à jour est réussie ou non<br><br>\*chaîne json d’erreur de @param {chaîne} pour l’objet KASError contenant la description et/ou le code d’erreur. |
+| Actionpropriétés | [KASActionProperties](../classes/kasclient.kasactionproperties.md) |  ActionInstance/propriétés de formulaire à mettre à jour/enregistrer |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} Success indique si la mise à jour a réussi ou non.<br><br>\*@param valeur de chaîne JSON de l'erreur {String} pour l'objet KASError contenant un code d'erreur et/ou une description. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -659,11 +651,11 @@ ___
 
 ###  <a name="updateactionpackagelocaldatacacheasync"></a>updateActionPackageLocalDataCacheAsync
 
-▸ **updateActionPackageLocalDataCacheAsync**(actionPackageProperties : *[KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)*, rappel : *`function`*) :`void`
+▸ **updateActionPackageLocalDataCacheAsync**(ActionPackageProperties: *[KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md)*, callback: *`function`*):`void`
 
-Mises à jour/enregistre les propriétés du Package Action donné dans le cache de données local que ces propriétés sont enregistrées au niveau du lot d’action. Ainsi, les données sont partagées entre toutes les instances de l’action créés à partir de ce package d’action.
+Met à jour/enregistre les propriétés de package d'action données dans le cache de données local ces propriétés sont enregistrées au niveau du package d'action. Les données sont donc partagées entre toutes les instances d'action créées à partir de ce package d'action.
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var actionPackageProperties = KASClient.KASActionPackageProperties.fromJSON(JSON.parse("{}"));
@@ -676,16 +668,16 @@ KASClient.Form.updateActionPackageLocalDataCacheAsync(actionPackageProperties, f
 ```
 #### <a name="note"></a>Remarque
 
-Cette API ne fonctionne pas comme prévu en cas d’historique des messages.
+Cette API ne fonctionne pas comme prévu en cas de messages historiques.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Propriétés du Package action soit mis à jour/enregistré |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*réussite @param {boolean} indique si la mise à jour est réussie ou non<br><br>\*chaîne json d’erreur de @param {chaîne} pour l’objet KASError contenant la description et/ou le code d’erreur. |
+| actionPackageProperties | [KASActionPackageProperties](../classes/kasclient.kasactionpackageproperties.md) |  Propriétés du package d'action à mettre à jour/enregistrer |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} Success indique si la mise à jour a réussi ou non.<br><br>\*@param valeur de chaîne JSON de l'erreur {String} pour l'objet KASError contenant un code d'erreur et/ou une description. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 
@@ -693,11 +685,11 @@ ___
 
 ###  <a name="updateformpropertiesasync"></a>updateFormPropertiesAsync
 
-▸ **updateFormPropertiesAsync**(propertyUpdates : *[] [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)*, notifyUsers : * `string`[]*, notificationMessage : *`string`*, rappel : *`function`*) :`void`
+▸ **updateFormPropertiesAsync**(propertyUpdates: * [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md)[]*, notifyUsers: * `string`[]*, notification: *`string`*, callback: *`function`*):`void`
 
-Publier une demande pour mettre à jour les propriétés associées à l’écran
+Publier une demande pour mettre à jour les propriétés associées au formulaire
 
-#### <a name="sample-usage"></a>Exemple d’utilisation
+#### <a name="sample-usage"></a>Exemple d'utilisation
 
 ```
 var updateProperties = [];
@@ -719,12 +711,12 @@ KASClient.Form.updateFormPropertiesAsync(updateProperties, notifyUsersList, noti
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| propertyUpdates | [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md) [] |  un tableau de toutes les infos de mise à jour qui sont nécessaires pour être effectuée, mise à jour infos peuvent être créés à l’aide de KASFormPropertyUpdateFactory |
-| notifyUsers | `string`[] |  envoyer des notifications push à ces noms d’utilisateurs concernant cette mise à jour |
-| notificationMessage | `string` |  message de notification push |
-| callback | `function` |  avec les paramètres ci-dessous :<br><br>\*réussite @param {boolean} indique si la mise à jour est réussie ou non |
+| propertyUpdates | [KASFormPropertyUpdateInfo](../classes/kasclient.kasformpropertyupdateinfo.md) [] |  un tableau de toutes les informations de mise à jour qui sont nécessaires pour être effectuées, des informations de mise à jour peuvent être créées à l'aide de KASFormPropertyUpdateFactory |
+| notifyUsers | `string`[] |  Envoyer des notifications de type émission à ces ID d'utilisateur concernant cette mise à jour |
+| Notification | `string` |  message de notification d'envoi |
+| callback | `function` |  avec les paramètres suivants:<br><br>\*@param {Boolean} Success indique si la mise à jour a réussi ou non. |
 
-**Renvoie :** `void`
+**Renvoie:**`void`
 
 ___
 

@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 3b1a2cbce6762e7efcb4371db75d71596d651887
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727906"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormReaction](../classes/kasclient.kasformreaction.md)
 
-# <a name="class-kasformreaction"></a>Classe : KASFormReaction
+# <a name="class-kasformreaction"></a>Classe: KASFormReaction
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -19,7 +11,7 @@ ms.locfileid: "28727906"
 ### <a name="properties"></a>Propriétés
 
 * [commentsCount](kasclient.kasformreaction.md#commentscount)
-* [didIComment](kasclient.kasformreaction.md#didicomment)
+* [didICom](kasclient.kasformreaction.md#didicomment)
 * [didILike](kasclient.kasformreaction.md#didilike)
 * [hideComments](kasclient.kasformreaction.md#hidecomments)
 * [hideLikes](kasclient.kasformreaction.md#hidelikes)
@@ -45,11 +37,11 @@ ___
 
 <a id="didicomment"></a>
 
-###  <a name="didicomment"></a>didIComment
+###  <a name="didicomment"></a>didICom
 
-**● didIComment**: *`boolean`* = false
+**● didicom**: *`boolean`* = false
 
-Indique si l’utilisateur actuel a aimé déjà ou non
+Indique si l'utilisateur actuel a déjà aimé ou non
 
 ___
 
@@ -59,7 +51,7 @@ ___
 
 **● didILike**: *`boolean`* = false
 
-Indique si l’utilisateur actuel a aimé déjà ou non
+Indique si l'utilisateur actuel a déjà aimé ou non
 
 ___
 
@@ -69,7 +61,7 @@ ___
 
 **● hideComments**: *`boolean`* = false
 
-Indique s’il faut afficher ou non les commentaires
+Indique s'il faut afficher les commentaires ou non
 
 ___
 
@@ -79,7 +71,7 @@ ___
 
 **● hideLikes**: *`boolean`* = false
 
-Indique si Afficher j’aime ou non
+Indique s'il faut afficher les autres aiment ou non.
 
 ___
 
@@ -89,7 +81,7 @@ ___
 
 **● hideLikesDetails**: *`boolean`* = false
 
-Indique si Afficher j’aime imeersive affichage ou non
+Indique s'il faut afficher ou non les imeersive.
 
 ___
 
@@ -99,7 +91,7 @@ ___
 
 **● likesCount**: *`number`* = 0
 
-Nombre de J’aime reçu pour le formulaire
+Nombre de «j'aime reçus» pour le formulaire
 
 ___
 
@@ -109,7 +101,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASFormReaction](kasclient.kasformreaction.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASFormReaction](kasclient.kasformreaction.md)
 
 **Paramètres :**
 
@@ -117,7 +109,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASFormReaction](kasclient.kasformreaction.md)
+**Renvoie:** [KASFormReaction](kasclient.kasformreaction.md)
 
 ___
 

@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 1b4a3a6805310a9a0eb7c63701c367d96aa5fe61
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727927"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormAggregatedSummary](../classes/kasclient.kasformaggregatedsummary.md)
 
-# <a name="class-kasformaggregatedsummary"></a>Classe : KASFormAggregatedSummary
+# <a name="class-kasformaggregatedsummary"></a>Classe: KASFormAggregatedSummary
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -37,7 +29,7 @@ ms.locfileid: "28727927"
 
 ###  <a name="formid"></a>formId
 
-**● formId**: *`string`* = « »
+**● formid**: *`string`* = ""
 
 ___
 
@@ -45,7 +37,7 @@ ___
 
 ###  <a name="formstatus"></a>formStatus
 
-**● formStatus**: *[FormStatus](../enums/kasclient.formstatus.md)* = FormStatus.Active
+**● formStatus**: *[formStatus](../enums/kasclient.formstatus.md)* = formStatus. active
 
 ___
 
@@ -53,15 +45,15 @@ ___
 
 ###  <a name="json"></a>json
 
-**● json**:*`JSON`*
+**● JSON**:*`JSON`*
 
 ___
 
 <a id="result"></a>
 
-###  <a name="result"></a>résultat
+###  <a name="result"></a>result
 
-**Résultat ●**: * `any`[]* =]
+**● résultat**: * `any`[]* = []
 
 ___
 
@@ -95,7 +87,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*, questions : *[] [KASQuestion](kasclient.kasquestion.md)*) : [KASFormAggregatedSummary](kasclient.kasformaggregatedsummary.md)
+▸ **fromJSON**(objet: *`JSON`*, questions: * [KASQuestion](kasclient.kasquestion.md)[]*): [KASFormAggregatedSummary](kasclient.kasformaggregatedsummary.md)
 
 **Paramètres :**
 
@@ -104,7 +96,7 @@ ___
 | objet | `JSON` |
 | questions | [KASQuestion](kasclient.kasquestion.md) [] |
 
-**Renvoie :** [KASFormAggregatedSummary](kasclient.kasformaggregatedsummary.md)
+**Renvoie:** [KASFormAggregatedSummary](kasclient.kasformaggregatedsummary.md)
 
 ___
 

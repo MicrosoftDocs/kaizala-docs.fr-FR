@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: c52e672a7e3356171388692054fcd1dc3cee5365
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727908"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASOptionResult](../classes/kasclient.kasoptionresult.md)
 
-# <a name="class-kasoptionresult"></a>Classe : KASOptionResult
+# <a name="class-kasoptionresult"></a>Classe: KASOptionResult
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -18,7 +10,7 @@ ms.locfileid: "28727908"
 
 ### <a name="properties"></a>Propriétés
 
-* [Id_option](kasclient.kasoptionresult.md#optionid)
+* [optionId](kasclient.kasoptionresult.md#optionid)
 * [optionTitle](kasclient.kasoptionresult.md#optiontitle)
 * [responderToResponseCount](kasclient.kasoptionresult.md#respondertoresponsecount)
 * [totalResponsesCount](kasclient.kasoptionresult.md#totalresponsescount)
@@ -32,11 +24,11 @@ ms.locfileid: "28727908"
 
 <a id="optionid"></a>
 
-###  <a name="optionid"></a>Id_option
+###  <a name="optionid"></a>optionId
 
-**● Id_option**: *`number`* = 0
+**● optionId**: *`number`* = 0
 
-Index de l’option
+Index de l'option
 
 ___
 
@@ -44,9 +36,9 @@ ___
 
 ###  <a name="optiontitle"></a>optionTitle
 
-**● optionTitle**: *`string`* = « »
+**● optionTitle**: *`string`* = ""
 
-Titre de l’option
+Titre de l'option
 
 ___
 
@@ -56,7 +48,7 @@ ___
 
 **● responderToResponseCount**:*`object`*
 
-Un mappage de l’ID d’utilisateur par rapport à leur nombre de réponse Dictionary<UserId : chaîne, ResponseCount : number>
+Une carte des ID d'utilisateur par rapport à leur nombre de réponses Dictionary<UserId: String, ResponseCount: number>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
@@ -67,7 +59,7 @@ ___
 
 **● totalResponsesCount**: *`number`* = 0
 
-Combien choisi cette option
+Combien d'entre elles ont choisi cette option?
 
 ___
 
@@ -77,7 +69,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASOptionResult](kasclient.kasoptionresult.md)
+▸ **fromJSON**(objet: *`any`*): [KASOptionResult](kasclient.kasoptionresult.md)
 
 **Paramètres :**
 
@@ -85,7 +77,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASOptionResult](kasclient.kasoptionresult.md)
+**Renvoie:** [KASOptionResult](kasclient.kasoptionresult.md)
 
 ___
 

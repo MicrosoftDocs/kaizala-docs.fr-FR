@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 6433ecb385d38db201ec8e2733768e9fc095ae8e
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727923"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormProperty](../classes/kasclient.kasformproperty.md)
 
-# <a name="class-kasformproperty"></a>Classe : KASFormProperty
+# <a name="class-kasformproperty"></a>Classe: KASFormProperty
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -18,7 +10,7 @@ ms.locfileid: "28727923"
 
 ### <a name="properties"></a>Propriétés
 
-* [Nom](kasclient.kasformproperty.md#name)
+* [name](kasclient.kasformproperty.md#name)
 * [type](kasclient.kasformproperty.md#type)
 * [value](kasclient.kasformproperty.md#value)
 ### <a name="methods"></a>Méthodes
@@ -37,7 +29,7 @@ ms.locfileid: "28727923"
 
 ###  <a name="name"></a>name
 
-**Nom ●**: *`string`* = « »
+**● nom**: *`string`* = ""
 
 Nom des métadonnées
 
@@ -47,7 +39,7 @@ ___
 
 ###  <a name="type"></a>type
 
-**Type ●**: *[KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)* = KASFormPropertyType.Text
+**● type**: *[KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)* = KASFormPropertyType. Text
 
 Type de métadonnées
 
@@ -57,7 +49,7 @@ ___
 
 ###  <a name="value"></a>value
 
-**Valeur ●**: *`string`* = « »
+**● valeur**: *`string`* = ""
 
 Valeur des métadonnées
 
@@ -69,7 +61,7 @@ ___
 
 ###  <a name="getapicompatiblepropertytype"></a>getAPICompatiblePropertyType
 
-▸ **getAPICompatiblePropertyType**(type : *`string`*) :`string`
+▸ **getAPICompatiblePropertyType**(type: *`string`*):`string`
 
 **Paramètres :**
 
@@ -77,7 +69,7 @@ ___
 | ------ | ------ |
 | type | `string` |
 
-**Renvoie :** `string`
+**Renvoie:**`string`
 
 ___
 
@@ -85,9 +77,9 @@ ___
 
 ###  <a name="toapicompatiblejson"></a>toAPICompatibleJSON
 
-▸ **toAPICompatibleJSON**() :`JSON`
+▸ **toAPICompatibleJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -95,9 +87,9 @@ ___
 
 ###  <a name="toclientjson"></a>toClientJSON
 
-▸ **toClientJSON**() :`JSON`
+▸ **toClientJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -105,9 +97,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 
@@ -115,7 +107,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASFormProperty](kasclient.kasformproperty.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASFormProperty](kasclient.kasformproperty.md)
 
 **Paramètres :**
 
@@ -123,7 +115,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASFormProperty](kasclient.kasformproperty.md)
+**Renvoie:** [KASFormProperty](kasclient.kasformproperty.md)
 
 ___
 

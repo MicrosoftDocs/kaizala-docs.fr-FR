@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 4c1a62cb1d76cbfd695aa6707f126787401f680d
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727932"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASShareObject](../classes/kasclient.kasshareobject.md)
 
-# <a name="class-kasshareobject"></a>Classe : KASShareObject
+# <a name="class-kasshareobject"></a>Classe: KASShareObject
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -30,9 +22,9 @@ ms.locfileid: "28727932"
 
 <a id="data"></a>
 
-###  <a name="data"></a>data
+###  <a name="data"></a>données
 
-**Données ●**: *`string`* = « »
+**● Data**: *`string`* = ""
 
 ___
 
@@ -40,7 +32,7 @@ ___
 
 ###  <a name="type"></a>type
 
-**Type ●**: *[KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)* = KASShareObjectType.Image
+**● type**: *[KASShareObjectType](../enums/kasclient.kasshareobjecttype.md)* = KASShareObjectType. image
 
 ___
 
@@ -50,9 +42,9 @@ ___
 
 ###  <a name="tojson"></a>toJSON
 
-▸ **toJSON**() :`JSON`
+▸ **toJSON**():`JSON`
 
-**Renvoie :** `JSON`
+**Renvoie:**`JSON`
 
 ___
 

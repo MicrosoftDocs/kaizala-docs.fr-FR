@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 35a77307e603499ebf73881ff861b61cb7d41e76
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727947"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASFormFlatSummary](../classes/kasclient.kasformflatsummary.md)
 
-# <a name="class-kasformflatsummary"></a>Classe : KASFormFlatSummary
+# <a name="class-kasformflatsummary"></a>Classe: KASFormFlatSummary
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -38,9 +30,9 @@ ms.locfileid: "28727947"
 
 ###  <a name="conversationid"></a>conversationId
 
-**● conversationId**: *`string`* = « »
+**● conversationId**: *`string`* = ""
 
-L’id de la conversation associée, ne doit pas être modifié.
+L'ID de la conversation associée ne doit pas être modifié.
 
 ___
 
@@ -48,9 +40,9 @@ ___
 
 ###  <a name="formid"></a>formId
 
-**● formId**: *`string`* = « »
+**● formid**: *`string`* = ""
 
-L’id du formulaire associé, ne doit pas être modifié.
+L'ID du formulaire associé ne doit pas être modifié.
 
 ___
 
@@ -58,7 +50,7 @@ ___
 
 ###  <a name="json"></a>json
 
-**● json**:*`JSON`*
+**● JSON**:*`JSON`*
 
 ___
 
@@ -68,11 +60,11 @@ ___
 
 ###  <a name="getallresponses"></a>getAllResponses
 
-▸ **getAllResponses**() :`__type`
+▸ **getAllResponses**():`__type`
 
 Obtient toutes les réponses de tous les utilisateurs
 
-**Renvoie :** `__type`
+**Renvoie:**`__type`
 
 ___
 
@@ -80,18 +72,18 @@ ___
 
 ###  <a name="getquestionresponsesforuserid"></a>getQuestionResponsesForUserId
 
-▸ **getQuestionResponsesForUserId**(userId : *`string`*, questionId : *`number`*) : `string`]
+▸ **getQuestionResponsesForUserId**(UserID: *`string`*, questionId: *`number`*): `string`[]
 
-Obtient toutes les réponses d’un utilisateur par rapport à une question spécifique
+Obtient toutes les réponses d'un utilisateur par rapport à une question spécifique.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| userId | `string` |  l’id unique de l’utilisateur |
-| questionId | `number` |  l’id de la question |
+| userId | `string` |  ID unique de l'utilisateur |
+| questionId | `number` |  ID de la question |
 
-**Renvoie :** `string`[] liste de toutes les réponses indiquée par l’utilisateur pour cette question
+**Renvoie:** `string`[] liste de toutes les réponses fournies par l'utilisateur pour cette question
 
 ___
 
@@ -99,11 +91,11 @@ ___
 
 ###  <a name="getrespondeduserids"></a>getRespondedUserIds
 
-▸ **getRespondedUserIds**() : `string`]
+▸ **getRespondedUserIds**(): `string`[]
 
-Obtient tous les ID d’utilisateur qui a répondu à l’écran
+Obtient tous les ID d'utilisateur qui ont répondu au formulaire.
 
-**Renvoie :** `string`[] liste de tous les codes de réponse utilisateur
+**Renvoie:** `string`[] liste de tous les ID d'utilisateur ayant répondu
 
 ___
 
@@ -111,17 +103,17 @@ ___
 
 ###  <a name="getresponsesforuserid"></a>getResponsesForUserId
 
-▸ **getResponsesForUserId**(userId : *`string`*) :`__type`
+▸ **getResponsesForUserId**(UserID: *`string`*):`__type`
 
-Obtient toutes les réponses d’un utilisateur à un formulaire
+Obtient toutes les réponses d'un utilisateur à un formulaire.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| userId | `string` |  l’id unique de l’utilisateur |
+| userId | `string` |  ID unique de l'utilisateur |
 
-**Renvoie :** `__type` id de question à la liste de réponses
+**Renvoie:** `__type` ID de la question à la liste des réponses
 
 ___
 
@@ -129,11 +121,11 @@ ___
 
 ###  <a name="gettotalresponsecount"></a>getTotalResponseCount
 
-▸ **getTotalResponseCount**() :`number`
+▸ **getTotalResponseCount**():`number`
 
-Nombre d’Obtient de toutes les réponses à tous les utilisateurs
+Obtient le nombre de réponses de tous les utilisateurs
 
-**Renvoie :** `number` nombre de toutes les réponses
+**Renvoie:** `number` nombre de réponses
 
 ___
 
@@ -141,7 +133,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*, isResponseAppended : *`boolean`*) : [KASFormFlatSummary](kasclient.kasformflatsummary.md)
+▸ **fromJSON**(objet: *`any`*, isResponseAppended: *`boolean`*): [KASFormFlatSummary](kasclient.kasformflatsummary.md)
 
 **Paramètres :**
 
@@ -150,7 +142,7 @@ ___
 | objet | `any` |
 | isResponseAppended | `boolean` |
 
-**Renvoie :** [KASFormFlatSummary](kasclient.kasformflatsummary.md)
+**Renvoie:** [KASFormFlatSummary](kasclient.kasformflatsummary.md)
 
 ___
 

@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 772f983399b4c0361536a38ff5363bac9ba08e54
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727897"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASO365User](../classes/kasclient.kaso365user.md)
 
-# <a name="class-kaso365user"></a>Classe : KASO365User
+# <a name="class-kaso365user"></a>Classe: KASO365User
 
 ## <a name="hierarchy"></a>Hierarchy
 
@@ -37,7 +29,7 @@ ms.locfileid: "28727897"
 
 ###  <a name="businessphones"></a>businessPhones
 
-**● businessPhones**: * `string`[]* =]
+**● businessPhones**: * `string`[]* = []
 
 ___
 
@@ -45,7 +37,7 @@ ___
 
 ###  <a name="displayname"></a>displayName
 
-**● displayName**: *`string`* = « »
+**● DisplayName**: *`string`* = ""
 
 ___
 
@@ -53,7 +45,7 @@ ___
 
 ###  <a name="email"></a>email
 
-**Courrier électronique ●**: *`string`* = « »
+**● courrier électronique**: *`string`* = ""
 
 ___
 
@@ -61,7 +53,7 @@ ___
 
 ###  <a name="givenname"></a>givenName
 
-**● le prénom**: *`string`* = « »
+**● GivenName**: *`string`* = ""
 
 ___
 
@@ -69,7 +61,7 @@ ___
 
 ###  <a name="jobtitle"></a>jobTitle
 
-**● jobTitle**: *`string`* = « »
+**● JobTitle**: *`string`* = ""
 
 ___
 
@@ -77,7 +69,7 @@ ___
 
 ###  <a name="mobilephone"></a>mobilePhone
 
-**● mobilePhone**: *`string`* = « »
+**● MobilePhone**: *`string`* = ""
 
 ___
 
@@ -85,7 +77,7 @@ ___
 
 ###  <a name="surname"></a>surname
 
-**Nom de famille ●**: *`string`* = « »
+**●**surnamer: *`string`* = ""
 
 ___
 
@@ -95,7 +87,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`JSON`*) : [KASO365User](kasclient.kaso365user.md)
+▸ **fromJSON**(objet: *`JSON`*): [KASO365User](kasclient.kaso365user.md)
 
 **Paramètres :**
 
@@ -103,7 +95,7 @@ ___
 | ------ | ------ |
 | objet | `JSON` |
 
-**Renvoie :** [KASO365User](kasclient.kaso365user.md)
+**Renvoie:** [KASO365User](kasclient.kaso365user.md)
 
 ___
 

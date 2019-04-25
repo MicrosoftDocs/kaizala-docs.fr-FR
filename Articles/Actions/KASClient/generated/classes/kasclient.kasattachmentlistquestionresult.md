@@ -1,16 +1,8 @@
----
-ms.openlocfilehash: 84017de85cac36d49be86fe3a7a2aca9bb9b4d34
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727918"
----
 [](../README.md) > [KASClient](../modules/kasclient.md) > [KASAttachmentListQuestionResult](../classes/kasclient.kasattachmentlistquestionresult.md)
 
-# <a name="class-kasattachmentlistquestionresult"></a>Classe : KASAttachmentListQuestionResult
+# <a name="class-kasattachmentlistquestionresult"></a>Classe: KASAttachmentListQuestionResult
 
-Ce modèle contient des données pour chaque réponse à une question de Type de liste de pièce jointe.
+Ce modèle contient des données pour chaque réponse à une question de type de liste de pièces jointes.
 ## <a name="hierarchy"></a>Hierarchy
 
  [KASQuestionResult](kasclient.kasquestionresult.md)
@@ -40,9 +32,9 @@ Ce modèle contient des données pour chaque réponse à une question de Type de
 
 ###  <a name="attachmentlisttype"></a>attachmentListType
 
-**● attachmentListType**: *[AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)* = AttachmentListResponseType.GENERIC
+**● attachmentListType**: *[AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)* = AttachmentListResponseType. Generic
 
-attachmentListType : indique le type de la réponse de la liste des pièces jointes
+attachmentListType: contient le type de la réponse de liste de pièces jointes
 
 ___
 
@@ -50,9 +42,9 @@ ___
 
 ###  <a name="attachmentsresponsejsonstrings"></a>attachmentsResponseJSONStrings
 
-**● attachmentsResponseJSONStrings**: * `string`[]* =]
+**● attachmentsResponseJSONStrings**: * `string`[]* = []
 
-attachmentsResponseJSONStrings : contient la liste des pièces jointes correspondant à chaque réponse sous forme de chaîne JSON directement disponible dans le questionIdToAnswerMap.
+attachmentsResponseJSONStrings: contient la liste des pièces jointes correspondant à chaque réponse sous la forme d'une chaîne JSON qui est directement disponible dans le questionIdToAnswerMap.
 
 ___
 
@@ -70,7 +62,7 @@ ___
 
 ###  <a name="questiontitle"></a>questionTitle
 
-**● questionTitle**: *`string`* = « »
+**● questionTitle**: *`string`* = ""
 
 Titre de la question
 
@@ -80,7 +72,7 @@ ___
 
 ###  <a name="questiontype"></a>questionType
 
-**● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* = KASQuestionType.None
+**● questionType**: *[KASQuestionType](../enums/kasclient.kasquestiontype.md)* = KASQuestionType. None
 
 Type de la question
 
@@ -90,9 +82,9 @@ ___
 
 ###  <a name="timestamps"></a>Horodatages
 
-**● horodatages**: * `string`[]* =]
+**● horodatages**: * `string`[]* = []
 
-Horodatages : contient les horodatages response pour chaque réponse.
+timeStamps: contient les horodatages de réponse pour chaque réponse.
 
 ___
 
@@ -100,9 +92,9 @@ ___
 
 ###  <a name="userinfo"></a>userInfo
 
-**● userInfo**: *[] [KASUser](kasclient.kasuser.md)* =]
+**● UserInfo**: * [KASUser](kasclient.kasuser.md)[]* = []
 
-userInfo : contient des instances de KASUser avec des détails de la personne interrogée pour la réponse particulière afin que nous pouvons afficher l’image de nom et le profil de la personne interrogée.
+userInfo: contient des instances de KASUser avec les détails de la personne interrogée pour la réponse particulière, afin que nous puissions afficher le nom et l'image de profil de la personne interrogée.
 
 ___
 
@@ -112,7 +104,7 @@ ___
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
 
-▸ **fromJSON**(objet : *`any`*) : [KASQuestionResult](kasclient.kasquestionresult.md)
+▸ **fromJSON**(objet: *`any`*): [KASQuestionResult](kasclient.kasquestionresult.md)
 
 **Paramètres :**
 
@@ -120,7 +112,7 @@ ___
 | ------ | ------ |
 | objet | `any` |
 
-**Renvoie :** [KASQuestionResult](kasclient.kasquestionresult.md)
+**Renvoie:** [KASQuestionResult](kasclient.kasquestionresult.md)
 
 ___
 
