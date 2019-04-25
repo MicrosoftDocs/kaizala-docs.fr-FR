@@ -18,7 +18,7 @@ Si l'utilisateur est satisfait de la résolution proposée, l'utilisateur a la p
 
   <img src="EmployeeHelpdesk-Images/1.jpg" width="350">
 
-   Affichage de la mise à jour de l'État vers «affecté» dans SharePoint et de la carte correspondante envoyée à l'utilisateur
+   Affichage de l'État mis à jour sur «affecté» dans SharePoint et la carte correspondante envoyée à l'utilisateur
 
    <img src="EmployeeHelpdesk-Images/2.jpg" width="600">
 
@@ -55,7 +55,7 @@ Cette opération est généralement divisée en trois étapes:
     3. Pour mettre à jour la liste SharePoint lorsque l'utilisateur choisit de fermer, de rouvrir ou d'ajouter des commentaires de commentaires à partir de la carte (*TicketReopenFlow. zip*)
 
 ### <a name="upload-action-packages"></a>Télécharger des packages d'actions
-1. Télécharger le fichier [«EmployeeHelpDesk-SolutionPackage. zip»](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpdesk-SolutionPackage.zip) (*il contient 2 packages d'action et 3 flux*)
+1. Télécharger le fichier [«EmployeeHelpDesk-SolutionPackage. zip»](https://aka.ms/EmployeeHelpdesk-SolutionPackage.zip)(*il contient 2 packages d'action et 3 flux*)
 
 2. Téléchargez la dernière version de Kaizala [«ActionSDK. zip»](https://manage.kaiza.la/MiniApps/DownloadSDK) (*elle contient KASClient. js*)
 
@@ -100,7 +100,25 @@ Cette opération est généralement divisée en trois étapes:
 2. [Ajouter](https://support.office.com/en-us/article/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2) des colonnes et [modifier](https://support.office.com/en-us/article/Edit-list-settings-in-SharePoint-Online-4d35793b-246e-42a3-990c-563a83795b7f) (*comme indiqué ci-dessous dans les mêmes paramètres de colonne ordre et format*) pour cette liste
 
 
-    Paramètres de colonne recommandés--------| service---| Une seule ligne de l'emplacement de texte | Une seule ligne de texte catégorie | Une seule ligne de texte Description | Plusieurs lignes de photos de texte | Plusieurs lignes de texte CreatorName | Une seule ligne de texte CreatorContact | Une seule ligne de texte ReportedAt | Une seule ligne de texte AffectéÀ | Une seule ligne de texte AssignedBy | État d'une seule ligne de texte | Choix avec des options comme nouveau, affecté, résolu, fermé et rouvert (*ces étapes de ticket sont obligatoires*) HelpdeskComments | Plusieurs lignes de texte UserFeedback | Plusieurs lignes de texte ReasonsToReopen | Plusieurs lignes de texte CreatorKaizalaName | Une seule ligne de texte CreatorKaizalaContact | Une seule ligne de texte UserRating | Une seule ligne de texte
+    |Column|Paramètres recommandés|
+    |-------- |---|
+    |Service|Une seule ligne de texte|
+    |Emplacement|Une seule ligne de texte|
+    |Catégorie|Ligne de texte|
+    |Description |Plusieurs lignes de texte|
+    |Photos|Plusieurs lignes de texte|
+    |CreatorName|Une seule ligne de texte|
+    |CreatorContact|Une seule ligne de texte|
+    |ReportedAt|Une seule ligne de texte|
+    |AssignedTo|Une seule ligne de texte|
+    |AssignedBy|Une seule ligne de texte|
+    |État|Choix avec des options comme nouveau, affecté, résolu, fermé et rouvert (*ces étapes de ticket sont obligatoires*)|
+    |HelpdeskComments|Plusieurs lignes de texte|
+    |UserFeedback|Plusieurs lignes de texte|
+    |ReasonsToReopen|Plusieurs lignes de texte|
+    |CreatorKaizalaName|Une seule ligne de texte|
+    |CreatorKaizalaContact|Une seule ligne de texte|
+    |UserRating|Une seule ligne de texte|
  
 
 4. [Modifier l'affichage de liste](https://support.office.com/en-gb/article/edit-a-list-view-in-sharepoint-online-15916903-e79a-423f-b4e2-02d37e1ff372) sur l'ID de poste à la première place. Il s'agit de l'ID de ticket unique qui s'affichera dans la carte, une fois le ticket attribué.

@@ -39,7 +39,7 @@ Cela peut être divisé en trois étapes:
 
 ### <a name="format-excel-sheet"></a>Format de feuille Excel
 
-1. Télécharger le [modèle Excel](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Leaderboard/Leaderboard.csv)
+1. Télécharger le [modèle Excel](https://github.com/MicrosoftDocs/kaizala-docs/blob/master/Articles/BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.csv)
 
 2. Remplissez tous les champs obligatoires-nom, PhoneNo et score. À l'exception de ces trois champs obligatoires, les autres sont des indicateurs de performance clés (facultatif) et sont affichés sous l'onglet «My performance».
 
