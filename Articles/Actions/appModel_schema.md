@@ -1,4 +1,4 @@
-# <a name="app-model-schema"></a><span data-ttu-id="650c4-101">Schéma de modèle d’application</span><span class="sxs-lookup"><span data-stu-id="650c4-101">App Model schema</span></span>
+# <a name="app-model-schema"></a><span data-ttu-id="0e305-101">Schéma de modèle d'application</span><span class="sxs-lookup"><span data-stu-id="0e305-101">App Model schema</span></span>
 `````json-schema
 {
     "$schema": "http://json-schema.org/draft-04/schema#",

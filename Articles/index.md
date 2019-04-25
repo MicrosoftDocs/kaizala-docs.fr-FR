@@ -7,8 +7,13 @@ topic: overview
 author: nitinjms
 ms.author: nitinjms
 ms.date: 04/04/2018
+ms.openlocfilehash: b2bfbebebdb61122ddbe1c9f0785cd693ac16c10
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190683"
 ---
-
 <div id="main" class="v2">
 <div class="container">
     <h1>Microsoft Kaizala</h1>

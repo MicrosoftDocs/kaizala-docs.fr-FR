@@ -1,4 +1,4 @@
-# <a name="kasform"></a><span data-ttu-id="5dbd3-101">KASForm</span><span class="sxs-lookup"><span data-stu-id="5dbd3-101">KASForm</span></span>
+# <a name="kasform"></a><span data-ttu-id="580de-101">KASForm</span><span class="sxs-lookup"><span data-stu-id="580de-101">KASForm</span></span>
 ```typescript
 class KASForm {
   // Form id, shouldn't be changed

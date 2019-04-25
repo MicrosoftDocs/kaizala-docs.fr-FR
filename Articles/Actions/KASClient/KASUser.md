@@ -1,4 +1,4 @@
-# <a name="kasuser"></a><span data-ttu-id="93a9b-101">KASUser</span><span class="sxs-lookup"><span data-stu-id="93a9b-101">KASUser</span></span>
+# <a name="kasuser"></a><span data-ttu-id="8efac-101">KASUser</span><span class="sxs-lookup"><span data-stu-id="8efac-101">KASUser</span></span>
 ```typescript
 class KASUser {
   // Unique user id

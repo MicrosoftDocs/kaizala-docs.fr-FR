@@ -1,4 +1,4 @@
-# <a name="kasoptionquestionresult"></a><span data-ttu-id="527c2-101">KASOptionQuestionResult</span><span class="sxs-lookup"><span data-stu-id="527c2-101">KASOptionQuestionResult</span></span>
+# <a name="kasoptionquestionresult"></a><span data-ttu-id="a1223-101">KASOptionQuestionResult</span><span class="sxs-lookup"><span data-stu-id="a1223-101">KASOptionQuestionResult</span></span>
 ```typescript
 class KASOptionQuestionResult extends KASQuestionResult {
   // For SingleSelect/MultiSelect question, the result will be option id versus their counts

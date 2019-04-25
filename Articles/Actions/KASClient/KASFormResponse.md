@@ -1,4 +1,4 @@
-# <a name="kasformresponse"></a><span data-ttu-id="2e1d6-101">KASFormResponse</span><span class="sxs-lookup"><span data-stu-id="2e1d6-101">KASFormResponse</span></span>
+# <a name="kasformresponse"></a><span data-ttu-id="88ba2-101">KASFormResponse</span><span class="sxs-lookup"><span data-stu-id="88ba2-101">KASFormResponse</span></span>
 ```typescript
 class KASFormResponse {
   // A unique response id, required in case of updating an existing response

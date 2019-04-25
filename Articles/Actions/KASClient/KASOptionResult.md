@@ -1,4 +1,4 @@
-# <a name="kasoptionresult"></a><span data-ttu-id="cb872-101">KASOptionResult</span><span class="sxs-lookup"><span data-stu-id="cb872-101">KASOptionResult</span></span>
+# <a name="kasoptionresult"></a><span data-ttu-id="7e0c3-101">KASOptionResult</span><span class="sxs-lookup"><span data-stu-id="7e0c3-101">KASOptionResult</span></span>
 ```typescript
 class KASOptionResult {
   // Title of the option
