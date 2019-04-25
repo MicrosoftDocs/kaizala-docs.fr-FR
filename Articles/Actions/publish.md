@@ -1,37 +1,37 @@
-# <a name="publish-a-kaizala-action"></a>Publier une Action Kaizala
+# <a name="publish-a-kaizala-action"></a>Publier une action Kaizala
 
-Le portail de gestion Kaizala fournit un emplacement pratique pour vous permet d’importer des Actions personnalisées Kaizala.
+Le portail de gestion Kaizala fournit un emplacement pratique pour importer des actions Kaizala personnalisées.
 
->   Vous aurez besoin d’un abonnement à Office 365 d’organisation actif pour accéder au portail de gestion.
+>   Vous aurez besoin d'un abonnement d'entreprise Office 365 actif pour accéder au portail de gestion.
 
-## <a name="import-kaizala-action"></a>Action Kaizala d’importation
-Vous pouvez suivre les étapes pour envoyer votre Action ci-dessous :
-*   Accédez au portail de gestion de Kaizala @https://manage.kaiza.la/
-*   Ouvrez une session à l’aide d’un compte Office 365 existant
-*   Inscrire un numéro de téléphone sur le portail en tapant sur « Ajouter un numéro de téléphone »
-*   Cliquez sur « Actions » dans le menu de gauche
-*   Cliquez sur « Importer Action »
-*   Cliquez sur « Accepter » sur la page « Conditions d’utilisation ». Vous devez accepter les « Conditions d’utilisation » pour Kaizala Action SDK (*Si vous n'avez pas déjà accepté précédemment*)
-*   Télécharger le package zip
+## <a name="import-kaizala-action"></a>Importer une action Kaizala
+Vous pouvez suivre les étapes ci-dessous pour soumettre votre action:
+*   Accédez au portail de gestion Kaizala @https://manage.kaiza.la/
+*   Se connecter à l'aide d'un compte Office 365 existant
+*   Enregistrer un numéro de téléphone sur le portail en tapant «ajouter un numéro de téléphone»
+*   Appuyez sur «actions» dans le menu de gauche.
+*   Appuyez sur «Importer une action»
+*   Appuyez sur la page «accepter» sur «conditions d'utilisation». Vous devez accepter nos «conditions d'utilisation» pour le kit de développement d'actions Kaizala (*si vous ne l'avez pas déjà accepté*).
+*   Charger votre package zip
 
-Toutes les Actions Kaizala devez confirmer les [instructions](validation.md) pour être éligibles pour être publiés sur les clients Kaizala.
+Toutes les actions Kaizala doivent confirmer les [recommandations](validation.md) pour être publiées sur les clients Kaizala.
 
-## <a name="steps-to-publish-an-action"></a>Étapes pour publier une Action
-*   Une fois que votre Action est téléchargée avec succès, il est disponible en mode **brouillon**
-*   Vous devez 'étape' la version téléchargée afin de [test et débogage](test.md) votre Action
-*   Après avoir testé votre Action, vous pouvez « activer » l’Action. Action déplace vers l’état actif
+## <a name="steps-to-publish-an-action"></a>Étapes de publication d'une action
+*   Une fois votre action chargée, elle est disponible en état **Brouillon** .
+*   Vous devez mettre à niveau la version téléchargée afin de [tester &](test.md) de déboguer votre action
+*   Une fois que vous avez testé votre action, vous pouvez activer l'action. L'action passe à l'état actif
 
-[Détails](ActionLifecycle.md) sur le cycle de vie d’une Action Kaizala
+[En savoir plus](ActionLifecycle.md) sur le cycle de vie d'une action Kaizala
 
-## <a name="add-action-to-group"></a>Ajout d’Action à un groupe
-Vous pouvez ajouter votre Action aux membres d’un groupe spécifique en suivant les étapes ci-dessous :
-*   Accédez à l’Action que vous souhaitez ajouter. Vous trouverez une page dans laquelle toutes les versions de l’Action est répertorié.
-*   Ouvrir la page Détails de la version de l’Action qui se trouve dans un état actif/intermédiaire
-*   Cliquez ou appuyez sur Ajouter aux groupes
-*   Sélectionnez le groupe dans lequel vous souhaitez publier l’Action. Sélectionnez les rôles d’utilisateur pour lequel vous souhaitez que l’Action à publier pour
-*   Cliquez ou appuyez sur Publier
+## <a name="add-action-to-group"></a>Ajouter une action au groupe
+Vous pouvez ajouter votre action aux membres d'un groupe spécifique en suivant les étapes ci-dessous:
+*   Accédez à l'action que vous souhaitez ajouter. Vous trouverez une page dans laquelle toutes les versions de l'action sont indiquées.
+*   Ouvrir la page de détails pour la version de l'action qui est en état actif/intermédiaire
+*   Cliquez ou appuyez sur Ajouter à des groupes
+*   Sélectionnez le groupe dans lequel vous souhaitez publier l'action. Choisissez les rôles d'utilisateur pour lesquels vous souhaitez que l'action soit publiée.
+*   Cliquez ou appuyez sur publier
 
 > **Remarque** :<ol>
-    <li>Action dans un état intermédiaire/Active peut uniquement être ajoutée aux groupes</li>
-    <li>Action intermédiaire permettre être ajoutée aux groupes uniquement pour les groupes whthose le créateur de l’Action est un administrateur </li>
+    <li>L'action en état intermédiaire/actif ne peut être ajoutée qu'à des groupes</li>
+    <li>L'action intermédiaire peut être ajoutée à des groupes uniquement pour les groupes whthose dont le créateur d'action est administrateur </li>
     </ol>

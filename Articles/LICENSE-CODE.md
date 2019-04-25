@@ -1,7 +1,7 @@
-MIT licence (MIT) Copyright (c) Microsoft Corporation
+La licence MIT (MIT) Copyright (c) Microsoft Corporation
 
-Présente l’autorisation est accordée, gratuitement, à toute personne obtenant une copie de ce logiciel et les fichiers de la documentation associée (le « logiciel »), pour faire face dans le logiciel sans restriction, y compris les droits à utiliser, copier, modifier, fusionner, publier, distribuer, céder et/ou vendre des copies du logiciel et d’autoriser les personnes auxquelles le logiciel est fourni pour ce faire, les conditions suivantes :
+L'autorisation est accordée gratuitement à toute personne obtenant une copie du logiciel et des fichiers de documentation associés (le «logiciel»), afin de traiter les logiciels sans restriction, y compris sans limiter les droits d'utilisation, de copie, de modification, de fusion publiez, distribuez, sous-licence et/ou vendez des copies du logiciel, et pour permettre aux personnes auxquelles le logiciel est fourni de le faire, sous réserve des conditions suivantes:
 
-Le copyright ci-dessus et cette autorisation doivent figurer dans toutes les copies ou portions importantes du logiciel.
+La notice de copyright ci-dessus et cette notification d'autorisation doivent être incluses dans toutes les copies ou dans des parties substantielles du logiciel.
 
-LE LOGICIEL EST FOURNI « EN L’ÉTAT », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS MAIS SANS LIMITATION LES GARANTIES DE QUALITÉ, D’ADÉQUATION À UN USAGE PARTICULIER ET D’ABSENCE DE CONTREFAÇON. EN AUCUN CAS LES AUTEURS ET LES DÉTENTEURS DE DROITS D’AUTEUR EST RESPONSABLE POUR TOUTE RÉCLAMATION, TOUT DOMMAGE OU TOUTE AUTRE RESPONSABILITÉ, SI DANS UNE ACTION DE CONTRAT, TORT OU DANS LE CAS CONTRAIRE, PROVENANT D’OU EN RELATION AVEC LE LOGICIEL OU L’UTILISATION OU DANS LE LOGICIEL.
+LE LOGICIEL EST FOURNI «EN L'ÉTAT», SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON. LES AUTEURS OU LES TITULAIRES DE DROITS D'AUTEUR NE DOIVENT EN AUCUN CAS ÊTRE TENUS RESPONSABLES DES RÉCLAMATIONS, DOMMAGES OU AUTRES RESPONSABILITÉS, QU'ILS SOIENT LIÉS À UN CONTRAT, À UN DÉLIT OU À UN AUTRE, À L'ÉGARD DU LOGICIEL, DE L'UTILISATION OU D'AUTRES RELATIONS DANS LE LOGICIEL.

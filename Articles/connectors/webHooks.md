@@ -4,11 +4,11 @@ description: Article de référence pour l'API permettant de gérer les abonneme
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: a2cdb74284f6980644366cf3b61740ea46389512
-ms.sourcegitcommit: 6014f31329a438ea02de677673049dc0d036bed9
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30405800"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190731"
 ---
 # <a name="apis-to-register--manage-webhooks"></a>API pour inscrire & gérer les webhooks
 ## <a name="webhook"></a>/webhook
@@ -47,8 +47,7 @@ Pour vérifier que votre point de terminaison de service webhook est authentique
 #### <a name="response-body"></a>Corps de la réponse
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| webhookId | String
- | Identificateur représentant le webHook créé |
+| webhookId | Chaîne | Identificateur représentant le webHook créé |
 
 #### <a name="request-body---subscribe-to-all-events-at-group-level"></a>Corps de la demande: s'abonner à tous les événements au niveau du groupe
 
@@ -107,19 +106,14 @@ Vous pouvez trouver le schéma de réponse webhook pour les événements inscrit
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
 | id | String | Identificateur de webhook |
-| objectId | String
- | Identificateur d'objet |
+| objectId | Chaîne | Identificateur d'objet |
 | objectType | String | Énumération: «Group»/«action»/«ActionPackage» |
-| événements | Chaîne [] | Liste d'événements avec chaque valeur «ActionCreated», «ActionResponse», «SurveyCreated», «JobCreated», «SurveyResponse», «JobResponse», «TextMessageCreated», «AttachmentCreated», «Announcement», «MemberAdded», «MemberRemoved», «GroupAdded», «», « GroupRemoved» |
-| callBackUrl | String
- | URL de rappel à laquelle les événements abonnés doivent être notifiés |
-| callBackToken | String
- | Paramètre qui sera envoyé dans l'en-tête HTTP'KZ-callback-Token'avec chaque rappel effectué par le webHook |
-| callBackContext | String
- | Paramètre envoyé dans la charge utile JSON comme «Context» avec chaque rappel effectué par le webHook |
-| validité | String
- | La validité du webHook est active au format d'époque. |
-| Active | Boolean | True si l'état du webhook est actif |
+| events | Chaîne [] | Liste d'événements avec chaque valeur «ActionCreated», «ActionResponse», «SurveyCreated», «JobCreated», «SurveyResponse», «JobResponse», «TextMessageCreated», «AttachmentCreated», «Announcement», «MemberAdded», «MemberRemoved», «GroupAdded», «», « GroupRemoved» |
+| callBackUrl | Chaîne | URL de rappel à laquelle les événements abonnés doivent être notifiés |
+| callBackToken | Chaîne | Paramètre qui sera envoyé dans l'en-tête HTTP'KZ-callback-Token'avec chaque rappel effectué par le webHook |
+| callBackContext | Chaîne | Paramètre envoyé dans la charge utile JSON comme «Context» avec chaque rappel effectué par le webHook |
+| validité | Chaîne | La validité du webHook est active au format d'époque. |
+| Active | Booléen | True si l'état du webhook est actif |
 
 ##### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -189,8 +183,8 @@ Tout paramètre du webhook peut être mis à jour. Le corps de la demande peut c
 | callBackUrl | Chaîne | Oui | URL HTTPs à laquelle les événements abonnés doivent être notifiés |
 | callBackToken | Chaîne | Oui | Paramètre facultatif que vous pouvez définir qui sera envoyé dans l'en-tête HTTP'KZ-callback-Token'avec chaque rappel effectué par le webHook |
 | callBackContext | Chaîne | Oui | Paramètre facultatif que vous pouvez définir qui sera envoyé dans la charge utile JSON en tant que «Context» avec chaque rappel effectué par le webHook |
-| validité | String | Oui | La validité du webHook est active au format d'époque. La valeur par défaut est 2 ans |
-| Actif | Boolean | Oui | Définir l'état du webhook sur actif si la valeur est true |
+| validité | Chaîne | Oui | La validité du webHook est active au format d'époque. La valeur par défaut est 2 ans |
+| Actif | Booléen | Oui | Définir l'état du webhook sur actif si la valeur est true |
 
 
 #### <a name="sample-request-body"></a>Exemple de corps de requête

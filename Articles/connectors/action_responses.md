@@ -1,46 +1,46 @@
 ---
 title: /Responses
-description: Article de référence de l’API obtenir des données de réponse pour les Actions Kaizala
+description: Article de référence pour les API permettant d'obtenir des données de réponse pour les actions Kaizala
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: 7eee4d159fa932bec1e949ea6fd2b558d2154e7b
-ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "20399370"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190725"
 ---
-# <a name="post-response-to-an-action"></a>Réponse à une Action
-## <a name="post-responses"></a>/Responses POST
+# <a name="post-response-to-an-action"></a>Publier une réponse à une action
+## <a name="post-responses"></a>POST/Responses
 
     POST {endpoint-url}/groups/{groupId}/actions/{actionId}/responses
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | Identificateur de groupe |
-| Paramètre de chemin d’accès d’URL | actionId | String | Non | Identificateur d’action |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| En-tête HTTP | Content-Type | String | Non | valeur : application/json |
+| Paramètre de chemin d'URL | groupId | String | Non | Identificateur de groupe |
+| Paramètre de chemin d'URL | actionId | String | Non | Identificateur d'action |
+| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | String | Non | valeur: application/JSON |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| id | String | ID du package Kaizala Action. ActionType ou Id doit être spécifiée |
-| actionType | String | Enum « Enquête » / « Du travail ». ActionType ou Id doit être spécifiée |
-| responseId | String | Pour mettre à jour la réponse existante |
-| actionBody | Objet JSON | Objet représentant les données nécessaires pour l’Action respectif. Paramètres définis ci-dessous pour chacune des Actions prises en charge. |
+| id | Chaîne | ID du package d'action Kaizala. L'un des actionType ou l'ID doit être spécifié |
+| actionType | String | Enum «Survey»/«Job». L'un des actionType ou l'ID doit être spécifié |
+| responseId | Chaîne | Pour la mise à jour de la réponse existante |
+| actionBody | Objet JSON | Objet représentant les données nécessaires pour l'action correspondante. Paramètres définis ci-dessous pour chacune des actions prises en charge. |
 
-#### <a name="actionbody-for-a-job-action"></a>actionBody pour une Action de tâche
+#### <a name="actionbody-for-a-job-action"></a>actionBody pour une action de travail
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| isCompleted | Bool | Non | Marque la tâche comme étant achevée |
+| isCompleted | Bool | Non | Marquer le travail comme étant terminé |
 
 
-##### <a name="sample-json-request-for-a-job-action"></a>Exemple de demande JSON pour une Action de tâche
+##### <a name="sample-json-request-for-a-job-action"></a>Exemple de demande JSON pour une action de travail
 
 ```javascript
 {
@@ -51,23 +51,23 @@ ms.locfileid: "20399370"
 }
 ```
 
-#### <a name="actionbody-for-a-survey-action-or-action-package-instanceid-"></a>actionBody pour un instance(id) de package enquête Action ou Action :
+#### <a name="actionbody-for-a-survey-action-or-action-package-instanceid-"></a>actionBody pour une action d'enquête ou une instance de package d'action (ID):
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| responseName | String | Oui | Pour identifier une réponse |
-| responseLocation | Objet Location | Oui | Pour identifier l’emplacement de la réponse |
-| réponses | object[] | Non | Réponse de chaque question (basée sur un index). objet sera de type chaîne pour le type de question : Text/SingleOption/Image, objet sera de type string [] type de question : MultiOption/AttachmentList, objet sera de type double pour le type de question : numérique/Date |
+| responseName | Chaîne | Oui | Pour identifier une réponse de manière unique |
+| responseLocation | Objet Location | Oui | Pour identifier l'emplacement de la réponse |
+| réponses | object[] | Non | Réponse de chaque question (en fonction de l'index). l'objet sera de type chaîne pour type de question: SingleOption/Text/image, Object sera de type chaîne [] pour type de question: multiOption/AttachmentList, l'objet sera de type double pour type de question: numérique/date |
 
-##### <a name="structure-for-location-object"></a>Structure de l’objet d’emplacement
+##### <a name="structure-for-location-object"></a>Structure de l'objet Location
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| latitude | Double | Non | Latitude de l’emplacement |
-| longitude | Double | Non | Longitude de l’emplacement |
-| name | String | Non | Nom de l’emplacement |
+| latitude | Double | Non | Latitude de l'emplacement |
+| longitude | Double | Non | Longitude de l'emplacement |
+| name | Chaîne | Non | Nom de l'emplacement |
 
-##### <a name="sample-json-request-for-a-survey-action"></a>Exemple de demande JSON pour une Action de l’enquête
+##### <a name="sample-json-request-for-a-survey-action"></a>Exemple de demande JSON pour une action d'enquête
 
 ```javascript
 {
@@ -85,13 +85,13 @@ ms.locfileid: "20399370"
   }
 }
 ```
-Vous devez télécharger l’image (v1/support api), puis utiliser mediaResource de la réponse comme réponse à la question de type Image.
+Vous devez télécharger une image (v1/API multimédia), puis utiliser mediaResource de la réponse en tant que réponse à la question du type d'image.
 
 #### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| responseId | String | Identificateur de réponse. Vous permet de réponse de mise à jour |
+| responseId | Chaîne | Identificateur de la réponse. Est-il possible d'utiliser pour la mise à jour de la réponse? |
 
 ```javascript
 {

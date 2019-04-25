@@ -1,39 +1,39 @@
 ---
 title: /Groups
-description: Article de référence de l’API pour interroger les données de groupe
+description: Article de référence pour l'API permettant de rechercher des données de groupe
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: 6a0b56d36aef458b5a3d302235499f445ed134e6
-ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "20399372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190715"
 ---
 # <a name="groups"></a>/Groups
-Point de terminaison API pour interagir avec les groupes de conversation à l’intérieur de Kaizala.
+Point de terminaison d'API pour interagir avec les groupes de conversation dans Kaizala.
 
-## <a name="post-groups"></a>/Groups POST
+## <a name="post-groups"></a>POST/Groups
 
     Post {endpoint-url}/v1/groups
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| En-tête HTTP | Content-Type | String | Non | « application/json » |
+| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | String | Non | «application/JSON» |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :--- | :--- |
-| name | String | Non | Nom de groupe |
-| welcomeMessage | String | Non | Message de bienvenue qui s’affiche à nouveau membre du groupe |
-| membres | String] | Oui | Numéro de Mobile (avec le code du pays) des membres à ajouter. Valeur par défaut : Utilisateur du jeton d’accès sera ajouté en tant qu’administrateur du groupe |
-| groupType | String | Oui | Enum : Groupe/ConnectGroup. ConnectGroup créera un groupe Public gérés. Par défaut : groupe |
+| name | Chaîne | Non | Nom du groupe |
+| welcomeMessage | String | Non | Message d'accueil qui sera affiché dans le nouveau membre de groupe |
+| membres | Chaîne [] | Oui | Numéro de téléphone mobile (avec code de pays) des membres à ajouter. Valeur par défaut: l'utilisateur du jeton d'accès est ajouté en tant qu'administrateur du groupe. |
+| groupType | Chaîne | Oui | Énumération: Group/ConnectGroup. ConnectGroup crée un groupe public géré. Valeur par défaut: groupe |
 
-#### <a name="sample-json-request-for-create-group"></a>Exemple de demande JSON pour créer le groupe
+#### <a name="sample-json-request-for-create-group"></a>Exemple de requête JSON pour Create Group
 
 ```javascript
 {
@@ -48,9 +48,9 @@ Point de terminaison API pour interagir avec les groupes de conversation à l’
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| groupName | String | Nom de groupe |
-| groupId | String | Identificateur de groupe qui peut être utilisé dans les appels d’api suivants |
-| membersAdded | bool | True si tous les membres sont bien ajoutés |
+| groupName | Chaîne | Nom du groupe |
+| groupId | Chaîne | Identificateur de groupe qui peut être utilisé dans les appels d'API suivants |
+| membersAdded | bool | True si tous les membres sont ajoutés avec succès |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -63,36 +63,36 @@ Point de terminaison API pour interagir avec les groupes de conversation à l’
 ```
 
 
-## <a name="get-groups"></a>OBTENIR /groups
+## <a name="get-groups"></a>OBTENIR/Groups
 
     GET {endpoint-url}/v1/groups
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| Paramètre de requête | showDetail | bool | Oui | Par défaut : false. True pour renvoyer tous les détails du groupe |
-| Paramètre de requête | fetchAllGroups | bool | Oui | Par défaut : false. True pour renvoyer tous les parents et sub groupes |
+| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| Paramètre de requête | showDetail | bool | Oui | Valeur par défaut: false. True pour renvoyer tous les détails du groupe |
+| Paramètre de requête | fetchAllGroups | bool | Oui | Valeur par défaut: false. True pour renvoyer tous les parents et sous-groupes |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| groupes | Tableau d’objets JSON | Tableau de groupes que l’utilisateur a accès à avec l’accessToken |
+| groupes | Tableau d'objets JSON | Tableau de groupes auxquels l'utilisateur a accès à l'aide du accessToken |
 
-####  <a name="json-structure-for-each-individual-group-in-the-array-groups"></a>Structure de JSON pour chaque groupe individuel dans le tableau groupes [] :
+####  <a name="json-structure-for-each-individual-group-in-the-array-groups"></a>Structure JSON pour chaque groupe individuel dans les groupes de tableaux []:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| groupId | String | Identificateur de groupe |
-| groupName | String | Nom du groupe |
-| groupImageURL | String | Chaîne spécifiant l’URL de l’image de profil de groupe |
+| groupId | Chaîne | Identificateur de groupe |
+| groupName | Chaîne | Nom du groupe |
+| groupImageURL | Chaîne | Chaîne spécifiant l'URL de l'image de profil de groupe |
 | hasSubGroups | bool | True si le groupe a des sous-groupes |
-| hasParentGroups | bool | True si le groupe a groupes parents |
-| isMappedToTenant | bool | True si le groupe est le groupe d’Organisation |
-| groupType | String | Groupe/ConnectGroup. ConnectGroup si le groupe dans le groupe Public gérés |
-| userCount | Numérique | Nombre total d’utilisateurs sous ce groupe dans la hiérarchie |
+| hasParentGroups | bool | True si le groupe a des groupes parents |
+| isMappedToTenant | bool | True si le groupe est un groupe d'organisation |
+| groupType | Chaîne | Group/ConnectGroup. ConnectGroup si le groupe dans le groupe public géré |
+| Nombre | Numérique | Nombre total d'utilisateurs sous ce groupe dans la hiérarchie |
 | currentLevelUserCount | Numérique | Nombre total de membres individuels du groupe au niveau actuel |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
@@ -124,37 +124,37 @@ Point de terminaison API pour interagir avec les groupes de conversation à l’
 }
 ```
 
-## <a name="get-groupsgroupid"></a>OBTENIR /groups/ {groupId}
+## <a name="get-groupsgroupid"></a>OBTENIR/groups/{groupId}
 
-Vous pouvez obtenir plus d’informations sur un membre de ressources spécifiques (groupe ici) en spécifiant l’identificateur comme un paramètre de chemin d’accès d’URL
+Vous pouvez obtenir des détails sur un membre de ressource spécifique (un groupe ici) en spécifiant l'identificateur sous la forme d'un paramètre de chemin d'URL.
 
     GET {endpoint-url}/groups/{groupId}
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| groupes | Tableau d’objets JSON | Tableau de groupes que l’utilisateur a accès à avec l’accessToken |
+| groupes | Tableau d'objets JSON | Tableau de groupes auxquels l'utilisateur a accès à l'aide du accessToken |
 
-Structure de JSON pour chaque groupe individuel dans le tableau groupes [] :
+Structure JSON pour chaque groupe individuel dans les groupes de tableaux []:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| groupId | String | Identificateur de groupe |
-| groupName | String | Nom du groupe |
-| groupImageURL | String | Chaîne spécifiant l’URL de l’image de profil de groupe |
+| groupId | Chaîne | Identificateur de groupe |
+| groupName | Chaîne | Nom du groupe |
+| groupImageURL | Chaîne | Chaîne spécifiant l'URL de l'image de profil de groupe |
 | hasSubGroups | bool | True si le groupe a des sous-groupes |
-| hasParentGroups | bool | True si le groupe a groupes parents |
-| isMappedToTenant | bool | True si le groupe est le groupe d’Organisation |
-| groupType | String | Groupe/ConnectGroup. ConnectGroup si le groupe dans le groupe Public gérés |
-| userCount | Numérique | Nombre total d’utilisateurs sous ce groupe dans la hiérarchie |
+| hasParentGroups | bool | True si le groupe a des groupes parents |
+| isMappedToTenant | bool | True si le groupe est un groupe d'organisation |
+| groupType | Chaîne | Group/ConnectGroup. ConnectGroup si le groupe dans le groupe public géré |
+| Nombre | Numérique | Nombre total d'utilisateurs sous ce groupe dans la hiérarchie |
 | currentLevelUserCount | Numérique | Nombre total de membres individuels du groupe au niveau actuel |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON

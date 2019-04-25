@@ -1,4 +1,4 @@
-# <a name="app-model-schema"></a>Schéma de modèle d’application
+# <a name="app-model-schema"></a>Schéma de modèle d'application
 `````json-schema
 {
     "$schema": "http://json-schema.org/draft-04/schema#",

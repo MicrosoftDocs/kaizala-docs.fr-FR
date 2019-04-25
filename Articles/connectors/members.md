@@ -1,34 +1,34 @@
 ---
 title: /Members
-description: Article de référence de l’API pour interroger les données de membres de groupe
+description: Article de référence pour l'API permettant d'interroger les données des membres du groupe
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: a2bbbc19e74140737e768b55f296f2463004d2fa
-ms.sourcegitcommit: 3a6a13cc885faf1bbc9ee8498f5183f414395aac
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19905151"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190791"
 ---
 # <a name="members"></a>/Members
-Point de terminaison API pour ajouter ou supprimer des membres de groupes de conversation à l’intérieur de Kaizala.
+Point de terminaison d'API pour ajouter ou supprimer des membres de groupes de conversation dans Kaizala.
 
-## <a name="get-members"></a>OBTENIR /members
+## <a name="get-members"></a>OBTENIR/members
 
     GET {endpoint-url}/v1/groups/{groupId}/members
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | Chaîne | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| members | Tableau JSON | Tableau de JSON objets chaque qui représente un membre du groupe |
+| members | Tableau JSON | Tableau d'objets JSON chacun représentant un membre du groupe. |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -51,25 +51,25 @@ Point de terminaison API pour ajouter ou supprimer des membres de groupes de con
 }
 ```
 
-## <a name="put-members"></a>Placez /members
+## <a name="put-members"></a>PUT/members
 
     PUT {endpoint-url}/v1/groups/{groupId}/members
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | Chaîne | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| En-tête HTTP | Content-Type | Chaîne | Non | valeur : application/json |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | Chaîne | Non | valeur: application/JSON |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| members | Tableau de chaînes | Tableau des numéros de téléphone au format correct de nouveaux membres à ajouter |
+| members | Tableau de chaînes | Tableau de numéros de téléphone bien mis en forme des nouveaux membres à ajouter |
 
-#### <a name="sample-json-request"></a>Exemple de demande JSON
+#### <a name="sample-json-request"></a>Exemple de requête JSON
 
 ```javascript
 {
@@ -84,7 +84,7 @@ Point de terminaison API pour ajouter ou supprimer des membres de groupes de con
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| result | Bool�en | True si tous les numéros de téléphone ont correctement été ajouté au groupe |
+| result | Booléen | True lorsque tous les numéros de téléphone ont été ajoutés au groupe avec succès |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -94,23 +94,23 @@ Point de terminaison API pour ajouter ou supprimer des membres de groupes de con
 }
 ```
 
-## <a name="delete-members"></a>SUPPRIMER /members
+## <a name="delete-members"></a>SUPPRIMER/members
 
     DELETE {endpoint-url}/v1/groups/{groupId}/members/{memberId}
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | Chaîne | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| Paramètre de chemin d’accès d’URL | ID de membre | Chaîne | Non | GUID représentant l’ID de membre spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| Paramètre de chemin d'URL | ID | Chaîne | Non | GUID représentant l'ID de membre du membre spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| result | Bool�en | La valeur True après le membre spécifié a correctement été supprimé du groupe |
+| result | Booléen | True lorsque le membre spécifié a été supprimé du groupe avec succès. |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 

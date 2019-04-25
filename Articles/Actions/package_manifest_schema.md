@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 65f66e554aaaa69957d16a115a5cf7529314c4ac
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727716"
----
 `````
 {
     "$schema": "http://json-schema.org/draft-04/schema#",

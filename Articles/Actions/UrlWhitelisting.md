@@ -1,19 +1,19 @@
-# <a name="load-external-urls-within-your-action"></a>Charger des URL externes au sein de votre Action
+# <a name="load-external-urls-within-your-action"></a>Charger les URL externes dans votre action
 
-Kaizala permet aux développeurs Action charger URL https au sein d’une Action. Dans les scénarios où Action développeur souhaite ouvrir une page Web, ils peuvent utiliser « externalUrls » pour charger des pages Web dans les vues IMMERSIFS.
-Pour activer le chargement de page Web au sein d’une Action, développeur Action doit d’autorisation les URL et les ajouter dans le fichier Package.json pour l’Action.
+Kaizala permet aux développeurs d'actions de charger les URL HTTPS au sein d'une action. Dans les scénarios où les développeurs d'actions veulent ouvrir une page Web, ils peuvent utiliser «externalUrls» pour charger des pages Web au sein d'affichages immersifs.
+Pour activer le chargement de la page Web au sein d'une action, le développeur d'actions doit utiliser les URL de la liste blanche et les ajouter dans le fichier Package. JSON pour l'action.
 
-## <a name="whitelisting-external-url"></a>Création de listes autorisées des URL externe
+## <a name="whitelisting-external-url"></a>URL externe de liste d'adresses
 
-Dans votre fichier 'Package.json' pour votre Action
-* Ajoutez une nouvelle balise **'externalUrls'**.
-* Ajouter la liste d’URL que vous souhaitez à la liste d’autorisation dans cette balise. Vous trouverez la partie de l’exemple de code ci-dessous. 
+Dans le fichier «Package. JSON» pour votre action
+* Ajoutez une nouvelle balise **«externalUrls»**.
+* Ajoutez la liste des URL que vous souhaitez autoriser dans cette balise. Recherchez la partie de l'exemple de code ci-dessous. 
 ```
   "externalUrls": [
     { "url" : "https://www.example-url.com" },
     { "url" : "https://another-example-url.com" },
   ],
 ```
-* Chaque url doit être une url complète valide.
-* Chaque url doit être une url https.
+* Chaque URL doit être une URL complète valide.
+* Chaque URL doit être une URL HTTPS.
 

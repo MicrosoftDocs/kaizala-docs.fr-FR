@@ -1,26 +1,26 @@
-#   <a name="form-summary-flow-apis"></a>Formulaire de flux synthèse API :
+#   <a name="form-summary-flow-apis"></a>API de flux de synthèse de formulaire:
 
-| **API** | Description | Paramètre de demande | Sortie de réponse |
+| **API** | Description | Paramètre de requête | Sortie de la réponse |
 | :---: | :---: | :---: | :--- |
-| **shouldSeeFormSummaryAsync** | Détermine si le formulaire de synthèse est visible à l’utilisateur actuel |  | *shouldSeeSummary ((valeur booléenne))* - true si l’utilisateur actuel est autorisé à voir Résumé |
-| **getFormSummaryAsync** | Obtient les réponses à tous les utilisateurs et résumé traité à partir de toutes les réponses associés au formulaire | Implique le rappel de synthèse de formulaire à deux dimensions et de traitement de rappel de synthèse de formulaire | Objets de synthèse |
-| **getFlatFormSummaryAsync** | Obtient les réponses plats par tous les utilisateurs associés au formulaire (il est recommandé d’utiliser des getFormSummary() au lieu de cela) | | *flatSummary* – objet résumé |
-| **getProcessedFormSummaryAsync** | Obtient le résumé traité à partir de toutes les réponses associé au formulaire (il est recommandé d’utiliser des getFormSummary() au lieu de cela) | | *processedSummary* – objet résumé |
-| **getAggregatedFormSummaryAsync** | Obtient agrégées récapitulative à partir de toutes les réponses associés au formulaire | | *aggregatedSummary* – objet résumé |
-| **getFormURLAsync** | Obtient l’url du fichier contenant les réponses plats associés au formulaire de serveur | | Url |
-| **shareFormURL** | Lance le partage native écran pour l’url du formulaire | URL à partager | |
-| **getFormReactionAsync** | Obtient la réaction consolidée (J’aime et commentaires) de la carte de conversation associée au formulaire | | Objet réaction |
-| **showAllReactions** | Affiche tous les la réaction écran (J’aime et commentaires) par rapport à l’écran | | |
-| **likeForm** | Pour ajouter un décompte similaire à un formulaire, le nombre de demandes peuvent entraîner une diminution si l’utilisateur actuel a aimé déjà le formulaire | | |
-| **addCommentOnForm** | Demandes d’ajout d’un commentaire à un formulaire | | |
-| **respondToForm** | Demandes d’ajout d’une réponse à un formulaire, en lançant l’écran de réponse | | |
-| **sendRemindersToRespond** | Envoie un rappel (une nouvelle carte de conversation) par rapport à la carte existante | | |
-| **copyFormAndForward** | Lance le sélecteur de conversation pour transférer une copie du formulaire existant en tant qu’une nouvelle carte de conversation | | |
-| **updateFormPropertiesAsync** | Publier une demande pour mettre à jour les propriétés associées à l’écran |  <ul><li>*propertyUpdates* - un tableau de toutes les infos de mise à jour qui sont nécessaires pour être effectuée – *tableau de KASFormPropertyUpdateInfo*</li><li>*notifyUsers* - envoyer des notifications push pour ces noms d’utilisateurs concernant cette mise à jour – *tableau de chaînes*</li><li>*notificationMessage* - de message de notification push *chaîne*</li></ul> | *Success(Boolean)* - indique la réussite ou l’échec de la mise à jour|
+| **shouldSeeFormSummaryAsync** | Obtient une valeur indiquant si le résumé du formulaire est visible par l'utilisateur actuel. |  | *shouldSeeSummary (Boolean)* -true si l'utilisateur actuel est autorisé à afficher la synthèse |
+| **getFormSummaryAsync** | Obtient les réponses de tous les utilisateurs et le résumé traité de toutes les réponses associées au formulaire. | Inclut le rappel de résumé de formulaire plat et le rappel de résumé de formulaire traité | Objets de synthèse |
+| **getFlatFormSummaryAsync** | Obtient les réponses plates de tous les utilisateurs associés au formulaire (il est recommandé d'utiliser getFormSummary () à la place de celui-ci) | | *flatSummary* : objet de synthèse |
+| **getProcessedFormSummaryAsync** | Obtient le résumé traité de toutes les réponses associées au formulaire (il est recommandé d'utiliser getFormSummary () à la place de celui-ci) | | *processedSummary* : objet de synthèse |
+| **getAggregatedFormSummaryAsync** | Obtient une synthèse agrégée de toutes les réponses associées au formulaire. | | *aggregatedSummary* : objet de synthèse |
+| **getFormURLAsync** | Obtient l'URL de fichier à partir du serveur contenant les réponses plates associées au formulaire. | | Url |
+| **shareFormURL** | Lance l'écran de partage natif pour l'URL du formulaire | URL à partager | |
+| **getFormReactionAsync** | Obtient la réaction consolidée (j'aime et les commentaires) de la carte de conversation associée au formulaire. | | Objet reAction |
+| **showAllReactions** | Affiche tous les écrans de réaction (j'aime et commentaires) sur le formulaire | | |
+| **likeForm** | Demandes d'ajout d'un nombre similaire à un formulaire, le nombre peut diminuer si l'utilisateur actuel a déjà aimé le formulaire. | | |
+| **addCommentOnForm** | Demandes d'ajout d'un commentaire à un formulaire | | |
+| **respondToForm** | Demandes d'ajout d'une réponse à un formulaire, en lançant l'écran de réponse | | |
+| **sendRemindersToRespond** | Envoie un rappel (une nouvelle carte de conversation) à la carte existante | | |
+| **copyFormAndForward** | Lance le sélecteur de conversation pour transférer une copie du formulaire existant en tant que nouvelle carte de conversation | | |
+| **updateFormPropertiesAsync** | Publier une demande pour mettre à jour les propriétés associées au formulaire |  <ul><li>*propertyUpdates* -tableau de toutes les informations de mise à jour qui sont nécessaires à l'exécution – *tableau de KASFormPropertyUpdateInfo*</li><li>*notifyUsers* -envoyer des notifications de type émission à ces ID d'utilisateur concernant cette mise à jour – *tableau de chaînes*</li><li>*notification* - *chaîne* de message de notification de type poussé</li></ul> | *Success (Boolean)* : indique la réussite ou l'échec de la mise à jour|
 
 ##   <a name="get-the-summary-associated-with-the-form"></a>Obtenir le résumé associé au formulaire
 
-```typescript 
+```typescript 
 /**
   * Gets flat responses by all the users, and processed summary from all the responses associated
   * with the form. It requires two callbacks:
@@ -43,7 +43,7 @@
                    notifyCallback: function(flatSummary: KASFormFlatSummary, processedSummary: KASFormProcessedSummary, error: string))
 ```
 
-##   <a name="get-the-flat-summary-all-responses-associated-with-the-form"></a>Obtenir le résumé plat (toutes les réponses) associé au formulaire
+##   <a name="get-the-flat-summary-all-responses-associated-with-the-form"></a>Obtenir le résumé plat (toutes les réponses) associées au formulaire
 
 ```typescript
 /**
@@ -55,7 +55,7 @@
   function getFlatFormSummaryAsync(callback: function(flatSummary: KASFormFlatSummary, error: string))
 ```
 
-##   <a name="get-the-processed-summary-aggregated-responses-associated-with-the-form"></a>Obtenir le résumé traité (réponses agrégées) associé au formulaire
+##   <a name="get-the-processed-summary-aggregated-responses-associated-with-the-form"></a>Obtenir le résumé traité (réponses agrégées) associées au formulaire
 
 ```typescript
 /**
@@ -67,7 +67,7 @@
   function getProcessedFormSummaryAsync(callback: function(processedSummary: KASFormProcessedSummary, error: string))
 ```
 
-##   <a name="fetch-from-server-and-get-the-result-url-all-responses-associated-with-the-form"></a>Extraction (serveur) et obtenir l’url du résultat (toutes les réponses) associé au formulaire
+##   <a name="fetch-from-server-and-get-the-result-url-all-responses-associated-with-the-form"></a>Extraire (à partir du serveur) et obtenir l'URL de résultat (toutes les réponses) associées au formulaire
 
 ```typescript
 /**
@@ -79,7 +79,7 @@
   function getFormURLAsync(callback: function(url: string, error: string))
 ```
 
-##   <a name="share-the-result-url-fetched-from-server"></a>Partager le résultat qu'url extraites du serveur
+##   <a name="share-the-result-url-fetched-from-server"></a>Partager l'URL de résultats extraite à partir du serveur
 
 ```typescript
 /**
@@ -89,7 +89,7 @@
   function shareFormURL(url: string)
 ```
 
-##   <a name="get-all-the-reactions-associated-with-the-form"></a>Obtenir tous les réactions associées au formulaire
+##   <a name="get-all-the-reactions-associated-with-the-form"></a>Obtenir toutes les réactions associées au formulaire
 
 ```typescript
 /**
@@ -101,7 +101,7 @@
   function getFormReactionAsync(callback: function(reaction: KASFormReaction, error: string))
 ```
 
-##   <a name="show-all-the-reactions-associated-with-the-form"></a>Afficher tous les réactions associées au formulaire
+##   <a name="show-all-the-reactions-associated-with-the-form"></a>Afficher toutes les réactions associées au formulaire
 
 ```typescript
 /**
@@ -110,7 +110,7 @@
   function showAllReactions()
 ```
 
-##   <a name="put-a-like-on-the-form-in-turn-the-associated-conversation-card"></a>Placez un type sur le formulaire (activer la carte de conversation associée)
+##   <a name="put-a-like-on-the-form-in-turn-the-associated-conversation-card"></a>Placer un comme sur le formulaire (à son tour, la carte de conversation associée)
 
 ```typescript
 /**
@@ -119,7 +119,7 @@
   function likeForm()
 ```
 
-##   <a name="show-response-view-for-the-form"></a>Afficher le mode de réponse pour le formulaire
+##   <a name="show-response-view-for-the-form"></a>Afficher l'affichage des réponses pour le formulaire
 
 ```typescript
 /**
@@ -128,7 +128,7 @@
   function respondToForm()
 ```
 
-##   <a name="remind-other-people-to-respond"></a>Rappeler les autres personnes doivent répondre
+##   <a name="remind-other-people-to-respond"></a>Rappeler aux autres personnes de répondre
 
 ```typescript
 /**
@@ -137,7 +137,7 @@
   function sendRemindersToRespond()
 ```
 
-##   <a name="forward-a-new-form-duplicated-from-the-associated-one"></a>Transférer un nouveau formulaire double de celle associée
+##   <a name="forward-a-new-form-duplicated-from-the-associated-one"></a>Transférer un nouveau formulaire dupliqué à partir du associé
 
 ```typescript
 /**
@@ -146,7 +146,7 @@
   function copyFormAndForward() 
 ```
 
-##   <a name="close-the-form-in-turn-responses-to-it"></a>Fermer le formulaire (en activer les réponses lui)
+##   <a name="close-the-form-in-turn-responses-to-it"></a>Fermer le formulaire (en lui transformeant des réponses)
 
 ```typescript
 /**

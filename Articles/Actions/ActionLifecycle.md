@@ -1,9 +1,9 @@
-# <a name="action-lifecycle"></a>Action de cycle de vie
+# <a name="action-lifecycle"></a>Cycle de vie des actions
 
-Une Action peut prendre 5 états :
+Une action peut avoir 5 États:
 
-* **Brouillon** - Action est téléchargé avec succès. Il est visible uniquement par le créateur de l’Action et organisation Admin(s) sur le portail de gestion Kaizala. Il ne peut pas être ajouté aux groupes
-* **Intermédiaire** - Action dans un état intermédiaire peuvent être testées (avant le déploiement) dans les groupes pour lesquels créateur d’Action est un administrateur. Il est visible uniquement par le créateur de l’Action et Organisation Admin(s) sur le portail de gestion Kaizala
-* **Active** - après une version d’une Action est mis en place, il peut être activé. Dans un état actif, il est disponible pour tous les membres de l’Organisation pour l’ajouter dans leurs groupes respectifs sur le portail de gestion Kaizala
-* Inactif peut être établie à **inactif/Inactive** - Action dans un état actif. Dans ce cas, concerné package Action n’est pas disponible à d’autres membres de l’organisation pour l’ajouter à leurs groupes respectifs. Application Kaizala, il peut toujours être utilisé par les utilisateurs dans les groupes dans laquelle cette Action a déjà été ajoutée
-* **Suppression** - si une version d’une Action est explicitement supprimée ou remplacée par une autre version, elle est déplacée vers l’état de suppression. Sur les applications Kaizala, ces packages ne sera pas disponibles pour l’utilisateur à utiliser
+* **Draft** -action est téléchargée avec succès. Il n'est visible que par le créateur d'actions et les administrateurs d'organisation sur le portail de gestion Kaizala. Il ne peut pas être ajouté à des groupes
+* **Intermédiaire** -l'action dans l'état intermédiaire peut être testée (avant le déploiement) dans des groupes pour lesquels le créateur d'action est un administrateur. Il n'est visible que pour le créateur d'action et les administrateurs d'organisation sur le portail de gestion Kaizala
+* **Actif** : après qu'une version d'une action est intermédiaire, elle peut être activée. Dans l'état actif, il est disponible pour tous les membres de l'Organisation pour l'ajouter à ses groupes sur le portail de gestion Kaizala
+* **Inactive** -l'état actif peut être inactif. Dans cet État, le package d'action concerné n'est pas accessible aux autres membres de l'Organisation pour l'ajouter à leurs groupes. Sur l'application Kaizala, elle peut toujours être utilisée par les utilisateurs dans les groupes dans lesquels cette action est déjà ajoutée.
+* **Supprimé** : si une version d'une action est explicitement supprimée ou remplacée par une autre version, elle passe à l'état supprimé. Dans les applications Kaizala, ces packages ne pourront pas être utilisés par l'utilisateur.

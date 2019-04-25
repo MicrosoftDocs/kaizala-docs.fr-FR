@@ -1,37 +1,37 @@
-# <a name="guidelines-for-kaizala-actions"></a>Recommandations pour les Actions Kaizala
+# <a name="guidelines-for-kaizala-actions"></a>Instructions pour les actions Kaizala
 
-Ce document décrit les critères que doivent être respectées pour lors du développement d’Actions Kaizala. En outre, vous devez de consentement pour les [Conditions d’utilisation]() pour Kaizala Client SDK. Recherchez la stratégie de règle :
+Ce document décrit les critères qui doivent être respectés lors du développement d'actions Kaizala. En outre, vous devez accepter les [conditions d'utilisation]() du kit de développement logiciel client Kaizala. Veuillez trouver la stratégie d'instruction:
 
-1.  Actions Kaizala fournir de valeur pour les utilisateurs Kaizala
-
-| Numéro de police | Description |
-| :---: | :--- |
-|1.1|Votre Action Kaizala doit proposer à valeur unique ou qui étend les fonctionnalités de client Kaizala pour les utilisateurs.|
-|1.2|Votre Action Kaizala doit fonctionner conformément à votre description et ne doit pas être inachevée.|
-
-2.  Actions Kaizala ne peut pas afficher les annonces
+1.  Les actions Kaizala fournissent la valeur aux utilisateurs du client Kaizala
 
 | Numéro de police | Description |
 | :---: | :--- |
-|2.1|L’Action Kaizala ne peut pas contenir n’importe quel formulaire d’annonces.|
+|1.1|Votre action Kaizala doit proposer une valeur unique ou un utilitaire qui étend la fonctionnalité de client Kaizala pour les utilisateurs.|
+|1.2|Votre action Kaizala doit fonctionner conformément à votre description et ne doit pas être dans un État non terminé.|
 
-3.  Actions Kaizala comportement prévisible
-
-| Numéro de police | Description |
-| :---: | :--- |
-|3.1|Votre Action Kaizala ne doit pas cesser de répondre, se terminer de manière inattendue ou contenir des erreurs de programmation.|
-|3.2|La description de l’Action Kaizala, les images, documentation et toute autre métadonnée associée à doivent être cohérentes avec les fonctionnalités de l’Action|
-|3.3|Votre Action Kaizala ne doit pas mettre en péril ou compromettre la sécurité ou les fonctionnalités de Microsoft ou de produits tiers|
-|3.4|Votre Action Kaizala doit être de virus, logiciels malveillants et les logiciels malveillants.|
-
-4. Actions Kaizala confirmer les restrictions de taille de lot 
+2.  Les actions Kaizala ne peuvent pas afficher de publicités
 
 | Numéro de police | Description |
 | :---: | :--- |
-|4.1|La taille du package Kaizala Action ne peut pas être supérieure à 1 Mo.|
+|2.1|Votre action Kaizala ne peut pas contenir une forme de publicités.|
 
-5. Package Actions Kaizala ne doit pas être à l’aide de mots clés 'Microsoft' dans sa définition de package
+3.  Les actions Kaizala se comportent de manière prévisible
 
 | Numéro de police | Description |
 | :---: | :--- |
-|5.1|Votre espace de noms id de package Kaizala Action ne doit pas comporter de Microsoft|
+|3.1|Votre action Kaizala ne doit pas cesser de répondre, se terminer de manière inopinée ou contenir des erreurs de programmation.|
+|3.2|La description de l'action Kaizala, l'image, la documentation et toute autre métadonnée associée doivent être cohérentes avec les fonctionnalités de l'action|
+|3.3|Votre action Kaizala ne doit pas compromettre ou compromettre la sécurité ou les fonctionnalités de Microsoft ou des produits tiers|
+|3.4|Votre action Kaizala doit être exempte de virus, de programmes malveillants et de tout autre logiciel malveillant.|
+
+4. Actions Kaizala confirmer les restrictions de taille de package 
+
+| Numéro de police | Description |
+| :---: | :--- |
+|4.1|La taille de votre package d'action Kaizala ne peut pas être supérieure à 1 Mo.|
+
+5. Le package d'actions Kaizala ne doit pas utiliser le mot clé «Microsoft» dans sa définition de package
+
+| Numéro de police | Description |
+| :---: | :--- |
+|5.1|Votre espace de noms d'ID de package d'action Kaizala ne doit pas contenir Microsoft|

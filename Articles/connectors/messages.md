@@ -1,40 +1,40 @@
 ---
 title: /messages
-description: Article de référence de l’API pour les messages de requête envoyée groupe carte réseau interne
+description: Article de référence pour l'API permettant de demander des messages envoyés à l'adresse interne
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: 8efad3236e852276e11c3052f98ac6f1d5541b0a
-ms.sourcegitcommit: 58839035fca768f92eda40974029208eb31dda7f
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27465700"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190711"
 ---
 # <a name="messages"></a>/messages
 
-Point de terminaison API pour envoyer des messages à des groupes de conversation à l’intérieur de Kaizala.
+Point de terminaison de l'API pour envoyer des messages à des groupes de conversation dans Kaizala.
 
-## <a name="post-messages"></a>/Messages POST
+## <a name="post-messages"></a>POST/messages
 
     POST {endpoint-url}/v1/groups/{groupId}/messages
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| En-tête HTTP | Content-Type | String | Non | valeur : application/json |
+| Paramètre de chemin d'URL | groupId | String | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | String | Non | valeur: application/JSON |
 
 ### <a name="request-body"></a>Corps de la demande
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :--- | :--- |
-| message | String | Non | Message texte envoyé (limite maximale de 1 000 caractères) |
-| sendToAllSubscribers | Bool | Oui | Par défaut : false. Valide uniquement dans les cas groupId appartient à un groupe Public. True pour envoyer le message à tous les abonnés qui requiert l’utilisateur du jeton admin du groupe Public |
-| abonnés | String] | Oui | Chaque élément correspond à un numéro de téléphone mobile (avec le code du pays. Par exemple. +911999999999). Message texte sera envoyé uniquement pour les abonnés sélectionnés. À utiliser pour la communication sélective aux abonnés dans le contexte d’un groupe Public |
+| message | String | Non | Message texte à envoyer (limite maximale de 1000 caractères) |
+| sendToAllSubscribers | Bool | Oui | Valeur par défaut: false. Valide uniquement si le groupId appartient à un groupe public. True pour envoyer le message texte à tous les abonnés qui nécessitent l'administrateur du jeton pour être administrateur du groupe public |
+| leurs | Chaîne [] | Oui | Chaque élément correspond à un numéro de téléphone mobile (avec le code pays. Nnn. + 911999999999). Le message texte n'est envoyé qu'aux abonnés sélectionnés. À utiliser pour la communication sélective aux abonnés dans le contexte d'un groupe public |
 
-#### <a name="sample-json-request"></a>Exemple de demande JSON
+#### <a name="sample-json-request"></a>Exemple de requête JSON
 
 ```javascript
 {
@@ -47,7 +47,7 @@ Point de terminaison API pour envoyer des messages à des groupes de conversatio
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| referenceId | String | GUID représentant l’exécution réussie de la demande |
+| ID | Chaîne | GUID représentant la fin de la demande |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 

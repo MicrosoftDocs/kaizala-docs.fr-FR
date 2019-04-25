@@ -1,40 +1,40 @@
-#   <a name="app-apis"></a>API d’application :
+#   <a name="app-apis"></a>API d'application:
 
-| **API** | Description | Paramètre de demande | Sortie de réponse |
+| **API** | Description | Paramètre de requête | Sortie de la réponse |
 | :---: | :---: | :---: | :--- |
-| **getUsersDetailsAsync** | Obtient les détails des utilisateurs (nom, pic, numéro de téléphone, etc.) par rapport à leur ID | userIds tableau des ID d’utilisateur | *JSON d’infos utilisateur* |
-| **showContactPickerAsync** | Affiche un sélecteur de contact natif et renvoie un tableau de détails de tous les utilisateurs | <ul><li>*titre du sélecteur de Contact*</li><li>*selectedMutableUser* - tableau des ID utilisateur sélectionné</li><li>*selectedImmutableUser* - tableau des ID utilisateur sélectionné fixe</li><li>*isSingleSelection* - seule sélection dans le sélecteur de contacts</li></ul> | Tableau des détails de tous les utilisateurs (*Tableau de JSON*) |
-| **showImagePickerAsync** | Affiche un sélecteur d’images natif et renvoie le chemin d’accès de l’image sélectionnée | | *Emplacement de l’image sélectionnée* |
-| **showAttachmentPickerAsync** | Affiche un sélecteur de pièce jointe dans la couche native | <ul><li>*supportedTypes* - tableau des types de pièce jointe pris en charge pour le sélecteur</li><li>propriétés supplémentaires pour configurer le sélecteur</li></ul> | |
-| **downloadAttachmentAsync** | Télécharger la pièce jointe spécifiée | <ul><li>*avec un chemin d’accès de serveur valide pour télécharger des pièces jointes*</li><li>rappel à la fin du téléchargement</li></ul> | |
-| **cancelAttachmentDownloadAsync** | Annuler une opération de téléchargement en file d’attente d’une pièce jointe | pièce jointe | |
-| **showPlacePickerAsync** | Affiche un sélecteur de place natif et renvoie le lieu sélectionné (lt, lg, n) | Emplacement sélectionné | Latitude/longitude |
-| **showLocationOnMap** | Emplacement de donné s’ouvre des cartes natives avec | Type de [KASLocation](KASLocation.md) | |
-| **showDurationPickerAsync** | Affiche un sélecteur de durée native avec jour/heure/minute | Durée par défaut à afficher dans le sélecteur | |
-| **isTalkBackEnabledAsync** | Indique si talkback est activé ou non | | Bool�en |
-| **generateUUIDAsync** | Obtient le nouvel UUID | | Uuid nouvellement créé |
-| **getCurrentDeviceLocationAsync** | Obtient l’emplacement actuel du périphérique | | |
-| **getAppLocaleAsync** | Obtient les paramètres régionaux application-langue dans laquelle l’application s’affiche, utile pour localiser les chaînes de l’Action | | Locale |
-| **getConversationParticipantsCountAsync** | Obtient tous les participants-ID de la conversation en cours | | Nombre de participants |
-| **getConversationNameAsync** | Obtient le nom actuel de la conversation | | Nom de la conversation |
-| **dismissCurrentScreen** | Faire disparaître l’écran actuel (création, réponse ou résumé) | | |
-| **ShowProgressBar indique** | Affiche une barre de progression de l ' écran complète native avec le texte donné | Texte à afficher | |
-| **hideProgressBar** | Masque la barre de progression en cours, le cas échéant | | |
-| **getCurrentUserIdAsync** | Obtient le nom d’utilisateur qui a ouvert l’Action en cours | | User ID |
-| **showImageImmersiveView** | Affiche l’Image en mode immersif | Tableau d’url d’images | |
+| **getUsersDetailsAsync** | Obtient les détails des utilisateurs (nom, pic, numéro de téléphone, etc.) par rapport à leurs ID. | Tableau des ID utilisateur | *JSON des informations utilisateur* |
+| **showContactPickerAsync** | Affiche un sélecteur de contacts natif et renvoie un tableau de tous les détails des utilisateurs sélectionnés | <ul><li>*titre du sélecteur de contacts*</li><li>*selectedMutableUser* -tableau d'ID utilisateur sélectionnés</li><li>*selectedImmutableUser* : tableau des ID utilisateur sélectionnés fixes</li><li>*isSingleSelection* -sélection unique dans le sélecteur de contacts</li></ul> | Tableau de tous les détails des utilisateurs sélectionnés (*tableau de JSON*) |
+| **showImagePickerAsync** | Affiche un sélecteur d'image native et renvoie le chemin d'accès à l'image sélectionnée | | *Emplacement de l'image sélectionnée* |
+| **showAttachmentPickerAsync** | Affiche un sélecteur de pièces jointes dans la couche native | <ul><li>*supportedTypes* -tableau de types de pièces jointes pris en charge pour le sélecteur</li><li>autres propriétés permettant de configurer le sélecteur</li></ul> | |
+| **downloadAttachmentAsync** | Télécharger la pièce jointe spécifiée | <ul><li>*pièce jointe avec un chemin d'accès de serveur valide à télécharger*</li><li>rappel à la fin du téléchargement</li></ul> | |
+| **cancelAttachmentDownloadAsync** | Annuler une opération de téléchargement en file d'attente pour une pièce jointe | pièce jointe | |
+| **showPlacePickerAsync** | Affiche un sélecteur d'emplacement natif et renvoie le lieu sélectionné (LT, LG, n) | Emplacement sélectionné | Latitude/Longitude |
+| **showLocationOnMap** | Ouvre les cartes natives avec l'emplacement donné | Type [KASLocation](KASLocation.md) | |
+| **showDurationPickerAsync** | Affiche un sélecteur de durée native avec jour/heure/minute | Durée par défaut à afficher sur le sélecteur | |
+| **isTalkBackEnabledAsync** | Obtient une valeur indiquant si Talkback est activé ou non. | | Booléen |
+| **generateUUIDAsync** | Obtient le nouvel UUID | | UUID nouvellement généré |
+| **getCurrentDeviceLocationAsync** | Obtient l'emplacement actuel de l'appareil. | | |
+| **getAppLocaleAsync** | Obtient la langue locale de l'application en cours dans laquelle l'application est rendue, utile pour la localisation des chaînes de l'action. | | Locale |
+| **getConversationParticipantsCountAsync** | Obtient tous les ID de participant de la conversation actuelle. | | Nombre de participants |
+| **getConversationNameAsync** | Obtient le nom de la conversation actuelle. | | Nom de la conversation |
+| **dismissCurrentScreen** | Faire disparaître l'écran actuel (création, réponse ou résumé) | | |
+| **showProgressBar** | Affiche une barre de progression Sreen complète native avec le texte donné | Texte à afficher | |
+| **hideProgressBar** | Masque la barre de progression actuelle, le cas échéant. | | |
+| **getCurrentUserIdAsync** | Obtient l'ID d'utilisateur actuel qui a ouvert l'action. | | ID utilisateur |
+| **showImageImmersiveView** | Affiche l'image en mode immersif | Tableau de l'URL des images | |
 | **openAttachmentImmersiveView** | Ouvrir la pièce jointe en mode immersif | Objet Attachment | |
-| **hasStorageAccessForAttachmentType** | vérifie si application dispose d’un accès en lecture/écriture pour le stockage | Type de pièce jointe | |
-| **generateBase64ThumbnailAsync** | Génère une image miniature en Base64 | localPath pour l’imageAttachment dont miniature doit être généré | |
-| **getFontSizeMultiplierAsync** | Obtient le multiplicateur de taille de police de texte de grande taille - courant uniquement nécessaire pour iOS | | |
-| **getLocalizedStringsAsync** | Obtient le dictionnaire des chaînes localisées en fonction de paramètres régionaux application en cours | Chaînes doivent être fournis dans le package, par exemple : strings_en.json, strings_hi.json, etc..    | Chaînes JSON |
-| **logToReport** | Enregistre une erreur pour « Envoyer le rapport » | Type de pièce jointe | |
-| **isCurrentUserO365SubscribedAsync** | Vérifie si l’abonné utilisateur un O365 actuel | | Bool�en |
-| **registerHardwareBackPressCallback** | Enregistre un rappel à exécuter sur matériel, appuyez sur le bouton précédent (pour Android) | | |
-| **initLocalizationStringsAsync** | Initialise le mappage des chaînes de la localisation | Dictionnaire - feuille de route des chaînes | Success(Boolean) indique la réussite ou l’échec de l’initialisation |
-| **getString** |   Retourne une chaîne de fichier des chaînes localisées |stringid d' ||
+| **hasStorageAccessForAttachmentType** | vérifie si l'application dispose d'un accès en lecture/écriture au stockage | Type de pièce jointe | |
+| **generateBase64ThumbnailAsync** | Génère une miniature Base64 pour une image | localPath pour le imageAttachment dont la miniature doit être générée | |
+| **getFontSizeMultiplierAsync** | Obtient le multiplicateur de taille de police pour le texte de grande taille-actuel uniquement requis par iOS | | |
+| **getLocalizedStringsAsync** | Obtient le dictionnaire des chaînes localisées en fonction des paramètres régionaux de l'application actuelle | Les chaînes doivent être fournies dans le package avec des noms tels que: strings_en. JSON, strings_hi. JSON, etc.    | Chaînes JSON |
+| **logToReport** | Enregistre une erreur pour «envoyer un rapport» | Type de pièce jointe | |
+| **isCurrentUserO365SubscribedAsync** | Vérifie si l'utilisateur actuel est un abonné O365 | | Booléen |
+| **registerHardwareBackPressCallback** | Enregistre un rappel à exécuter sur une pression de bouton de retour matériel (pour Android) | | |
+| **initLocalizationStringsAsync** | Initialise le mappage des chaînes de localisation. | Dictionary-le mappage des chaînes | Success (Boolean) indique la réussite ou l'échec de l'initialisation. |
+| **getString** |   Renvoie une chaîne à partir du fichier de chaînes localisées |stringId ||
 
 
-##  <a name="get-user-info"></a>Obtenir les informations utilisateur
+##  <a name="get-user-info"></a>Obtenir des informations sur l'utilisateur
 
 ```typescript
 /**
@@ -59,7 +59,7 @@
   function showContactPickerAsync(callback: function(users: KASUser[], error: string))
 ```
 
-##  <a name="show-image-picker"></a>Afficher le sélecteur d’images
+##  <a name="show-image-picker"></a>Afficher le sélecteur d'images
 
 ```typescript
 /**
@@ -71,7 +71,7 @@
   function showImagePickerAsync(callback: function(selectedImagePath: string, error: string))
 ```
 
-##  <a name="get-current-device-location"></a>Obtenir l’emplacement actuel de l’unité
+##  <a name="get-current-device-location"></a>Obtenir l'emplacement actuel de l'appareil
 
 ```typescript
 /**
@@ -83,7 +83,7 @@
   function getCurrentDeviceLocationAsync(callback: function(location: string, error: string))
 ```
 
-##  <a name="place-picker"></a>Sélecteur d’emplacement
+##  <a name="place-picker"></a>Sélecteur de lieux
 
 ```typescript
 /**
@@ -95,7 +95,7 @@
   function showPlacePickerAsync(callback: (selectedLocation: KASLocation, error: string))
 ```
 
-##  <a name="show-location-on-maps"></a>Afficher l’emplacement sur les cartes
+##  <a name="show-location-on-maps"></a>Afficher l'emplacement sur les cartes
 
 ```typescript
 /**
@@ -105,7 +105,7 @@
   function showLocationOnMap(selectedLocation: KASLocation)
 ```
 
-##  <a name="show-error-message-alert-or-toast"></a>Afficher le message d’erreur (alerte ou toast)
+##  <a name="show-error-message-alert-or-toast"></a>Afficher un message d'erreur (Alert ou Toast)
 
 ```typescript
 /**
@@ -115,7 +115,7 @@
   function showNativeErrorMessage(message: string)
 ```
 
-##  <a name="get-current-language-used-by-the-app"></a>Obtenir la langue en cours utilisé par l’application
+##  <a name="get-current-language-used-by-the-app"></a>Obtenir la langue actuelle utilisée par l'application
 
 ```typescript
 /**
@@ -127,7 +127,7 @@
   function getAppLocaleAsync(callback: function(locale: string, error: string))
 ```
 
-##  <a name="get-the-name-of-the-current-conversation"></a>Obtenir le nom de la conversation en cours
+##  <a name="get-the-name-of-the-current-conversation"></a>Obtenir le nom de la conversation actuelle
 
 ```typescript
 /**
@@ -139,7 +139,7 @@
   function getConversationNameAsync(callback: function(name: string, error: string))
 ```
 
-##  <a name="dismiss-the-currently-opened-actions-screen"></a>Ignorer l’écran de l’Action actuellement ouvert.
+##  <a name="dismiss-the-currently-opened-actions-screen"></a>Faire disparaître l'écran de l'action actuellement ouverte
 
 ```typescript
 /**
@@ -148,7 +148,7 @@
   function dismissCurrentScreen()
 ```
 
-##  <a name="show-native-progress-bar"></a>Afficher la barre de progression native
+##  <a name="show-native-progress-bar"></a>Afficher la barre de progression Native
 
 ```typescript
 /**
@@ -158,7 +158,7 @@
   function showProgressBar(text: string)
 ```
 
-##  <a name="hide-native-progress-bar"></a>Masquer la barre de progression native
+##  <a name="hide-native-progress-bar"></a>Masquer la barre de progression Native
 
 ```typescript
 /**
@@ -167,7 +167,7 @@
   function hideProgressBar()
 ```
 
-##  <a name="get-current-user-id"></a>Obtenir l’id d’utilisateur actuel
+##  <a name="get-current-user-id"></a>Obtenir l'ID d'utilisateur actuel
 
 ```typescript
 /**
@@ -179,7 +179,7 @@
   function getCurrentUserIdAsync(callback: function(userId: string, error: string))
 ```
 
-##  <a name="register-for-hardware-back-button-press-android"></a>S’inscrire pour appuyer sur le bouton précédent de matériel (Android)
+##  <a name="register-for-hardware-back-button-press-android"></a>Appuyez sur le bouton inscrire pour obtenir une pression sur le matériel (Android)
 
 ```typescript
 /**
@@ -189,7 +189,7 @@
   function registerHardwareBackPressCallback(callback: function())
 ```
 
-##  <a name="localization-for-action"></a>Localisation d’Action
+##  <a name="localization-for-action"></a>Localisation de l'action
 
 ```typescript
 /**
@@ -202,7 +202,7 @@
   function getLocalizedStringsAsync(callback: (strings: JSON, error: string))
 ```
 
-##  <a name="printf-for-action"></a>printf() d’Action
+##  <a name="printf-for-action"></a>printf () pour l'action
 
 ```typescript
 /**

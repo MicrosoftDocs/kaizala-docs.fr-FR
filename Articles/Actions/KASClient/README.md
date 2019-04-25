@@ -1,32 +1,24 @@
----
-ms.openlocfilehash: de0df75d7a62fda9ea6ff5625fbef94774069cfd
-ms.sourcegitcommit: 1482683c0fde70600ce3b2948cbba8856935d91e
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28727718"
----
-## <a name="kas-client"></a>KAS Client
+## <a name="kas-client"></a>Client KAS
 
-SDK de Client KAS fournit un pont entre l’interface de l’application Kaizala native (Objective-C pour iOS, Java pour Android) et javascript de l’Action de votre Kaizala.
+Le kit de développement logiciel client KAS fournit un pont entre l'interface native de l'application Kaizala (objective-C pour iOS, Java pour Android) et le code JavaScript de votre action Kaizala.
 
-KASClient APIs sont divisées en deux catégories :
-1.  **API de formulaire**: carte de conversation de chaque Action associée à un objet form. Un formulaire définit le comportement de l’Action. Pour créer une instance d’Action que vous avez besoin d’initialisation d’un objet form, insérer les informations nécessaires, puis l’envoyer en tant que demande à la conversation respectif. Participants à la conversation peuvent répondre à l’écran ou afficher le résumé agrégé de toutes les réponses. Ces API ont été créés pour faire face à tout ce qui concerne les formulaires. En fonction de différents flux, qui peuvent plus être sous-fonctionnalités classés dans :
-    *   **Flux de création API**: fait d’appuyer sur l’icône de l’Action dans la palette lance le flux de sa création. À l’aide de ces API, vous pouvez initialiser un objet form, manipuler et envoyer en tant que demande.
-    *   **Flux de réponse API**: fait d’appuyer sur le bouton répondre d’une carte Action lance le flux de réponse. À l’aide de ces API, vous pouvez obtenir l’objet de formulaire, toutes les réponses précédentes et soumettre une nouvelle réponse.
-    *   **Résumé des API de flux**: fait d’appuyer sur le bouton de synthèse d’une carte Action lance le flux de synthèse. À l’aide de ces API, vous pouvez obtenir l’objet de formulaire, toutes les réponses agrégées par les participants et choisissez Fermer le formulaire afin que les autres réponses ne sont pas autorisés.
+Les API KASClient largement répandues sont divisées en deux catégories:
+1.  **API de formulaire**: la carte de conversation de chaque action est associée à un objet de formulaire. Un formulaire définit le comportement de l'action. Pour créer une instance d'action, vous devez initialiser un objet Form, y placer les informations nécessaires, puis l'envoyer en tant que demande à la conversation correspondante. Les participants à la conversation peuvent répondre au formulaire ou consulter le récapitulatif agrégé de toutes les réponses. Ces API ont été créées pour traiter tous les éléments liés aux formulaires. En fonction de différents flux, ceux-ci peuvent être sous-catégorisés:
+    *   **API de flux de création**: le fait de cliquer sur l'icône de l'action dans la palette lance son flux de création. À l'aide de ces API, vous pouvez initialiser un objet Form, le manipuler et l'envoyer en tant que requête.
+    *   **API de flux de réponse**: le recours au bouton répondre d'une carte d'action lance son flux de réponse. À l'aide de ces API, vous pouvez obtenir l'objet de formulaire associé, toutes les réponses précédentes et envoyer une nouvelle réponse.
+    *   **API de flux de résumé**: le recours au bouton Résumé d'une carte d'action lance son flux de synthèse. À l'aide de ces API, vous pouvez obtenir l'objet de formulaire associé, toutes les réponses agrégées par les participants, et choisir de fermer le formulaire afin que les réponses supplémentaires ne soient pas autorisées.
     
-2.  **API d’application**: il s’agit des API qui peut servir à interagir avec l’interface native du client Kaizala et récupérer les informations nécessaires. Cela inclut des API génériques, comme afficher le sélecteur de contact, sélecteur d’images, emplacement actuel de l’unité get, aux paramètres régionaux de l’application, etc.. Ces API peuvent être utilisées dans un des flux mentionnés ci-dessus.
+2.  **API d'application**: il s'agit d'API qui peuvent être utilisées pour interagir avec l'interface native du client Kaizala et récupérer les informations nécessaires. Cela inclut les API génériques, comme afficher le sélecteur de contacts, le sélecteur d'images, l'emplacement actuel de l'appareil, les paramètres régionaux de l'application, etc. Ces API peuvent être utilisées dans n'importe quel flux mentionné ci-dessus.
 
-Vous pouvez télécharger le fichier KASClient Javascript actuel à partir [d’ici](https://manage.kaiza.la/MiniApps/DownloadSDK)
+Vous pouvez télécharger le fichier JavaScript KASClient actuel à partir de [cet emplacement](https://manage.kaiza.la/MiniApps/DownloadSDK) .
 
-## <a name="api-reference"></a>Référence API
+## <a name="api-reference"></a>Référence de l'API
 
-*   [Flux de création de formulaire API](generated/modules/kasclient.form.md#creation)
-*   [Formulaire de flux de réponse API](generated/modules/kasclient.form.md#response)
-*   [API de flux de résumé de formulaire](generated/modules/kasclient.form.md#summary)
-*   [API d’application](generated/modules/kasclient.app.md)
+*   [API de flux de création de formulaire](generated/modules/kasclient.form.md#creation)
+*   [API de flux de réponse de formulaire](generated/modules/kasclient.form.md#response)
+*   [API de flux de synthèse de formulaire](generated/modules/kasclient.form.md#summary)
+*   [API d'application](generated/modules/kasclient.app.md)
 
-## <a name="object-reference"></a>Référence d’objet
+## <a name="object-reference"></a>Référence d'objet
 
-Les références de tous les objets dans le SDK sont disponibles [ici](objects.md).
+Les références de tous les objets du kit de développement logiciel (SDK) sont disponibles [ici](objects.md).

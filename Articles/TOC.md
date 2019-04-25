@@ -24,7 +24,7 @@
 #### [Anatomie du package d'action Kaizala](Actions/anatomy.md)
 #### [Prise en main](Actions/get_started.md)
 #### [Développer](Actions/develop.md)
-#### [Publier](Actions/publish.md)
+#### [Publish](Actions/publish.md)
 
 ## Références de l'API
 
@@ -62,7 +62,9 @@
 ### [Afficher les flux RSS dans les groupes Kaizala](BusinessSolutions/CorporateCommunications/GetRSSFeedsonKaizala/DisplayRSSFeedsinKaizalagroups.md)
 ### [Afficher les annonces SharePoint dans les groupes Kaizala](BusinessSolutions/CorporateCommunications/SharepointAnnouncementsonKaizala/DisplaySharepointAnnouncements.md)
 ### [Publication automatique des mises à jour Twitter sur Kaizala](BusinessSolutions/CorporateCommunications/AutoPostTwitterUpdatesToKaizala/AutoPostTwitterUpdatesToKaizala.md)
-## [Performances des disques à l'aide de Leaderboard](BusinessSolutions/Leaderboard/Leaderboard.md)
+## [Vie professionnelle](BusinessSolutions/Life%40Work/Life%40Work.md)
+### [Support technique pour les employés](BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpDesk.md)
+### [Performances des disques à l'aide de Leaderboard](BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.md)
 ## [Système de tickets](PartnerDocs/Customerticketingsolution.md)
 ## [Intégration de données Kaizala à vos tableaux de bord personnalisés](PartnerDocs/IntegratingKaizalaData.md)
 

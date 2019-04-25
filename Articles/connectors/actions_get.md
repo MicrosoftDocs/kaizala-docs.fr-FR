@@ -1,54 +1,55 @@
 ---
 title: /actions
-description: Article de référence de l’API obtenir la liste des actions d’un groupe
+description: Article de référence pour l'API permettant d'obtenir la liste des actions dans un groupe
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: 717b91d38ed43c85c3511de84538bb357e799f9b
-ms.sourcegitcommit: 3a6a13cc885faf1bbc9ee8498f5183f414395aac
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19905131"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190719"
 ---
-# <a name="get-list-of-actions-in-a-group"></a>Obtenir la liste des Actions d’un groupe
-## <a name="get-actions"></a>OBTENIR /actions
+# <a name="get-list-of-actions-in-a-group"></a>Obtenir la liste des actions dans un groupe
+## <a name="get-actions"></a>OBTENIR/actions
 
     GET {endpoint-url}/v1/groups/{groupId}/actions?actionType={action_Type}
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | Chaîne | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| Paramètre de requête URL | actionType | String | Non | Type d’action à récupérer |
-| Paramètre de requête URL | fromDate | DateTime (heure époque) | Oui | Heure à partir de laquelle les actions doivent être extraites |
-| Paramètre de requête URL | count | number | Oui | Nombre d’actions individuelles à renvoyer ; Par défaut = 30 |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| Paramètre de requête d'URL | actionType | Chaîne | Non | Type d'action à récupérer |
+| Paramètre de requête d'URL | fromDate | Date/heure (époque) | Oui | Heure à partir de laquelle les actions doivent être récupérées |
+| Paramètre de requête d'URL | count | number | Oui | Nombre d'actions individuelles à renvoyer; Valeur par défaut = 30 |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actions | Tableau d’objets JSON | Tableau d’objets action |
-| hasMore | bool?en | Si le nombre maximal d’actions par réponse a atteint, cette variable est définie sur true |
+| actions | Tableau d'objets JSON | Tableau d'objets action |
+| hasMore | booléen | Si le nombre maximal d'actions par réponse est atteint, cette variable sera définie sur true. |
 
-Structure de JSON pour chaque action individuelle dans les actions de tableau [] :
-
-| Paramètre | Type | Description |
-| :---: | :---: | :--- |
-| referenceId | Chaîne | referenceID pour le message |
-| actionType | String | Type d’action renvoyée |
-| actionBody | Tableau d’objets JSON spécifique à l’actiontype | Tableau avec des objets spécifiques à l’actiontype |
-| sender | Chaîne | Numéro de téléphone de l’utilisateur qui a envoyé l’action pour le groupe |
-| sentAt | Date/heure | Publication de l’action pour le groupe |
-
-####  <a name="actionbody-object-structure-for-imagepicture-attachment"></a>structure d’objet actionBody de pièce jointe image/image :
+Structure JSON pour chaque action individuelle dans les actions de tableau []:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| imageURL | Chaîne | Chaîne d’URL de l’image |
+| ID | Chaîne | ID pour le message |
+| actionType | String | Type d'action retourné |
+| actionBody | Tableau d'objets JSON propre au ActionType | Tableau avec des objets spécifiques au ActionType |
+| expéditeur | Chaîne | Numéro de téléphone de l'utilisateur qui a envoyé l'action au groupe |
+| sentAt | DateTime
+ | Heure à laquelle l'action a été publiée dans le groupe |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+####  <a name="actionbody-object-structure-for-imagepicture-attachment"></a>structure d'objet actionBody pour la pièce jointe image/image:
+
+| Paramètre | Type | Description |
+| :---: | :---: | :--- |
+| imageURL | Chaîne | Chaîne de l'URL de l'image |
+
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -66,14 +67,14 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
 }
 ```
 
-####  <a name="actionbody-object-structure-for-the-action-share-location"></a>structure d’objet actionBody pour l’emplacement du partage de l’action :
+####  <a name="actionbody-object-structure-for-the-action-share-location"></a>structure d'objet actionBody pour l'action «emplacement de partage»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| latitude | Double | Latitude coordonnées de l’emplacement |
-| longitude | Double | Longitude coordonnées de l’emplacement |
+| latitude | Double | Coordonnées latitude de l'emplacement |
+| longitude | Double | Coordonnées de longitude de l'emplacement |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -92,15 +93,15 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
 }
 ```
 
-#### <a name="actionbody-object-structure-for-the-action-photo-with-location"></a>structure d’objet actionBody pour l’action « Photo avec emplacement » :
+#### <a name="actionbody-object-structure-for-the-action-photo-with-location"></a>structure d'objet actionBody pour l'action «photo avec emplacement»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| imageURL | Chaîne | Chaîne d’URL de l’image |
-| latitude | Double | Latitude coordonnées de l’emplacement |
-| longitude | Double | Longitude coordonnées de l’emplacement |
+| imageURL | Chaîne | Chaîne de l'URL de l'image |
+| latitude | Double | Coordonnées latitude de l'emplacement |
+| longitude | Double | Coordonnées de longitude de l'emplacement |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -120,17 +121,17 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
 }
 ```
 
-####  <a name="actionbody-object-structure-for-the-action-job"></a>structure d’objet actionBody pour l’action 'Job' :
+####  <a name="actionbody-object-structure-for-the-action-job"></a>structure d'objet actionBody pour l'action «Job»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionId | Chaîne | GUID représentant l’instance de l’action spécifique |
-| title | Chaîne | Titre de la tâche |
-| assigneeCount | Numérique | Nombre de destinataires |
-| responseCount | Numérique | Nombre d’intervenants a marqué le travail terminée |
-| isCompleted | Bool�en | True si tous les intervenants ont effectué le travail |
+| actionId | Chaîne | GUID représentant l'instance d'action spécifique |
+| title | Chaîne | Titre du travail |
+| assigneeCount | Numérique | Nombre de personnes affectées |
+| responseCount | Numérique | Nombre d'utilisateurs ayant marqué le travail comme terminé |
+| isCompleted | Booléen | True lorsque tous les utilisateurs ont effectué le travail |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -151,17 +152,18 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
   ]
 }
 ```
-####  <a name="actionbody-object-structure-for-the-action-poll"></a>structure d’objet actionBody pour l’action « Sondage » :
+####  <a name="actionbody-object-structure-for-the-action-poll"></a>structure d'objet actionBody pour l'action «Poll»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionId | Chaîne | GUID représentant l’instance de l’action spécifique |
-| question | Chaîne | Question du sondage |
-| isSenderOnly | Bool�en | True lorsque le résumé de sondage est visible uniquement par l’expéditeur |
-| affichait | Date/heure | DateTime de la date d’expiration de sondage |
-| Choices | Tableau JSON | Liste de Json objets avec le composant suivant <ol><li>titre - texte de l’Option</li><li>image - Option Image</li></ol> |
+| actionId | Chaîne | GUID représentant l'instance d'action spécifique |
+| relative | Chaîne | Question de sondage |
+| isSenderOnly | Booléen | True lorsque le résumé de l'interRogation est visible uniquement par l'expéditeur |
+| expiryDate | DateTime
+ | Date et heure de l'expiration du sondage |
+| Choix | Tableau JSON | Liste d'objets JSON avec le composant suivant <ol><li>titre-texte d'option</li><li>image de l'option image</li></ol> |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -193,19 +195,20 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
   ]
 }
 ```
-####  <a name="actionbody-object-structure-for-the-action-lets-meet"></a>structure d’objet actionBody pour l’action « Rendez-vous » :
+####  <a name="actionbody-object-structure-for-the-action-lets-meet"></a>structure d'objet actionBody pour l'action «je suis en réunion»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionId | Chaîne | GUID représentant l’instance de l’action spécifique |
-| title | Chaîne | Titre de la demande de réunion |
-| isSenderOnly | Bool�en | True lorsque le résumé de sondage est visible uniquement par l’expéditeur |
+| actionId | Chaîne | GUID représentant l'instance d'action spécifique |
+| title | String | Titre de la demande de réunion |
+| isSenderOnly | Booléen | True lorsque le résumé de l'interRogation est visible uniquement par l'expéditeur |
 | duration | Entier | Durée de la réunion (en minutes) |
-| ordre du jour | Chaîne | Ordre du jour, la valeur de la réunion |
-| startingTime | Date/heure | DateTime de la date d’expiration de sondage |
-| Place | Objet JSON | Données d’emplacement avec le composant suivant <ol><li>Latitude</li><li>Longitude</li><li>name</li></ol> |
+| réunion | Chaîne | Calendrier défini pour la réunion |
+| startingTime | DateTime
+ | Date et heure de l'expiration du sondage |
+| Positionnement | Objet JSON | Données de localisation avec le composant suivant <ol><li>Système</li><li>Ouest</li><li>name</li></ol> |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -234,16 +237,17 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
 ```
 
 
-####  <a name="actionbody-object-structure-for-the-action-survey"></a>structure d’objet actionBody pour l’action « Enquête » :
+####  <a name="actionbody-object-structure-for-the-action-survey"></a>structure d'objet actionBody pour l'action «Survey»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionId | Chaîne | GUID représentant l’instance de l’action spécifique |
-| title | Chaîne | Titre de l’enquête |
-| responseCount | Numérique | Nombre de personnes qui a répondu à l’enquête |
-| affichait | Date/heure | DateTime de délai d’expiration de l’enquête |
+| actionId | Chaîne | GUID représentant l'instance d'action spécifique |
+| title | String | Titre de l'enquête |
+| responseCount | Numérique | Nombre de personnes ayant répondu à l'enquête |
+| expiryDate | DateTime
+ | Date et heure de l'expiration de l'enquête |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {
@@ -263,4 +267,4 @@ Structure de JSON pour chaque action individuelle dans les actions de tableau []
 }
 ```
 
-À suivre : Vous pouvez récupérer davantage les détails de chaque instance de l’action avec actionId correspondant. [API pour l’extraction des détails de l’instance Action](actionDetails.md)
+Ensuite: vous pouvez récupérer des informations supplémentaires sur chaque instance d'action avec l'actionId correspondant. [API pour la récupération des détails d'instance d'action](actionDetails.md)

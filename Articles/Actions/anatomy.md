@@ -1,43 +1,43 @@
-# <a name="anatomy-of-a-kaizala-action-package"></a>Anatomie d’un package de l’Action Kaizala
+# <a name="anatomy-of-a-kaizala-action-package"></a>Anatomie d'un package d'action Kaizala
 
-Un package Kaizala Action est un fichier ZIP régulière qui n’est pas protégé par mot de passe et ne peut pas dépasser 1 Mo. Les ressources dans le package sont à la racine du fichier zip et non pas dans une structure de répertoire. Les ressources ne peuvent pas également faire référence à des ressources externes, autres que celles présentes dans le package.
+Un package d'action Kaizala est un fichier ZIP standard qui n'est pas protégé par mot de passe et dont la taille maximale est de 1 Mo. Les ressources du package se trouvent à la racine du fichier zip et non dans une structure de répertoire. Les ressources ne peuvent pas non plus référencer de ressources externes autres que celles présentes dans le package.
 
-Les composants de base d’un package Kaizala Action sont 
+Les composants de base d'un package d'action Kaizala sont 
 *   Un fichier manifeste au format JSON
-*   Un modèle d’application pour votre Action Kaizala au format JSON
-*   Ressources Web qui constituent votre Action Kaizala - HTML, JS, CSS et fichiers image
+*   Un modèle d'application pour votre action Kaizala au format JSON
+*   Ressources Web qui constituent votre action Kaizala-HTML, JS, CSS et les fichiers image
 
-## <a name="package-manifest"></a>Manifeste du package
+## <a name="package-manifest"></a>Manifeste de package
 
-Le manifeste spécifie les paramètres de l’Action Kaizala, telles que les suivantes :
-*   De l’Action nom complet, description, ID, version et icône Action.
-*   Différentes vues qui définissent votre Action et les mapper à leur point invokation respectifs
-    * Un affichage Création lorsqu’une Action est appelée à partir de la palette
-    * Une vue de carte qui apparaît dans la zone de conversation lorsqu’une instance de l’Action est envoyée
-    * Une vue répondeur pour les utilisateurs répondre à l’Action Kaizala
-    * Un résumé Affichage agrégé réponses
-*   Étiquettes pour être utilisés dans les affichages natives qui encapsulent les vues personnalisées
+Le manifeste spécifie les paramètres de l'action Kaizala, tels que les suivants:
+*   Le nom d'affichage, la description, l'ID, la version et l'icône d'action de l'action.
+*   Différentes vues qui définissent votre action et les mappent à leurs points invokation respectifs
+    * Une vue de création lorsqu'une action est appelée à partir de la palette
+    * Affichage de carte qui apparaît dans la zone de conversation lors de l'envoi d'une instance de l'action
+    * Une vue de répondeur permettant aux utilisateurs de répondre à l'action Kaizala
+    * Affichage de synthèse pour afficher les réponses agrégées
+*   Étiquettes à utiliser dans les vues natives qui encapsulent vos affichages personnalisés
 
-Pour plus d’informations, voir [Schéma de manifeste de Package au format JSON](package_manifest_schema.md).
+Pour plus d'informations, consultez la rubrique [package MANIFEST Schema in JSON format](package_manifest_schema.md).
 
-## <a name="app-model"></a>Modèle d’application
+## <a name="app-model"></a>Modèle d'application
 
-Le modèle d’application spécifie les fonctionnalités de l’Action Kaizala, y compris :
-*   Le modèle de données pour l’objet de formulaire à utiliser pour mettre à profit les Services d’agrégation Kaizala
-*   Propriétés de l’objet de formulaire
-*   Paramètres associés à l’objet de formulaire
+Le modèle d'application spécifie les fonctionnalités de l'action Kaizala, notamment:
+*   Modèle de données de l'objet Form à utiliser pour tirer parti des services d'agrégation Kaizala
+*   Propriétés de l'objet Form
+*   Paramètres associés à l'objet Form
 
-Pour plus d’informations, voir [Schéma de modèle d’application au format JSON](appModel_schema.md).
+Pour plus d'informations, consultez la rubrique [schéma de modèle d'application au format JSON](appModel_schema.md).
 
 ## <a name="web-resources"></a>Ressources Web
 
-Comme mentionné ci-dessus, le package Kaizala doit inclure toutes les ressources référencés dans le package. Cela inclut toutes les ressources HTML, JavaScript, CSS et image.
+Comme mentionné ci-dessus, le package Kaizala doit inclure toutes les ressources référencées à l'intérieur du package. Cela inclut toutes les ressources HTML, JavaScript, CSS et image.
 
-L’Action Kaizala plus élémentaire se compose de trois pages HTML qui sont affichées lorsque
-*   L’Action Kaizal est appelée à partir de la Palette de l’Action dans l’application cliente - mode Création
-*   Un utilisateur tente de répondre à une instance de carte Action publiée sur la zone de conversation dans l’application cliente - affichage de réponse
-*   Un utilisateur essaie d’afficher le résumé de toutes les réponses validée pour une instance d’Action spécifique - affichage de synthèse
+L'action Kaizala la plus simple est constituée de trois pages HTML qui s'affichent lorsque
+*   L'action Kaizal est appelée à partir de la palette d'actions dans l'affichage de création d'application cliente
+*   Un utilisateur tente de répondre à une instance de carte d'action publiée sur la toile de conversation dans l'affichage application client-réponse
+*   Un utilisateur tente d'afficher le résumé de toutes les réponses publiées pour une action spécifique-vue de synthèse
 
-Pour interagir avec l’application de client Kaizala, vous pouvez utiliser l' [Interface API JavaScript KASClient.js](KASClient/README.md) que nous fournissons.
+Pour interagir avec l'application cliente Kaizala, vous pouvez utiliser l' [API JavaScript KASClient. js](KASClient/README.md) que nous fournissons.
 
 

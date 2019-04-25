@@ -1,51 +1,51 @@
-# <a name="instant-edit-of-actions-in-staged-environment"></a>Modifier instantané d’Actions dans l’environnement intermédiaire
+# <a name="instant-edit-of-actions-in-staged-environment"></a>Modification instantanée des actions dans un environnement intermédiaire
 
-Avant de commencer la modification des Actions, veuillez activer [l’état intermédiaire](test.md)
+Avant de commencer à modifier les actions, activez l' [état intermédiaire](test.md) .
 
-Lors de la création d’une Action, les vues HTML et les fichiers associés (css, js) sont regroupés dans le package de l’Action et est importé sur le portail de gestion Kaizala. Les autres modifications aux vues requièrent le package recréer et téléchargé sur le portail de gestion Kaizala.
+Lors de la création d'une action, les vues HTML et ses fichiers associés (CSS, js) sont regroupés dans le package d'action et sont importés sur le portail de gestion Kaizala. Toute modification supplémentaire apportée aux affichages nécessite que le package soit recréé et téléchargé sur le portail de gestion Kaizala.
 
-Afin de simplifier la modification ultérieure des affichages HTML, Kaizala permet de modifier du code HTML, JavaScript et fichiers CSS localement et instantanément voir les mises à jour dans l’application Kaizala. Cela implique la création d’un serveur HTTP local qui va héberger les fichiers mis à jour et Kaizala application utilisera ces fichiers, au lieu des fichiers présents dans le package réel.
+Afin de simplifier la modification ultérieure des affichages HTML, Kaizala permet de modifier les fichiers HTML, JavaScript et CSS localement et de voir immédiatement les mises à jour dans l'application Kaizala. Cela implique la création d'un serveur HTTP local qui hébergera les fichiers mis à jour et l'application Kaizala utilisera ces fichiers au lieu des fichiers présents dans le package.
 
->  **Remarque :** Afin d’activer la modification instantanée, l’Action doit être téléchargée sur le portail de gestion Kaizala et doit être en état intermédiaire
+>  **Remarque:** Pour activer la modification instantanée, l'action doit être téléchargée sur le portail de gestion Kaizala et doit être à l'état intermédiaire.
 
-## <a name="enable-instant-edit-in-android-devices"></a>Activer Modifier instantanés pour les appareils Android
+## <a name="enable-instant-edit-in-android-devices"></a>Activer la modification instantanée dans les appareils Android
 
-### <a name="steps-to-create-local-http-server-in-windows"></a>Étapes pour créer un serveur HTTP local dans Windows
+### <a name="steps-to-create-local-http-server-in-windows"></a>Étapes à suivre pour créer un serveur HTTP local dans Windows
 
-* **Étape 1 : Créer une copie du Package de l’Action dans votre ordinateur local**
+* **Étape 1: créer une copie du package d'actions sur votre ordinateur local**
 
-  * Créer une copie du package de l’Action dans un emplacement de votre choix sur votre ordinateur. Le nom du dossier doit être l’ID d’Action.
+  * Créez une copie du package d'actions à l'emplacement de votre choix sur votre ordinateur. Le nom du dossier doit être l'ID d'action.
     
-* **Étape 2 : Exécuter python commande**
+* **Étape 2: exécuter la commande python**
 
-  *  Ouvrez Terminal de commande et accédez au dossier contenant le Package d’Action.
-  *  Exécutez la commande suivante :`python -m SimpleHTTPServer 8000`
+  *  Ouvrez le terminal de commandes et accédez au dossier contenant le package d'action.
+  *  Exécutez la commande suivante:`python -m SimpleHTTPServer 8000`
   
-      > Installation de Python est une condition préalable pour exécuter le script ci-dessus.
+      > L'installation de Python est une condition préalable à l'exécution du script ci-dessus.
   
-* **Étape 3 : Vérifier le serveur local**
+* **Étape 3: vérifier le serveur local**
 
-  * L’URL du serveur local sera maintenant`http://localhost/<ActionId>:8000`
-  * Pour vérifier votre serveur d’ouvrir un navigateur et entrez ci-dessus l’url du serveur local dans la barre d’adresses et vous doit être en mesure de voir le contenu du dossier à partir de laquelle le serveur a été démarré.
+  * L'URL de votre serveur local sera désormais`http://localhost/<ActionId>:8000`
+  * Pour vérifier que votre serveur ouvre un navigateur et entrez au-dessus de l'URL du serveur local dans la barre d'adresses, vous devez être en mesure d'afficher le contenu du dossier à partir duquel le serveur a été démarré.
   
-### <a name="steps-to-setup-your-android-device"></a>Étapes pour configurer votre appareil Android
+### <a name="steps-to-setup-your-android-device"></a>Étapes de configuration de votre appareil Android
 
-> Condition Préalable : Vous devez activer le mode de débogage, comme indiqué [ici](test.md). Versions approuvées des Actions ne prennent pas en charge cette fonctionnalité
+> Conditions préalables: vous devez activer le mode débogage, comme indiqué [ici](test.md). Les versions approuvées des actions ne prennent pas en charge cette fonctionnalité.
 
-* **Étape 1 : Se connecter à votre ordinateur à l’appareil via un câble**
+* **Étape 1: connecter votre ordinateur à l'appareil via un USB**
 
-    * Votre appareil doit être connecté à la votre ordinateur via usb
+    * Votre appareil doit être connecté à votre ordinateur via USB
     
-* **Étape 2 : Activer les Diagnostics sur Kaizala application** 
+* **Étape 2: activer les diagnostics sur l'application Kaizala** 
 
-    * Dans Kaizala, cliquez sur profil -> Paramètres -> sur. Cliquez sur « logo Microsoft Kaziala » cinq reprises pour activer l’option de Diagnostics. ** Cliquez sur Précédent pour atteindre la page Paramètres. Cliquez sur « Dépannage » située sous l’étiquette « Diagnostics » au bas de la page Paramètres
-    * Activer le commutateur 'Mini applications emplacement Override' pour activer le champ URL du serveur.
-    * Accédez à <chrome://inspect/> sur votre ordinateur hôte et les activer le transfert de port. Dans paramètres de transfert de port, donnez le numéro de port en tant que « 8000 "(first tab) et l’adresse IP et port en tant que « localhost:8000 » (onglet deuxième)
-    * Avec cette modification Kaizala extraira les fichiers HTML/css/JS de votre Action à partir du serveur au lieu d’utiliser les fichiers de package
+    * Dans Kaizala, accédez à Profile-> paramètres-> à propos de. Appuyez sur «logo Microsoft Kaziala» cinq fois pour activer l'option Diagnostics. * * Appuyez sur retour pour accéder à la page Paramètres. Cliquez sur l'option dépannage sous l'étiquette «Diagnostics» en bas de la page Paramètres.
+    * Activez le commutateur «mini-applications à l'emplacement prioritaire» pour activer le champ URL du serveur.
+    * Accédez à <chrome://inspect/> sur votre ordinateur hôte et activez le transfert de port. Dans paramètres de transfert de port, donnez au numéro de Port la valeur «8000» (premier onglet) et l'adresse IP et le port «localhost: 8000» (deuxième onglet)
+    * Avec cette modification Kaizala extrait les fichiers HTML/CSS/JS de votre action à partir du serveur au lieu d'utiliser les fichiers empaquetés.
     
-* **Étape 3 : Apporter des modifications dans le dossier de l’Action de votre ordinateur**
+* **Étape 3: effectuer des modifications dans le dossier action de votre ordinateur**
 
-    * Les modifications apportées aux fichiers peuvent être observées immédiatement par le rechargement de l’affichage dans l’application (quitter l’affichage et l’ouvrir à nouveau)
+    * Toutes les modifications apportées aux fichiers peuvent être observées immédiatement en rechargeant l'affichage dans l'application (quittez et redémarrez l'affichage)
     
-Une fois terminé le processus de modification les fichiers mis à jour sont disponibles pour créer le package et mettre à jour le package présent dans le portail. Désactiver le commutateur Mini application substituez l’emplacement dans la page Diagnostics pour restaurer le comportement par défaut.
+Une fois le processus d'édition terminé, les fichiers mis à jour peuvent être regroupés pour créer le package et mettre à jour le package présent dans le portail. Désactivez le commutateur mini-emplacement d'une mini-application dans la page Diagnostics pour restaurer le comportement par défaut.
 

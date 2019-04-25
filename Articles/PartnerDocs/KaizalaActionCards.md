@@ -1,61 +1,61 @@
-# <a name="kaizala-action-cards"></a>Cartes d’Action Kaizala
+# <a name="kaizala-action-cards"></a>Cartes d'action Kaizala
 
-Kaizala vous offre un large éventail de cartes de visite action ou minies applications qui simplifient la gestion de travail quotidien et efficace. Vous pouvez utiliser les cartes Out-of-box(OOB) Action ou créer votre propre Kaizala des Actions personnalisées.
+Kaizala offre une large gamme de cartes d'action ou de mini-applications qui facilitent et optimisent votre gestion quotidienne des tâches. Vous pouvez utiliser les cartes d'action prêtes à l'emploi (OOB) ou créer vos propres actions Kaizala personnalisées.
 
-Certaines cartes Action prêtes à l’emploi disponibles sont les suivantes :
-- Announcements
-- Enquêtes et sondages rapides
-- Tâches /
-- Invitation de réunion
-- Carte de présence
-- Carte de formation
-- Fiche magasin
-- Découvrir plus d’Actions 
+Certaines cartes d'action OOB disponibles sont les suivantes:
+- Annonces
+- Sondages & enquêtes rapides
+- Travail/tâches
+- Invitation à une réunion
+- Carte de participation
+- Carte de transBordement
+- Fiche d'emplacement
+- Découvrir d'autres actions 
 
-## <a name="announcements"></a>Announcements
+## <a name="announcements"></a>Annonces
 
-Kaizala vous permet de partager des informations avec votre organisation en une fois au moyen de la carte d’annonce. Vous pouvez ajouter des images, des messages audio ou vidéos ainsi que des documents dans les annonces Kaizala.
+Kaizala vous permet de partager des informations avec l'ensemble de votre organisation dans une carte d'annonce. Vous pouvez ajouter des images, des messages audio ou vidéo, ainsi que des documents dans les annonces Kaizala.
 
-Récepteurs d’annonces puissent s’impliquer sur cette annonces par le biais de fonction j’aime et de commentaires.
+Les récepteurs des annonces peuvent s'engager sur cette annonce par le biais de la fonctionnalité j'aime et commentaires.
 
 ![Annonces] (Images/Actions1.png "Annonces")
 
-## <a name="quick-polls--surveys"></a>Enquêtes et sondages rapides
+## <a name="quick-polls--surveys"></a>Sondages & enquêtes rapides
 
-Kaizala fournit une Action prédéfinie de sondages et d’enquêtes à recueillir rapidement les données du champ. Agrégation de données est disponible à cet endroit, sans avoir à compiler rien.<p>Sondages prend en charge la question unique, enquêtes prend en charge plusieurs questions et les types de questions à choix multiples, le type de date, numérique, etc. de texte.
+Kaizala fournit des actions prédéfinies pour les sondages et des enquêtes afin de collecter rapidement des données à partir du champ. L'agrégation des données est disponible directement, sans avoir à compiler quoi que ce soit.<p>Tandis que les sondages prennent en charge une seule question, les enquêtes prennent en charge plusieurs types de questions et de questions, comme un choix multiple, un type de date, une valeur numérique, du texte, etc.
 
-![Enquêtes et sondages rapides] (Images/Actions2.png "Enquêtes et sondages rapides")
+Sondages ![_AMP_ enquêtes rapides] Sondages (Images/Actions2.png "_AMP_ enquêtes rapides")
 
-## <a name="jobtasks"></a>Tâches / 
-Kaizala permet d’affecter des tâches ou des tâches à une ou plusieurs personnes. Lorsque vos utilisateurs terminé les tâches, vous recevez une notification. En outre, vous pouvez suivre l’état de toutes les tâches affectées sous **Actions en attente** dans le profil.
+## <a name="jobtasks"></a>Travail/tâches 
+Kaizala vous permet d'affecter des travaux ou des tâches à une ou plusieurs personnes. Lorsque les utilisateurs terminent les tâches, vous recevez une notification. De plus, vous pouvez suivre l'état de toutes les tâches affectées sous **actions en attente** dans le profil.
 
-![Tâche ou des tâches] (Images/Actions3.png "Tâche ou des tâches")
+![Travail ou tâches] (Images/Actions3.png "Travail ou tâches")
 
- ## <a name="attendance-card"></a>Carte de présence
+ ## <a name="attendance-card"></a>Carte de participation
 
-Carte de présence vous permet de collecter les coordonnées de l’emplacement, avec ou sans la photo des membres de votre groupe. Cela garantit qu'une personne est présente à l’emplacement spécifique à un moment donné. Vous pouvez afficher le rapport pour la même Kaizala portail de gestion.
+La carte de participation vous permet de collecter des coordonnées d'emplacement, avec ou sans photo des membres de votre groupe. Cela garantit qu'une personne est présente à un emplacement spécifique à un moment donné. Vous pouvez afficher le rapport pour le même dans le portail de gestion Kaizala.
 
-![Carte de présence] (Images/ActionsAttendance.PNG "Carte de présence")
+![Carte de participation] (Images/ActionsAttendance.PNG "Carte de participation")
   
 ## <a name="training-card"></a>Carte de formation
-Kaizala permet d’envoyer le contenu de formation ainsi que des questions/questionnaires de formation à votre équipe. Rapport de celui-ci est disponible sur Kaizala management Portal. Vous pouvez configurer des formations sur Kaizala rapidement si le contenu de la formation et les questions sont prêtes.
+Kaizala vous permet d'envoyer du contenu de formation avec des questions/quiz de formation à votre équipe. Le rapport est disponible sur le portail de gestion Kaizala. Vous pouvez configurer rapidement la formation sur Kaizala si le contenu et les questions de formation sont prêts.
 
-![Formation sur la carte] (Images/ActionsTraining.PNG "Formation sur la carte")
+![Carte de formation] (Images/ActionsTraining.PNG "Carte de formation")
 
-## <a name="location-card"></a>Fiche magasin
+## <a name="location-card"></a>Fiche d'emplacement
 
-Kaizala fournit des cartes de visite emplacement en fonction de différents qui sont comme suit :
+Kaizala fournit différentes cartes basées sur l'emplacement de la manière suivante:
 
-1. Effectuer le suivi sur emplacement actuel de mappage unique de votre groupe entier.
-2. Pour effectuer le suivi des coordonnées de l’emplacement live d’un ou plusieurs membres.
-3. Pour effectuer le suivi des photos avec l’emplacement d’une personne pour vous assurer de présence à un emplacement.
+1. Pour effectuer le suivi sur l'emplacement actuel de la carte unique de l'ensemble de votre groupe.
+2. Pour suivre les coordonnées des emplacements de production d'un ou de plusieurs membres.
+3. Pour suivre une photo avec l'emplacement d'une personne afin de garantir la présence à un emplacement.
 
-![Fiche magasin] (Images/ActionsLocation.PNG "Fiche magasin")
+![Fiche d'emplacement] (Images/ActionsLocation.PNG "Fiche d'emplacement")
 
-## <a name="discover-more-actions"></a>Découvrir plus d’Actions
+## <a name="discover-more-actions"></a>Découvrir d'autres actions
 
-Vous pouvez trouver beaucoup plus d’actions Kaizala sous découvrir. Si vous souhaitez créer votre propre des actions personnalisées dans Kaizala, vous pouvez également le faire. 
+Vous trouverez bien plus d'actions Kaizala sous Discover. Si vous souhaitez créer vos propres actions personnalisées dans Kaizala, vous pouvez également le faire. 
 
-![Découvrir plus d’Actions] (Images/ActionsDiscoverMore.PNG "Découvrir plus d’Actions")
+![Découvrir d'autres actions] (Images/ActionsDiscoverMore.PNG "Découvrir d'autres actions")
 
-Reportez-vous à [cette](../developer-platform.md) section pour plus d’informations sur la personnalisation et de créer vos propres cartes d’Action.
+RePortez-vous à [cette](../developer-platform.md) section pour obtenir des informations sur la personnalisation et la création de vos propres cartes d'action.

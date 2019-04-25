@@ -1,13 +1,13 @@
-#   <a name="form-creation-flow-apis"></a>Formulaire de flux de création API :
+#   <a name="form-creation-flow-apis"></a>API de flux de création de formulaire:
 
-| **API** | Description | Paramètre de demande | Sortie de réponse |
+| **API** | Description | Paramètre de requête | Sortie de la réponse |
 | :---: | :---: | :---: | :--- |
-| **initFormAsync** | Initialise et renvoie un objet de formulaire vide basé sur le fichier de formulaire par défaut dans le package |  | Form, objet |
-| **submitFormRequest** | Envoie le formulaire nouvellement créé en tant que demande. Cette action entraîne une nouvelle carte de conversation | <ul><li>Formulaire</li><li>Boolean – devrait pas augmenter</li></ul>| |
-| **submitFormRequestWithoutDismiss** | Envoie le formulaire nouvellement créé en tant que demande. Cette action entraîne une nouvelle carte de conversation |<ul><li>Formulaire</li><li>Boolean – devrait pas augmenter</li></ul>| |
-| **updateForm** | Utilisé pour apporter des modifications dans les champs de formulaire comme titre, description et paramètres | <ul><li>Champs qui nécessitent la mise à jour</li><li>Boolean – devrait pas augmenter</li></ul> | |
+| **initFormAsync** | Initialise et renvoie un objet Form vide basé sur le fichier de formulaire par défaut présent dans le package. |  | Form, objet |
+| **submitFormRequest** | Envoie le formulaire nouvellement créé sous la forme d'une requête. Cela aboutit à une nouvelle carte de conversation | <ul><li>Formulaire</li><li>Boolean – doit être gonflé/non</li></ul>| |
+| **submitFormRequestWithoutDismiss** | Envoie le formulaire nouvellement créé sous la forme d'une requête. Cela aboutit à une nouvelle carte de conversation |<ul><li>Formulaire</li><li>Boolean – doit être gonflé/non</li></ul>| |
+| **updateForm** | Utilisé pour apporter des modifications aux champs de formulaire comme le titre, la description et les paramètres | <ul><li>Champs nécessitant une mise à jour</li><li>Boolean – doit être gonflé/non</li></ul> | |
 
-##  <a name="initialize-a-form"></a>Initialisation d’un formulaire
+##  <a name="initialize-a-form"></a>Initialiser un formulaire
 
 ```typescript
 /**

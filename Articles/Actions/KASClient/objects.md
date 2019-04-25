@@ -1,6 +1,6 @@
-# <a name="kas-client-js-sdk-object-reference"></a>Référence d’objet KAS Client JS SDK
+# <a name="kas-client-js-sdk-object-reference"></a>Référence d'objet du kit de développement logiciel (SDK) KAS client JS
 
-Les objets suivants sont désignés dans les API KAS Client JS SDK.
+Les objets suivants sont mentionnés dans les API du kit de développement logiciel (SDK) KAS client JS.
 
 *   [KASForm](KASForm.md)
 *   [KASFormResponse](KASFormResponse.md)

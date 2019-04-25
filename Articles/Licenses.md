@@ -1,28 +1,28 @@
-# <a name="license--terms-of-use"></a>Licence et les conditions d’utilisation
+# <a name="license--terms-of-use"></a>Conditions d'utilisation de la licence &
 
-Merci d’intérêt dans la [documentation pour les développeurs Microsoft Kaizala](index.md).
+Nous vous reMercions de l'intérêt que vous portez à la [documentation du développeur Microsoft Kaizala](index.md).
 
-Nous cherchons constamment pour améliorer l’expérience de la plateforme de développement. Si vous souhaitez conserver vous-même mis à jour sur les modifications, supprimez un message à kaizalaDev@microsoft.com et nous vous tient informé.
+Nous travaillons constamment pour améliorer l'expérience de la plateforme de développement. Si vous souhaitez vous assurer que vous êtes informé des modifications, supprimez un message électronique à kaizalaDev@microsoft.com et nous vous ferons savoir.
 
 
 ## <a name="apis"></a>API
-Microsoft Kaizala APIs sont régies par la [licence d’API de Microsoft et les conditions d’utilisation](https://docs.microsoft.com/en-us/outlook/rest/terms-of-use)
+Les API Microsoft Kaizala sont régies par la [licence et les conditions d'utilisation de l'API Microsoft](https://docs.microsoft.com/en-us/outlook/rest/terms-of-use)
 
 ## <a name="actions"></a>Actions
 
-Développement d’une Action personnalisée Kaizala est en **mode Aperçu public**. Vous vous engagez à nos [conditions d’utilisation](ActionSDKLicense.md), si vous développez une Action personnalisée à l’aide du SDK de notre Action Kaizala.
+Le développement d'une action Kaizala personnalisée est en **mode aperçu public**. Vous acceptez les [conditions d'utilisation](ActionSDKLicense.md), si vous développez une action Kaizala personnalisée à l'aide de notre kit de développement d'actions.
 
 
-## <a name="legal-notices"></a>Informations légales
-Microsoft et les contributeurs accordent une licence à la documentation de Microsoft et d’autres contenus dans ce référentiel sous [Creative Commons Attribution 4.0 internationales licence publique](https://creativecommons.org/licenses/by/4.0/legalcode), consultez le fichier de [licence](LICENSE.md) .
+## <a name="legal-notices"></a>Mentions légales
+Microsoft et tous les contributeurs vous accordent une licence à la documentation Microsoft et à d'autres contenus de ce référentiel sous la [licence publique internationale 4,0 de Creative](https://creativecommons.org/licenses/by/4.0/legalcode). [](LICENSE.md)
 
-Microsoft, Windows, Microsoft Azure et/ou dans d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques déposées soit des marques déposées de Microsoft Corporation aux États-Unis et/ou dans d’autres pays.
-Les licences pour ce projet n’accordez pas les droits d’utiliser des noms, logos, soit des marques déposées Microsoft.
-Les instructions générales relatives aux marques de Microsoft, voir http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft, Windows, Microsoft Azure et/ou d'autres produits et services Microsoft mentionnés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d'autres pays.
+Les licences pour ce projet ne vous permettent pas de vous accorder des droits d'utilisation des noms, logos ou marques de Microsoft.
+Les conseils de la marque générale de Microsoft sont http://go.microsoft.com/fwlink/?LinkID=254653disponibles à l'adresse.
 
-Vous trouverez des informations de confidentialité àhttps://privacy.microsoft.com/en-us/
+Vous trouverez des informations sur la confidentialité à l'adresse suivante:https://privacy.microsoft.com/en-us/
 
-Microsoft et toute réserve collaborateurs tous les autres droits en vertu de leurs droits respectifs, brevets ou marques déposées, par implication, préclusion ou autre.
+Microsoft et tous les contributeurs réservent tous les droits, qu'ils soient sous leurs droits d'auteur, brevets ou marques de sous-traitants, par implication, estoppel ou autre.
 
 ## <a name="code-of-conduct"></a>Code de conduite
-Ce projet a adopté le [code de conduite Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.
+Ce projet a adopté le [code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.

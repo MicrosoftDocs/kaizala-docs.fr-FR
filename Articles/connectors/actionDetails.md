@@ -1,61 +1,64 @@
 ---
-title: / Détails de l’action
-description: Article de référence de l’API à la requête concernant les détails des Actions Kaizala
+title: Détails de l'/action
+description: Article de référence pour l'API permettant de rechercher des détails sur les actions Kaizala
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: a0871eec8a0247cea122bd14f968dd1e16936101
-ms.sourcegitcommit: 3a6a13cc885faf1bbc9ee8498f5183f414395aac
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19905123"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190723"
 ---
-# <a name="get-details-for-an-action-in-a-group"></a>Obtenir plus d’informations pour une Action dans un groupe
-## <a name="get-actionsactionid"></a>GET /actions/ {actionId} /
+# <a name="get-details-for-an-action-in-a-group"></a>Obtenir les détails d'une action dans un groupe
+## <a name="get-actionsactionid"></a>OBTENIR/actions/{actionId}/
 
-Extraction l’API pour extraire la liste des instances de l’action envoyé à un groupe à l’aide de l' [API pour obtenir /actions ici](actions_get.md). Vous pouvez récupérer plus de détails sur une instance d’action spécifique référencé par un actionId.
+Extrayez l'API pour récupérer la liste des instances d'action envoyées à un groupe à l'aide [de l'API pour Get/actions ici](actions_get.md). Vous pouvez récupérer des informations supplémentaires sur une instance d'action spécifique référencée par un actionId.
 
     GET {endpoint-url}/v1/groups/{groupId}/actions/{actionId}/
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | Chaîne | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| Paramètre de chemin d’accès d’URL | actionId | Chaîne | Non | GUID représentant l’instance de l’action spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| Paramètre de requête URL | getDetails | Booléen | Oui | Permet d’obtenir l’affichage des détails de l’action spécifique ; Valeur par défaut est False |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| Paramètre de chemin d'URL | actionId | Chaîne | Non | GUID représentant l'instance d'action spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| Paramètre de requête d'URL | getDetails | Booléen | Oui | Utilisez pour obtenir des informations détaillées sur l'action spécifique; La valeur par défaut est false |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionType | String | Type d’action renvoyée |
-| actionDetails | Objet JSON | JSON onbject spécifique à l’actiontype |
-| sender | Chaîne | Numéro de téléphone de l’utilisateur qui a envoyé l’action pour le groupe |
-| sentAt | Date/heure | Publication de l’action pour le groupe |
+| actionType | String | Type d'action retourné |
+| actionDetails | Objet JSON | Onbject JSON spécifique au ActionType |
+| expéditeur | Chaîne | Numéro de téléphone de l'utilisateur qui a envoyé l'action au groupe |
+| sentAt | DateTime
+ | Heure à laquelle l'action a été publiée dans le groupe |
 
-####  <a name="actiondetails-object-structure-for-the-action-job"></a>structure d’objet actionDetails pour l’action 'Job' :
-
-| Paramètre | Type | Description |
-| :---: | :---: | :--- |
-| dueDate | Date/heure | Date d’échéance de la tâche |
-| title | Chaîne | Titre de la tâche |
-| status | Bool�en | True si tous les intervenants ont effectué le travail |
-| responseCount | Numérique | Nombre d’intervenants a marqué le travail terminée |
-| assigneeCount | Numérique | Nombre de destinataires |
-| réponses | Tableau JSON | Tableau JSON de réponses individuelles de travail |
-
-####  <a name="actiondetails-object-structure-for-the-action-survey"></a>structure d’objet actionDetails pour l’action « Enquête » :
+####  <a name="actiondetails-object-structure-for-the-action-job"></a>structure d'objet actionDetails pour l'action «Job»:
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionId | Chaîne | GUID représentant l’instance de l’action spécifique |
-| title | Chaîne | Titre de l’enquête |
-| responseCount | Numérique | Nombre de personnes qui a répondu à l’enquête |
-| affichait | Date/heure | DateTime de délai d’expiration de l’enquête |
+| dueDate | DateTime
+ | Date d'échéance de la tâche |
+| title | Chaîne | Titre du travail |
+| status | Booléen | True lorsque tous les utilisateurs ont effectué le travail |
+| responseCount | Numérique | Nombre d'utilisateurs ayant marqué le travail comme terminé |
+| assigneeCount | Numérique | Nombre de personnes affectées |
+| renvoyé | Tableau JSON | Tableau JSON de réponses aux travaux individuels |
 
-##### <a name="sample-json-response"></a>Exemple de réponse JSON :
+####  <a name="actiondetails-object-structure-for-the-action-survey"></a>structure d'objet actionDetails pour l'action «Survey»:
+
+| Paramètre | Type | Description |
+| :---: | :---: | :--- |
+| actionId | Chaîne | GUID représentant l'instance d'action spécifique |
+| title | Chaîne | Titre de l'enquête |
+| responseCount | Numérique | Nombre de personnes ayant répondu à l'enquête |
+| expiryDate | DateTime
+ | Date et heure de l'expiration de l'enquête |
+
+##### <a name="sample-json-response"></a>Exemple de réponse JSON:
 
 ```javascript
 {

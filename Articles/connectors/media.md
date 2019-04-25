@@ -1,85 +1,85 @@
 ---
-title: / Media
-description: Article de référence de l’API envoyer des pièces jointes multimédias à des groupes
+title: /Media
+description: Article de référence pour l'API permettant d'envoyer des pièces jointes à des groupes
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: 3cf1e6b235d6bf324011f0b054408eb418eb0871
-ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "20399376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190693"
 ---
-# <a name="media"></a>/ Media
-Point de terminaison API envoyer des pièces jointes multimédias à des groupes de conversation à l’intérieur de Kaizala.
+# <a name="media"></a>/Media
+Point de terminaison d'API pour envoyer des pièces jointes aux groupes de conversation dans Kaizala.
 
-Formats de fichiers pris en charge sont les suivants :
+Les formats de fichier pris en charge sont les suivants:
 
 | Type de média | ActionType | Extension |
 |---|---|---|
-| Des images | Image | .jpg, .jpeg, .png |
-| Album | Album | .jpg, .jpeg, .png |
-| Fichiers audio | Audio |.mp3, .wav |
-| Documents | Document | .doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf |
-| Vidéos | Vidéo | .mp4, .3gpp |
+| Des images | Image | . jpg,. jpeg,. png |
+| Album | Album | . jpg,. jpeg,. png |
+| Fichiers audio | Audio |. mp3,. wav |
+| Documents | Document | . doc,. docx,. xls,. xlsx,. ppt,. pptx,. pdf |
+| Vidéos | Vidéo | . MP4,. 3GPP |
 
-Validation des médias joints à Kaizala est un processus en deux étapes. Tout d’abord, vous devez télécharger le fichier multimédia dans un référentiel en utilisant le point de terminaison/Media et utiliser l’URL de ressource ultérieurement à publier en tant qu’Action à l’intérieur de Kaizala.
+La publication de pièces jointes de média dans Kaizala est un processus en deux étapes. Tout d'abord, vous devez télécharger le fichier multimédia dans un référentiel à l'aide du point de terminaison/Media, puis utiliser l'URL de la ressource plus tard pour publier en tant qu'action dans Kaizala.
 
-Le contenu correspondant-type(mime type) doit être définie dans l’en-tête de contenu du fichier multimédia. Sans cette api génère des erreur Media(415) non pris en charge. 
+Le type de contenu correspondant (type MIME) doit être défini dans l'en-tête de contenu du fichier multimédia. Sans cette API générera une erreur de support non pris en charge (415). 
 
-## <a name="post-media"></a>/ Media POST
+## <a name="post-media"></a>POST/Media
 
     POST {endpoint-url}/v1/media
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| En-tête HTTP | Content-Type | String | Non | Pour indiquer qu’un fichier est en cours d’envoi. valeur : multipart/form data |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | Chaîne | Non | Pour indiquer qu'un fichier est en cours de téléchargement. valeur: multipart/form-data |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| Corps de publication | fichiers | Fichier à télécharger dans un format de données multipart/form |
+| Corps de la publication | fichiers | Fichier multimédia à charger dans un format multipart/form-data |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| mediaResource | String | Données multimédias à être utilisé dans les appels d’action suivants envoi codées |
+| mediaResource | Chaîne | Données multimédias codées à utiliser dans les appels d'action d'envoi suivants |
 
-## <a name="post-groupsgroupidactions"></a>POST /groups/ {groupId} / actions
+## <a name="post-groupsgroupidactions"></a>POST/groups/{groupId}/actions
 
-Une fois que vous avez téléchargé le fichier multimédia, vous pouvez publier un fichier multimédia à un groupe à l’aide de ci-dessous API
+Une fois que vous avez téléchargé le fichier multimédia, vous pouvez publier un fichier multimédia dans un groupe à l'aide de l'API ci-dessous.
 
     POST {endpoint-url}/v1/groups/{groupId}/actions
 
 ### <a name="request-parameters"></a>Paramètres de la demande
 
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
-| En-tête HTTP | Content-Type | String | Non | valeur : application/json |
+| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | Chaîne | Non | valeur: application/JSON |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| actionType | String | ID de l’Action Kaizala à envoyer. Reportez-vous au tableau ci-dessus pour les formats de fichiers pris en charge et leur ActionType respectif. |
-| actionBody | Objet JSON | Objet représentant les données nécessaires pour l’Action respectif. Paramètres définis ci-dessous pour chacun du MediaType pris en charge. |
+| actionType | String | ID de l'action Kaizala à envoyer. Consultez le tableau ci-dessus pour les formats de fichier pris en charge et leurs ActionType respectifs. |
+| actionBody | Objet JSON | Objet représentant les données nécessaires pour l'action correspondante. Paramètres définis ci-dessous pour chacun des MediaType pris en charge. |
 
-#### <a name="actionbody-for-media-files"></a>actionBody des fichiers multimédias
+#### <a name="actionbody-for-media-files"></a>actionBody pour les fichiers multimédias
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| mediaResource | String | Non | Chaîne MediaResource à partir d’un appel précédent à/Media où vous devez télécharger la pièce jointe |
-| légende | String | Oui | Texte chaîne qui est illustré alongwith le fichier multimédia dans le cadre du message |
+| mediaResource | Chaîne | Non | MediaResource chaîne d'un appel précédent à/Media où vous devez télécharger la pièce jointe |
+| caption | Chaîne | Oui | Chaîne de texte affichée alongwith le fichier multimédia dans le cadre du message |
 
 
-#### <a name="sample-json-request-for-a-media-action"></a>Exemple de demande JSON pour une Action de média
+#### <a name="sample-json-request-for-a-media-action"></a>Exemple de demande JSON pour une action multimédia
 
 ```javascript
 {

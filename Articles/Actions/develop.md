@@ -1,59 +1,59 @@
-# <a name="developing-a-new-kaizala-action"></a>Développement d’une nouvelle Action Kaizala
+# <a name="developing-a-new-kaizala-action"></a>Développement d'une nouvelle action Kaizala
 
-Un package de l’Action Kaizala est un fichier zip qui contient tous les fichiers de manifeste et des ressources requises à la racine.
+Un package d'action Kaizala est un fichier zip qui contient tous les fichiers de manifeste et de ressource requis à la racine.
 
-Pour commencer, créez un nouveau dossier sur votre ordinateur pour rendre votre répertoire de travail.
+Pour commencer, créez un dossier sur votre PC pour en faire votre répertoire de travail.
 
-Vous aurez besoin d’un éditeur de code pour travailler avec différents types de fichiers manifeste de & de ressources web.
+Vous aurez besoin d'un éditeur de code pour utiliser différents types de ressources Web & fichiers manifeste.
 
->   Nous vous recommandons de l’éditeur de Code Visual Studio. Vous pouvez le télécharger à partir [d’ici](https://code.visualstudio.com/)
+>   Nous recommandons l'éditeur de code Visual Studio. Vous pouvez le télécharger à partir de [cet emplacement](https://code.visualstudio.com/) .
 
-## <a name="defining-the-app-model"></a>Définition du modèle d’application
+## <a name="defining-the-app-model"></a>Définition du modèle d'application
 
-Les Actions Kaizala prend en charge les modèles de données de formulaire en fonction de qui peuvent être utilisés pour la création, collecte et consolidation des données en utilisant les Services d’agrégation Kaizala.
+Les actions Kaizala prennent actuellement en charge les modèles de données basés sur des formulaires qui peuvent être utilisés pour la création, la collecte et l'agrégation de données à l'aide des services d'agrégation Kaizala.
 
-Par conséquent, vous devez d’abord définir les questions que vous devez inclure pour créer un objet form.
+Par conséquent, vous devez d'abord définir les «questions» que vous devez inclure pour créer un objet de formulaire.
 
-Reportez-vous à l' [application schéma JSON de modèle](appModel_schema.md) pour créer le modèle d’application de votre Action.
+RePortez-vous au [schéma JSON du modèle d'application](appModel_schema.md) pour créer le modèle d'application de votre action.
 
-## <a name="define-the-creation-view"></a>Définir le mode de création
+## <a name="define-the-creation-view"></a>Définir la vue de création
 
-Lorsqu’une nouvelle instance de l’Action Kaizala est appelée à partir de Action Palette l’application, la ressource HTML marqué comme la CreationView s’affiche. L’objectif de cet affichage Création consiste à créer une nouvelle instance de l’objet de formulaire tel que défini dans le modèle d’application. 
+Lorsqu'une nouvelle instance de l'action Kaizala est appelée à partir de la palette d'action de l'application, la ressource HTML marquée comme CreationView est rendue. L'objectif de cette vue de création est de créer une nouvelle instance de l'objet Form tel qu'il est défini dans le modèle d'application. 
 
-Pour interagir avec les Services d’agrégation Kaizala et la création de la nouvelle instance de formulaire, vous pouvez faire référence aux API dans le [Kit de développement logiciel KASClient JS](KASClient/README.md). Vous devez télécharger le [Fichier de KASClient JS](https://manage.kaiza.la/MiniApps/DownloadSDK) et l’inclure dans votre package.
+Pour interagir avec les services d'agrégation Kaizala et en créant la nouvelle instance de formulaire, vous pouvez consulter les API dans le [Kit de développement logiciel (SDK) KASCLIENT js](KASClient/README.md). Vous devrez télécharger le [fichier KASCLIENT js](https://manage.kaiza.la/MiniApps/DownloadSDK) et l'inclure dans votre package.
 
-Créer un nouveau fichier HTML qui représente ce mode Création. Dans le fichier javascript correspondant, appeler le Kit de développement KASClient JS et créez un objet form.
+Créez un fichier HTML qui représente cette vue de création. Dans le fichier JavaScript correspondant, appelez le kit de développement logiciel (SDK) KASClient JS et créez un objet Form.
 
-## <a name="create-the-package-manifest-file"></a>Créer le fichier de manifeste de Package
+## <a name="create-the-package-manifest-file"></a>Créer le fichier manifeste de package
 
-Maintenant que vous disposez d’un semblance de ce que vous souhaitez atteindre et avez créé un affichage – vous pouvez commencer à créer votre fichier manifeste de package.
+Maintenant que vous avez un semblance de ce que vous souhaitez obtenir et que vous avez créé une vue, vous pouvez commencer à créer votre fichier manifeste de package.
 
-Le fichier manifeste de Kaizala Package fournit des informations essentielles pour la plate-forme Kaizala pour qu’il reconnaisse et exécuter l’action Kaizala personnalisée.
+Le fichier manifeste du package Kaizala fournit des informations essentielles sur la plateforme Kaizala pour qu'il reconnaisse et exécute votre action Kaizala personnalisée.
 
-Reportez-vous à la [JSON schéma de manifeste de package](package_manifest_schema.md) pour créer le manifeste du package de votre Action.
+RePortez-vous au [schéma JSON du manifeste de package](package_manifest_schema.md) pour créer le manifeste de package de votre action.
 
-À ce stade, vous devez également inclure un fichier d’icône pour votre Action personnalisée dans le package.
+À ce stade, vous devez également inclure un fichier d'icône pour votre action personnalisée dans le package.
 
-Fichier HTML d’affichage Création dans le manifeste du package et mappez-le sur l’objet parameter pertinents.
+RePortez-vous à votre fichier HTML d'affichage de création dans le manifeste du package et mappez-le à l'objet Parameter approprié.
 
-## <a name="configure-the-card-that-appears-on-the-conversation-canvas"></a>Configurer la carte qui apparaît dans la zone de conversation
+## <a name="configure-the-card-that-appears-on-the-conversation-canvas"></a>Configurer la carte qui apparaît dans la zone de conversation de conversation
 
-Lorsqu’une nouvelle instance d’une Action Kaizala est créée et publiée dans une conversation, une carte d’Action s’affiche dans la zone de dessin pour d’autres utilisateurs de la conversation afficher et soumettre leurs réponses.
+Lorsqu'une nouvelle instance d'une action Kaizala est créée et publiée dans une conversation, une carte d'action s'affiche dans la zone de dessin pour que d'autres utilisateurs de la conversation puissent afficher et envoyer leurs réponses.
 
-Afin de personnaliser l’affichage de carte de conversation, reportez-vous à [Personnalisation de ChatCardView](ChatCanvasCardView.md) 
-## <a name="define-the-response--summary-views"></a>Définir les affichages de synthèse & réponse
+Pour personnaliser la vue de la carte de conversation, reportez-vous à la rubrique [customizIng ChatCardView](ChatCanvasCardView.md) 
+## <a name="define-the-response--summary-views"></a>Définir les vues récapitulatives de la réponse &
 
-Lorsque les utilisateurs tentent d’afficher plus d’informations et de répondre à une instance de l’Action Kaizala publié dans une conversation, ils peuvent voir les deux types d’affichages.
-*   Affichage de réponse lorsqu’ils cliquez sur le bouton d’appel à l’action principal et want publier une réponse
-*   Affichage de synthèse lorsqu’ils cliquez sur l’en-tête de la carte et pour afficher la vue agrégée de toutes les reesponses publiés
+Lorsque les utilisateurs essaient d'afficher des détails et de répondre à une instance de l'action Kaizala publiée dans une conversation, ils peuvent voir deux types d'affichage.
+*   Affichage des réponses lorsqu'ils cliquent sur le bouton d'appel à l'action principal et que vous souhaitez valider une réponse
+*   Affichage de synthèse lorsqu'ils cliquent sur l'en-tête de la carte et que vous souhaitez afficher la vue agrégée de tous les reesponses publiés
 
-Créez un ou plusieurs fichiers HTML nécessaire pour définir votre Action et mettez-les en correspondance avec les paramètres appropriées dans le fichier manifeste de package.
+Créez un ou plusieurs fichiers HTML selon vos besoins pour définir votre action et mappez-les aux paramètres pertinentes dans le fichier manifeste du package.
 
-Pour interagir avec les Services d’agrégation Kaizala et le client natif Kaizala pour récupérer des informations, envoyer une réponse ou obtenir des réponses agrégées, vous pouvez faire référence aux API dans le [Kit de développement logiciel KASClient JS](KASClient/README.md).
+Pour interagir avec les services d'agrégation Kaizala et le client natif Kaizala pour récupérer des informations, soumettre une réponse ou obtenir des réponses regroupées, vous pouvez consulter les API dans le [Kit de développement logiciel (SDK) de KASCLIENT js](KASClient/README.md).
 
 
 ## <a name="create-the-zip-file"></a>Créer le fichier ZIP
 
-Sélectionnez tous les fichiers dans votre répertoire de travail et créer un nouveau fichier zip pour votre package. Assurez-vous que tous les fichiers sont présents dans le répertoire racine du package.
+Sélectionnez tous les fichiers dans votre répertoire de travail et créez un fichier zip pour votre package. Assurez-vous que tous les fichiers sont présents dans le répertoire racine du package.
 
-*   À suivre : [Publier](publish.md)
+*   À suivre: [publier](publish.md)

@@ -1,50 +1,50 @@
 # <a name="customizing-chatcanvascardview"></a>Personnalisation de ChatCanvasCardView
 
-Contrairement à la création, réponse et affichages de synthèse sont html, conversation affichages sont native. Pour personnaliser l’affichage de carte de conversation, vous devrez fournir un json de la disposition de la carte, ainsi que les valeurs dans la vue. En l’absence d’une conversation personnalisée un canevas affichage carte, la valeur par défaut est affichage de carte de conversation avec le texte de titre de l’application. 
+Contrairement aux vues de création, de réponse et de résumé html, les affichages de conversation sont des affichages natifs. Pour personnaliser la vue de la carte de conversation, vous devez fournir un JSON de la disposition de la carte, ainsi que les valeurs de l'affichage. En l'absence d'une vue de carte de canevas de conversation personnalisée, la valeur par défaut est affichage carte de conversation avec le texte du titre de l'application. 
 
 ## <a name="views-and-their-supported-properties"></a>Vues et leurs propriétés prises en charge
-Vous trouverez ci-dessous les différents types de sub-views/widgets ainsi que leurs propriétés personnalisables. Certaines propriétés sont marquées avec <sup>iOS</sup> indiquant qu’ils sont applicables uniquement sur iOS _(et n’a aucun effet sur android)_.
+Vous trouverez ci-dessous différents types de sous-vues/widgets, ainsi que leurs propriétés personnalisables. Peu de propriétés sont marquées avec <sup>iOS</sup> , indiquant qu'elles ne s'appliquent qu'à IOS _(et n'ont aucun effet sur Android)_.
 
-### <a name="container--view"></a>Conteneur / afficher
+### <a name="container--view"></a>Conteneur/vue
 
 <ol>
 <li>ID (facultatif, mais doit être unique)</li>
-<li>visible<sup>iOS</sup></li>
-<li>Tapez _(tous les types de vue secondaire que nous avons mentionné ici)_</li>
-<li>marge / marginTop / marginRight / marginBottom / marginLeft</li>
-<li>remplissage / paddingTop / paddingRight / paddingBottom / paddingLeft</li>
+<li><sup>iOS</sup> visible</li>
+<li>type _(n'importe quel type de sous-affichage mentionné ici)_</li>
+<li>Margin/marginTop/marginRight/marginBottom/marginLeft</li>
+<li>Padding/paddingTop/paddingRight/paddingBottom/paddingLeft</li>
 <li>width</li>
 <li>height</li>
-<li>poids _(% taux de parent largeur/hauteur de la vue en cas de mises en page horizontaux/verticaux respectivement)_</li>
-<li>backgroundColor _(uniquement code hexadécimal autorisé ici)_</li>
+<li>poids _(pourcentage de la largeur/hauteur de la vue parent en cas de disposition horizontale/verticale, respectivement)_</li>
+<li>backgroundColor _(uniquement le code hexadécimal autorisé ici)_</li>
 <li>cornerRadius</li>
-<li>borderWidthiOS / borderColoriOS</li>
-<li>Children _(tableau de vues sous-sites)_</li>
-<li>mise en page _(quand verticale / horizontale n’est pas spécifié, par défaut verticale)_</li>
-<li>verticalAlignment _(haut / bas / centre / stretchiOS - comment enfants seront alignés verticalement)_</li>
-<li>horizontalAlignment _ (gauche/droite/centre/spaceBetween<sup></sup> iOS/spaceAround<sup>iOS</sup>) - comment enfants seront alignés horizontalement. _</li>
-<li>initialHeight<sup>iOS</sup> _une seule propriété iOS utilisée dans le conteneur de plus haut est utilisé pour afficher la carte avant la dimension précise est établie. Il est fortement recommandé d’utiliser cette propriété pour une meilleure expérience !_</li>
+<li>borderWidthiOS/borderColoriOS</li>
+<li>enfants _(tableau de sous-affichages)_</li>
+<li>mise en page _(verticale/horizontale en cas d'inspécification, par défaut, verticale)_</li>
+<li>verticalAlignment _(haut/bas/centre/stretchiOS-comment les enfants seront alignés verticalement)_</li>
+<li>horizontalAlignment _ (Left/Right/Center/spaceBetween<sup>iOS</sup> /spaceAround<sup>iOS</sup>): comment les enfants seront alignés horizontalement. _</li>
+<li>initialHeight<sup>iOS</sup> _une propriété iOS uniquement utilisée dans le conteneur de niveau supérieur qui est utilisée pour afficher la carte avant que la dimension exacte ne soit vérifiée. Il est vivement recommandé d'utiliser cette propriété pour une expérience plus homogène!_</li>
 </ol>
 
-### <a name="text"></a>Texte
+### <a name="text"></a>Text
 
 <ol>
 <li>ID (facultatif, mais doit être unique)</li>
-<li>visible<sup>iOS</sup></li>
-<li>Tapez _(tous les types de vue secondaire que nous avons mentionné ici)_</li>
-<li>marge / marginTop / marginRight / marginBottom / marginLeft</li>
-<li>remplissage / paddingTop / paddingRight / paddingBottom / paddingLeft</li>
+<li><sup>iOS</sup> visible</li>
+<li>type _(n'importe quel type de sous-affichage mentionné ici)_</li>
+<li>Margin/marginTop/marginRight/marginBottom/marginLeft</li>
+<li>Padding/paddingTop/paddingRight/paddingBottom/paddingLeft</li>
 <li>width</li>
 <li>height</li>
-<li>poids _(% taux de parent largeur/hauteur de la vue en cas de mises en page horizontaux/verticaux respectivement)_</li>
-<li>backgroundColor _(uniquement code hexadécimal autorisé ici)_</li>
+<li>poids _(pourcentage de la largeur/hauteur de la vue parent en cas de disposition horizontale/verticale, respectivement)_</li>
+<li>backgroundColor _(uniquement le code hexadécimal autorisé ici)_</li>
 <li>cornerRadius</li>
-<li>borderWidthiOS / borderColoriOS</li>
+<li>borderWidthiOS/borderColoriOS</li>
 <li>chaîne</li>
-<li>fontSize _(famille de polices est toujours du système par défaut, pour éviter les problèmes de rendu)_</li>
+<li>FontSize _(famille de polices est toujours la valeur par défaut du système, pour éviter les problèmes de rendu)_</li>
 <li>textColor _(uniquement code hexadécimal autorisé ici)_</li>
-<li>ellipsizeMode _(head / intermédiaire / Queue)_</li>
-<li>maxNumberOfLines _(0 pour aucune limite autre texte sera tronqué selon ellipsizeMode)_</li>
+<li>ellipsizeMode _(Head/Middle/tail)_</li>
+<li>maxNumberOfLines _(0 pour aucune limite, sinon le texte est tronqué en fonction du ellipsizeMode)_</li>
 </ol>
 
 
@@ -52,61 +52,61 @@ Vous trouverez ci-dessous les différents types de sub-views/widgets ainsi que l
 
 <ol>
 <li>ID (facultatif, mais doit être unique)</li>
-<li>visible<sup>iOS</sup></li>
-<li>Tapez _(tous les types de vue secondaire que nous avons mentionné ici)_</li>
-<li>marge / marginTop / marginRight / marginBottom / marginLeft</li>
-<li>remplissage / paddingTop / paddingRight / paddingBottom / paddingLeft</li>
+<li><sup>iOS</sup> visible</li>
+<li>type _(n'importe quel type de sous-affichage mentionné ici)_</li>
+<li>Margin/marginTop/marginRight/marginBottom/marginLeft</li>
+<li>Padding/paddingTop/paddingRight/paddingBottom/paddingLeft</li>
 <li>width</li>
 <li>height</li>
-<li>poids _(% taux de parent largeur/hauteur de la vue en cas de mises en page horizontaux/verticaux respectivement)_</li>
-<li>backgroundColor _(uniquement code hexadécimal autorisé ici)_</li>
+<li>poids _(pourcentage de la largeur/hauteur de la vue parent en cas de disposition horizontale/verticale, respectivement)_</li>
+<li>backgroundColor _(uniquement le code hexadécimal autorisé ici)_</li>
 <li>cornerRadius</li>
-<li>borderWidthiOS / borderColoriOS</li>
+<li>borderWidthiOS/borderColoriOS</li>
 <li>source</li>
-<li>contentMode _ (aspectFit/aspectFill/étirer/répétez<sup>iOS</sup>) _</li>
+<li>contentMode _ (aspectFit/aspectFill/étirer/répéter<sup>iOS</sup>) _</li>
 </ol>
 
 
 
 ## <a name="binding-data-with-views"></a>Liaison de données avec des vues
-* __Formulaire__
-  * $\{Form.Title}
-  * $\{Form.Expiry} - _sortie est une chaîne de date-heure_
-  * $\{Form.questions}
-  * $\{Form.questions.Length}
-  * $\{Form.questions[questionId].Title}
-  * $\{Form.questions[questionId].Options}
-  * $\{Form.questions[questionId].Options.Length}
-  * $\{Form.questions[questionId].Options[optionId].Text}
-  * $\{Form.questions[questionId].Options[optionId].pictureUrl}
-  * $\{Form.Properties}
-  * $\{Form.Properties.Length}
-  * $\{Form.Properties[PropertyName]}
-  * $\{Form.Properties[PropertyName].Value}
-  * $\{Form.Properties[PropertyName].Length} - _pour tableau/définir la propriété type_
+* __Form__
+  * $\{Form. title}
+  * $\{Form. Expiry}- _Output est une chaîne de date-heure_
+  * $\{Form. questions}
+  * $\{Form. questions. Length}
+  * $\{Form. questions [questionId]. title}
+  * $\{Form. questions [questionId]. options}
+  * $\{Form. questions [questionId]. options. Length}
+  * $\{Form. questions [questionId]. options [optionId]. Text}
+  * $\{Form. questions [questionId]. options [optionId]. pictureUrl}
+  * $\{Form. Properties}
+  * $\{Form. Properties. Length}
+  * $\{Form. Properties [propertyName]}
+  * $\{Form. Properties [propertyName]. Value}
+  * $\{Form. Properties [propertyName]. Length}- _pour la propriété Array/Set type_
 * __MyLatestResponse__
-  * $\{MyLatestResponse.sendTime} - _sortie est une chaîne de date-heure_
-  * $\{MyLatestResponse.questionToAnswerMap[questionId]}
-* __Résumé__
-  * $\{Summary.totalResponseCount}
-  * $\{Summary.totalParticipantsCount}
-  * $\{Summary.targetResponderCount}
+  * $\{MyLatestResponse. sendTime}- _Output est une chaîne date-heure_
+  * $\{MyLatestResponse. questionToAnswerMap [questionId]}
+* __Summary__
+  * $\{Résumé. totalResponseCount}
+  * $\{Résumé. totalParticipantsCount}
+  * $\{Résumé. targetResponderCount}
 
-Un peut également utiliser ces variables comme espaces réservés, tels que :  
-_« Je vous remercie de votre rapport news : ${Form.properties[newsDescription].value} »_
+Par ailleurs, il est possible d'utiliser ces variables comme espaces réservés, comme:  
+_«Merci pour votre rapport sur les actualités: $ {Form. Properties [newsDescription]. Value}»_
 
 ## <a name="operations"></a>Opérations
 
-Dans certains scénarios, il peut se produire un besoin où différents utilisateurs devront peut-être afficher la carte de conversation différent, qui peut-être être basée sur certains attributs. Afin d’activer des scénarios, Kaizala fournit des [opérateurs](Operator.md), qui permet aux créateurs de Action personnaliser les affichages de carte de conversation pour la même instance d’Action différentes pour différents scénarios/utilisateurs.
+Dans certains cas, il peut être nécessaire que différents utilisateurs aient besoin d'afficher différentes cartes de conversation, qui peuvent être basées sur certains attributs. Afin d'activer ce type de scénario, Kaizala fournit des [opérateurs](Operator.md), qui permet aux créateurs d'actions de personnaliser les vues de carte de conversation pour la même instance d'action différemment pour différents scénarios/utilisateurs.
 
-Par exemple, vous pouvez choisir d’afficher une vue carte différentes pour les utilisateurs qui n’ont pas terminé le travail et un affichage autre carte pour les utilisateurs qui ont terminé le travail. Cela peut être étendu à n’importe quel type de scénarios qui peuvent survenir.
+Par exemple, vous pouvez choisir d'afficher une autre vue carte pour les utilisateurs qui n'ont pas effectué le travail et une autre vue carte pour les utilisateurs qui ont effectué le travail. Cette opération peut être étendue à n'importe quel type de scénario susceptible de se produire.
 
-## <a name="how-to-provide-the-json-schema"></a>Comment fournir le schéma json
-Dans le fichier manifeste _(package.json)_ d’un package de placer le nom de fichier JSON sous **sourceLocation** clé **ChatCanvasCardView** ci-dessous est un instantané de package.json :
+## <a name="how-to-provide-the-json-schema"></a>Comment fournir le schéma JSON
+Dans le fichier manifeste _(package. Json)_ d'un package, placez le nom de fichier JSON sous la clé **SourceLocation** dans **ChatCanvasCardView** Voici un exemple de capture instantanée de package. JSON:
 
-![capture instantanée de package.json](./chatcardviewjson.png)
+![capture instantanée de package. JSON](./chatcardviewjson.png)
 
-## <a name="example-chatcanvascardview-source-file"></a>Exemple de fichier de code source ChatCanvasCardView
+## <a name="example-chatcanvascardview-source-file"></a>Exemple de fichier source ChatCanvasCardView
 ```json
 {
     "schemaVersion": 1,

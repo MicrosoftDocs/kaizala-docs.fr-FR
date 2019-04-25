@@ -1,45 +1,45 @@
 ---
-title: /Subscribers
-description: Référence de l’Article de l’API obtenir les abonnés données pour des groupes publics
+title: /subscribers
+description: Article de référence pour les API permettant d'obtenir les données des abonnés pour les groupes publics
 topic: Reference
 author: nitinjms
 ms.openlocfilehash: 1f6f9055ce909ecc24bac77c3770477f405c8d27
-ms.sourcegitcommit: 523ff9067dc81712d7da2b103a3a1a0f0236b8e4
+ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "20399364"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33190697"
 ---
-# <a name="subscribers"></a>/Subscribers
+# <a name="subscribers"></a>/subscribers
 
-Point de terminaison API pour ajouter, obtenir ou supprimer les abonnés de groupe Public gérés.
+Point de terminaison d'API pour ajouter, obtenir ou supprimer des abonnés à partir d'un groupe public géré.
 
-## <a name="add-subscribers"></a>Ajouter /subscribers
+## <a name="add-subscribers"></a>Ajouter/subscribers
 
-    PUT {endpoint-url}/v1/groups/{groupId}/subscribers/add
+    PUT {Endpoint-URL}/v1/groups/{groupId}/subscribers/add
 
 ### <a name="request-parameters"></a>Paramètres de la demande
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
+| Paramètre de chemin d'URL | groupId | String | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| abonnés | String] | Chaque chaîne représente le numéro de téléphone mobile avec le code du pays (par ex.. +911111111111) |
+| leurs | Chaîne [] | Chaque chaîne représente le numéro de téléphone mobile avec le code pays (par exemple, + 911111111111) |
 
-#### <a name="sample-json-request"></a>Exemple de demande JSON
+#### <a name="sample-json-request"></a>Exemple de requête JSON
 ```javascript
 {
-    subscribers : ["+911111111111", "+911111111112"]
+    subscribers : ["+911111111111", "+911111111112"]
 }
 ```
 
 ### <a name="response-body"></a>Corps de la réponse
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| result | Objet JSON | chaque clé de cet objet Json représente le numéro de téléphone mobile et valeur l’objet Json contenant a réussi ou échoué avec motif |
+| result | Objet JSON | chaque clé de cet objet JSON représente le numéro de téléphone mobile et la valeur représente l'objet JSON contenant la réussite ou l'échec avec la raison |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -56,29 +56,29 @@ Point de terminaison API pour ajouter, obtenir ou supprimer les abonnés de grou
 }
 ```
 
-## <a name="get-subscribers"></a>OBTENIR /subscribers
+## <a name="get-subscribers"></a>OBTENIR/subscribers
 
-    POST {endpoint-url}/v1/groups/{groupId}/subscribers
+    POST {Endpoint-URL}/v1/groups/{groupId}/subscribers
 
 ### <a name="request-parameters"></a>Paramètres de la demande
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
+| Paramètre de chemin d'URL | groupId | String | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 
-| Paramètre | Type | Facultatif ? | Description |
+| Paramètre | Type | Module? | Description |
 | :---: | :---: | :--- | :--- |
-| curseur | String | Oui | Début du jeu de résultats. Pour la pagination. Renvoyée dans le corps de réponse |
-| count | entier | Oui | Par défaut : 50. Max : 50. Nombre d’abonnés à renvoyer dans un jeu de résultats|
+| curseur | Chaîne | Oui | Début de l'ResultSet. Pour la pagination. Renvoyé dans le corps de la réponse |
+| count | int | Oui | Valeur par défaut: 50. Max: 50. Nombre d'abonnés à renvoyer dans un jeu de résultats|
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| abonnés | Tableau JSON | Tableau de JSON objets représentant chacun un abonné du groupe |
-| curseur | String | Début du jeu de résultats. Pour la pagination. Pour être utilisé dans le corps de la requête pour extraire le résultat suivant défini. Présenter en réponse uniquement s’il existe un jeu de résultats valide suivant. |
+| leurs | Tableau JSON | Tableau d'objets JSON représentant chacun un abonné du groupe |
+| curseur | Chaîne | Début de l'ResultSet. Pour la pagination. À utiliser dans le corps de la demande pour récupérer le jeu de résultats suivant. Présent en réponse uniquement s'il existe un jeu de résultats suivant valide. |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -96,32 +96,32 @@ Point de terminaison API pour ajouter, obtenir ou supprimer les abonnés de grou
 }
 ```
 
-## <a name="remove-subscribers"></a>SUPPRIMER /subscribers
+## <a name="remove-subscribers"></a>SUPPRIMER/subscribers
 
-    PUT {endpoint-url}/v1/groups/{groupId}/subscribers/remove
+    PUT {Endpoint-URL}/v1/groups/{groupId}/subscribers/remove
 
 ### <a name="request-parameters"></a>Paramètres de la demande
-|  | Paramètre | Type | Facultatif ? | Description |
+|  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d’accès d’URL | groupId | String | Non | GUID représentant le groupId de la ressource groupe spécifique |
-| En-tête HTTP | accessToken | String | Non | Reçu à partir de la fin de l’authentification par jeton d’accès |
+| Paramètre de chemin d'URL | groupId | String | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
 
-### <a name="request-body"></a>Corps de la requête
+### <a name="request-body"></a>Corps de la demande
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| abonnés | String] | Chaque chaîne représente le numéro de téléphone mobile avec le code du pays (par ex.. +911111111111) |
+| leurs | Chaîne [] | Chaque chaîne représente le numéro de téléphone mobile avec le code pays (par exemple, + 911111111111) |
 
-#### <a name="sample-json-request"></a>Exemple de demande JSON
+#### <a name="sample-json-request"></a>Exemple de requête JSON
 ```javascript
 {
-    subscribers : ["+911111111111", "+911111111112"]
+    subscribers : ["+911111111111", "+911111111112"]
 }
 ```
 
 ### <a name="response-body"></a>Corps de la réponse
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| result | Objet JSON | chaque clé de cet objet Json représente le numéro de téléphone mobile et valeur l’objet Json contenant a réussi ou échoué avec motif |
+| result | Objet JSON | chaque clé de cet objet JSON représente le numéro de téléphone mobile et la valeur représente l'objet JSON contenant la réussite ou l'échec avec la raison |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
