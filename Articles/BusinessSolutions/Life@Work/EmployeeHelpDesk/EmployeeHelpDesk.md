@@ -112,7 +112,7 @@ Cette opération est généralement divisée en trois étapes:
     |ReportedAt|Une seule ligne de texte|
     |AssignedTo|Une seule ligne de texte|
     |AssignedBy|Une seule ligne de texte|
-    |État|Choix avec des options comme nouveau, affecté, résolu, fermé et rouvert (*ces étapes de ticket sont obligatoires*)|
+    |Statut|Choix avec des options comme nouveau, affecté, résolu, fermé et rouvert (*ces étapes de ticket sont obligatoires*)|
     |HelpdeskComments|Plusieurs lignes de texte|
     |UserFeedback|Plusieurs lignes de texte|
     |ReasonsToReopen|Plusieurs lignes de texte|
