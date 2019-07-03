@@ -37,17 +37,15 @@ Ce modèle contient des données pour chaque réponse à une question de type de
 attachmentListType: contient le type de la réponse de liste de pièces jointes
 
 ___
-
 <a id="attachmentsresponsejsonstrings"></a>
 
 ###  <a name="attachmentsresponsejsonstrings"></a>attachmentsResponseJSONStrings
 
 **● attachmentsResponseJSONStrings**: * `string`[]* = []
 
-attachmentsResponseJSONStrings: contient la liste des pièces jointes correspondant à chaque réponse sous la forme d'une chaîne JSON qui est directement disponible dans le questionIdToAnswerMap.
+attachmentsResponseJSONStrings: contient la liste des pièces jointes correspondant à chaque réponse sous la forme d’une chaîne JSON qui est directement disponible dans le questionIdToAnswerMap.
 
 ___
-
 <a id="questionid"></a>
 
 ###  <a name="questionid"></a>questionId
@@ -57,7 +55,6 @@ ___
 Index de la question
 
 ___
-
 <a id="questiontitle"></a>
 
 ###  <a name="questiontitle"></a>questionTitle
@@ -67,7 +64,6 @@ ___
 Titre de la question
 
 ___
-
 <a id="questiontype"></a>
 
 ###  <a name="questiontype"></a>questionType
@@ -77,7 +73,6 @@ ___
 Type de la question
 
 ___
-
 <a id="timestamps"></a>
 
 ###  <a name="timestamps"></a>Horodatages
@@ -87,14 +82,13 @@ ___
 timeStamps: contient les horodatages de réponse pour chaque réponse.
 
 ___
-
 <a id="userinfo"></a>
 
 ###  <a name="userinfo"></a>userInfo
 
 **● UserInfo**: * [KASUser](kasclient.kasuser.md)[]* = []
 
-userInfo: contient des instances de KASUser avec les détails de la personne interrogée pour la réponse particulière, afin que nous puissions afficher le nom et l'image de profil de la personne interrogée.
+userInfo: contient des instances de KASUser avec les détails de la personne interrogée pour la réponse particulière, afin que nous puissions afficher le nom et l’image de profil de la personne interrogée.
 
 ___
 

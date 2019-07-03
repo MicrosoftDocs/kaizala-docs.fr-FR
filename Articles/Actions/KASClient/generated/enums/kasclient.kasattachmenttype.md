@@ -2,10 +2,10 @@
 
 # <a name="enumeration-kasattachmenttype"></a>Énumération: KASAttachmentType
 
-Les valeurs d'énumération suivantes doivent être synchronisées avec la représentation d'énumération AttachmentType dans le code iOS et Android. Cette étape est essentielle pour la sérialisation et la désérialisation appropriées sur le pont KAS.
+Les valeurs d’énumération suivantes doivent être synchronisées avec la représentation d’énumération AttachmentType dans le code iOS et Android. Cette étape est essentielle pour la sérialisation et la désérialisation appropriées sur le pont KAS.
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [Signaux](kasclient.kasattachmenttype.md#audio)
 * [Document](kasclient.kasattachmenttype.md#document)
@@ -15,7 +15,7 @@ Les valeurs d'énumération suivantes doivent être synchronisées avec la repr�
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="audio"></a>
 
@@ -24,7 +24,6 @@ Les valeurs d'énumération suivantes doivent être synchronisées avec la repr�
 **Audio**: = 2
 
 ___
-
 <a id="document"></a>
 
 ###  <a name="document"></a>Document
@@ -32,7 +31,6 @@ ___
 **Document**: = 3
 
 ___
-
 <a id="generic"></a>
 
 ###  <a name="generic"></a>Generic
@@ -40,7 +38,6 @@ ___
 **Générique**: = 99
 
 ___
-
 <a id="image"></a>
 
 ###  <a name="image"></a>Image
@@ -48,7 +45,6 @@ ___
 **Image**: = 1
 
 ___
-
 <a id="video"></a>
 
 ###  <a name="video"></a>Vidéo

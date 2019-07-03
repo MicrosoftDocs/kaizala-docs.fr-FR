@@ -11,7 +11,7 @@
 ### <a name="properties"></a>Propriétés
 
 * [commentsCount](kasclient.kasformreaction.md#commentscount)
-* [didICom](kasclient.kasformreaction.md#didicomment)
+* [didicom](kasclient.kasformreaction.md#didicomment)
 * [didILike](kasclient.kasformreaction.md#didilike)
 * [hideComments](kasclient.kasformreaction.md#hidecomments)
 * [hideLikes](kasclient.kasformreaction.md#hidelikes)
@@ -34,64 +34,58 @@
 Nombre de commentaires reçus pour le formulaire
 
 ___
-
 <a id="didicomment"></a>
 
-###  <a name="didicomment"></a>didICom
+###  <a name="didicomment"></a>didicom
 
 **● didicom**: *`boolean`* = false
 
-Indique si l'utilisateur actuel a déjà aimé ou non
+Indique si l’utilisateur actuel a déjà aimé ou non
 
 ___
-
 <a id="didilike"></a>
 
 ###  <a name="didilike"></a>didILike
 
 **● didILike**: *`boolean`* = false
 
-Indique si l'utilisateur actuel a déjà aimé ou non
+Indique si l’utilisateur actuel a déjà aimé ou non
 
 ___
-
 <a id="hidecomments"></a>
 
 ###  <a name="hidecomments"></a>hideComments
 
 **● hideComments**: *`boolean`* = false
 
-Indique s'il faut afficher les commentaires ou non
+Indique s’il faut afficher les commentaires ou non
 
 ___
-
 <a id="hidelikes"></a>
 
 ###  <a name="hidelikes"></a>hideLikes
 
 **● hideLikes**: *`boolean`* = false
 
-Indique s'il faut afficher les autres aiment ou non.
+Indique s’il faut afficher les autres aiment ou non.
 
 ___
-
 <a id="hidelikesdetails"></a>
 
 ###  <a name="hidelikesdetails"></a>hideLikesDetails
 
 **● hideLikesDetails**: *`boolean`* = false
 
-Indique s'il faut afficher ou non les imeersive.
+Indique s’il faut afficher ou non les imeersive.
 
 ___
-
 <a id="likescount"></a>
 
 ###  <a name="likescount"></a>likesCount
 
 **● likesCount**: *`number`* = 0
 
-Nombre de «j'aime reçus» pour le formulaire
+Nombre de «j’aime reçus» pour le formulaire
 
 ___
 

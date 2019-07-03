@@ -4,14 +4,14 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [GENERIC](kasclient.attachmentlistresponsetype.md#generic)
 * [LIST_OF_IMAGES](kasclient.attachmentlistresponsetype.md#list_of_images)
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="generic"></a>
 
@@ -20,7 +20,6 @@
 **Générique**: = 0
 
 ___
-
 <a id="list_of_images"></a>
 
 ###  <a name="listofimages"></a>LIST_OF_IMAGES

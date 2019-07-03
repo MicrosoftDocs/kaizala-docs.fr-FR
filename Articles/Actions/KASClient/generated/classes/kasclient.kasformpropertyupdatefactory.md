@@ -37,7 +37,6 @@
 **Renvoie:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
 <a id="addproperty"></a>
 
 ### <a name="static-addproperty"></a>`<Static>`addProperty
@@ -53,7 +52,6 @@ ___
 **Renvoie:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
 <a id="deleteentriesfrompropertyvalue"></a>
 
 ### <a name="static-deleteentriesfrompropertyvalue"></a>`<Static>`deleteEntriesFromPropertyValue
@@ -70,7 +68,6 @@ ___
 **Renvoie:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
 <a id="deleteproperty"></a>
 
 ### <a name="static-deleteproperty"></a>`<Static>`deleteProperty
@@ -86,7 +83,6 @@ ___
 **Renvoie:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
 <a id="replaceentryinpropertyvalue"></a>
 
 ### <a name="static-replaceentryinpropertyvalue"></a>`<Static>`replaceEntryInPropertyValue
@@ -104,7 +100,6 @@ ___
 **Renvoie:** [KASFormPropertyUpdateInfo](kasclient.kasformpropertyupdateinfo.md)
 
 ___
-
 <a id="updatevalueinproperty"></a>
 
 ### <a name="static-updatevalueinproperty"></a>`<Static>`updateValueInProperty

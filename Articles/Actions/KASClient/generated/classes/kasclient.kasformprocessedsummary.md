@@ -30,7 +30,6 @@
 **● JSON**:*`JSON`*
 
 ___
-
 <a id="nonrespondersinconversation"></a>
 
 ###  <a name="nonrespondersinconversation"></a>nonRespondersInConversation
@@ -40,18 +39,16 @@ ___
 Nombre de réponses dans la conversation
 
 ___
-
 <a id="results"></a>
 
 ###  <a name="results"></a>results
 
 **● résultats**:*`object`*
 
-Résultat agrégé pour les questions agrégées Dictionary<QuestionId: Number, result: KASQuestionResult>
+Résultat agrégé pour le dictionnaire de questions agrégées<QuestionId: Number, result: KASQuestionResult>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
-
 <a id="targetrespondercount"></a>
 
 ###  <a name="targetrespondercount"></a>targetResponderCount
@@ -61,14 +58,13 @@ ___
 Combien de fois dans la conversation ont été affectées pour répondre à ce formulaire
 
 ___
-
 <a id="totalresponsecount"></a>
 
 ###  <a name="totalresponsecount"></a>totalResponseCount
 
 **● totalResponseCount**: *`number`* = 0
 
-Le nombre total de réponses reçues pour le formulaire, en considérant plusieurs réponses d'une personne
+Le nombre total de réponses reçues pour le formulaire, en considérant plusieurs réponses d’une personne
 
 ___
 

@@ -22,12 +22,11 @@
 
 <a id="data"></a>
 
-###  <a name="data"></a>données
+###  <a name="data"></a>data
 
 **● Data**: *`string`* = ""
 
 ___
-
 <a id="type"></a>
 
 ###  <a name="type"></a>type

@@ -29,7 +29,6 @@
 **● nom**: *`string`* = ""
 
 ___
-
 <a id="operation"></a>
 
 ###  <a name="operation"></a>restauration
@@ -37,7 +36,6 @@ ___
 **● opération**: *[KASFormPropertyUpdateOperation](../enums/kasclient.kasformpropertyupdateoperation.md)* = KASFormPropertyUpdateOperation. UpdateValue
 
 ___
-
 <a id="type"></a>
 
 ###  <a name="type"></a>type
@@ -45,7 +43,6 @@ ___
 **● type**: *[KASFormPropertyType](../enums/kasclient.kasformpropertytype.md)* = KASFormPropertyType. Text
 
 ___
-
 <a id="value"></a>
 
 ###  <a name="value"></a>value

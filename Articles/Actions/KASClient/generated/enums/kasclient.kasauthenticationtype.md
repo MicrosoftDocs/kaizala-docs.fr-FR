@@ -4,7 +4,7 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [FaceRecognition](kasclient.kasauthenticationtype.md#facerecognition)
 * [Identification](kasclient.kasauthenticationtype.md#fingerprint)
@@ -15,7 +15,7 @@
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="facerecognition"></a>
 
@@ -24,7 +24,6 @@
 **FaceRecognition**: = 5
 
 ___
-
 <a id="fingerprint"></a>
 
 ###  <a name="fingerprint"></a>Identification
@@ -32,7 +31,6 @@ ___
 **Empreinte numérique**: = 4
 
 ___
-
 <a id="none"></a>
 
 ###  <a name="none"></a>Aucun
@@ -40,15 +38,13 @@ ___
 **None**: =-1
 
 ___
-
 <a id="password"></a>
 
-###  <a name="password"></a>Mot de passe
+###  <a name="password"></a>Password
 
 **Mot de passe**: = 3
 
 ___
-
 <a id="pattern"></a>
 
 ###  <a name="pattern"></a>Modèle
@@ -56,7 +52,6 @@ ___
 **Modèle**: = 1
 
 ___
-
 <a id="pin"></a>
 
 ###  <a name="pin"></a>Ancre

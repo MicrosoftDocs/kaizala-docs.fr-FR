@@ -4,14 +4,14 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [Current](kasclient.urltype.md#current)
 * [Fixed](kasclient.urltype.md#fixed)
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="current"></a>
 
@@ -20,7 +20,6 @@
 **Actuel**: = 0
 
 ___
-
 <a id="fixed"></a>
 
 ###  <a name="fixed"></a>Fixed

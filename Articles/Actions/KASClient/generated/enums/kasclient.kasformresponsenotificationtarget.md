@@ -4,15 +4,15 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [CREAT](kasclient.kasformresponsenotificationtarget.md#creator)
-* [Communauté](kasclient.kasformresponsenotificationtarget.md#group)
+* [GROUP](kasclient.kasformresponsenotificationtarget.md#group)
 * [COMMERÇANTS](kasclient.kasformresponsenotificationtarget.md#owners)
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="creator"></a>
 
@@ -21,7 +21,6 @@
 **Créateur**: = 1
 
 ___
-
 <a id="group"></a>
 
 ###  <a name="group"></a>Communauté
@@ -29,7 +28,6 @@ ___
 **Groupe**: = 3
 
 ___
-
 <a id="owners"></a>
 
 ###  <a name="owners"></a>COMMERÇANTS

@@ -4,12 +4,13 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [AttachmentList](kasclient.kasquestiontype.md#attachmentlist)
 * [DateOnly](kasclient.kasquestiontype.md#dateonly)
 * [DateTime](kasclient.kasquestiontype.md#datetime)
 * [Image](kasclient.kasquestiontype.md#image)
+* [LargeText](kasclient.kasquestiontype.md#largetext)
 * [Emplacement](kasclient.kasquestiontype.md#location)
 * [MultiSelect](kasclient.kasquestiontype.md#multiselect)
 * [None](kasclient.kasquestiontype.md#none)
@@ -21,7 +22,7 @@
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="attachmentlist"></a>
 
@@ -32,7 +33,6 @@
 Réponse de type de liste de pièces jointes
 
 ___
-
 <a id="dateonly"></a>
 
 ###  <a name="dateonly"></a>DateOnly
@@ -42,48 +42,51 @@ ___
 Type de date
 
 ___
-
 <a id="datetime"></a>
 
-###  <a name="datetime"></a>DateTime
-
+###  <a name="datetime"></a>Date/heure
 
 **DateTime**: = 5
 
 Date heure type réponse
 
 ___
-
 <a id="image"></a>
 
 ###  <a name="image"></a>Image
 
 **Image**: = 6
 
-La réponse sera une pièce jointe d'image
+La réponse sera une pièce jointe d’image
 
 ___
+<a id="largetext"></a>
 
+###  <a name="largetext"></a>LargeText
+
+**LargeText**: = 11
+
+Tout texte peut être la réponse à la question au-dessus de 4000 caractères
+
+___
 <a id="location"></a>
 
 ###  <a name="location"></a>Emplacement
 
 **Emplacement**: = 4
 
-L'emplacement actuel de l'utilisateur sera joint en tant que réponse.
+L’emplacement actuel de l’utilisateur sera joint en tant que réponse.
 
 ___
-
 <a id="multiselect"></a>
 
 ###  <a name="multiselect"></a>MultiSelect
 
 **MultiSelect**: = 1
 
-Plusieurs options peuvent être sélectionnées dans la liste d'options
+Plusieurs options peuvent être sélectionnées dans la liste d’options
 
 ___
-
 <a id="none"></a>
 
 ###  <a name="none"></a>Aucun
@@ -93,7 +96,6 @@ ___
 Type par défaut
 
 ___
-
 <a id="numeric"></a>
 
 ###  <a name="numeric"></a>Numérique
@@ -103,7 +105,6 @@ ___
 Seuls les nombres peuvent être une réponse valide à la question
 
 ___
-
 <a id="phonenumber"></a>
 
 ###  <a name="phonenumber"></a>PhoneNumber
@@ -113,17 +114,15 @@ ___
 Type de numéro de téléphone
 
 ___
-
 <a id="singleselect"></a>
 
 ###  <a name="singleselect"></a>SingleSelect
 
 **SingleSelect**: = 0
 
-Une seule option peut être sélectionnée dans la liste d'options.
+Une seule option peut être sélectionnée dans la liste d’options.
 
 ___
-
 <a id="singleselectexternal"></a>
 
 ###  <a name="singleselectexternal"></a>SingleSelectExternal
@@ -133,14 +132,13 @@ ___
 Type de sélection unique, mais les options de chaque question dépendent du choix de la précédente.
 
 ___
-
 <a id="text"></a>
 
-###  <a name="text"></a>Text
+###  <a name="text"></a>Texte
 
 **Text**: = 2
 
-Tout texte peut être la réponse à la question
+Tout texte peut être la réponse à la question ci-dessous 4000 caractères
 
 ___
 

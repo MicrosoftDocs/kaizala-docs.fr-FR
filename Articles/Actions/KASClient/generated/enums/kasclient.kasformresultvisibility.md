@@ -4,7 +4,7 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [Admin](kasclient.kasformresultvisibility.md#admin)
 * [All](kasclient.kasformresultvisibility.md#all)
@@ -13,28 +13,26 @@
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="admin"></a>
 
-###  <a name="admin"></a>Administrateur
+###  <a name="admin"></a>Admin
 
 **Administrateur**: = 2
 
 Le résumé est visible par tous les administrateurs de la conversation.
 
 ___
-
 <a id="all"></a>
 
-###  <a name="all"></a>Tous
+###  <a name="all"></a>Tout
 
 **All**: = 0
 
-Le résumé du formulaire est visible par tous les membres de la conversation.
+Le résumé du formulaire est visible par tous les membres de la conversation. Pour le groupe de diffusion, cela n’inclut pas les abonnés
 
 ___
-
 <a id="membersandsubscribers"></a>
 
 ###  <a name="membersandsubscribers"></a>MembersAndSubscribers
@@ -44,7 +42,6 @@ ___
 Résumé visible par tous les membres et abonnés de la conversation
 
 ___
-
 <a id="sender"></a>
 
 ###  <a name="sender"></a>Expéditeur

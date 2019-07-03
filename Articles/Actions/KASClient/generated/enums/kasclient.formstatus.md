@@ -4,15 +4,15 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
-* [Actif](kasclient.formstatus.md#active)
+* [Active](kasclient.formstatus.md#active)
 * [Closed](kasclient.formstatus.md#closed)
 * [Expiré](kasclient.formstatus.md#expired)
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="active"></a>
 
@@ -21,7 +21,6 @@
 **Actif**: = 0
 
 ___
-
 <a id="closed"></a>
 
 ###  <a name="closed"></a>Fermé
@@ -29,7 +28,6 @@ ___
 **Fermé**: = 1
 
 ___
-
 <a id="expired"></a>
 
 ###  <a name="expired"></a>Expiré

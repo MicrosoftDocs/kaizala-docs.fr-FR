@@ -51,7 +51,6 @@ ___
 **● countryPhoneCode**: *`number`* = 0
 
 ___
-
 <a id="phonenumber"></a>
 
 ###  <a name="phonenumber"></a>phoneNumber
@@ -71,7 +70,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="tostring"></a>
 
 ###  <a name="tostring"></a>Méthode
@@ -81,7 +79,6 @@ ___
 **Renvoie:**`string`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

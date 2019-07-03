@@ -43,7 +43,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

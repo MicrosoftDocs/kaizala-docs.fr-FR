@@ -31,50 +31,45 @@
 
 **● ID**: *`string`* = ""
 
-ID d'utilisateur unique
+ID d’utilisateur unique
 
 ___
-
 <a id="name"></a>
 
 ###  <a name="name"></a>name
 
 **● nom**: *`string`* = ""
 
-Nom de l'utilisateur («vous» pour l'utilisateur actuel)
+Nom de l’utilisateur («vous» pour l’utilisateur actuel)
 
 ___
-
 <a id="originalname"></a>
 
 ###  <a name="originalname"></a>originalName
 
 **● originalName**: *`string`* = ""
 
-N'envisagez pas «vous»
+N’envisagez pas «vous»
 
 ___
-
 <a id="phonenumber"></a>
 
 ###  <a name="phonenumber"></a>phoneNumber
 
 **● phoneNumber**: *`string`* = ""
 
-Numéro de téléphone de l'utilisateur
+Numéro de téléphone de l’utilisateur
 
 ___
-
 <a id="picturebgcolor"></a>
 
 ###  <a name="picturebgcolor"></a>pictureBGColor
 
 **● pictureBGColor**: *`string`* = ""
 
-Si le PictureUrl n'est pas là, nous devons utiliser les initiales des utilisateurs comme profil pic, sous deux membres
+Si le PictureUrl n’est pas là, nous devons utiliser les initiales des utilisateurs comme profil pic, sous deux membres
 
 ___
-
 <a id="pictureinitials"></a>
 
 ###  <a name="pictureinitials"></a>pictureInitials
@@ -82,14 +77,13 @@ ___
 **● pictureInitials**: *`string`* = ""
 
 ___
-
 <a id="pictureurl"></a>
 
 ###  <a name="pictureurl"></a>pictureUrl
 
 **● pictureUrl**: *`string`* = ""
 
-URL de l'image de profil de l'utilisateur
+URL de l’image de profil de l’utilisateur
 
 ___
 

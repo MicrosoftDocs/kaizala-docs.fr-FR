@@ -28,7 +28,6 @@
 **● actionPackageId**: *`string`* = ""
 
 ___
-
 <a id="json"></a>
 
 ###  <a name="json"></a>json
@@ -36,10 +35,9 @@ ___
 **● JSON**:*`JSON`*
 
 ___
-
 <a id="properties"></a>
 
-###  <a name="properties"></a>properties
+###  <a name="properties"></a>propriétés
 
 **● Propriétés**:*`JSON`*
 

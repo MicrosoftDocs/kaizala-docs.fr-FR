@@ -34,7 +34,6 @@
 Nom des métadonnées
 
 ___
-
 <a id="type"></a>
 
 ###  <a name="type"></a>type
@@ -44,7 +43,6 @@ ___
 Type de métadonnées
 
 ___
-
 <a id="value"></a>
 
 ###  <a name="value"></a>value
@@ -72,7 +70,6 @@ ___
 **Renvoie:**`string`
 
 ___
-
 <a id="toapicompatiblejson"></a>
 
 ###  <a name="toapicompatiblejson"></a>toAPICompatibleJSON
@@ -82,7 +79,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="toclientjson"></a>
 
 ###  <a name="toclientjson"></a>toClientJSON
@@ -92,7 +88,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="tojson"></a>
 
 ###  <a name="tojson"></a>toJSON
@@ -102,7 +97,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

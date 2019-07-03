@@ -32,7 +32,6 @@
 **● moyenne**: *`number`* = 0
 
 ___
-
 <a id="questionid"></a>
 
 ###  <a name="questionid"></a>questionId
@@ -42,7 +41,6 @@ ___
 Index de la question
 
 ___
-
 <a id="questiontitle"></a>
 
 ###  <a name="questiontitle"></a>questionTitle
@@ -52,7 +50,6 @@ ___
 Titre de la question
 
 ___
-
 <a id="questiontype"></a>
 
 ###  <a name="questiontype"></a>questionType
@@ -62,7 +59,6 @@ ___
 Type de la question
 
 ___
-
 <a id="sum"></a>
 
 ###  <a name="sum"></a>synthèse

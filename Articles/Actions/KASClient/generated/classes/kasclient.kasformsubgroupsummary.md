@@ -30,7 +30,6 @@
 Exemple de résumé de sous-groupe {"0c6207fc-39CE-4b74-B420-db2d52f2c388 @ 1": {"n": "G22", "RDC": 1, "TC": 6}}
 
 ___
-
 <a id="respondercount"></a>
 
 ###  <a name="respondercount"></a>responderCount
@@ -38,7 +37,6 @@ ___
 **● responderCount**: *`number`* = 0
 
 ___
-
 <a id="targetcount"></a>
 
 ###  <a name="targetcount"></a>targetCount

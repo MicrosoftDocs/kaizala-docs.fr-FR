@@ -10,6 +10,7 @@
 
 ### <a name="properties"></a>Propriétés
 
+* [attachmentsList](kasclient.kasquestion.md#attachmentslist)
 * [configurer](kasclient.kasquestion.md#config)
 * [displayType](kasclient.kasquestion.md#displaytype)
 * [id](kasclient.kasquestion.md#id)
@@ -18,6 +19,7 @@
 * [isInvisible](kasclient.kasquestion.md#isinvisible)
 * [isResponseOptional](kasclient.kasquestion.md#isresponseoptional)
 * [options](kasclient.kasquestion.md#options)
+* [questionMetadata](kasclient.kasquestion.md#questionmetadata)
 * [title](kasclient.kasquestion.md#title)
 * [type](kasclient.kasquestion.md#type)
 * [valif](kasclient.kasquestion.md#valif)
@@ -35,26 +37,33 @@
 
 ## <a name="properties"></a>Propriétés
 
+<a id="attachmentslist"></a>
+
+###  <a name="attachmentslist"></a>attachmentsList
+
+**● attachmentsList**: * [KASAttachment](kasclient.kasattachment.md)[]* = []
+
+Attchments d’une question-tableau de KASAttachment
+
+___
 <a id="config"></a>
 
 ###  <a name="config"></a>configurer
 
 **● config**: *[KASQuestionConfig](kasclient.kasquestionconfig.md)* = null
 
-Configuration/comportement d'une question
+Configuration/comportement d’une question
 
 ___
-
 <a id="displaytype"></a>
 
 ###  <a name="displaytype"></a>displayType
 
 **● DisplayType**: *[KASQuestionDisplayType](../enums/kasclient.kasquestiondisplaytype.md)* = KASQuestionDisplayType. None
 
-Type d'affichage des options de la question
+Type d’affichage des options de la question
 
 ___
-
 <a id="id"></a>
 
 ###  <a name="id"></a>id
@@ -64,7 +73,6 @@ ___
 Index de la question commençant par 0
 
 ___
-
 <a id="iseditable"></a>
 
 ###  <a name="iseditable"></a>isEditable
@@ -74,7 +82,6 @@ ___
 Indique si la question peut être modifiée par le répondeur, la valeur par défaut est true.
 
 ___
-
 <a id="isexcludedfromreporting"></a>
 
 ###  <a name="isexcludedfromreporting"></a>isExcludedFromReporting
@@ -84,7 +91,6 @@ ___
 Indique si la question sera ignorée de toutes sortes de rapports
 
 ___
-
 <a id="isinvisible"></a>
 
 ###  <a name="isinvisible"></a>isInvisible
@@ -94,17 +100,15 @@ ___
 Indique si la question doit être invisible pour le répondeur, la valeur par défaut est false.
 
 ___
-
 <a id="isresponseoptional"></a>
 
 ###  <a name="isresponseoptional"></a>isResponseOptional
 
 **● isResponseOptional**: *`boolean`* = false
 
-Indique s'il est obligatoire de répondre à cette question.
+Indique s’il est obligatoire de répondre à cette question.
 
 ___
-
 <a id="options"></a>
 
 ###  <a name="options"></a>options
@@ -114,7 +118,13 @@ ___
 Liste des options pour la question
 
 ___
+<a id="questionmetadata"></a>
 
+###  <a name="questionmetadata"></a>questionMetadata
+
+**● questionMetadata**:*`string`*
+
+___
 <a id="title"></a>
 
 ###  <a name="title"></a>title
@@ -124,7 +134,6 @@ ___
 Titre de la question
 
 ___
-
 <a id="type"></a>
 
 ###  <a name="type"></a>type
@@ -134,24 +143,22 @@ ___
 Type de la question
 
 ___
-
 <a id="valif"></a>
 
 ###  <a name="valif"></a>valif
 
 **● valif**: *[KASValidationRule](kasclient.kasvalidationrule.md)* = null
 
-Règles de validation d'une question-JSON de règle (s), chaîne d'erreur et chaîne d'aide
+Règles de validation d’une question-JSON de règle (s), chaîne d’erreur et chaîne d’aide
 
 ___
-
 <a id="visif"></a>
 
 ###  <a name="visif"></a>visif
 
 **● visif**: *[KASVisibilityRule](kasclient.kasvisibilityrule.md)* = null
 
-Règles de visibilité d'une chaîne de règle de question
+Règles de visibilité d’une chaîne de règle de question
 
 ___
 
@@ -172,7 +179,6 @@ ___
 **Renvoie:**`string`
 
 ___
-
 <a id="toapicompatiblejson"></a>
 
 ###  <a name="toapicompatiblejson"></a>toAPICompatibleJSON
@@ -182,7 +188,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="toclientjson"></a>
 
 ###  <a name="toclientjson"></a>toClientJSON
@@ -192,7 +197,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="tojson"></a>
 
 ###  <a name="tojson"></a>toJSON
@@ -202,7 +206,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="validateresponse"></a>
 
 ###  <a name="validateresponse"></a>validateResponse
@@ -218,7 +221,6 @@ ___
 **Renvoie:** [KASQuestionValidationResponse](kasclient.kasquestionvalidationresponse.md)
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

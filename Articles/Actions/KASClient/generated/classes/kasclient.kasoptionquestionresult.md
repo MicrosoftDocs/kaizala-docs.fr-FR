@@ -31,11 +31,10 @@
 
 **● optionResults**:*`object`*
 
-Pour SingleSelect/multiSelect, le résultat sera l'ID d'option et son nombre Dictionary<OptionId: nombre, OptionResult: KASOptionResult>
+Pour SingleSelect/MultiSelect, le résultat sera l’ID d’option et son dictionnaire de nombre<OptionId: nombre, OptionResult: KASOptionResult>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
-
 <a id="questionid"></a>
 
 ###  <a name="questionid"></a>questionId
@@ -45,7 +44,6 @@ ___
 Index de la question
 
 ___
-
 <a id="questiontitle"></a>
 
 ###  <a name="questiontitle"></a>questionTitle
@@ -55,7 +53,6 @@ ___
 Titre de la question
 
 ___
-
 <a id="questiontype"></a>
 
 ###  <a name="questiontype"></a>questionType
@@ -74,12 +71,11 @@ ___
 
 ▸ **getResultsOrder**(): `number`[]
 
-Obtient tous les ID d'option triés dans le nombre total de réponses (décroissant).
+Obtient tous les ID d’option triés dans le nombre total de réponses (décroissant).
 
-**Renvoie:** `number`[] liste de tous les ID d'option
+**Renvoie:** `number`[] liste de tous les ID d’option
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

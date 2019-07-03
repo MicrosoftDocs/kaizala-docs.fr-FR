@@ -36,7 +36,6 @@
 ID de groupe
 
 ___
-
 <a id="groupname"></a>
 
 ###  <a name="groupname"></a>groupName
@@ -46,28 +45,25 @@ ___
 Nom du groupe
 
 ___
-
 <a id="id"></a>
 
 ###  <a name="id"></a>id
 
 **● ID**: *`string`* = ""
 
-Un ID de réponse unique, requis en cas de mise à jour d'une réponse existante
+Un ID de réponse unique, requis en cas de mise à jour d’une réponse existante
 
 ___
-
 <a id="questiontoanswermap"></a>
 
 ###  <a name="questiontoanswermap"></a>questionToAnswerMap
 
 **● questionToAnswerMap**:*`object`*
 
-Une carte de l'ID de question pour répondre à Dictionary<QuestionId: Number, Answer: string>
+Une carte de l’ID de question pour le dictionnaire<QuestionId: Number, Answer: String>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
-
 <a id="responderid"></a>
 
 ###  <a name="responderid"></a>responderId
@@ -77,7 +73,6 @@ ___
 ID du répondeur
 
 ___
-
 <a id="respondername"></a>
 
 ###  <a name="respondername"></a>responderName
@@ -87,34 +82,31 @@ ___
 Nom du répondeur
 
 ___
-
 <a id="sendstatus"></a>
 
 ###  <a name="sendstatus"></a>sendStatus
 
 **● sendStatus**: *[KASFormMessageSendStatus](../enums/kasclient.kasformmessagesendstatus.md)* = KASFormMessageSendStatus. Unknown
 
-État de l'envoi du message de réponse
+État de l’envoi du message de réponse
 
 ___
-
 <a id="sendtime"></a>
 
 ###  <a name="sendtime"></a>sendTime
 
 **● sendTime**: *`number`* = 0
 
-Heure d'envoi de la réponse
+Heure d’envoi de la réponse
 
 ___
-
 <a id="servertolocalasseturlmap"></a>
 
 ###  <a name="servertolocalasseturlmap"></a>serverToLocalAssetUrlMap
 
 **● serverToLocalAssetUrlMap**:*`object`*
 
-Une carte pour l'localUrl de toutes les pièces jointes d'image à une réponse Dictionary<ServerUrl: chaîne, LocalUrl: string>
+Une carte pour l’localUrl de toutes les pièces jointes d’image à un dictionnaire de réponses<ServerUrl: chaîne, LocalUrl: chaîne>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___

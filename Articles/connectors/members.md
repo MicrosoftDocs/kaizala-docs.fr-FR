@@ -1,17 +1,17 @@
 ---
-title: /Members
-description: Article de référence pour l'API permettant d'interroger les données des membres du groupe
+title: /members
+description: Article de référence pour l’API permettant d’interroger les données des membres du groupe
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: a2bbbc19e74140737e768b55f296f2463004d2fa
-ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
+ms.openlocfilehash: d4f71858cfd58a4d6dd33f3d3d14b5ac855a757a
+ms.sourcegitcommit: 7f642489150d68013f55d6ad11a6bd6dde185036
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "33190791"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "35535773"
 ---
-# <a name="members"></a>/Members
-Point de terminaison d'API pour ajouter ou supprimer des membres de groupes de conversation dans Kaizala.
+# <a name="members"></a>/members
+Point de terminaison d’API pour ajouter ou supprimer des membres de groupes de conversation dans Kaizala.
 
 ## <a name="get-members"></a>OBTENIR/members
 
@@ -21,14 +21,14 @@ Point de terminaison d'API pour ajouter ou supprimer des membres de groupes de c
 
 |  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| Paramètre de chemin d’URL | groupId | Chaîne | Non | GUID représentant l’ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d’accès reçu depuis le point de terminaison auth |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| members | Tableau JSON | Tableau d'objets JSON chacun représentant un membre du groupe. |
+| members | Tableau JSON | Tableau d’objets JSON chacun représentant un membre du groupe. |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -59,8 +59,8 @@ Point de terminaison d'API pour ajouter ou supprimer des membres de groupes de c
 
 |  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| Paramètre de chemin d’URL | groupId | Chaîne | Non | GUID représentant l’ID de ressource de la ressource de groupe spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d’accès reçu depuis le point de terminaison auth |
 | En-tête HTTP | Content-Type | Chaîne | Non | valeur: application/JSON |
 
 ### <a name="request-body"></a>Corps de la demande
@@ -84,7 +84,7 @@ Point de terminaison d'API pour ajouter ou supprimer des membres de groupes de c
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| result | Booléen | True lorsque tous les numéros de téléphone ont été ajoutés au groupe avec succès |
+| result | Boolean | True lorsque tous les numéros de téléphone ont été ajoutés au groupe avec succès |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 
@@ -102,15 +102,15 @@ Point de terminaison d'API pour ajouter ou supprimer des membres de groupes de c
 
 |  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d'URL | groupId | Chaîne | Non | GUID représentant l'ID de ressource de la ressource de groupe spécifique |
-| Paramètre de chemin d'URL | ID | Chaîne | Non | GUID représentant l'ID de membre du membre spécifique |
-| En-tête HTTP | accessToken | Chaîne | Non | Jeton d'accès reçu depuis le point de terminaison auth |
+| Paramètre de chemin d’URL | groupId | Chaîne | Non | GUID représentant l’ID de ressource de la ressource de groupe spécifique |
+| Paramètre de chemin d’URL | ID | Chaîne | Non | GUID représentant l’ID de membre du membre spécifique |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d’accès reçu depuis le point de terminaison auth |
 
 ### <a name="response-body"></a>Corps de la réponse
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| result | Booléen | True lorsque le membre spécifié a été supprimé du groupe avec succès. |
+| result | Boolean | True lorsque le membre spécifié a été supprimé du groupe. |
 
 #### <a name="sample-json-response"></a>Exemple de réponse JSON
 

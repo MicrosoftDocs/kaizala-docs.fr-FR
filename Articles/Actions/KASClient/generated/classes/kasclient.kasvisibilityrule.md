@@ -29,7 +29,6 @@
 **● dependencyQuestionId**: *`string`* = ""
 
 ___
-
 <a id="optionid"></a>
 
 ###  <a name="optionid"></a>optionId
@@ -37,7 +36,6 @@ ___
 **● optionId**: *`string`* = ""
 
 ___
-
 <a id="rule"></a>
 
 ###  <a name="rule"></a>sous
@@ -57,7 +55,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

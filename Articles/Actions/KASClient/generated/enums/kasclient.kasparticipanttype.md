@@ -5,15 +5,15 @@
 Enum pour le type de participant dans un groupe
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
-* [Communauté](kasclient.kasparticipanttype.md#group)
+* [GROUP](kasclient.kasparticipanttype.md#group)
 * [NUL](kasclient.kasparticipanttype.md#none)
 * [USER](kasclient.kasparticipanttype.md#user)
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="group"></a>
 
@@ -22,7 +22,6 @@ Enum pour le type de participant dans un groupe
 **Groupe**: = 1
 
 ___
-
 <a id="none"></a>
 
 ###  <a name="none"></a>NUL
@@ -30,7 +29,6 @@ ___
 **None**: =-1
 
 ___
-
 <a id="user"></a>
 
 ###  <a name="user"></a>USER

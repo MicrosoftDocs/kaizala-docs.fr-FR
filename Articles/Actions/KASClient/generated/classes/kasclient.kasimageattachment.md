@@ -8,6 +8,8 @@
 
 **↳ KASImageAttachment**
 
+↳ [KASRichImageAttachment](kasclient.kasrichimageattachment.md)
+
 ## <a name="index"></a>Index
 
 ### <a name="properties"></a>Propriétés
@@ -44,7 +46,6 @@
 **● attachmentId**: *`string`* = ""
 
 ___
-
 <a id="filename"></a>
 
 ###  <a name="filename"></a>fileName
@@ -52,7 +53,6 @@ ___
 **● filename**: *`string`* = ""
 
 ___
-
 <a id="generatethumbnailserverurl"></a>
 
 ###  <a name="generatethumbnailserverurl"></a>generateThumbnailServerUrl
@@ -60,7 +60,6 @@ ___
 **● generateThumbnailServerUrl**: *`boolean`* = false
 
 ___
-
 <a id="hassetthumbnail"></a>
 
 ###  <a name="hassetthumbnail"></a>hasSetThumbnail
@@ -68,7 +67,6 @@ ___
 **● hasSetThumbnail**: *`boolean`* = false
 
 ___
-
 <a id="height"></a>
 
 ###  <a name="height"></a>height
@@ -76,7 +74,6 @@ ___
 **● hauteur**: *`number`* = 0
 
 ___
-
 <a id="localpath"></a>
 
 ###  <a name="localpath"></a>localPath
@@ -84,7 +81,6 @@ ___
 **● LocalPath**: *`string`* = ""
 
 ___
-
 <a id="requirehighresthumbnail"></a>
 
 ###  <a name="requirehighresthumbnail"></a>requireHighResThumbnail
@@ -92,7 +88,6 @@ ___
 **● requireHighResThumbnail**: *`boolean`* = false
 
 ___
-
 <a id="serverpath"></a>
 
 ###  <a name="serverpath"></a>serverPath
@@ -100,15 +95,13 @@ ___
 **● ServerPath**: *`string`* = ""
 
 ___
-
 <a id="size"></a>
 
-###  <a name="size"></a>taille
+###  <a name="size"></a>size
 
 **● taille**: *`number`* = 0
 
 ___
-
 <a id="thumbnail"></a>
 
 ###  <a name="thumbnail"></a>icône
@@ -116,7 +109,6 @@ ___
 **● miniature**: *`string`* = ""
 
 ___
-
 <a id="thumbnailserverurl"></a>
 
 ###  <a name="thumbnailserverurl"></a>thumbnailServerUrl
@@ -124,7 +116,6 @@ ___
 **● thumbnailServerUrl**: *`string`* = ""
 
 ___
-
 <a id="type"></a>
 
 ###  <a name="type"></a>type
@@ -132,7 +123,6 @@ ___
 **● type**: *[KASAttachmentType](../enums/kasclient.kasattachmenttype.md)* = KASAttachmentType. image
 
 ___
-
 <a id="width"></a>
 
 ###  <a name="width"></a>width
@@ -152,7 +142,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON
@@ -168,7 +157,6 @@ ___
 **Renvoie:** [KASImageAttachment](kasclient.kasimageattachment.md)
 
 ___
-
 <a id="haslocalpath"></a>
 
 ### <a name="static-haslocalpath"></a>`<Static>`hasLocalPath
@@ -184,7 +172,6 @@ ___
 **Renvoie:**`boolean`
 
 ___
-
 <a id="hasserverpath"></a>
 
 ### <a name="static-hasserverpath"></a>`<Static>`hasServerPath
@@ -200,7 +187,6 @@ ___
 **Renvoie:**`boolean`
 
 ___
-
 <a id="populatemodelfromjson"></a>
 
 ### <a name="static-populatemodelfromjson"></a>`<Static>`populateModelFromJSON

@@ -28,38 +28,35 @@
 
 **● optionId**: *`number`* = 0
 
-Index de l'option
+Index de l’option
 
 ___
-
 <a id="optiontitle"></a>
 
 ###  <a name="optiontitle"></a>optionTitle
 
 **● optionTitle**: *`string`* = ""
 
-Titre de l'option
+Titre de l’option
 
 ___
-
 <a id="respondertoresponsecount"></a>
 
 ###  <a name="respondertoresponsecount"></a>responderToResponseCount
 
 **● responderToResponseCount**:*`object`*
 
-Une carte des ID d'utilisateur par rapport à leur nombre de réponses Dictionary<UserId: String, ResponseCount: number>
+Mappage des ID d’utilisateur par rapport au dictionnaire de nombre de réponses<UserId: String, ResponseCount: Number>
 #### <a name="type-declaration"></a>Déclaration de type
 
 ___
-
 <a id="totalresponsescount"></a>
 
 ###  <a name="totalresponsescount"></a>totalResponsesCount
 
 **● totalResponsesCount**: *`number`* = 0
 
-Combien d'entre elles ont choisi cette option?
+Combien d’entre elles ont choisi cette option?
 
 ___
 

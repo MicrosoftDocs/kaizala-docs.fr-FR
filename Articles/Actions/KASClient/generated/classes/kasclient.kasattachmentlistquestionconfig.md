@@ -37,7 +37,6 @@
 **● attachmentListType**: *[AttachmentListResponseType](../enums/kasclient.attachmentlistresponsetype.md)* = AttachmentListResponseType. Generic
 
 ___
-
 <a id="defaultcamerafiltermode"></a>
 
 ###  <a name="defaultcamerafiltermode"></a>defaultCameraFilterMode
@@ -45,7 +44,6 @@ ___
 **● defaultCameraFilterMode**: *[CameraFilterMode](../enums/kasclient.camerafiltermode.md)* = CameraFilterMode. photo
 
 ___
-
 <a id="imagesource"></a>
 
 ###  <a name="imagesource"></a>imageSource
@@ -53,7 +51,6 @@ ___
 **● imageSource**: *[ImagePickerSource](../enums/kasclient.imagepickersource.md)* = ImagePickerSource. All
 
 ___
-
 <a id="maximagecount"></a>
 
 ###  <a name="maximagecount"></a>maxImageCount
@@ -61,7 +58,6 @@ ___
 **● maxImageCount**: *`number`* = 10
 
 ___
-
 <a id="pagebreakenabled"></a>
 
 ###  <a name="pagebreakenabled"></a>pageBreakEnabled
@@ -69,7 +65,6 @@ ___
 **● pageBreakEnabled**: *`boolean`* = true
 
 ___
-
 <a id="attachment_list_type"></a>
 
 ### <a name="static-attachmentlisttype"></a>`<Static>`ATTACHMENT_LIST_TYPE
@@ -77,7 +72,6 @@ ___
 **● ATTACHMENT_LIST_TYPE**: *`string`* = "alt"
 
 ___
-
 <a id="default_camera_filter_mode"></a>
 
 ### <a name="static-defaultcamerafiltermode"></a>`<Static>`DEFAULT_CAMERA_FILTER_MODE
@@ -85,7 +79,6 @@ ___
 **● DEFAULT_CAMERA_FILTER_MODE**: *`string`* = "DCFM"
 
 ___
-
 <a id="image_source_key"></a>
 
 ### <a name="static-imagesourcekey"></a>`<Static>`IMAGE_SOURCE_KEY
@@ -93,7 +86,6 @@ ___
 **● IMAGE_SOURCE_KEY**: *`string`* = "is"
 
 ___
-
 <a id="max_image_count_key"></a>
 
 ### <a name="static-maximagecountkey"></a>`<Static>`MAX_IMAGE_COUNT_KEY
@@ -113,7 +105,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

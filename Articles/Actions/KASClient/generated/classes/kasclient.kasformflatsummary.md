@@ -32,20 +32,18 @@
 
 **● conversationId**: *`string`* = ""
 
-L'ID de la conversation associée ne doit pas être modifié.
+L’ID de la conversation associée ne doit pas être modifié.
 
 ___
-
 <a id="formid"></a>
 
 ###  <a name="formid"></a>formId
 
 **● formid**: *`string`* = ""
 
-L'ID du formulaire associé ne doit pas être modifié.
+L’ID du formulaire associé ne doit pas être modifié.
 
 ___
-
 <a id="json"></a>
 
 ###  <a name="json"></a>json
@@ -67,56 +65,52 @@ Obtient toutes les réponses de tous les utilisateurs
 **Renvoie:**`__type`
 
 ___
-
 <a id="getquestionresponsesforuserid"></a>
 
 ###  <a name="getquestionresponsesforuserid"></a>getQuestionResponsesForUserId
 
 ▸ **getQuestionResponsesForUserId**(UserID: *`string`*, questionId: *`number`*): `string`[]
 
-Obtient toutes les réponses d'un utilisateur par rapport à une question spécifique.
+Obtient toutes les réponses d’un utilisateur par rapport à une question spécifique.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| userId | `string` |  ID unique de l'utilisateur |
+| userId | `string` |  ID unique de l’utilisateur |
 | questionId | `number` |  ID de la question |
 
-**Renvoie:** `string`[] liste de toutes les réponses fournies par l'utilisateur pour cette question
+**Renvoie:** `string`[] liste de toutes les réponses fournies par l’utilisateur pour cette question
 
 ___
-
 <a id="getrespondeduserids"></a>
 
 ###  <a name="getrespondeduserids"></a>getRespondedUserIds
 
 ▸ **getRespondedUserIds**(): `string`[]
 
-Obtient tous les ID d'utilisateur qui ont répondu au formulaire.
+Obtient tous les ID d’utilisateur qui ont répondu au formulaire.
 
-**Renvoie:** `string`[] liste de tous les ID d'utilisateur ayant répondu
+**Renvoie:** `string`[] liste de tous les ID d’utilisateur ayant répondu
 
 ___
-
 <a id="getresponsesforuserid"></a>
 
 ###  <a name="getresponsesforuserid"></a>getResponsesForUserId
 
 ▸ **getResponsesForUserId**(UserID: *`string`*):`__type`
 
-Obtient toutes les réponses d'un utilisateur à un formulaire.
+Obtient toutes les réponses d’un utilisateur à un formulaire.
 
 **Paramètres :**
 
 | Nom | Type | Description |
 | ------ | ------ | ------ |
-| userId | `string` |  ID unique de l'utilisateur |
+| userId | `string` |  ID unique de l’utilisateur |
 
 **Renvoie:** `__type` ID de la question à la liste des réponses
 
 ___
-
 <a id="gettotalresponsecount"></a>
 
 ###  <a name="gettotalresponsecount"></a>getTotalResponseCount
@@ -128,7 +122,6 @@ Obtient le nombre de réponses de tous les utilisateurs
 **Renvoie:** `number` nombre de réponses
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJSON

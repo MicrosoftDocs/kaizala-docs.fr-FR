@@ -5,7 +5,7 @@
 Enum pour le rôle de participant dans un groupe
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [ADMIN](kasclient.kasparticipantrole.md#admin)
 * [MEMBRE](kasclient.kasparticipantrole.md#member)
@@ -14,7 +14,7 @@ Enum pour le rôle de participant dans un groupe
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="admin"></a>
 
@@ -23,7 +23,6 @@ Enum pour le rôle de participant dans un groupe
 **Administrateur**: = 0
 
 ___
-
 <a id="member"></a>
 
 ###  <a name="member"></a>MEMBRE
@@ -31,7 +30,6 @@ ___
 **Membre**: = 1
 
 ___
-
 <a id="none"></a>
 
 ###  <a name="none"></a>NUL
@@ -39,7 +37,6 @@ ___
 **None**: =-1
 
 ___
-
 <a id="subscriber"></a>
 
 ###  <a name="subscriber"></a>DSL

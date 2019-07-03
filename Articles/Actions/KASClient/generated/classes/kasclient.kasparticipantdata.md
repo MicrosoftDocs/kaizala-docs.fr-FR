@@ -2,7 +2,7 @@
 
 # <a name="class-kasparticipantdata"></a>Classe: KASParticipantData
 
-Définit les propriétés d'un participant à une conversation
+Définit les propriétés d’un participant à une conversation
 ## <a name="hierarchy"></a>Hierarchy
 
 **KASParticipantData**
@@ -29,7 +29,6 @@ Définit les propriétés d'un participant à une conversation
 **● participantId**: *`string`* = ""
 
 ___
-
 <a id="participantrole"></a>
 
 ###  <a name="participantrole"></a>participantRole
@@ -37,7 +36,6 @@ ___
 **● participantRole**: *[KASParticipantRole](../enums/kasclient.kasparticipantrole.md)* = KASParticipantRole. None
 
 ___
-
 <a id="participanttype"></a>
 
 ###  <a name="participanttype"></a>participantType

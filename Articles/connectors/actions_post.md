@@ -1,14 +1,14 @@
 ---
 title: /Actions_post
-description: Article de référence pour l'API de publication d'une action sur un groupe Kaizala
+description: Article de référence pour l’API de publication d’une action sur un groupe Kaizala
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: 5ca7c92f76a0e0e18025dda2526b53515a003e90
-ms.sourcegitcommit: 973f754fdb7c93381f808632f47fe66a46cc069e
+ms.openlocfilehash: 8a5e6e3c4d2f294e7c507e661ec8e5df7c717ec6
+ms.sourcegitcommit: 7f642489150d68013f55d6ad11a6bd6dde185036
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "33190741"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "35535775"
 ---
 # <a name="post-a-action-in-a-group"></a>Publier une action dans un groupe
 ## <a name="post-actions"></a>POST/actions
@@ -19,28 +19,28 @@ ms.locfileid: "33190741"
 
 |  | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :---: | :--- |
-| Paramètre de chemin d'URL | groupId | String | Non | Identificateur de groupe |
-| En-tête HTTP | accessToken | String | Non | Jeton d'accès reçu depuis le point de terminaison auth |
-| En-tête HTTP | Content-Type | String | Non | valeur: application/JSON |
+| Paramètre de chemin d’URL | groupId | Chaîne | Non | Identificateur de groupe |
+| En-tête HTTP | accessToken | Chaîne | Non | Jeton d’accès reçu depuis le point de terminaison auth |
+| En-tête HTTP | Content-Type | Chaîne | Non | valeur: application/JSON |
 
 ### <a name="request-body"></a>Corps de la demande
 
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
-| id | String | ID du package d'action Kaizala. L'un des actionType ou l'ID doit être spécifié |
-| actionType | String | Enum «Survey»/«Job». L'un des actionType ou l'ID doit être spécifié |
-| actionBody | Objet JSON | Objet représentant les données nécessaires pour l'action correspondante. Paramètres définis ci-dessous pour chacune des actions prises en charge. |
+| id | String | ID du package d’action Kaizala. L’un des actionType ou l’ID doit être spécifié |
+| actionType | String | Enum «Survey»/«Job». L’un des actionType ou l’ID doit être spécifié |
+| actionBody | Objet JSON | Objet représentant les données nécessaires pour l’action correspondante. Paramètres définis ci-dessous pour chacune des actions prises en charge. |
 
 
-#### <a name="actionbody-for-an-announcement-action"></a>actionBody pour une action d'annonce
+#### <a name="actionbody-for-an-announcement-action"></a>actionBody pour une action d’annonce
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| title | String | Non | Titre de l'annonce |
+| title | Chaîne | Non | Titre de l’annonce |
 | MediaResources | Chaîne [] | Oui | Tableau des ressources multimédias |
-| Message | String | Non | Corps du message |
+| Message | Chaîne | Non | Corps du message |
 
-#### <a name="sample-json-request-for-an-announcement-action"></a>Exemple de demande JSON pour une action d'annonce
+#### <a name="sample-json-request-for-an-announcement-action"></a>Exemple de demande JSON pour une action d’annonce
 
 ```javascript
 {
@@ -62,9 +62,9 @@ ms.locfileid: "33190741"
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| title | String | Non | Titre du travail |
+| title | Chaîne | Non | Titre du travail |
 | assignedTo | Chaîne [] | Non | Titre du travail |
-| dueDate | long | Oui | Valeur par défaut: 24 heures. Nombre d'heures avant laquelle le travail doit être effectué |
+| dueDate | long | Oui | Valeur par défaut: 24 heures. Nombre d’heures avant laquelle le travail doit être effectué |
 
 ##### <a name="sample-json-request-for-a-job-action"></a>Exemple de demande JSON pour une action de travail
 
@@ -84,9 +84,9 @@ ms.locfileid: "33190741"
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| relative | String | Non | Question de sondage |
-| Choix | Tableau JSON | Non | Options disponibles pour le sondage. Chaque choix comporte le composant suivant: <ol><li>title (obligatoire & dans le format de chaîne) </li><li>image (facultatif)</li></ol> |
-| expiryInHours | Entier | Oui | Valeur par défaut: 720. Nombre d'heures pendant lesquelles une interrogation gven a expiré. |
+| relative | Chaîne | Non | Question de sondage |
+| Choix | Tableau JSON | Non | Options disponibles pour le sondage. Chaque choix comporte le composant suivant: <ol><li>title (obligatoire & au format de chaîne) </li><li>image (facultatif)</li></ol> |
+| expiryInHours | Entier | Oui | Valeur par défaut: 720. Nombre d’heures pendant lesquelles une interrogation donnée expire |
 
 ##### <a name="sample-json-request-for-a-poll-action"></a>Exemple de requête JSON pour une action de sondage
 
@@ -104,13 +104,12 @@ ms.locfileid: "33190741"
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| title | String | Non | Titre de la demande de réunion  |
-| startingTime | DateTime
- | Non | Heure de début de la réunion |
+| title | Chaîne | Non | Titre de la demande de réunion  |
+| startingTime | Date/heure | Non | Heure de début de la réunion |
 | DurationInMins | Entier | Non | Valeur par défaut: 30 minutes. Nombre de minutes pendant lesquelles une réunion est effectuée |
 | positionnement | Objet JSON | Oui | Emplacement de la réunion. Contient 3 composants: Latitude, longitude, nom  |
 | réunion | Chaîne | Oui | Ordre du jour de la réunion/Description de la réunion |
-| isSenderOnly | Bool | Oui | Pour autoriser uniquement l'expéditeur à consulter le résumé de la réunion. Valeur par défaut: false |
+| isSenderOnly | Bool | Oui | Pour autoriser uniquement l’expéditeur à consulter le résumé de la réunion. Valeur par défaut: false |
 
 ##### <a name="sample-json-request-for-a-lets-meet-action"></a>Exemple de demande JSON pour une action de réunion
 
@@ -119,34 +118,34 @@ ms.locfileid: "33190741"
 
 ```
 
-#### <a name="actionbody-for-a-survey-action-or-action-package-instanceid-"></a>actionBody pour une action d'enquête ou une instance de package d'action (ID):
+#### <a name="actionbody-for-a-survey-action-or-action-package-instanceid-"></a>actionBody pour une action d’enquête ou une instance de package d’action (ID):
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| title | String | Non | Titre du travail |
-| dueDate | long | Oui | Valeur par défaut: 24 heures. Nombre d'heures avant laquelle le travail doit être effectué |
-| isAnonymous | Bool | Oui | Pour autoriser les réponses d'enquête anonymes. Valeur par défaut: false |
-| isSenderOnly | Bool | Oui | Pour autoriser uniquement l'expéditeur à afficher le résumé de l'enquête. Valeur par défaut: false |
+| title | Chaîne | Non | Titre du travail |
+| dueDate | long | Oui | Valeur par défaut: 24 heures. Nombre d’heures avant laquelle le travail doit être effectué |
+| isAnonymous | Bool | Oui | Pour autoriser les réponses d’enquête anonymes. Valeur par défaut: false |
+| isSenderOnly | Bool | Oui | Pour autoriser uniquement l’expéditeur à afficher le résumé de l’enquête. Valeur par défaut: false |
 | acceptMultipleResponses | Bool | Oui | Pour autoriser plusieurs réponses du même répondeur. Valeur par défaut: false |
-| questions | object[] | Non | Chaque élément de l'objet [] est décrit ci-dessous en tant qu'objet question. |
-| properties | object[] | Non | Chaque élément de l'objet [] est décrit ci-dessous en tant qu'objet Property. Valide uniquement pour la création d'une instance de package d'action |
+| questions | object[] | Non | Chaque élément de l’objet [] est décrit ci-dessous en tant qu’objet question. |
+| propriétés | object[] | Non | Chaque élément de l’objet [] est décrit ci-dessous en tant qu’objet Property. Valide uniquement pour la création d’une instance de package d’action |
 
-##### <a name="structure-for-question-object"></a>Structure de l'objet question
+##### <a name="structure-for-question-object"></a>Structure de l’objet question
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| title | String | Non | Titre de la question |
-| type | String | Non | Type de la question. Énumération: SingleOption/multiOption/Text/Image/Numeric/date/location/AttachmentList |
+| title | Chaîne | Non | Titre de la question |
+| type | Chaîne | Non | Type de la question. Énumération: SingleOption/multioption/Text/Image/Numeric/date/location/AttachmentList |
 | isInvisible | Bool | Oui | Valeur par défaut: false. Pour contrôler la visibilité de la question |
-| options | object[] | Oui | Obligatoire pour SingleOption et le type de question multiOption. chaque élément de l'objet [] est décrit ci-dessous comme objet option |
+| options | object[] | Oui | Obligatoire pour SingleOption et le type de question multioption. chaque élément de l’objet [] est décrit ci-dessous comme objet option |
 
-###### <a name="structure-for-option-object"></a>Structure de l'objet option
+###### <a name="structure-for-option-object"></a>Structure de l’objet option
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
-| title | Chaîne | Non | Titre de l'option |
+| title | Chaîne | Non | Titre de l’option |
 
-###### <a name="structure-for-property-object"></a>Structure de l'objet Property
+###### <a name="structure-for-property-object"></a>Structure de l’objet Property
 
 | Paramètre | Type | Module? | Description |
 | :---: | :---: | :---: | :--- |
@@ -154,7 +153,7 @@ ms.locfileid: "33190741"
 | type | Chaîne | Non | Type de la propriété. Énumération: Text, Numeric, location, DateTime, StringList, Attachment, StringSet, AttachmentList |
 | value | Chaîne | Non | Valeur de la propriété |
 
-##### <a name="sample-json-request-for-a-survey-action"></a>Exemple de demande JSON pour une action d'enquête
+##### <a name="sample-json-request-for-a-survey-action"></a>Exemple de demande JSON pour une action d’enquête
 
 ```javascript
 {
@@ -206,7 +205,7 @@ ms.locfileid: "33190741"
 | Paramètre | Type | Description |
 | :---: | :---: | :--- |
 | ID | Chaîne | Identificateur de demande |
-| actionId | Chaîne | Identificateur d'action |
+| actionId | Chaîne | Identificateur d’action |
 
 ```javascript
 {

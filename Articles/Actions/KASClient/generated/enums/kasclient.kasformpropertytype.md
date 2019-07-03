@@ -4,7 +4,7 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [Array](kasclient.kasformpropertytype.md#array)
 * [Attachment](kasclient.kasformpropertytype.md#attachment)
@@ -17,7 +17,7 @@
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="array"></a>
 
@@ -28,17 +28,15 @@
 Tableau de chaînes en tant que valeur de métadonnées
 
 ___
-
 <a id="attachment"></a>
 
 ###  <a name="attachment"></a>Pièce jointe
 
 **Pièce jointe**: = 5
 
-Chemin d'accès des pièces jointes en tant que valeur de métadonnées
+Chemin d’accès des pièces jointes en tant que valeur de métadonnées
 
 ___
-
 <a id="attachmentlist"></a>
 
 ###  <a name="attachmentlist"></a>AttachmentList
@@ -48,28 +46,24 @@ ___
 Liste des KASAttachment en tant que valeur de métadonnées
 
 ___
-
 <a id="datetime"></a>
 
-###  <a name="datetime"></a>DateTime
-
+###  <a name="datetime"></a>Date/heure
 
 **Date/heure**: = 3
 
 Date et heure comme valeur de métadonnées
 
 ___
-
 <a id="location"></a>
 
 ###  <a name="location"></a>Emplacement
 
 **Emplacement**: = 2
 
-Type d'emplacement comme valeur de métadonnées
+Type d’emplacement comme valeur de métadonnées
 
 ___
-
 <a id="numeric"></a>
 
 ###  <a name="numeric"></a>Numérique
@@ -79,7 +73,6 @@ ___
 Seuls les nombres sont autorisés comme valeur de métadonnées
 
 ___
-
 <a id="set"></a>
 
 ###  <a name="set"></a>Set
@@ -89,10 +82,9 @@ ___
 Set (liste unique) de chaînes en tant que valeur de métadonnées
 
 ___
-
 <a id="text"></a>
 
-###  <a name="text"></a>Text
+###  <a name="text"></a>Texte
 
 **Text**: = 0
 

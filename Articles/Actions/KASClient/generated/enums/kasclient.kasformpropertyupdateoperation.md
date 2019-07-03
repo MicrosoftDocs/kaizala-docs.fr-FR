@@ -4,7 +4,7 @@
 
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [AddEntriesInValue](kasclient.kasformpropertyupdateoperation.md#addentriesinvalue)
 * [AddProperty](kasclient.kasformpropertyupdateoperation.md#addproperty)
@@ -15,7 +15,7 @@
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="addentriesinvalue"></a>
 
@@ -24,7 +24,6 @@
 **AddEntriesInValue**: = 4
 
 ___
-
 <a id="addproperty"></a>
 
 ###  <a name="addproperty"></a>AddProperty
@@ -32,7 +31,6 @@ ___
 **AddProperty**: = 1
 
 ___
-
 <a id="deleteentriesfromvalue"></a>
 
 ###  <a name="deleteentriesfromvalue"></a>DeleteEntriesFromValue
@@ -40,7 +38,6 @@ ___
 **DeleteEntriesFromValue**: = 5
 
 ___
-
 <a id="deleteproperty"></a>
 
 ###  <a name="deleteproperty"></a>DeleteProperty
@@ -48,7 +45,6 @@ ___
 **DeleteProperty**: = 2
 
 ___
-
 <a id="replaceentryinvalue"></a>
 
 ###  <a name="replaceentryinvalue"></a>ReplaceEntryInValue
@@ -56,7 +52,6 @@ ___
 **ReplaceEntryInValue**: = 3
 
 ___
-
 <a id="updatevalue"></a>
 
 ###  <a name="updatevalue"></a>UpdateValue

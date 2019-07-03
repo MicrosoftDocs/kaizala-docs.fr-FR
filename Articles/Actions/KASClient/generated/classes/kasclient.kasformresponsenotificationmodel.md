@@ -29,7 +29,7 @@
 
 ###  <a name="constructor"></a>constructeur
 
-⊕ **New KASFormResponseNotificationModel**(MessageTarget?: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*, pushTarget?: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*, messagePreview?: *`String`*): [ KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
+⊕ **New KASFormResponseNotificationModel**(messageTarget?: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*, pushTarget?: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*, messagePreview?: *`String`*): [ KASFormResponseNotificationModel](kasclient.kasformresponsenotificationmodel.md)
 
 **Paramètres :**
 
@@ -52,7 +52,6 @@ ___
 **● messagePreview**: *`String`* = ""
 
 ___
-
 <a id="messagetarget"></a>
 
 ###  <a name="messagetarget"></a>messageTarget
@@ -60,7 +59,6 @@ ___
 **● messageTarget**: * [KASFormResponseNotificationTarget](../enums/kasclient.kasformresponsenotificationtarget.md)[]*
 
 ___
-
 <a id="pushtarget"></a>
 
 ###  <a name="pushtarget"></a>pushTarget
@@ -80,7 +78,6 @@ ___
 **Renvoie:**`JSON`
 
 ___
-
 <a id="fromjson"></a>
 
 ### <a name="static-fromjson"></a>`<Static>`fromJson

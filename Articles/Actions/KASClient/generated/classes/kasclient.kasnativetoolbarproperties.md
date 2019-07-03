@@ -31,7 +31,6 @@
 **● fixedUrl**: *`string`* = null
 
 ___
-
 <a id="icon"></a>
 
 ###  <a name="icon"></a>icône
@@ -39,7 +38,6 @@ ___
 **icône ●**: *`string`* = null
 
 ___
-
 <a id="subtitle"></a>
 
 ###  <a name="subtitle"></a>sous-titre
@@ -47,7 +45,6 @@ ___
 **● sous**- *`string`* titre: = null
 
 ___
-
 <a id="title"></a>
 
 ###  <a name="title"></a>title
@@ -55,7 +52,6 @@ ___
 **● titre**: *`string`* = null
 
 ___
-
 <a id="urlaction"></a>
 
 ###  <a name="urlaction"></a>urlAction
@@ -63,7 +59,6 @@ ___
 **● UrlAction**: *[UrlAction](../enums/kasclient.urlaction.md)* = UrlAction. None
 
 ___
-
 <a id="urltype"></a>
 
 ###  <a name="urltype"></a>urlType

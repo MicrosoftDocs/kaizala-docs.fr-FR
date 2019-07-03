@@ -5,7 +5,7 @@
 Enum pour le type de conversation
 ## <a name="index"></a>Index
 
-### <a name="enumeration-members"></a>Membres d'énumération
+### <a name="enumeration-members"></a>Membres d’énumération
 
 * [FLAT_GROUP](kasclient.kasformconversationtype.md#flat_group)
 * [ORGANE](kasclient.kasformconversationtype.md#forum)
@@ -15,7 +15,7 @@ Enum pour le type de conversation
 
 ---
 
-## <a name="enumeration-members"></a>Membres d'énumération
+## <a name="enumeration-members"></a>Membres d’énumération
 
 <a id="flat_group"></a>
 
@@ -24,7 +24,6 @@ Enum pour le type de conversation
 **FLAT_GROUP**: = 1
 
 ___
-
 <a id="forum"></a>
 
 ###  <a name="forum"></a>ORGANE
@@ -32,7 +31,6 @@ ___
 **Forum**: = 2
 
 ___
-
 <a id="none"></a>
 
 ###  <a name="none"></a>NUL
@@ -40,7 +38,6 @@ ___
 **None**: =-1
 
 ___
-
 <a id="one_on_one"></a>
 
 ###  <a name="oneonone"></a>ONE_ON_ONE
@@ -48,7 +45,6 @@ ___
 **ONE_ON_ONE**: = 0
 
 ___
-
 <a id="public_group"></a>
 
 ###  <a name="publicgroup"></a>PUBLIC_GROUP

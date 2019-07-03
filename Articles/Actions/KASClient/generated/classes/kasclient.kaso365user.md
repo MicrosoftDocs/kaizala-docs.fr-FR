@@ -32,7 +32,6 @@
 **● businessPhones**: * `string`[]* = []
 
 ___
-
 <a id="displayname"></a>
 
 ###  <a name="displayname"></a>displayName
@@ -40,7 +39,6 @@ ___
 **● DisplayName**: *`string`* = ""
 
 ___
-
 <a id="email"></a>
 
 ###  <a name="email"></a>email
@@ -48,7 +46,6 @@ ___
 **● courrier électronique**: *`string`* = ""
 
 ___
-
 <a id="givenname"></a>
 
 ###  <a name="givenname"></a>givenName
@@ -56,7 +53,6 @@ ___
 **● GivenName**: *`string`* = ""
 
 ___
-
 <a id="jobtitle"></a>
 
 ###  <a name="jobtitle"></a>jobTitle
@@ -64,7 +60,6 @@ ___
 **● JobTitle**: *`string`* = ""
 
 ___
-
 <a id="mobilephone"></a>
 
 ###  <a name="mobilephone"></a>mobilePhone
@@ -72,7 +67,6 @@ ___
 **● MobilePhone**: *`string`* = ""
 
 ___
-
 <a id="surname"></a>
 
 ###  <a name="surname"></a>surname
