@@ -22,7 +22,7 @@
 #### [Anatomie du package d’action Kaizala](Actions/anatomy.md)
 #### [Prise en main](Actions/get_started.md)
 #### [Développer](Actions/develop.md)
-#### [Publish](Actions/publish.md)
+#### [Publier](Actions/publish.md)
 
 ## Références de l’API
 
@@ -50,7 +50,7 @@
 ### [Création d’un flux à l’aide de Kaizala](https://support.office.com/en-us/article/Integrate-your-workflow-in-Kaizala-using-Microsoft-Flow-883343d0-6b16-4725-a23d-bc69fb264356?ui=en-US&rs=en-US&ad=US)
 ### [Utiliser le complément Office Kaizala](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
 
-# Connecteurs & de compléments à intégrer à d’autres applications métiers
+# Connecteurs & des compléments à intégrer à d’autres applications métiers
 ## [Créer des flux de travail métier à l’aide de Flow Connector et Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
 ## [Pack de contenu PowerBI pour Kaizala](https://support.office.com/en-us/article/Kaizala-content-pack-c8f9ab98-e840-4fd9-9afd-415474db8fd9)
 ## [Complément Office Kaizala](PartnerDocs/ExcelAddinforKaizala.md)
@@ -63,6 +63,7 @@
 ## [Vie professionnelle](BusinessSolutions/Life%40Work/Life%40Work.md)
 ### [Support technique pour les employés](BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpDesk.md)
 ### [Performances des disques à l’aide de Leaderboard](BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.md)
+### [Obtenir des réponses structurées à vos questions auprès de vos collègues](BusinessSolutions/Life%40Work/QnA/QnA.md)
 ## [Intégration de données Kaizala à vos tableaux de bord personnalisés](PartnerDocs/IntegratingKaizalaData.md)
 
 
@@ -77,7 +78,7 @@
 
 # Formation et support
 ## [Formation des utilisateurs finaux](https://support.office.com/en-us/article/Kaizala-training-987b5e60-e32a-44e8-8c71-c891a2a3d8f0)
-## [Formation pour les développeurs & d’administrateurs informatiques](PartnerDocs/PartnerTrainings.md)
+## [& des administrateurs informatiques](PartnerDocs/PartnerTrainings.md)
 ## [FAQ pour les développeurs](FAQ.md)
 ## [Modifications avec altération](BreakingChanges.md)
 ## [Développeur ChangeList](DevChangelist.md)
