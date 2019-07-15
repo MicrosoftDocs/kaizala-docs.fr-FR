@@ -7,4 +7,4 @@ Les solutions ci-dessous vous aideront à créer une communauté inclusive:
 
 1. [Support technique pour les employés](https://docs.microsoft.com/en-us/kaizala/businesssolutions/life%40work/employeehelpdesk/employeehelpdesk)
 2. [Performances des disques à l’aide de Leaderboard](https://docs.microsoft.com/en-us/kaizala/businesssolutions/life%40work/leaderboard/leaderboard)
-3. [Obtenir des réponses structurées à vos questions auprès de vos collègues]()
+3. [Obtenir des réponses structurées à vos questions auprès de vos collègues](https://docs.microsoft.com/en-us/kaizala/businesssolutionslife%40work/QnA/QnA)
