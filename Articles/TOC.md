@@ -63,7 +63,7 @@
 ## [Vie professionnelle](BusinessSolutions/Life%40Work/Life%40Work.md)
 ### [Support technique pour les employés](BusinessSolutions/Life%40Work/EmployeeHelpDesk/EmployeeHelpDesk.md)
 ### [Performances des disques à l’aide de Leaderboard](BusinessSolutions/Life%40Work/Leaderboard/Leaderboard.md)
-### [Obtenir des réponses structurées à vos questions auprès de vos collègues](BusinessSolutions/Life%40Work/QnA/QnA.md)
+### [Obtenir des réponses structurées à vos questions auprès de vos collègues](https://docs.microsoft.com/en-us/kaizala/businesssolutions/life@work/qna/qna)
 ## [Intégration de données Kaizala à vos tableaux de bord personnalisés](PartnerDocs/IntegratingKaizalaData.md)
 
 
