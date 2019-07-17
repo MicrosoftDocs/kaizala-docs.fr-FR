@@ -1,8 +1,10 @@
 # <a name="get-structured-answers-to-your-questions-from-co-workers"></a>Obtenir des réponses structurées à vos questions auprès de vos collègues
 
-Les conversations de groupe peuvent être confuses à certains moments, surtout s’il s’agit d’une communauté importante qui discute en même temps. Les réponses aux questions peuvent interrompre le flux et les utilisateurs finaux manquent d’informations, surtout si les questions sont liées aux stratégies de l’entreprise, aux objectifs et aux projets pour n’en nommer que quelques-uns.
+L’élévation de l’implication des employés est essentielle pour la réussite de toute organisation, qu’il s’agisse d’un petit démarrage ou d’une grande entreprise qui fonctionne sur plusieurs emplacements. Il peut être difficile pour les dirigeants et les responsables de savoir comment les employés se conforment aux stratégies de la société, aux projets, aux tâches et aux tâches affectées.
 
-Avec la carte QnA, les utilisateurs peuvent poser des questions au reste de la communauté et afficher toutes les réponses dans un format structuré.
+Avec l’augmentation de la main-d’œuvre mobile qui mènent de telles sessions QnA avec des responsables, en déplacement, il peut s’avérer encore plus difficile. En recourant à la session QnA sur une conversation mobile, les réponses aux questions peuvent interrompre le flux et l’utilisateur final peut manquer d’informations.
+
+Avec la carte QnA, les utilisateurs peuvent poser des questions à des responsables et à la suite de la communauté afficher toutes les réponses dans un format structuré.
 
 Il s’agit d’une carte simple avec un affichage de création, qui permet à l’utilisateur de soumettre une question, une vue de la carte graphique permettant aux utilisateurs de voir le dernier commentaire et un affichage de synthèse permettant aux utilisateurs d’afficher et de participer à la discussion.
 
