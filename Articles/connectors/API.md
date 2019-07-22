@@ -3,12 +3,12 @@ title: API Kaizala
 description: Liste des API que Kaizala expose pour permettre l’intégration à des systèmes tiers
 topic: Reference
 author: nitinjms
-ms.openlocfilehash: 221d421feeeb2528f185fa205c7cfa81207a8478
-ms.sourcegitcommit: 7f642489150d68013f55d6ad11a6bd6dde185036
+ms.openlocfilehash: c46e15ec9bd88ebbaf1d0d1a1241f1bfd892c00a
+ms.sourcegitcommit: 19e8481e67d9178efb7ea6ca19831ee7a9fa4a8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "35535683"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35811959"
 ---
 # <a name="kaizala-api-documentation"></a>Documentation de l’API Kaizala
 
@@ -24,7 +24,9 @@ Le domaine racine pour l’appel des API Kaizala est le suivant:
 | :---: | :---: | :---: | :---: | :--- |
 | URL du point de terminaison  | `endpoint-url`        | Chaîne    | Non            | Lors de l’authentification réussie lors de la génération de jetons d’accès, une URL de point de terminaison est renvoyée qui doit être utilisée comme URL de base de l’API pour effectuer les appels d’API suivants    |
 
-Notez que lorsque vous accédez à une API Kaizala, vous pouvez obtenir le code d’État http: 308 indiquant que l’URL de point de terminaison de l’utilisateur a changé. Dans ce cas, l’emplacement de l’en-tête de réponse contiendra la nouvelle URL de point de terminaison.
+> Tout en accédant à une API Kaizala, vous pouvez obtenir le code d’État http: 308 indiquant que l’URL de point de terminaison de l’utilisateur a changé. Dans ce cas, l’emplacement de l’en-tête de réponse contiendra la nouvelle URL de point de terminaison.
+
+> **Suggestion:** Les clients peuvent configurer le délai d’expiration pour recevoir une réponse des API Kaizala à 1 min
 
 ### <a name="api-end-points"></a>Points de terminaison d’API
 
