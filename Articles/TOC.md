@@ -1,10 +1,8 @@
     
 # Prise en main
-## [Vue d’ensemble de l’application Kaizala](PartnerDocs/Kaizala_overview.md)
-## [Vue d’ensemble du portail de gestion Kaizala](PartnerDocs/KaizalaManagementPortal.md)
-## [Groupes Kaizala](PartnerDocs/GroupsinKaizala.md)
-## [Actions Kaizala](PartnerDocs/KaizalaActionCards.md)
-## [Liens de disponibilité et de téléchargement Kaizala](PartnerDocs/KaizalaDownloadlinks.md)
+## [Vue d’ensemble de l’application Kaizala](https://support.office.com/en-us/article/get-to-know-kaizala-22700f1d-274f-4533-8956-247c733f6ae6)
+## [Vue d’ensemble du portail de gestion Kaizala](https://docs.microsoft.com/en-us/Office365/Kaizala/kaizala-management-portal)
+## [Liens de disponibilité et de téléchargement Kaizala](https://docs.microsoft.com/en-us/Office365/Kaizala/regional-availability)
 
 # Plateforme de développeur
 ## [À propos de la plateforme de développement Microsoft Kaizala](developer-platform.md)
