@@ -9,7 +9,7 @@
 ### [Connecteurs](connectors/README.md)
 ### [Actions Kaizala](Actions/README.md)
 
-## QuickStarts
+## Démarrages rapides
 ### Utiliser des connecteurs pour l’intégration à Kaizala
 #### [Configurer des connecteurs](connectors/setup.md)
 #### [Générer des jetons d’accès](connectors/Tokens.md)
@@ -47,6 +47,7 @@
 ### [Développer une action personnalisée](Actions/tutorial.md)
 ### [Création d’un flux à l’aide de Kaizala](https://support.office.com/en-us/article/Integrate-your-workflow-in-Kaizala-using-Microsoft-Flow-883343d0-6b16-4725-a23d-bc69fb264356?ui=en-US&rs=en-US&ad=US)
 ### [Utiliser le complément Office Kaizala](https://support.office.com/en-us/article/Kaizala-Office-Add-in-4cd01439-5da2-4a9f-b493-8f2e23e2fd91)
+### [Créer une action à l’aide de contrôles de carte de composant](Actions/componentcardtutorial.md)
 
 # Connecteurs & des compléments à intégrer à d’autres applications métiers
 ## [Créer des flux de travail métier à l’aide de Flow Connector et Kaizala](PartnerDocs/IntegrateKaizalaandMailflow.md)
